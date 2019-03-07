@@ -1,0 +1,6 @@
+framework module ActionCardsSDK {
+  umbrella header "ActionCardsSDK.h"
+
+  export *
+  module * { export * }
+}
