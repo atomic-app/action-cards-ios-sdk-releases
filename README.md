@@ -8,9 +8,9 @@ The Action Cards SDK can be installed using any of the following methods:
 
 ### Carthage
 
-1. Add `github "atomic-app/action-cards-sdk-ios-releases"` to your `Cartfile`.
+1. Add `github "atomic-app/action-cards-ios-sdk-releases"` to your `Cartfile`.
 2. Run `carthage update`.
-3. Navigate to your project in Xcode and select the "General" settings tab. Drag `ActionCardsSDK.framework` from the `Carthage/Build/iOS` directory to the `Embedded Binaries` section. When prompted, ensure that "Copy items if needed" is selected, and then click "Finish".
+3. [Follow the instructions](https://github.com/Carthage/Carthage#if-youre-building-for-ios-tvos-or-watchos) provided by Carthage to add the SDK to your app.
 
 ### Cocoapods
 
