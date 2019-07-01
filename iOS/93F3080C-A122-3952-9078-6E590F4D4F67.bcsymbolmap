@@ -1501,6 +1501,10 @@ ___31-[AACMainFlowCoordinator start]_block_invoke_2
 ___31-[AACMainFlowCoordinator start]_block_invoke.59
 -[AACMainFlowCoordinator navigateToCardList]
 -[AACMainFlowCoordinator cardListViewController:didRequestLayoutWithName:forCardWithId:]
+___88-[AACMainFlowCoordinator cardListViewController:didRequestLayoutWithName:forCardWithId:]_block_invoke
+___88-[AACMainFlowCoordinator cardListViewController:didRequestLayoutWithName:forCardWithId:]_block_invoke_2
+___copy_helper_block_e4_20s24s28w
+___destroy_helper_block_e4_20s24s28w
 -[AACMainFlowCoordinator cardListViewController:didRequestToViewUrl:ofType:]
 -[AACMainFlowCoordinator cardWorkflowViewControllerDidSuccessfullyCompleteFlow:forCardWithInstanceId:postSubmissionUrl:]
 -[AACMainFlowCoordinator cardWorkflowViewController:didRequestToViewUrl:]
@@ -1519,6 +1523,8 @@ ___31-[AACMainFlowCoordinator start]_block_invoke.59
 -[AACMainFlowCoordinator setConfiguration:]
 -[AACMainFlowCoordinator .cxx_destruct]
 ___block_descriptor_28_e4_20s24s_e34_v12@?0@"AACAppearance"4@"NSError"8l
+___block_descriptor_32_e4_20s24s28w_e5_v4@?0l
+___block_descriptor_32_e4_20s24s28w_e36_v12@?0@"AACCardInstance"4@"NSError"8l
 _OBJC_IVAR_$_AACMainFlowCoordinator._delegate
 _OBJC_IVAR_$_AACMainFlowCoordinator._navigationController
 _OBJC_IVAR_$_AACMainFlowCoordinator._cardService
@@ -1533,11 +1539,15 @@ l_OBJC_PROTOCOL_$_AACLoadingViewControllerDelegate
 l_OBJC_LABEL_PROTOCOL_$_AACLoadingViewControllerDelegate
 /Users/steven/Documents/Code/action-cards-ios-sdk/ActionCardsSDK/ActionCardsSDK/Coordinator/AACMainFlowCoordinator.m
 /Users/steven/Documents/Code/action-cards-ios-sdk/ActionCardsSDK/ActionCardsSDK/Coordinator/AACMainFlowCoordinator.h
+__destroy_helper_block_e4_20s24s28w
+__copy_helper_block_e4_20s24s28w
+__88-[AACMainFlowCoordinator cardListViewController:didRequestLayoutWithName:forCardWithId:]_block_invoke_2
+__88-[AACMainFlowCoordinator cardListViewController:didRequestLayoutWithName:forCardWithId:]_block_invoke
+aac_dispatch_main
+/Users/steven/Documents/Code/action-cards-ios-sdk/ActionCardsSDK/ActionCardsSDK/Utilities/AACMacros.h
 __31-[AACMainFlowCoordinator start]_block_invoke.59
 __31-[AACMainFlowCoordinator start]_block_invoke_2
 __31-[AACMainFlowCoordinator start]_block_invoke
-aac_dispatch_main
-/Users/steven/Documents/Code/action-cards-ios-sdk/ActionCardsSDK/ActionCardsSDK/Utilities/AACMacros.h
 -[AACCardWorkflowViewController initWithCardService:cardInstanceId:layoutName:theme:]
 -[AACCardWorkflowViewController viewDidLoad]
 -[AACCardWorkflowViewController viewWillAppear:]
@@ -1603,7 +1613,6 @@ _OBJC_IVAR_$_AACTextView._heightConstraint
 /Users/steven/Documents/Code/action-cards-ios-sdk/ActionCardsSDK/ActionCardsSDK/Views/TextView/AACTextView.m
 /Users/steven/Documents/Code/action-cards-ios-sdk/ActionCardsSDK/ActionCardsSDK/Views/TextView/AACTextView.h
 -[AACCardOverflowView awakeFromNib]
--[AACCardOverflowView prepareForReuse]
 -[AACCardOverflowView tapAction:]
 -[AACCardOverflowView applyLayoutAttributes:]
 -[AACCardOverflowView delegate]
@@ -1678,12 +1687,16 @@ __42-[AACCardWorkflowPresenter loadCardLayout]_block_invoke
 -[AACCollectionViewFlowLayout initWithTheme:]
 -[AACCollectionViewFlowLayout prepareLayout]
 -[AACCollectionViewFlowLayout invalidateLayout]
+-[AACCollectionViewFlowLayout clearCaches]
 -[AACCollectionViewFlowLayout invalidateLayoutWithContext:]
 -[AACCollectionViewFlowLayout collectionViewContentSize]
 -[AACCollectionViewFlowLayout layoutAttributesForElementsInRect:]
 -[AACCollectionViewFlowLayout layoutAttributesForItemAtIndexPath:]
 -[AACCollectionViewFlowLayout layoutAttributesForSupplementaryViewOfKind:atIndexPath:]
 -[AACCollectionViewFlowLayout layoutAttributesForDecorationViewOfKind:atIndexPath:]
+-[AACCollectionViewFlowLayout existingCellAttributesForIndexPath:]
+-[AACCollectionViewFlowLayout existingDecorationViewAttributesForKind:atIndexPath:]
+-[AACCollectionViewFlowLayout existingSupplementaryViewAttributesForKind:atIndexPath:]
 -[AACCollectionViewFlowLayout updateLayoutAttributes:withCurrentVerticalOffset:]
 -[AACCollectionViewFlowLayout addOverflowButtonForSection:withVerticalOffset:]
 -[AACCollectionViewFlowLayout addActionsForSection:withVerticalOffset:desiredHeight:]
@@ -1725,7 +1738,6 @@ ___copy_helper_block_e4_20b24s
 ___55-[AACCardService submitResponse:withCompletionHandler:]_block_invoke
 ___55-[AACCardService submitResponse:withCompletionHandler:]_block_invoke_2
 ___copy_helper_block_e4_20b24s28w
-___destroy_helper_block_e4_20s24s28w
 ___copy_helper_block_e4_20s24b28w
 -[AACCardService sessionDelegate]
 -[AACCardService setSessionDelegate:]
@@ -1750,7 +1762,6 @@ _OBJC_IVAR_$_AACCardService._responseApi
 _OBJC_IVAR_$_AACCardService._apiCache
 /Users/steven/Documents/Code/action-cards-ios-sdk/ActionCardsSDK/ActionCardsSDK/Services/AACCardService.m
 __copy_helper_block_e4_20s24b28w
-__destroy_helper_block_e4_20s24s28w
 __copy_helper_block_e4_20b24s28w
 __55-[AACCardService submitResponse:withCompletionHandler:]_block_invoke_2
 __55-[AACCardService submitResponse:withCompletionHandler:]_block_invoke
@@ -1773,16 +1784,26 @@ _OBJC_IVAR_$_AACCardViewMediaTextLayout._textLabel
 -[AACInlineLoadingSpinnerView beginLoading]
 -[AACInlineLoadingSpinnerView endLoading]
 /Users/steven/Documents/Code/action-cards-ios-sdk/ActionCardsSDK/ActionCardsSDK/Views/InlineLoadingSpinner/AACInlineLoadingSpinnerView.m
++[AACCardComponentView borderHeight]
+___36+[AACCardComponentView borderHeight]_block_invoke
+-[AACCardComponentView resetView]
+-[AACCardComponentView didUnarchiveView]
 -[AACCardComponentView setupWithNode:context:]
 -[AACCardComponentView layoutSubviews]
 -[AACCardComponentView cardComponentWillAppear]
 -[AACCardComponentView cardComponentDidDisappear]
 -[AACCardComponentView displaysBorderInSubview]
--[AACCardComponentView borderLayer]
--[AACCardComponentView setBorderLayer:]
+-[AACCardComponentView borderTopView]
+-[AACCardComponentView setBorderTopView:]
+-[AACCardComponentView borderBottomView]
+-[AACCardComponentView setBorderBottomView:]
 -[AACCardComponentView .cxx_destruct]
-_OBJC_IVAR_$_AACCardComponentView._borderLayer
+_borderHeight.onceToken
+_borderHeight.borderHeight
+_OBJC_IVAR_$_AACCardComponentView._borderTopView
+_OBJC_IVAR_$_AACCardComponentView._borderBottomView
 /Users/steven/Documents/Code/action-cards-ios-sdk/ActionCardsSDK/ActionCardsSDK/Renderer/Components/Shared/AACCardComponentView.m
+__36+[AACCardComponentView borderHeight]_block_invoke
 -[AACCardComponentViewLayout setupWithNode:context:]
 -[AACCardComponentViewLayout resetView]
 -[AACCardComponentViewLayout cardComponentLayoutWillAppear]
@@ -1872,8 +1893,8 @@ _OBJC_IVAR_$_AACCardViewDateDropdownPresenter._selectedDate
 __49+[AACCardViewDateDropdownPresenter dateFormatter]_block_invoke
 -[AACCardShadowView awakeFromNib]
 -[AACCardShadowView layoutSubviews]
--[AACCardShadowView prepareForReuse]
 -[AACCardShadowView applyLayoutAttributes:]
+-[AACCardShadowView applyDefaultAlphaAndTransform]
 -[AACCardShadowView contentView]
 -[AACCardShadowView setContentView:]
 -[AACCardShadowView completionContainerView]
@@ -2043,6 +2064,7 @@ ___36-[AACCardListPresenter loadCardList]_block_invoke_2
 -[AACCardListPresenter handleNavigationForSubmitNode:]
 ___54-[AACCardListPresenter handleNavigationForSubmitNode:]_block_invoke
 ___54-[AACCardListPresenter handleNavigationForSubmitNode:]_block_invoke_2
+___copy_helper_block_e4_20s24w
 -[AACCardListPresenter handleNavigationForVideoNode:]
 -[AACCardListPresenter handleNavigationForImageNode:]
 -[AACCardListPresenter confirmCardRemovedWithInstanceId:]
@@ -2061,6 +2083,7 @@ ___55-[AACCardListPresenter listIndexForCardWithInstanceId:]_block_invoke
 -[AACCardListPresenter instanceIdForCardAtIndex:]
 -[AACCardListPresenter resetPanState]
 -[AACCardListPresenter hasReachedThresholdForPerformingDefaultAction:forCardWithInstanceId:]
+-[AACCardListPresenter canInteractWithCardAtIndex:]
 -[AACCardListPresenter viewDelegate]
 -[AACCardListPresenter setViewDelegate:]
 -[AACCardListPresenter theme]
@@ -2078,11 +2101,13 @@ ___55-[AACCardListPresenter listIndexForCardWithInstanceId:]_block_invoke
 -[AACCardListPresenter setPanOrigins:]
 -[AACCardListPresenter cardIndexBeingPanned]
 -[AACCardListPresenter setCardIndexBeingPanned:]
+-[AACCardListPresenter cardsInFlight]
+-[AACCardListPresenter setCardsInFlight:]
 -[AACCardListPresenter .cxx_destruct]
 _OBJC_IVAR_$_AACCardListPresenter._cardList
 ___block_descriptor_32_e4_20s24s28s_e5_v4@?0l
 ___block_descriptor_24_e4_20s_e28_v12@?0@"NSArray"4@"NSError"8l
-___block_descriptor_28_e4_20s24s_e16_v8@?0@"NSError"4l
+___block_descriptor_28_e4_20s24w_e16_v8@?0@"NSError"4l
 ___block_descriptor_24_e4_20s_e31_c16@?0@"AACCardInstance"4I8^c12l
 _OBJC_IVAR_$_AACCardListPresenter._viewDelegate
 _OBJC_IVAR_$_AACCardListPresenter._theme
@@ -2092,9 +2117,11 @@ _OBJC_IVAR_$_AACCardListPresenter._cardInstanceToAnimate
 _OBJC_IVAR_$_AACCardListPresenter._cardInstancePostSubmissionUrl
 _OBJC_IVAR_$_AACCardListPresenter._panOrigins
 _OBJC_IVAR_$_AACCardListPresenter._cardIndexBeingPanned
+_OBJC_IVAR_$_AACCardListPresenter._cardsInFlight
 /Users/steven/Documents/Code/action-cards-ios-sdk/ActionCardsSDK/ActionCardsSDK/Controllers/CardList/Presenter/AACCardListPresenter.m
 /Users/steven/Documents/Code/action-cards-ios-sdk/ActionCardsSDK/ActionCardsSDK/Controllers/CardList/Presenter/AACCardListPresenter.h
 __55-[AACCardListPresenter listIndexForCardWithInstanceId:]_block_invoke
+__copy_helper_block_e4_20s24w
 __54-[AACCardListPresenter handleNavigationForSubmitNode:]_block_invoke_2
 __54-[AACCardListPresenter handleNavigationForSubmitNode:]_block_invoke
 __36-[AACCardListPresenter loadCardList]_block_invoke_2
@@ -2598,6 +2625,10 @@ ___41+[AACMarkdownParser markdownCharacterSet]_block_invoke
 ___50+[AACMarkdownParser numberedListRegularExpression]_block_invoke
 +[AACMarkdownParser bulletedListRegularExpression]
 ___50+[AACMarkdownParser bulletedListRegularExpression]_block_invoke
++[AACMarkdownParser linkRegularExpression]
+___42+[AACMarkdownParser linkRegularExpression]_block_invoke
++[AACMarkdownParser linkReplacementTemplate]
+___44+[AACMarkdownParser linkReplacementTemplate]_block_invoke
 -[AACMarkdownParser parseLine:atIndex:withDocument:]
 -[AACMarkdownParser attributedStringFromMarkdown:configuration:]
 _sharedParser.onceToken
@@ -2607,11 +2638,18 @@ _markdownCharacterSet.characterSet
 ___block_literal_global.3
 _numberedListRegularExpression.onceToken
 _numberedListRegularExpression.regex
-___block_literal_global.8
+___block_literal_global.11
 _bulletedListRegularExpression.onceToken
 _bulletedListRegularExpression.regex
-___block_literal_global.14
+___block_literal_global.17
+_linkRegularExpression.onceToken
+_linkRegularExpression.regex
+___block_literal_global.20
+_linkReplacementTemplate.onceToken
+_linkReplacementTemplate.str
 /Users/steven/Documents/Code/action-cards-ios-sdk/ActionCardsSDK/ActionCardsSDK/Renderer/Markdown/AACMarkdownParser.m
+__44+[AACMarkdownParser linkReplacementTemplate]_block_invoke
+__42+[AACMarkdownParser linkRegularExpression]_block_invoke
 __50+[AACMarkdownParser bulletedListRegularExpression]_block_invoke
 __50+[AACMarkdownParser numberedListRegularExpression]_block_invoke
 __41+[AACMarkdownParser markdownCharacterSet]_block_invoke
