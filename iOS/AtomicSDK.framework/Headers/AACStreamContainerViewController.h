@@ -22,7 +22,7 @@
  @note Do not subclass this view controller.
  */
 __attribute__((objc_subclassing_restricted))
-@interface AACStreamContainerViewController : UINavigationController
+@interface AACStreamContainerViewController: UIViewController
 
 /**
  Creates a new view controller that renders a stream container by its identifier.
@@ -37,11 +37,8 @@ __attribute__((objc_subclassing_restricted))
                                 configuration:(AACConfiguration* __nonnull)configuration NS_DESIGNATED_INITIALIZER;
 
 - (instancetype __nonnull)init NS_UNAVAILABLE;
+- (instancetype __nonnull)initWithCoder:(NSCoder* __nonnull)aDecoder NS_UNAVAILABLE;
 - (instancetype __nonnull)initWithNibName:(NSString* __nullable)nibNameOrNil
                                    bundle:(NSBundle* __nullable)nibBundleOrNil NS_UNAVAILABLE;
-
-- (instancetype __nonnull)initWithRootViewController:(UIViewController* __nonnull)rootViewController NS_UNAVAILABLE;
-- (instancetype __nonnull)initWithNavigationBarClass:(Class __nullable)navigationBarClass
-                                        toolbarClass:(Class __nullable)toolbarClass NS_UNAVAILABLE;
 
 @end

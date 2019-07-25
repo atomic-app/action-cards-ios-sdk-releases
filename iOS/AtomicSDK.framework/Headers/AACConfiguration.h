@@ -7,22 +7,31 @@
 #import <Foundation/Foundation.h>
 @import UIKit;
 
+#import "AACStreamContainerActionDelegate.h"
+
 /**
  Supported methods for presenting a stream container in the SDK.
  */
 typedef NS_ENUM(NSUInteger, AACConfigurationPresentationStyle) {
     /**
-     The stream container is being presented inside of another content view controller,
-     or in a context that supplies another method of leaving the screen
-     (e.g. a `UITabBarController`).
+     The stream container should not display a button in its top left.
+     It is your responsibility to ensure that the stream container is presented
+     in a way that allows the user to navigate away from it.
      */
-    AACConfigurationPresentationStyleContent = 0,
+    AACConfigurationPresentationStyleWithoutButton = 0,
     /**
-     The stream container is being presented modally.
-     This presentation style displays a 'Close' button in the top left of the
-     screen to support dismissal.
+     THe stream container should display an action (overflow) button in its
+     top left. When tapped, you will be notified via the action delegate, at which
+     point you can perform your own custom action.
      */
-    AACConfigurationPresentationStyleModal
+    AACConfigurationPresentationStyleWithActionButton,
+    /**
+     The stream container is being presented with a button in its top left depending
+     on context:
+     - If presented inside of a navigation controller, a 'Back' button is presented.
+     - If presented modally, a 'Close' button is presented.
+     */
+    AACConfigurationPresentationStyleWithContextualButton
 };
 
 /**
@@ -34,6 +43,11 @@ typedef NS_ENUM(NSUInteger, AACConfigurationPresentationStyle) {
  The presentation style for the stream container.
  */
 @property (nonatomic) AACConfigurationPresentationStyle presentationStyle;
+
+/**
+ Optional action delegate that responds to actions triggered by the stream container.
+ */
+@property (nonatomic, weak) id<AACStreamContainerActionDelegate> actionDelegate;
 
 /**
  The background colour of the view displayed when the SDK is first presented.
