@@ -18,12 +18,17 @@ __38+[UIFont(AACFont) aac_loadFontAwesome]_block_invoke
 /Users/steven/Documents/Code/action-cards-ios-sdk/ActionCardsSDK/ActionCardsSDK/Model/Card/Layout/NodeTypes/AACCardNodeImage.m
 -[AACCardFeedAPI fetchCardsForContainerWithId:authenticationToken:completionHandler:]
 ___85-[AACCardFeedAPI fetchCardsForContainerWithId:authenticationToken:completionHandler:]_block_invoke
-___copy_helper_block_e4_20b
-___destroy_helper_block_e4_20s
-___block_descriptor_24_e4_20bs_e19_v12@?0@4@"NSError"8l
+___copy_helper_block_e4_20b24s
+___destroy_helper_block_e4_20s24s
+-[AACCardFeedAPI isHttpStatusCodeSuccessful:]
+-[AACCardFeedAPI lastETag]
+-[AACCardFeedAPI setLastETag:]
+-[AACCardFeedAPI .cxx_destruct]
+___block_descriptor_28_e4_20bs24s_e36_v16@?0@4@"NSDictionary"8@"NSError"12l
+_OBJC_IVAR_$_AACCardFeedAPI._lastETag
 /Users/steven/Documents/Code/action-cards-ios-sdk/ActionCardsSDK/ActionCardsSDK/Services/CardFeed/AACCardFeedAPI.m
-__destroy_helper_block_e4_20s
-__copy_helper_block_e4_20b
+__destroy_helper_block_e4_20s24s
+__copy_helper_block_e4_20b24s
 __85-[AACCardFeedAPI fetchCardsForContainerWithId:authenticationToken:completionHandler:]_block_invoke
 -[AACAppearanceCacheOperation main]
 -[AACAppearanceCacheOperation makeReadyWithAppearanceDictionary:]
@@ -75,6 +80,8 @@ l_OBJC_LABEL_PROTOCOL_$_AACDeserializable
 /Users/steven/Documents/Code/action-cards-ios-sdk/ActionCardsSDK/ActionCardsSDK/Model/Card/Layout/AACCardLayout.h
 -[AACListHeaderView didUnarchiveView]
 -[AACListHeaderView setupWithTitle:configuration:]
+-[AACListHeaderView setupWithButtonStyle:actionButtonColour:]
+-[AACListHeaderView applyActionButtonStyle:]
 -[AACListHeaderView applyTheme:]
 -[AACListHeaderView updateTransitionStateWithScrollOffset:]
 -[AACListHeaderView didTapActionButton:]
@@ -83,6 +90,7 @@ l_OBJC_LABEL_PROTOCOL_$_AACDeserializable
 -[AACListHeaderView endRefreshing]
 ___34-[AACListHeaderView endRefreshing]_block_invoke
 ___copy_helper_block_e4_20s
+___destroy_helper_block_e4_20s
 +[AACListHeaderView maximumHeight]
 -[AACListHeaderView compactHeaderAlphaDidChange:]
 -[AACListHeaderView loadingSpinnerAlphaDidChange:]
@@ -142,6 +150,7 @@ l_OBJC_PROTOCOL_$_AACThemable
 l_OBJC_LABEL_PROTOCOL_$_AACThemable
 /Users/steven/Documents/Code/action-cards-ios-sdk/ActionCardsSDK/ActionCardsSDK/Views/ListHeader/AACListHeaderView.m
 /Users/steven/Documents/Code/action-cards-ios-sdk/ActionCardsSDK/ActionCardsSDK/Views/ListHeader/AACListHeaderView.h
+__destroy_helper_block_e4_20s
 __copy_helper_block_e4_20s
 __34-[AACListHeaderView endRefreshing]_block_invoke
 UIEdgeInsetsMake
@@ -246,8 +255,8 @@ __55+[NSDate(ISO8601) aac_iso8601FormatterWithMilliseconds]_block_invoke
 ___58-[AACLoadingSpinnerView endRefreshingAlongsideAnimations:]_block_invoke
 ___58-[AACLoadingSpinnerView endRefreshingAlongsideAnimations:]_block_invoke_2
 ___58-[AACLoadingSpinnerView endRefreshingAlongsideAnimations:]_block_invoke.51
+___copy_helper_block_e4_20b
 ___copy_helper_block_e4_20s24b
-___destroy_helper_block_e4_20s24s
 -[AACLoadingSpinnerView updateWithScrollOffset:]
 -[AACLoadingSpinnerView layoutSubviews]
 -[AACLoadingSpinnerView delegate]
@@ -268,8 +277,8 @@ _OBJC_IVAR_$_AACLoadingSpinnerView._backingView
 _OBJC_IVAR_$_AACLoadingSpinnerView._isRefreshing
 /Users/steven/Documents/Code/action-cards-ios-sdk/ActionCardsSDK/ActionCardsSDK/Views/LoadingSpinner/AACLoadingSpinnerView.m
 /Users/steven/Documents/Code/action-cards-ios-sdk/ActionCardsSDK/ActionCardsSDK/Views/LoadingSpinner/AACLoadingSpinnerView.h
-__destroy_helper_block_e4_20s24s
 __copy_helper_block_e4_20s24b
+__copy_helper_block_e4_20b
 __58-[AACLoadingSpinnerView endRefreshingAlongsideAnimations:]_block_invoke.51
 __58-[AACLoadingSpinnerView endRefreshingAlongsideAnimations:]_block_invoke_2
 __58-[AACLoadingSpinnerView endRefreshingAlongsideAnimations:]_block_invoke
@@ -290,7 +299,6 @@ ___47-[AACActionSheetViewController viewWillAppear:]_block_invoke
 -[AACActionSheetViewController dismissViewControllerAnimated:completion:]
 ___73-[AACActionSheetViewController dismissViewControllerAnimated:completion:]_block_invoke
 ___73-[AACActionSheetViewController dismissViewControllerAnimated:completion:]_block_invoke_2
-___copy_helper_block_e4_20b24s
 -[AACActionSheetViewController didTapAction:]
 ___45-[AACActionSheetViewController didTapAction:]_block_invoke
 -[AACActionSheetViewController didTapBackground:]
@@ -318,7 +326,6 @@ _OBJC_IVAR_$_AACActionSheetViewController._sheetCornerRadius
 _OBJC_IVAR_$_AACActionSheetViewController._theme
 /Users/steven/Documents/Code/action-cards-ios-sdk/ActionCardsSDK/ActionCardsSDK/Controllers/ActionSheet/AACActionSheetViewController.m
 __45-[AACActionSheetViewController didTapAction:]_block_invoke
-__copy_helper_block_e4_20b24s
 __73-[AACActionSheetViewController dismissViewControllerAnimated:completion:]_block_invoke_2
 __73-[AACActionSheetViewController dismissViewControllerAnimated:completion:]_block_invoke
 __47-[AACActionSheetViewController viewWillAppear:]_block_invoke
@@ -349,25 +356,29 @@ _OBJC_IVAR_$_AACCardViewSubviewButton._titleLabel
 _OBJC_IVAR_$_AACCardViewSubviewButton._loadingView
 _OBJC_IVAR_$_AACCardViewSubviewButton._buttonTitle
 /Users/steven/Documents/Code/action-cards-ios-sdk/ActionCardsSDK/ActionCardsSDK/Renderer/Components/Button/SubviewButton/AACCardViewSubviewButton.m
+-[AACLoadingViewConfiguration presentationStyle]
+-[AACLoadingViewConfiguration setPresentationStyle:]
 -[AACLoadingViewConfiguration backgroundColor]
 -[AACLoadingViewConfiguration setBackgroundColor:]
 -[AACLoadingViewConfiguration iconColor]
 -[AACLoadingViewConfiguration setIconColor:]
 -[AACLoadingViewConfiguration buttonColor]
 -[AACLoadingViewConfiguration setButtonColor:]
--[AACLoadingViewConfiguration displaysCloseButton]
--[AACLoadingViewConfiguration setDisplaysCloseButton:]
+-[AACLoadingViewConfiguration textColor]
+-[AACLoadingViewConfiguration setTextColor:]
 -[AACLoadingViewConfiguration .cxx_destruct]
+_OBJC_IVAR_$_AACLoadingViewConfiguration._presentationStyle
 _OBJC_IVAR_$_AACLoadingViewConfiguration._backgroundColor
 _OBJC_IVAR_$_AACLoadingViewConfiguration._iconColor
 _OBJC_IVAR_$_AACLoadingViewConfiguration._buttonColor
-_OBJC_IVAR_$_AACLoadingViewConfiguration._displaysCloseButton
+_OBJC_IVAR_$_AACLoadingViewConfiguration._textColor
 /Users/steven/Documents/Code/action-cards-ios-sdk/ActionCardsSDK/ActionCardsSDK/Controllers/Loading/Configuration/AACLoadingViewConfiguration.m
 /Users/steven/Documents/Code/action-cards-ios-sdk/ActionCardsSDK/ActionCardsSDK/Controllers/Loading/Configuration/AACLoadingViewConfiguration.h
 -[NSString(AACLocalized) aac_localized]
 /Users/steven/Documents/Code/action-cards-ios-sdk/ActionCardsSDK/ActionCardsSDK/Utilities/NSString+AACLocalized.m
 -[AACThemeAPI appearanceForUserWithAuthToken:completionHandler:]
 ___64-[AACThemeAPI appearanceForUserWithAuthToken:completionHandler:]_block_invoke
+___block_descriptor_24_e4_20bs_e36_v16@?0@4@"NSDictionary"8@"NSError"12l
 /Users/steven/Documents/Code/action-cards-ios-sdk/ActionCardsSDK/ActionCardsSDK/Services/Theme/AACThemeAPI.m
 __64-[AACThemeAPI appearanceForUserWithAuthToken:completionHandler:]_block_invoke
 -[AACCardMetadata initWithDictionary:]
@@ -565,6 +576,10 @@ ___80-[AACCardListViewController viewWillTransitionToSize:withTransitionCoordina
 -[AACCardListViewController didFinishLoadingCardList]
 -[AACCardListViewController didSuccessfullyLoadCardList]
 -[AACCardListViewController didFailToLoadCardListWithError:]
+-[AACCardListViewController didBeginPollingCardList]
+-[AACCardListViewController didFinishPollingCardList]
+-[AACCardListViewController didSuccessfullyPollCardList]
+-[AACCardListViewController didFailToPollCardListWithError:]
 -[AACCardListViewController didRequestLayoutWithName:forCardWithId:]
 -[AACCardListViewController didBeginSubmittingResponseForCardWithInstanceId:]
 -[AACCardListViewController didFinishSubmittingResponseForCardWithInstanceId:]
@@ -924,6 +939,22 @@ __33+[AACCardNodeMedia formatMapping]_block_invoke
 _OBJC_IVAR_$_AACCardDismissalResponse._cardInstanceId
 /Users/steven/Documents/Code/action-cards-ios-sdk/ActionCardsSDK/ActionCardsSDK/Model/CardResponse/AACCardDismissalResponse.m
 /Users/steven/Documents/Code/action-cards-ios-sdk/ActionCardsSDK/ActionCardsSDK/Model/CardResponse/AACCardDismissalResponse.h
++[AACIntervalOperation operationWithInterval:task:]
+-[AACIntervalOperation start]
+-[AACIntervalOperation stop]
+-[AACIntervalOperation dealloc]
+-[AACIntervalOperation runTask]
+-[AACIntervalOperation task]
+-[AACIntervalOperation setTask:]
+-[AACIntervalOperation interval]
+-[AACIntervalOperation setInterval:]
+-[AACIntervalOperation timer]
+-[AACIntervalOperation setTimer:]
+-[AACIntervalOperation .cxx_destruct]
+_OBJC_IVAR_$_AACIntervalOperation._task
+_OBJC_IVAR_$_AACIntervalOperation._interval
+_OBJC_IVAR_$_AACIntervalOperation._timer
+/Users/steven/Documents/Code/action-cards-ios-sdk/ActionCardsSDK/ActionCardsSDK/Utilities/AACIntervalOperation.m
 -[AACCardViewStepper didUnarchiveView]
 -[AACCardViewStepper resetView]
 -[AACCardViewStepper setupWithNode:context:]
@@ -1011,6 +1042,14 @@ _OBJC_IVAR_$_AACCardViewListItem._itemText
 _OBJC_IVAR_$_AACCardViewListItem._iconName
 _OBJC_IVAR_$_AACCardViewListItem._defaultBulletIcon
 /Users/steven/Documents/Code/action-cards-ios-sdk/ActionCardsSDK/ActionCardsSDK/Renderer/Components/ListItem/AACCardViewListItem.m
+-[AACCardViewTextInputPresenter initWithInputType:]
+-[AACCardViewTextInputPresenter isValueEmpty:]
+-[AACCardViewTextInputPresenter isValueValid:]
+-[AACCardViewTextInputPresenter numericValueForString:]
+-[AACCardViewTextInputPresenter inputType]
+-[AACCardViewTextInputPresenter setInputType:]
+_OBJC_IVAR_$_AACCardViewTextInputPresenter._inputType
+/Users/steven/Documents/Code/action-cards-ios-sdk/ActionCardsSDK/ActionCardsSDK/Renderer/Components/TextInput/Presenter/AACCardViewTextInputPresenter.m
 +[AACFontRegistry sharedInstance]
 ___33+[AACFontRegistry sharedInstance]_block_invoke
 -[AACFontRegistry init]
@@ -1481,33 +1520,56 @@ __58-[AACThemeService appearanceForUserWithCompletionHandler:]_block_invoke_3
 __58-[AACThemeService appearanceForUserWithCompletionHandler:]_block_invoke_2
 __58-[AACThemeService appearanceForUserWithCompletionHandler:]_block_invoke
 __35+[AACThemeService sharedWriteQueue]_block_invoke
++[AACLoadingViewController loadingIcon]
+___39+[AACLoadingViewController loadingIcon]_block_invoke
++[AACLoadingViewController noDataIcon]
+___38+[AACLoadingViewController noDataIcon]_block_invoke
++[AACLoadingViewController noInternetIcon]
+___42+[AACLoadingViewController noInternetIcon]_block_invoke
++[AACLoadingViewController retryStyleForError:]
 -[AACLoadingViewController initWithConfiguration:]
 -[AACLoadingViewController viewDidLoad]
 -[AACLoadingViewController retryAction]
--[AACLoadingViewController dismissAction]
--[AACLoadingViewController enterRetryMode]
+-[AACLoadingViewController enterRetryModeWithStyle:]
 -[AACLoadingViewController enterLoadingMode]
+-[AACLoadingViewController listHeaderDidTapActionButton:]
+-[AACLoadingViewController listHeaderDidRequestRefresh:]
+-[AACLoadingViewController listHeader:didChangeMaxHeight:]
 -[AACLoadingViewController delegate]
 -[AACLoadingViewController setDelegate:]
 -[AACLoadingViewController iconView]
 -[AACLoadingViewController setIconView:]
+-[AACLoadingViewController titleLabel]
+-[AACLoadingViewController setTitleLabel:]
 -[AACLoadingViewController retryButton]
 -[AACLoadingViewController setRetryButton:]
--[AACLoadingViewController closeButton]
--[AACLoadingViewController setCloseButton:]
+-[AACLoadingViewController headerView]
+-[AACLoadingViewController setHeaderView:]
 -[AACLoadingViewController configuration]
 -[AACLoadingViewController setConfiguration:]
--[AACLoadingViewController inRetryMode]
--[AACLoadingViewController setInRetryMode:]
+-[AACLoadingViewController retryStyle]
+-[AACLoadingViewController setRetryStyle:]
 -[AACLoadingViewController .cxx_destruct]
+_loadingIcon.onceToken
+_loadingIcon.icon
+_noDataIcon.onceToken
+_noDataIcon.icon
+___block_literal_global.4
+_noInternetIcon.onceToken
+_noInternetIcon.icon
+___block_literal_global.7
 _OBJC_IVAR_$_AACLoadingViewController._delegate
 _OBJC_IVAR_$_AACLoadingViewController._iconView
+_OBJC_IVAR_$_AACLoadingViewController._titleLabel
 _OBJC_IVAR_$_AACLoadingViewController._retryButton
-_OBJC_IVAR_$_AACLoadingViewController._closeButton
+_OBJC_IVAR_$_AACLoadingViewController._headerView
 _OBJC_IVAR_$_AACLoadingViewController._configuration
-_OBJC_IVAR_$_AACLoadingViewController._inRetryMode
+_OBJC_IVAR_$_AACLoadingViewController._retryStyle
 /Users/steven/Documents/Code/action-cards-ios-sdk/ActionCardsSDK/ActionCardsSDK/Controllers/Loading/AACLoadingViewController.m
 /Users/steven/Documents/Code/action-cards-ios-sdk/ActionCardsSDK/ActionCardsSDK/Controllers/Loading/AACLoadingViewController.h
+__42+[AACLoadingViewController noInternetIcon]_block_invoke
+__38+[AACLoadingViewController noDataIcon]_block_invoke
+__39+[AACLoadingViewController loadingIcon]_block_invoke
 -[AACCardViewDropdownPresenter setTheme:]
 -[AACCardViewDropdownPresenter prepareLayoutForHorizontalOrientationWithTheme:]
 -[AACCardViewDropdownPresenter prepareLayoutForVerticalOrientationWithTheme:]
@@ -1589,7 +1651,6 @@ l_OBJC_LABEL_PROTOCOL_$_AACMainFlowCoordinatorDelegate
 /Users/steven/Documents/Code/action-cards-ios-sdk/ActionCardsSDK/ActionCardsSDK/Views/AACView.m
 -[AACMarkdownNode attributedStringWithConfiguration:]
 -[AACMarkdownNodeText displayText]
--[AACMarkdownNodeText linkUrl]
 -[AACMarkdownNodeText attributedStringWithConfiguration:]
 -[AACMarkdownNodeText text]
 -[AACMarkdownNodeText setText:]
@@ -1599,6 +1660,8 @@ l_OBJC_LABEL_PROTOCOL_$_AACMainFlowCoordinatorDelegate
 -[AACMarkdownNodeText setIsItalic:]
 -[AACMarkdownNodeText isLink]
 -[AACMarkdownNodeText setIsLink:]
+-[AACMarkdownNodeText linkUrl]
+-[AACMarkdownNodeText setLinkUrl:]
 -[AACMarkdownNodeText .cxx_destruct]
 -[AACMarkdownNodeListMarker attributedStringWithConfiguration:]
 -[AACMarkdownNodeListMarker isBulleted]
@@ -1610,6 +1673,7 @@ _OBJC_IVAR_$_AACMarkdownNodeText._text
 _OBJC_IVAR_$_AACMarkdownNodeText._isBold
 _OBJC_IVAR_$_AACMarkdownNodeText._isItalic
 _OBJC_IVAR_$_AACMarkdownNodeText._isLink
+_OBJC_IVAR_$_AACMarkdownNodeText._linkUrl
 _OBJC_IVAR_$_AACMarkdownNodeListMarker._isBulleted
 _OBJC_IVAR_$_AACMarkdownNodeListMarker._sequenceNumber
 /Users/steven/Documents/Code/action-cards-ios-sdk/ActionCardsSDK/ActionCardsSDK/Renderer/Markdown/AACMarkdownNode.m
@@ -1621,6 +1685,7 @@ _OBJC_IVAR_$_AACMarkdownNodeListMarker._sequenceNumber
 -[AACMarkdownDocument init]
 -[AACMarkdownDocument activeFormattingToken]
 -[AACMarkdownDocument applyFormattingToken:]
+-[AACMarkdownDocument endLink:]
 -[AACMarkdownDocument addTextBlock:]
 -[AACMarkdownDocument startListItemWithMode:]
 -[AACMarkdownDocument endList]
@@ -1642,6 +1707,8 @@ _OBJC_IVAR_$_AACMarkdownNodeListMarker._sequenceNumber
 -[AACMarkdownDocument setNodes:]
 -[AACMarkdownDocument lastListMode]
 -[AACMarkdownDocument setLastListMode:]
+-[AACMarkdownDocument nodesPendingLinks]
+-[AACMarkdownDocument setNodesPendingLinks:]
 -[AACMarkdownDocument .cxx_destruct]
 _OBJC_IVAR_$_AACMarkdownDocument._inBoldMode
 _OBJC_IVAR_$_AACMarkdownDocument._inItalicMode
@@ -1650,6 +1717,7 @@ _OBJC_IVAR_$_AACMarkdownDocument._nextListSequenceNumber
 _OBJC_IVAR_$_AACMarkdownDocument._formattingStack
 _OBJC_IVAR_$_AACMarkdownDocument._nodes
 _OBJC_IVAR_$_AACMarkdownDocument._lastListMode
+_OBJC_IVAR_$_AACMarkdownDocument._nodesPendingLinks
 /Users/steven/Documents/Code/action-cards-ios-sdk/ActionCardsSDK/ActionCardsSDK/Renderer/Markdown/AACMarkdownDocument.m
 -[AACCardViewMediaInlineLayout resetView]
 -[AACCardViewMediaInlineLayout setupWithNode:context:]
@@ -1753,9 +1821,9 @@ ___31-[AACMainFlowCoordinator start]_block_invoke
 ___31-[AACMainFlowCoordinator start]_block_invoke_2
 ___copy_helper_block_e4_20s24s28w
 ___destroy_helper_block_e4_20s24s28w
-___31-[AACMainFlowCoordinator start]_block_invoke.75
-___31-[AACMainFlowCoordinator start]_block_invoke_2.78
-___31-[AACMainFlowCoordinator start]_block_invoke.82
+___31-[AACMainFlowCoordinator start]_block_invoke.81
+___31-[AACMainFlowCoordinator start]_block_invoke_2.84
+___31-[AACMainFlowCoordinator start]_block_invoke.88
 -[AACMainFlowCoordinator navigateToCardListUsingCache:]
 -[AACMainFlowCoordinator cardListViewController:didRequestLayoutWithName:forCardWithId:]
 ___88-[AACMainFlowCoordinator cardListViewController:didRequestLayoutWithName:forCardWithId:]_block_invoke
@@ -1763,6 +1831,7 @@ ___88-[AACMainFlowCoordinator cardListViewController:didRequestLayoutWithName:fo
 -[AACMainFlowCoordinator cardListViewController:didRequestToViewUrl:ofType:]
 -[AACMainFlowCoordinator presentingNavigationController]
 -[AACMainFlowCoordinator requiresBackButton]
+-[AACMainFlowCoordinator didTapActionButton]
 -[AACMainFlowCoordinator cardSubviewViewControllerDidSuccessfullyCompleteFlow:forCardWithInstanceId:postSubmissionUrl:]
 -[AACMainFlowCoordinator cardSubviewViewController:didRequestToViewUrl:]
 -[AACMainFlowCoordinator loadingViewControllerDidRequestRetry:]
@@ -1803,9 +1872,9 @@ l_OBJC_LABEL_PROTOCOL_$_AACLoadingViewControllerDelegate
 /Users/steven/Documents/Code/action-cards-ios-sdk/ActionCardsSDK/ActionCardsSDK/Coordinator/AACMainFlowCoordinator.h
 __88-[AACMainFlowCoordinator cardListViewController:didRequestLayoutWithName:forCardWithId:]_block_invoke_2
 __88-[AACMainFlowCoordinator cardListViewController:didRequestLayoutWithName:forCardWithId:]_block_invoke
-__31-[AACMainFlowCoordinator start]_block_invoke.82
-__31-[AACMainFlowCoordinator start]_block_invoke_2.78
-__31-[AACMainFlowCoordinator start]_block_invoke.75
+__31-[AACMainFlowCoordinator start]_block_invoke.88
+__31-[AACMainFlowCoordinator start]_block_invoke_2.84
+__31-[AACMainFlowCoordinator start]_block_invoke.81
 __destroy_helper_block_e4_20s24s28w
 __copy_helper_block_e4_20s24s28w
 __31-[AACMainFlowCoordinator start]_block_invoke_2
@@ -1825,6 +1894,7 @@ __31-[AACMainFlowCoordinator start]_block_invoke
 -[AACCardSubviewViewController didFailToSubmitResponseForCardWithInstanceId:withError:]
 -[AACCardSubviewViewController gestureRecognizer:shouldRecognizeSimultaneouslyWithGestureRecognizer:]
 -[AACCardSubviewViewController textInput:textDidChange:]
+-[AACCardSubviewViewController textInput:numberDidChange:]
 -[AACCardSubviewViewController didTapComponentView:]
 -[AACCardSubviewViewController textView:didTapLinkWithUrl:]
 -[AACCardSubviewViewController stepperView:valueDidChange:]
@@ -1858,6 +1928,19 @@ l_OBJC_PROTOCOL_$_AACCardViewDropdownDelegate
 l_OBJC_LABEL_PROTOCOL_$_AACCardViewDropdownDelegate
 /Users/steven/Documents/Code/action-cards-ios-sdk/ActionCardsSDK/ActionCardsSDK/Controllers/Subview/AACCardSubviewViewController.m
 /Users/steven/Documents/Code/action-cards-ios-sdk/ActionCardsSDK/ActionCardsSDK/Controllers/Subview/AACCardSubviewViewController.h
+-[AACCardNodeNumberInput initWithAttributes:]
+-[AACCardNodeNumberInput placeholder]
+-[AACCardNodeNumberInput setPlaceholder:]
+-[AACCardNodeNumberInput defaultValue]
+-[AACCardNodeNumberInput setDefaultValue:]
+-[AACCardNodeNumberInput thumbnailUrl]
+-[AACCardNodeNumberInput setThumbnailUrl:]
+-[AACCardNodeNumberInput .cxx_destruct]
+_OBJC_IVAR_$_AACCardNodeNumberInput._placeholder
+_OBJC_IVAR_$_AACCardNodeNumberInput._defaultValue
+_OBJC_IVAR_$_AACCardNodeNumberInput._thumbnailUrl
+/Users/steven/Documents/Code/action-cards-ios-sdk/ActionCardsSDK/ActionCardsSDK/Model/Card/Layout/NodeTypes/AACCardNodeNumberInput.m
+/Users/steven/Documents/Code/action-cards-ios-sdk/ActionCardsSDK/ActionCardsSDK/Model/Card/Layout/NodeTypes/AACCardNodeNumberInput.h
 -[AACTextView initWithFrame:]
 -[AACTextView initWithCoder:]
 -[AACTextView commonInit]
@@ -2094,15 +2177,13 @@ _OBJC_IVAR_$_AACCollectionViewFlowLayout._theme
 -[AACCardService cacheKey]
 -[AACCardService updateCachedCards:]
 -[AACCardService cachedCards]
--[AACCardService invalidateCardFeed]
--[AACCardService loadCardFeedWithCompletionHandler:]
-___52-[AACCardService loadCardFeedWithCompletionHandler:]_block_invoke
-___52-[AACCardService loadCardFeedWithCompletionHandler:]_block_invoke_2
+-[AACCardService loadCardFeedWithCompletionHandler:bypassingCache:]
+___67-[AACCardService loadCardFeedWithCompletionHandler:bypassingCache:]_block_invoke
+___67-[AACCardService loadCardFeedWithCompletionHandler:bypassingCache:]_block_invoke_2
 ___copy_helper_block_e4_20b24w
 ___destroy_helper_block_e4_20s24w
 -[AACCardService removeCardWithInstanceId:]
 -[AACCardService cardWithInstanceId:completionHandler:]
-___55-[AACCardService cardWithInstanceId:completionHandler:]_block_invoke
 -[AACCardService submitResponse:withCompletionHandler:]
 ___55-[AACCardService submitResponse:withCompletionHandler:]_block_invoke
 ___55-[AACCardService submitResponse:withCompletionHandler:]_block_invoke_2
@@ -2124,7 +2205,6 @@ ___62-[AACCardService dismissCardWithInstanceId:completionHandler:]_block_invoke
 -[AACCardService .cxx_destruct]
 ___block_descriptor_28_e4_20bs24w_e28_v12@?0@"NSArray"4@"NSError"8l
 ___block_descriptor_28_e4_20bs24w_e17_v8@?0@"NSString"4l
-___block_descriptor_28_e4_20bs24s_e28_v12@?0@"NSArray"4@"NSError"8l
 ___block_descriptor_32_e4_20bs24s28w_e16_v8@?0@"NSError"4l
 ___block_descriptor_32_e4_20s24bs28w_e17_v8@?0@"NSString"4l
 _OBJC_IVAR_$_AACCardService._sessionDelegate
@@ -2139,11 +2219,10 @@ __copy_helper_block_e4_20s24b28w
 __copy_helper_block_e4_20b24s28w
 __55-[AACCardService submitResponse:withCompletionHandler:]_block_invoke_2
 __55-[AACCardService submitResponse:withCompletionHandler:]_block_invoke
-__55-[AACCardService cardWithInstanceId:completionHandler:]_block_invoke
 __destroy_helper_block_e4_20s24w
 __copy_helper_block_e4_20b24w
-__52-[AACCardService loadCardFeedWithCompletionHandler:]_block_invoke_2
-__52-[AACCardService loadCardFeedWithCompletionHandler:]_block_invoke
+__67-[AACCardService loadCardFeedWithCompletionHandler:bypassingCache:]_block_invoke_2
+__67-[AACCardService loadCardFeedWithCompletionHandler:bypassingCache:]_block_invoke
 -[AACCardViewMediaTextLayout resetView]
 -[AACCardViewMediaTextLayout setupWithNode:context:]
 -[AACCardViewMediaTextLayout applyTheme:]
@@ -2188,6 +2267,13 @@ __36+[AACCardComponentView borderHeight]_block_invoke
 -[AACCardComponentViewLayout cardComponentLayoutWillAppear]
 -[AACCardComponentViewLayout cardComponentLayoutDidDisappear]
 /Users/steven/Documents/Code/action-cards-ios-sdk/ActionCardsSDK/ActionCardsSDK/Renderer/Components/Shared/AACCardComponentViewLayout.m
++[NSError(AACErrorHandling) networkConnectivityErrorCodes]
+___58+[NSError(AACErrorHandling) networkConnectivityErrorCodes]_block_invoke
+-[NSError(AACErrorHandling) isNetworkConnectionError]
+_networkConnectivityErrorCodes.onceToken
+_networkConnectivityErrorCodes.errorSet
+/Users/steven/Documents/Code/action-cards-ios-sdk/ActionCardsSDK/ActionCardsSDK/Utilities/NSError+AACErrorHandling.m
+__58+[NSError(AACErrorHandling) networkConnectivityErrorCodes]_block_invoke
 +[AACImageView sharedImageCache]
 ___32+[AACImageView sharedImageCache]_block_invoke
 +[AACImageView sharedSessionConfiguration]
@@ -2447,11 +2533,18 @@ __84-[AACCardAnimationController animateToStep:forCardWithInstanceId:completionH
 __84-[AACCardAnimationController animateToStep:forCardWithInstanceId:completionHandler:]_block_invoke_2
 __84-[AACCardAnimationController animateToStep:forCardWithInstanceId:completionHandler:]_block_invoke
 -[AACCardListPresenter initWithCardService:theme:configuration:]
+-[AACCardListPresenter dealloc]
 -[AACCardListPresenter listHeaderConfiguration]
 -[AACCardListPresenter presentationStyle]
+-[AACCardListPresenter pollCardList]
+___36-[AACCardListPresenter pollCardList]_block_invoke
+___36-[AACCardListPresenter pollCardList]_block_invoke_2
 -[AACCardListPresenter loadCardListInvalidatingCache:]
 ___54-[AACCardListPresenter loadCardListInvalidatingCache:]_block_invoke
 ___54-[AACCardListPresenter loadCardListInvalidatingCache:]_block_invoke_2
+-[AACCardListPresenter startPollingTimer]
+___41-[AACCardListPresenter startPollingTimer]_block_invoke
+-[AACCardListPresenter stopPollingTimer]
 -[AACCardListPresenter numberOfCards]
 -[AACCardListPresenter numberOfNodesForCardAtIndex:]
 -[AACCardListPresenter cardNodeAtIndex:forCardAtIndex:]
@@ -2486,17 +2579,23 @@ ___55-[AACCardListPresenter listIndexForCardWithInstanceId:]_block_invoke
 -[AACCardListPresenter dismissCardWithInstanceId:]
 ___50-[AACCardListPresenter dismissCardWithInstanceId:]_block_invoke
 ___50-[AACCardListPresenter dismissCardWithInstanceId:]_block_invoke_2
+-[AACCardListPresenter addInflightCard:]
+-[AACCardListPresenter removeInflightCard:]
+-[AACCardListPresenter pollingPermitted]
 -[AACCardListPresenter viewDelegate]
 -[AACCardListPresenter setViewDelegate:]
 -[AACCardListPresenter theme]
 -[AACCardListPresenter setTheme:]
 -[AACCardListPresenter cardList]
+-[AACCardListPresenter setCardList:]
 -[AACCardListPresenter cardService]
 -[AACCardListPresenter setCardService:]
 -[AACCardListPresenter configuration]
 -[AACCardListPresenter setConfiguration:]
 -[AACCardListPresenter cardInstanceToAnimate]
 -[AACCardListPresenter setCardInstanceToAnimate:]
+-[AACCardListPresenter cardInstanceInSubview]
+-[AACCardListPresenter setCardInstanceInSubview:]
 -[AACCardListPresenter cardInstancePostSubmissionUrl]
 -[AACCardListPresenter setCardInstancePostSubmissionUrl:]
 -[AACCardListPresenter panOrigins]
@@ -2505,21 +2604,25 @@ ___50-[AACCardListPresenter dismissCardWithInstanceId:]_block_invoke_2
 -[AACCardListPresenter setCardIndexBeingPanned:]
 -[AACCardListPresenter cardsInFlight]
 -[AACCardListPresenter setCardsInFlight:]
+-[AACCardListPresenter cardRefreshOperation]
+-[AACCardListPresenter setCardRefreshOperation:]
 -[AACCardListPresenter .cxx_destruct]
-_OBJC_IVAR_$_AACCardListPresenter._cardList
-___block_descriptor_32_e4_20s24s28s_e5_v4@?0l
-___block_descriptor_24_e4_20s_e28_v12@?0@"NSArray"4@"NSError"8l
+___block_descriptor_24_e4_20w_e28_v12@?0@"NSArray"4@"NSError"8l
+___block_descriptor_24_e4_20w_e5_v4@?0l
 ___block_descriptor_28_e4_20s24w_e16_v8@?0@"NSError"4l
 ___block_descriptor_24_e4_20s_e31_c16@?0@"AACCardInstance"4I8^c12l
 _OBJC_IVAR_$_AACCardListPresenter._viewDelegate
 _OBJC_IVAR_$_AACCardListPresenter._theme
+_OBJC_IVAR_$_AACCardListPresenter._cardList
 _OBJC_IVAR_$_AACCardListPresenter._cardService
 _OBJC_IVAR_$_AACCardListPresenter._configuration
 _OBJC_IVAR_$_AACCardListPresenter._cardInstanceToAnimate
+_OBJC_IVAR_$_AACCardListPresenter._cardInstanceInSubview
 _OBJC_IVAR_$_AACCardListPresenter._cardInstancePostSubmissionUrl
 _OBJC_IVAR_$_AACCardListPresenter._panOrigins
 _OBJC_IVAR_$_AACCardListPresenter._cardIndexBeingPanned
 _OBJC_IVAR_$_AACCardListPresenter._cardsInFlight
+_OBJC_IVAR_$_AACCardListPresenter._cardRefreshOperation
 /Users/steven/Documents/Code/action-cards-ios-sdk/ActionCardsSDK/ActionCardsSDK/Controllers/CardList/Presenter/AACCardListPresenter.m
 /Users/steven/Documents/Code/action-cards-ios-sdk/ActionCardsSDK/ActionCardsSDK/Controllers/CardList/Presenter/AACCardListPresenter.h
 __50-[AACCardListPresenter dismissCardWithInstanceId:]_block_invoke_2
@@ -2528,8 +2631,11 @@ __55-[AACCardListPresenter listIndexForCardWithInstanceId:]_block_invoke
 __copy_helper_block_e4_20s24w
 __54-[AACCardListPresenter handleNavigationForSubmitNode:]_block_invoke_2
 __54-[AACCardListPresenter handleNavigationForSubmitNode:]_block_invoke
+__41-[AACCardListPresenter startPollingTimer]_block_invoke
 __54-[AACCardListPresenter loadCardListInvalidatingCache:]_block_invoke_2
 __54-[AACCardListPresenter loadCardListInvalidatingCache:]_block_invoke
+__36-[AACCardListPresenter pollCardList]_block_invoke_2
+__36-[AACCardListPresenter pollCardList]_block_invoke
 +[AACActionSheetAction actionWithTitle:icon:handler:]
 -[AACActionSheetAction title]
 -[AACActionSheetAction setTitle:]
@@ -2677,8 +2783,8 @@ __26+[AACCardNode nodeMapping]_block_invoke
 -[AACCoreAPI initWithBaseUrl:urlSession:]
 -[AACCoreAPI httpMethodForValue:]
 -[AACCoreAPI headerFieldsForAuthToken:]
--[AACCoreAPI fetchWithAuthenticationToken:path:method:body:handler:]
-___68-[AACCoreAPI fetchWithAuthenticationToken:path:method:body:handler:]_block_invoke
+-[AACCoreAPI fetchWithAuthenticationToken:path:method:body:headers:handler:]
+___76-[AACCoreAPI fetchWithAuthenticationToken:path:method:body:headers:handler:]_block_invoke
 ___copy_helper_block_e8_20s36b40s
 ___destroy_helper_block_e8_20s36s40s
 -[AACCoreAPI isHttpStatusCodeSuccessful:]
@@ -2693,7 +2799,7 @@ _OBJC_IVAR_$_AACCoreAPI._baseUrl
 /Users/steven/Documents/Code/action-cards-ios-sdk/ActionCardsSDK/ActionCardsSDK/Services/Shared/AACCoreAPI.m
 __destroy_helper_block_e8_20s36s40s
 __copy_helper_block_e8_20s36b40s
-__68-[AACCoreAPI fetchWithAuthenticationToken:path:method:body:handler:]_block_invoke
+__76-[AACCoreAPI fetchWithAuthenticationToken:path:method:body:headers:handler:]_block_invoke
 +[AACVideoSession sharedSession]
 ___32+[AACVideoSession sharedSession]_block_invoke
 -[AACVideoSession beginVideoSessionWithDelegate:]
@@ -2740,6 +2846,7 @@ _OBJC_IVAR_$_AACCardViewTitle._cardDescription
 -[AACCardViewTextInput setMode:]
 -[AACCardViewTextInput textDidChange:]
 -[AACCardViewTextInput doneAction]
+-[AACCardViewTextInput textField:shouldChangeCharactersInRange:replacementString:]
 -[AACCardViewTextInput textInputDelegate]
 -[AACCardViewTextInput setTextInputDelegate:]
 -[AACCardViewTextInput placeholderLabel]
@@ -2761,6 +2868,8 @@ _OBJC_IVAR_$_AACCardViewTitle._cardDescription
 -[AACCardViewTextInput setThumbnailUrlToLoad:]
 -[AACCardViewTextInput placeholder]
 -[AACCardViewTextInput setPlaceholder:]
+-[AACCardViewTextInput presenter]
+-[AACCardViewTextInput setPresenter:]
 -[AACCardViewTextInput .cxx_destruct]
 +[AACCardCellTextInput viewClass]
 _OBJC_IVAR_$_AACCardViewTextInput._mode
@@ -2774,6 +2883,7 @@ _OBJC_IVAR_$_AACCardViewTextInput._placeholderToImageConstraint
 _OBJC_IVAR_$_AACCardViewTextInput._imageBottomConstraint
 _OBJC_IVAR_$_AACCardViewTextInput._thumbnailUrlToLoad
 _OBJC_IVAR_$_AACCardViewTextInput._placeholder
+_OBJC_IVAR_$_AACCardViewTextInput._presenter
 /Users/steven/Documents/Code/action-cards-ios-sdk/ActionCardsSDK/ActionCardsSDK/Renderer/Components/TextInput/AACCardViewTextInput.m
 /Users/steven/Documents/Code/action-cards-ios-sdk/ActionCardsSDK/ActionCardsSDK/Renderer/Components/TextInput/AACCardViewTextInput.h
 -[AACCardViewListButton resetView]
@@ -2860,6 +2970,8 @@ _OBJC_IVAR_$_AACLabel._storage
 _OBJC_IVAR_$_AACLabel._tapGestureRecognizer
 /Users/steven/Documents/Code/action-cards-ios-sdk/ActionCardsSDK/ActionCardsSDK/Views/Label/AACLabel.m
 /Users/steven/Documents/Code/action-cards-ios-sdk/ActionCardsSDK/ActionCardsSDK/Views/Label/AACLabel.h
+-[AACConfiguration init]
+-[AACConfiguration setCardListRefreshInterval:]
 -[AACConfiguration presentationStyle]
 -[AACConfiguration setPresentationStyle:]
 -[AACConfiguration actionDelegate]
@@ -2870,12 +2982,17 @@ _OBJC_IVAR_$_AACLabel._tapGestureRecognizer
 -[AACConfiguration setLaunchIconColor:]
 -[AACConfiguration launchButtonColor]
 -[AACConfiguration setLaunchButtonColor:]
+-[AACConfiguration launchTextColor]
+-[AACConfiguration setLaunchTextColor:]
+-[AACConfiguration cardListRefreshInterval]
 -[AACConfiguration .cxx_destruct]
+_OBJC_IVAR_$_AACConfiguration._cardListRefreshInterval
 _OBJC_IVAR_$_AACConfiguration._presentationStyle
 _OBJC_IVAR_$_AACConfiguration._actionDelegate
 _OBJC_IVAR_$_AACConfiguration._launchBackgroundColor
 _OBJC_IVAR_$_AACConfiguration._launchIconColor
 _OBJC_IVAR_$_AACConfiguration._launchButtonColor
+_OBJC_IVAR_$_AACConfiguration._launchTextColor
 /Users/steven/Documents/Code/action-cards-ios-sdk/ActionCardsSDK/ActionCardsSDK/Configuration/AACConfiguration.m
 /Users/steven/Documents/Code/action-cards-ios-sdk/ActionCardsSDK/ActionCardsSDK/Configuration/AACConfiguration.h
 -[AACCardViewDropdown didUnarchiveView]
