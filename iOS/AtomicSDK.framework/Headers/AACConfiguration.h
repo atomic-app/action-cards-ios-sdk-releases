@@ -65,4 +65,17 @@ typedef NS_ENUM(NSUInteger, AACConfigurationPresentationStyle) {
  */
 @property (nonatomic, strong) UIColor *launchButtonColor;
 
+/**
+ The text colour to use for the view displayed when the SDK is first presented.
+ */
+@property (nonatomic, strong) UIColor *launchTextColor;
+
+/**
+ How often, in seconds, the list of cards in a stream container should be updated without user intervention.
+ Must be greater than or equal to 1 second.
+ 
+ If not specified, defaults to 15 seconds.
+ */
+@property (nonatomic) NSTimeInterval cardListRefreshInterval;
+
 @end
