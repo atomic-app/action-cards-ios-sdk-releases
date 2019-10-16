@@ -66,4 +66,29 @@ extern NSString* __nonnull const AACSessionCardCountUserInfoKey;
                                  sessionDelegate:(id<AACSessionDelegate> __nonnull)sessionDelegate
                                completionHandler:(AACSessionCardCountCompletionHandler __nonnull)completionHandler;
 
+/**
+ Asks the SDK to register the given device token against the currently logged in user. The logged in user
+ is specified by the authentication token provided by the session delegate.
+ 
+ @param deviceToken (Required) A device token supplied from `application:didRegisterForRemoteNotificationsWithDeviceToken:`
+ in your app delegate.
+ @param sessionDelegate (Required) A delegate that supplies a user authentication token when requested by the SDK.
+ */
++ (void)registerDeviceForNotifications:(NSData* __nonnull)deviceToken
+                   withSessionDelegate:(id<AACSessionDelegate> __nonnull)sessionDelegate;
+
+/**
+ Asks the SDK to register the currently logged in user for push notifications on the stream container IDs in the provided
+ array.
+ 
+ Push notifications will not be delivered to a user unless they have registered for push notifications first (using the above
+ method). However, the registration of device token and registration of stream container IDs can occur in either order.
+ 
+ @param streamContainerIds (Required) The stream container IDs to register the current user against for push notifications.
+ Pass an empty array to unregister this device from notifications (e.g. when the user performs a complete logout from your app).
+ @param sessionDelegate (Required) A delegate that supplies a user authentication token when requested by the SDK.
+ */
++ (void)registerStreamContainersForNotifications:(NSArray<NSNumber*>* __nonnull)streamContainerIds
+                             withSessionDelegate:(id<AACSessionDelegate> __nonnull)sessionDelegate;
+
 @end

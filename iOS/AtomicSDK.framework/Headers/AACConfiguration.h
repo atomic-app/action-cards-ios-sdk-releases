@@ -45,6 +45,12 @@ typedef NS_ENUM(NSUInteger, AACConfigurationPresentationStyle) {
 @property (nonatomic) AACConfigurationPresentationStyle presentationStyle;
 
 /**
+ The title to display at the top of the card list.
+ If not specified, defaults to `Cards`.
+ */
+@property (nonatomic, copy) NSString *cardListTitle;
+
+/**
  Optional action delegate that responds to actions triggered by the stream container.
  */
 @property (nonatomic, weak) id<AACStreamContainerActionDelegate> actionDelegate;
