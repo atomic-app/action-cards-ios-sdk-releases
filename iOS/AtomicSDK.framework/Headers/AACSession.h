@@ -8,11 +8,11 @@
 #import "AACSessionDelegate.h"
 
 /**
- Completion handler called when a request for the card count in a stream container is fulfilled.
+ Handler called whenever the card count changes.
  
- @param cardCount The count of the cards in the stream container, or `nil` if the request failed.
+ @param cardCount The count of the cards in the stream container, or `nil` if the count is not available.
  */
-typedef void(^AACSessionCardCountCompletionHandler)(NSNumber * __nullable cardCount);
+typedef void(^AACSessionCardCountChangedHandler)(NSNumber * __nullable cardCount);
 
 /**
  Notification posted when the number of cards in a stream container changes.
@@ -54,17 +54,33 @@ extern NSString* __nonnull const AACSessionCardCountUserInfoKey;
 + (void)logout;
 
 /**
- Asks the SDK for a count of all cards in the stream container with the given ID.
+ Asks the SDK to observe the card count for the given stream container, calling the `handler` every time
+ the count changes.
  
- @param streamContainerId (Required) The stream container ID to return the card count for.
+ @param streamContainerId (Required) The stream container ID to observe the card count for.
+ @param interval (Required) How frequently the card count should be updated. Must be at least 1 second,
+ otherwise defaults to 1 second.
  @param sessionDelegate (Required) A delegate that supplies a user authentication token when requested
  by the SDK.
- @param completionHandler (Required) A completion handler called when the request for the card
- count is fulfilled.
+ @param handler (Required) Handler called whenever the card count changes. If the handler returns `nil`, the
+ card count is not available for this stream container (the user may not have access or the internet connection
+ may be unavailable).
+ 
+ @return An opaque token that can be used to stop observing card count, by calling `+stopObservingCardCount:` with that token.
  */
-+ (void)requestCardCountForStreamContainerWithId:(NSString* __nonnull)streamContainerId
-                                 sessionDelegate:(id<AACSessionDelegate> __nonnull)sessionDelegate
-                               completionHandler:(AACSessionCardCountCompletionHandler __nonnull)completionHandler;
++ (id<NSObject> __nonnull)observeCardCountForStreamContainerWithId:(NSNumber* __nonnull)streamContainerId
+                                                          interval:(NSTimeInterval)interval
+                                                   sessionDelegate:(id<AACSessionDelegate> __nonnull)sessionDelegate
+                                                           handler:(AACSessionCardCountChangedHandler __nonnull)handler;
+
+/**
+ Asks the SDK to stop observing card count for the given token, which was returned from a call to
+ `+observeCardCountForStreamContainerWithId:interval:sessionDelegate:handler:`. If the token does not
+ correspond to a card count observer, this method does nothing.
+ 
+ @param token The opaque token returned when registering to observe card count.
+ */
++ (void)stopObservingCardCount:(id<NSObject> __nonnull)token;
 
 /**
  Asks the SDK to register the given device token against the currently logged in user. The logged in user
