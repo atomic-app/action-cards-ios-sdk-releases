@@ -4,16 +4,14 @@ BCSymbolMap Version: 2.0
 +[UIFont(AACFont) aac_loadFontAwesome]
 ___38+[UIFont(AACFont) aac_loadFontAwesome]_block_invoke
 +[UIFont(AACFont) aac_fontAwesomeFontOfSize:]
-___llvm_profile_runtime_user
 _aac_loadFontAwesome.onceToken
 ___block_descriptor_20_e5_v4@?0l
 ___block_literal_global
-___llvm_coverage_mapping
 Apple LLVM version 10.0.1 (clang-1001.0.46.4)
 /Users/steven/Documents/Code/action-cards-ios-sdk/ActionCardsSDK/ActionCardsSDK/Utilities/UIFont+AACFont.m
 /Users/steven/Documents/Code/action-cards-ios-sdk/ActionCardsSDK
 __38+[UIFont(AACFont) aac_loadFontAwesome]_block_invoke
-/Applications/Xcode 10.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/usr/include/dispatch/once.h
+/Applications/Xcode-10.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/usr/include/dispatch/once.h
 -[AACCardNodeImage mediaKind]
 /Users/steven/Documents/Code/action-cards-ios-sdk/ActionCardsSDK/ActionCardsSDK/Model/Card/Layout/NodeTypes/AACCardNodeImage.m
 -[AACCardFeedAPI fetchCardsForContainerWithId:resultType:authenticationToken:completionHandler:]
@@ -59,8 +57,6 @@ _OBJC_IVAR_$_AACAppearanceCacheOperation._appearanceDictionary
 +[AACCardCellButton viewClass]
 _OBJC_IVAR_$_AACCardViewButton._currentButton
 /Users/steven/Documents/Code/action-cards-ios-sdk/ActionCardsSDK/ActionCardsSDK/Renderer/Components/Button/AACCardViewButton.m
-CGRectMake
-/Applications/Xcode 10.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGGeometry.h
 -[NSData(AACStringRepresenting) aac_hexStringRepresentation]
 /Users/steven/Documents/Code/action-cards-ios-sdk/ActionCardsSDK/ActionCardsSDK/Utilities/Data/NSData+AACStringRepresenting.m
 -[AACValidationRequired initWithDictionary:]
@@ -171,6 +167,7 @@ __destroy_helper_block_e4_20s
 __copy_helper_block_e4_20s
 __34-[AACListHeaderView endRefreshing]_block_invoke
 CGSizeMake
+/Applications/Xcode-10.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGGeometry.h
 -[UIView(AACExtensions) aac_applyCornerRadius:]
 -[UIView(AACExtensions) aac_applyShadowWithColor:offset:radius:]
 -[UIView(AACExtensions) aac_updateShadowPath]
@@ -192,8 +189,6 @@ _OBJC_IVAR_$_AACMarkdownRenderConfiguration._linkColor
 /Users/steven/Documents/Code/action-cards-ios-sdk/ActionCardsSDK/ActionCardsSDK/Renderer/Markdown/AACMarkdownRenderConfiguration.h
 -[NSAttributedString(AACLinkDetection) aac_linkUrlAtCharacterIndex:]
 /Users/steven/Documents/Code/action-cards-ios-sdk/ActionCardsSDK/ActionCardsSDK/Utilities/NSAttributedString+AACLinkDetection.m
-NSMakeRange
-/Applications/Xcode 10.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSRange.h
 -[AACCardInstance initWithDictionary:]
 -[AACCardInstance layoutWithName:]
 -[AACCardInstance detail]
@@ -264,6 +259,7 @@ __55+[NSDate(ISO8601) aac_iso8601FormatterWithMilliseconds]_block_invoke
 /Users/steven/Documents/Code/action-cards-ios-sdk/ActionCardsSDK/ActionCardsSDK/Utilities/Toolbar/UIToolbar+AACAccessory.m
 -[AACFullImagePresenter zoomingRectWithSourceFrame:desiredScale:touchPoint:]
 /Users/steven/Documents/Code/action-cards-ios-sdk/ActionCardsSDK/ActionCardsSDK/Controllers/Media/Presenter/AACFullImagePresenter.m
+CGRectMake
 -[AACLoadingSpinnerView awakeFromNib]
 -[AACLoadingSpinnerView setupWithTheme:]
 -[AACLoadingSpinnerView startRefreshing]
@@ -298,7 +294,6 @@ __copy_helper_block_e4_20b
 __58-[AACLoadingSpinnerView endRefreshingAlongsideAnimations:]_block_invoke.51
 __58-[AACLoadingSpinnerView endRefreshingAlongsideAnimations:]_block_invoke_2
 __58-[AACLoadingSpinnerView endRefreshingAlongsideAnimations:]_block_invoke
-CGPointMake
 +[NSBundle(AACBundle) aac_actionCardsBundle]
 ___44+[NSBundle(AACBundle) aac_actionCardsBundle]_block_invoke
 -[NSBundle(AACBundle) aac_version]
@@ -722,7 +717,7 @@ __39-[AACCardListViewController panAction:]_block_invoke
 __55-[AACCardListViewController cardOverflowViewWasTapped:]_block_invoke
 __59-[AACCardListViewController listHeader:didChangeMaxHeight:]_block_invoke
 UIEdgeInsetsMake
-/Applications/Xcode 10.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIGeometry.h
+/Applications/Xcode-10.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIGeometry.h
 __46-[AACCardListViewController playVideoWithUrl:]_block_invoke
 __98-[AACCardListViewController didSuccessfullySubmitResponseForCardWithInstanceId:postSubmissionUrl:]_block_invoke
 __80-[AACCardListViewController viewWillTransitionToSize:withTransitionCoordinator:]_block_invoke.283
@@ -910,6 +905,7 @@ _OBJC_IVAR_$_AACCardComponentCell._lastRadius
 l_OBJC_PROTOCOL_$_AACComponentRendering
 l_OBJC_LABEL_PROTOCOL_$_AACComponentRendering
 /Users/steven/Documents/Code/action-cards-ios-sdk/ActionCardsSDK/ActionCardsSDK/Renderer/Components/Shared/AACCardComponentCell.m
+CGPointMake
 -[UIButton(AACButton) aac_applyButtonStyle:typographyStyle:]
 /Users/steven/Documents/Code/action-cards-ios-sdk/ActionCardsSDK/ActionCardsSDK/Utilities/Button/UIButton+AACButton.m
 -[AACCardNodeDropdownValue initWithDictionary:]
@@ -3593,6 +3589,7 @@ _OBJC_IVAR_$_AACValidationRegularExpression._regularExpression
 _OBJC_IVAR_$_AACValidationRegularExpression._errorMessage
 /Users/steven/Documents/Code/action-cards-ios-sdk/ActionCardsSDK/ActionCardsSDK/Model/Validation/Regex/AACValidationRegularExpression.m
 NSEqualRanges
+/Applications/Xcode-10.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.4.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSRange.h
 +[AACImageViewOptions optionsWithMediaKind:theme:]
 -[AACImageViewOptions mediaKind]
 -[AACImageViewOptions setMediaKind:]
