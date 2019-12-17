@@ -32,7 +32,7 @@ __attribute__((objc_subclassing_restricted))
  by the SDK.
  @param configuration (Required) A configuration object for defining behaviour of the stream container.
  */
-- (instancetype __nonnull)initWithContainerId:(NSString* __nonnull)containerId
+- (instancetype __nonnull)initWithContainerId:(NSNumber* __nonnull)containerId
                               sessionDelegate:(id<AACSessionDelegate> __nonnull)sessionDelegate
                                 configuration:(AACConfiguration* __nonnull)configuration NS_DESIGNATED_INITIALIZER;
 

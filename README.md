@@ -81,7 +81,7 @@ config.launchIconColor = .blue
 config.launchButtonColor = .blue
 config.launchTextColor = .white
 
-let streamContainer = AACStreamContainerViewController(containerId: "1234", sessionDelegate: self, configuration: config)
+let streamContainer = AACStreamContainerViewController(containerId: 1234, sessionDelegate: self, configuration: config)
 present(streamContainer, animated: true)
 ```
 
@@ -94,7 +94,7 @@ config.launchIconColor = [UIColor blueColor];
 config.launchButtonColor = [UIColor blueColor];
 config.launchTextColor = [UIColor whiteColor];
 
-AACStreamContainerViewController *streamContainer = [[AACStreamContainerViewController alloc] initWithContainerId:@"1234" sessionDelegate:self configuration:config];
+AACStreamContainerViewController *streamContainer = [[AACStreamContainerViewController alloc] initWithContainerId:@(1234) sessionDelegate:self configuration:config];
 [self presentViewController:streamContainer animated:YES completion:nil];
 ```
 
