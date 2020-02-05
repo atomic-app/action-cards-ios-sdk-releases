@@ -60,12 +60,13 @@ The configuration object specifies the initial styling and display mode via the 
     - With an action button that triggers a custom action you handle;
     - With a contextual button, which displays `Close` for modal presentations, or `Back` when inside a navigation controller.
 - `cardListTitle`: The title to display at the top of the card list. If not specified, defaults to `Cards`.
-- `actionDelegate`: An optional delegate that handles actions triggered inside of the stream container, such as the tap of the custom action button in the top left of the stream container.
+- `actionDelegate`: An optional delegate that handles actions triggered inside of the stream container, such as the tap of the custom action button in the top left of the stream container, or link buttons with custom actions.
 - `launchBackgroundColor`: The background colour to use for the launch screen, seen on first load.
 - `launchIconColor`: The colour of the icon displayed on the launch screen, seen on first load.
 - `launchButtonColor`: The colour of the buttons that allow the user to retry the first load, if the request fails.
 - `launchTextColor`: The text colour to use for the view displayed when the SDK is first presented.
-- `cardListRefreshInterval`: How frequently the card list should be refreshed. Defaults to 15 seconds, and must be at least 1 second. 
+- `cardListRefreshInterval`: How frequently the card list should be refreshed. Defaults to 15 seconds, and must be at least 1 second. Set to 0 to disable this functionality.
+- `interfaceStyle`: The interface style (light, dark or automatic) to apply to the stream container.
 
 !> Setting the card refresh interval to a value less than 15 seconds may negatively impact device battery life and is not recommended.
 
@@ -147,6 +148,138 @@ You can also call this SDK method any time you want to update the push token sto
 
 You will also need to update this token every time the logged in user changes in your app, so the Atomic Platform knows who to send notifications to.
 
+#### 3. (Optional) Perform a custom action when tapping on a push notification
+
+When a user taps on a push notification delivered to your app, you can ask the SDK whether the push notification payload originated from Atomic. If so, you will be provided with a structured object that you can inspect, to perform custom actions based on the payload. The custom data for the notification, that was sent with the original event to Atomic, is in the `detail` property.
+
+For a consistent experience, you should handle the scenarios where the push notification triggers your app to open when already running, and when not previously running.
+
+**While app is running - targeting iOS 9+**
+
+**Objective-C**
+
+```objectivec
+- (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo {    
+    AACPushNotification *notification = [AACSession notificationFromPushPayload:userInfo];
+    
+    if(notification != nil) {
+        // The payload originated from Atomic - use the properties on the object to determine the action to take.
+    }
+}
+```
+
+**Swift**
+
+```swift
+func application(_ application: UIApplication, didReceiveRemoteNotification userInfo: [AnyHashable : Any]) {
+    if let payload = userInfo as? NSDictionary {
+        if let notification = AACSession.notificationFromPushPayload(payload) {
+            // // The payload originated from Atomic - use the properties on the object to determine the action to take.
+        }
+    }
+}
+```
+
+**While app is running - targeting iOS 10+**
+
+**Objective-C**
+
+```objectivec
+- (void)userNotificationCenter:(UNUserNotificationCenter *)center didReceiveNotificationResponse:(UNNotificationResponse *)response withCompletionHandler:(void(^)(void))completionHandler {
+    if([response.actionIdentifier isEqualToString:UNNotificationDefaultActionIdentifier]) {
+        AACPushNotification *notification = [AACSession notificationFromPushPayload:response.notification.request.content.userInfo];
+        
+        if(notification != nil) {
+            // The payload originated from Atomic - use the properties on the object to determine the action to take.
+        }
+        
+        completionHandler();
+    }
+}
+```
+
+**Swift**
+
+```swift
+func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Void) {
+    if response.actionIdentifier == UNNotificationDefaultActionIdentifier,
+        let payload = response.notification.request.content.userInfo as? NSDictionary {
+        if let notification = AACSession.notificationFromPushPayload(payload) {
+            // // The payload originated from Atomic - use the properties on the object to determine the action to take.
+        }
+    }
+}
+```
+
+**When app was not running**
+
+**Objective-C**
+
+```objectivec
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    ...
+    if(launchOptions[UIApplicationLaunchOptionsRemoteNotificationKey] != nil) {
+        AACPushNotification *notification = [AACSession notificationFromPushPayload:launchOptions[UIApplicationLaunchOptionsRemoteNotificationKey]];
+        
+        if(notification != nil) {
+            // The payload originated from Atomic - use the properties on the object to determine the action to take.
+        }
+    }
+    
+    return YES;
+}
+```
+
+**Swift**
+
+```swift
+func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
+    if let payload = launchOptions?[.remoteNotification] as? NSDictionary {
+        if let notification = AACSession.notificationFromPushPayload(payload) {
+            // // The payload originated from Atomic - use the properties on the object to determine the action to take.
+        }
+    }
+}
+```
+
+### Supporting custom actions on link buttons
+
+In the Atomic Workbench, you can create a link button with a custom action. When such a link button is tapped, the `streamContainerDidTapLinkButton:withAction:` method is called on your action delegate. The second parameter to this method is an action object, containing the payload that was defined in the Workbench for that button.
+
+You can use this object to determine the action to take, within your app, when the link button is tapped.
+
+The action object also contains the card instance ID and stream container ID where the custom action was triggered.
+
+**Objective-C**
+
+```objectivec
+// 1. Assign the action delegate
+AACConfiguration *config = [[AACConfiguration alloc] init];
+config.actionDelegate = self;
+
+// 2. Implement the callback
+- (void)streamContainerDidTapLinkButton:(AACStreamContainerViewController*)streamContainer withAction:(AACCardCustomAction*)action {
+    if([action.actionPayload[@"screen"] isEqualToString:@"home-screen"]) {
+        [self navigateToHomeScreen];
+    }
+}
+```
+
+**Swift**
+
+```swift
+// 1. Assign the action delegate
+let config = AACConfiguration()
+config.actionDelegate = self
+
+// 2. Implement the callback
+func streamContainerDidTapLinkButton(_ streamContainer: AACStreamContainer, withAction action: AACCardCustomAction) {
+    if let screenName = action.actionPayload["screen"] as? String, screenName == "home-screen" {
+        navigateToHomeScreen()
+    }
+}
+```
+
 ### Retrieving card count
 The SDK supports observing the card count for a particular stream container, even when that stream container does not exist in memory.
 
@@ -203,6 +336,16 @@ NotificationCenter.default.addObserver(forName: NSNotification.Name(rawValue: AA
 ```
 
 The count of cards is available via the `AACSessionCardCountUserInfoKey` in the `userInfo` dictionary, and the notification’s `object` represents the stream container ID. You can listen for the card count of only a particular stream container by specifying that stream container ID in the `object` parameter when adding an observer.
+
+### Dark mode
+Stream containers in the Atomic iOS SDK support dark mode. You configure an (optional) dark theme for your stream container in the Atomic Workbench.
+
+The interface style determines which theme is rendered:
+- `AACConfigurationInterfaceStyleAutomatic`: If the user's device is currently set to light mode, the stream container will use the light (default) theme. If the user's device is currently set to dark mode, the stream container will use the dark theme (or fallback to the light theme if this has not been configured). On iOS versions less than 13, this setting is equivalent to `AACConfigurationInterfaceStyleLight`.
+- `AACConfigurationInterfaceStyleLight`: The stream container will always render in light mode, regardless of the device setting.
+- `AACConfigurationInterfaceStyleDark`: The stream container will always render in dark mode, regardless of the device setting.
+
+To change the interface style, set the corresponding value for the `interfaceStyle` property on the `AACConfiguration` object when creating the stream container.
 
 ### Debug logging
 Debug logging allows you to view more verbose logs regarding events that happen in the SDK. It is turned off by default, and should not be enabled in release builds. To enable debug logging:

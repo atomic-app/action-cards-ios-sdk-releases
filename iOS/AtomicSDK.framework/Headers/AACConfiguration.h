@@ -20,7 +20,7 @@ typedef NS_ENUM(NSUInteger, AACConfigurationPresentationStyle) {
      */
     AACConfigurationPresentationStyleWithoutButton = 0,
     /**
-     THe stream container should display an action (overflow) button in its
+     The stream container should display an action (overflow) button in its
      top left. When tapped, you will be notified via the action delegate, at which
      point you can perform your own custom action.
      */
@@ -32,6 +32,25 @@ typedef NS_ENUM(NSUInteger, AACConfigurationPresentationStyle) {
      - If presented modally, a 'Close' button is presented.
      */
     AACConfigurationPresentationStyleWithContextualButton
+};
+
+/**
+ The interface style (light or dark) to apply to the stream container.
+ */
+typedef NS_ENUM(NSUInteger, AACConfigurationInterfaceStyle) {
+    /**
+     The stream container will use the current system setting to determine whether the stream container should be light or dark.
+     This setting only applies to devices running iOS 13 - it will fall back to AACConfigurationInterfaceStyleLight on older system versions.
+     */
+    AACConfigurationInterfaceStyleAutomatic,
+    /**
+     The stream container should always render with a light appearance.
+     */
+    AACConfigurationInterfaceStyleLight,
+    /**
+     The stream container should always render with a dark appearance.
+     */
+    AACConfigurationInterfaceStyleDark
 };
 
 /**
@@ -77,11 +96,18 @@ typedef NS_ENUM(NSUInteger, AACConfigurationPresentationStyle) {
 @property (nonatomic, strong) UIColor *launchTextColor;
 
 /**
- How often, in seconds, the list of cards in a stream container should be updated without user intervention.
- Must be greater than or equal to 1 second.
+ How often, in seconds, the list of cards in the stream container should be polled to fetch the latest data.
+ Defaults to 15 seconds.
  
- If not specified, defaults to 15 seconds.
+ - Set to `0` to disable polling for this stream container.
+ - Set to `1` or more to set the polling interval in seconds.
  */
 @property (nonatomic) NSTimeInterval cardListRefreshInterval;
+
+/**
+ The interface style (light or dark) to render the stream container in.
+ Defaults to AACConfigurationInterfaceStyleAutomatic.
+ */
+@property (nonatomic) AACConfigurationInterfaceStyle interfaceStyle;
 
 @end

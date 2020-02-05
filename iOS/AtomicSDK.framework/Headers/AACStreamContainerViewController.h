@@ -41,4 +41,9 @@ __attribute__((objc_subclassing_restricted))
 - (instancetype __nonnull)initWithNibName:(NSString* __nullable)nibNameOrNil
                                    bundle:(NSBundle* __nullable)nibBundleOrNil NS_UNAVAILABLE;
 
+/**
+ The ID of this stream container, located in the Atomic Workbench.
+ */
+@property (nonatomic, copy, nonnull, readonly) NSNumber *containerId;
+
 @end

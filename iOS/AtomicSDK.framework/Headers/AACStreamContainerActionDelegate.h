@@ -7,9 +7,11 @@
 #import <Foundation/Foundation.h>
 
 @class AACStreamContainerViewController;
+@class AACCardCustomAction;
 
 /**
  Optional delegate called when external actions are triggered in the stream container.
+ All methods on this delegate are also optional.
  */
 @protocol AACStreamContainerActionDelegate <NSObject>
 
@@ -22,5 +24,16 @@
  @param streamContainer The stream container view controller that initiated the request.
  */
 - (void)streamContainerDidTapActionButton:(AACStreamContainerViewController* __nonnull)streamContainer;
+
+/**
+ The user tapped on a link button, which is configured with a custom action in the Atomic Workbench.
+ The action object provided here includes a payload - a set of key-value pairs assigned in the Workbench to this link button.
+ Use the information in this object to determine which action to take in your app.
+ 
+ @param streamContainer The stream container view controller where the user tapped the link button.
+ @param action Information associated with the action, including the card instance ID, stream container ID and action payload.
+ */
+- (void)streamContainerDidTapLinkButton:(AACStreamContainerViewController* __nonnull)streamContainer
+                             withAction:(AACCardCustomAction* __nonnull)action;
 
 @end

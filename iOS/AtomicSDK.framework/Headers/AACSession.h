@@ -6,6 +6,7 @@
 
 #import <Foundation/Foundation.h>
 #import "AACSessionDelegate.h"
+#import "AACPushNotification.h"
 
 /**
  Handler called whenever the card count changes.
@@ -106,5 +107,18 @@ extern NSString* __nonnull const AACSessionCardCountUserInfoKey;
  */
 + (void)registerStreamContainersForNotifications:(NSArray<NSNumber*>* __nonnull)streamContainerIds
                              withSessionDelegate:(id<AACSessionDelegate> __nonnull)sessionDelegate;
+
+/**
+ Determines whether the given push notification payload is for a push notification sent by the Atomic Platform. The push
+ notification payload is provided in the following system delegate methods:
+ 
+ - application:didFinishLaunchingWithOptions: (the push payload is contained in UIApplicationLaunchOptionsRemoteNotificationKey);
+ - application:didReceiveRemoteNotification: (iOS < 10);
+ - userNotificationCenter:didReceiveNotificationResponse:withCompletionHandler: (iOS 10+).
+ 
+ If the push payload is for an Atomic push notification, this method returns an instance of `AACPushNotification` populated with
+ details of the notification. Otherwise, it returns nil.
+ */
++ (AACPushNotification* __nullable)notificationFromPushPayload:(NSDictionary* __nonnull)payload;
 
 @end
