@@ -46,4 +46,9 @@ __attribute__((objc_subclassing_restricted))
  */
 @property (nonatomic, copy, nonnull, readonly) NSNumber *containerId;
 
+/**
+ Requests that runtime variables, across all cards in the card list, be re-evaluated.
+ */
+- (void)updateVariables;
+
 @end

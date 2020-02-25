@@ -60,13 +60,14 @@ The configuration object specifies the initial styling and display mode via the 
     - With an action button that triggers a custom action you handle;
     - With a contextual button, which displays `Close` for modal presentations, or `Back` when inside a navigation controller.
 - `cardListTitle`: The title to display at the top of the card list. If not specified, defaults to `Cards`.
-- `actionDelegate`: An optional delegate that handles actions triggered inside of the stream container, such as the tap of the custom action button in the top left of the stream container, or link buttons with custom actions.
+- `actionDelegate`: An optional delegate that handles actions triggered inside the stream container, such as the tap of the custom action button in the top left of the stream container, or link buttons with custom actions.
 - `launchBackgroundColor`: The background colour to use for the launch screen, seen on first load.
 - `launchIconColor`: The colour of the icon displayed on the launch screen, seen on first load.
 - `launchButtonColor`: The colour of the buttons that allow the user to retry the first load, if the request fails.
 - `launchTextColor`: The text colour to use for the view displayed when the SDK is first presented.
-- `cardListRefreshInterval`: How frequently the card list should be refreshed. Defaults to 15 seconds, and must be at least 1 second. Set to 0 to disable this functionality.
-- `interfaceStyle`: The interface style (light, dark or automatic) to apply to the stream container.
+- `cardListRefreshInterval`: How frequently the card list should be automatically refreshed. Defaults to 15 seconds, and must be at least 1 second. If set to 0, the card list will not automatically refresh after initial load.
+- `interfaceStyle`: The interface style (light, dark or automatic) to apply to the stream container;
+- `runtimeVariableResolutionTimeout`: The maximum amount of time, in seconds, allocated to the resolution of runtime variables in your session delegate's `cardSessionDidRequestRuntimeVariables:completionHandler:` method. If you do not call the provided `completionHandler` passed to this method before the timeout is reached, the default values for all runtime variables will be used. If you do not implement this delegate method, this property is not used. Defaults to 5 seconds.
 
 !> Setting the card refresh interval to a value less than 15 seconds may negatively impact device battery life and is not recommended.
 
@@ -174,7 +175,7 @@ For a consistent experience, you should handle the scenarios where the push noti
 func application(_ application: UIApplication, didReceiveRemoteNotification userInfo: [AnyHashable : Any]) {
     if let payload = userInfo as? NSDictionary {
         if let notification = AACSession.notificationFromPushPayload(payload) {
-            // // The payload originated from Atomic - use the properties on the object to determine the action to take.
+            // The payload originated from Atomic - use the properties on the object to determine the action to take.
         }
     }
 }
@@ -205,13 +206,13 @@ func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive respo
     if response.actionIdentifier == UNNotificationDefaultActionIdentifier,
         let payload = response.notification.request.content.userInfo as? NSDictionary {
         if let notification = AACSession.notificationFromPushPayload(payload) {
-            // // The payload originated from Atomic - use the properties on the object to determine the action to take.
+            // The payload originated from Atomic - use the properties on the object to determine the action to take.
         }
     }
 }
 ```
 
-**When app was not running**
+**When app is not running**
 
 **Objective-C**
 
@@ -236,7 +237,7 @@ func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive respo
 func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
     if let payload = launchOptions?[.remoteNotification] as? NSDictionary {
         if let notification = AACSession.notificationFromPushPayload(payload) {
-            // // The payload originated from Atomic - use the properties on the object to determine the action to take.
+            // The payload originated from Atomic - use the properties on the object to determine the action to take.
         }
     }
 }
@@ -338,6 +339,7 @@ NotificationCenter.default.addObserver(forName: NSNotification.Name(rawValue: AA
 The count of cards is available via the `AACSessionCardCountUserInfoKey` in the `userInfo` dictionary, and the notification’s `object` represents the stream container ID. You can listen for the card count of only a particular stream container by specifying that stream container ID in the `object` parameter when adding an observer.
 
 ### Dark mode
+
 Stream containers in the Atomic iOS SDK support dark mode. You configure an (optional) dark theme for your stream container in the Atomic Workbench.
 
 The interface style determines which theme is rendered:
@@ -346,6 +348,73 @@ The interface style determines which theme is rendered:
 - `AACConfigurationInterfaceStyleDark`: The stream container will always render in dark mode, regardless of the device setting.
 
 To change the interface style, set the corresponding value for the `interfaceStyle` property on the `AACConfiguration` object when creating the stream container.
+
+### Runtime variables
+
+Runtime variables are resolved in the SDK at runtime, rather than from an event payload when the card is assembled. Runtime variables are defined in the Atomic Workbench.
+
+The SDK will ask the host app to resolve runtime variables when a list of cards is loaded (and at least one card has a runtime variable), or when new cards become available due to polling (and at least one card has a runtime variable).
+
+Runtime variables are resolved by your app via the `-cardSessionDidRequestRuntimeVariables:completionHandler:` method on `AACSessionDelegate`. If this method is not implemented on `AACSessionDelegate`, runtime variables will fall back to their default values, as defined in the Atomic Workbench.
+
+This method, when called by the SDK, provides you with:
+
+- An array of objects representing the cards in the list. Each card object contains:
+    - The event name that triggered the card’s creation;
+    - The title of the card;
+    - The lifecycle identifier associated with the card;
+    - A method that you call to resolve each variable on that card (`-resolveRuntimeVariableWithName:value:`).
+- A block callback (`completionHandler`), that must be called by the host app, with the resolved cards, once all variables are resolved.
+
+If a variable is not resolved, that variable will use its default value, as defined in the Atomic Workbench.
+
+If you do not call the `completionHandler` before the `runtimeVariableResolutionTimeout` elapses (defined on `AACConfiguration`), the default values for all runtime variables will be used. Calling the completion handler more than once has no effect.
+
+**Swift**
+
+```swift
+func cardSessionDidRequestRuntimeVariables(_ cardsToResolve: [AACCardInstance], completionHandler: ([AACCardInstance]) -> Void) {
+    for card in cardsToResolve {
+        // Resolve variables on all cards.
+        // You can also inspect `lifecycleId`, `eventName` and `title` to determine what type of card this is.
+        card.resolveVariableWithName("numberOfItems", value: "12")
+    }
+    
+    completionHandler(cardsToResolve)
+}
+```
+
+**Objective-C**
+
+```objectivec
+- (void)cardSessionDidRequestRuntimeVariables:(NSArray<AACCardInstance*>*)cardsToResolve completionHandler:(AACSessionRuntimeVariablesHandler)completionHandler {
+    for(AACCardInstance* instance in cardsToResolve) {
+        // Resolve variables on all cards.
+        // You can also inspect `lifecycleId`, `eventName` and `title` to determine what type of card this is.
+        [instance resolveRuntimeVariableWithName:@"numberOfItems" value:@"12"];
+    }
+    
+    completionHandler(cardsToResolve);
+}
+```
+
+!> Runtime variables can currently only be resolved to string values.
+
+#### Updating runtime variables manually
+
+You can manually update runtime variables at any time by calling the `updateVariables` method on `AACStreamContainerViewController`:
+
+**Swift**
+
+```swift
+streamVc.updateVariables()
+```
+
+**Objective-C**
+
+```objectivec
+[streamVc updateVariables];
+```
 
 ### Debug logging
 Debug logging allows you to view more verbose logs regarding events that happen in the SDK. It is turned off by default, and should not be enabled in release builds. To enable debug logging:

@@ -105,6 +105,15 @@ typedef NS_ENUM(NSUInteger, AACConfigurationInterfaceStyle) {
 @property (nonatomic) NSTimeInterval cardListRefreshInterval;
 
 /**
+ The maximum amount of time allocated when resolving variables in the `-cardSessionDidRequestRuntimeVariables:completionHandler:`
+ method on `AACSessionDelegate`. If the tasks inside of the delegate method take longer than this timeout, or the completionHandler is
+ not called in this time, default values will be used for all runtime variables.
+ 
+ Defaults to 5 seconds, and cannot be negative.
+ */
+@property (nonatomic) NSTimeInterval runtimeVariableResolutionTimeout;
+
+/**
  The interface style (light or dark) to render the stream container in.
  Defaults to AACConfigurationInterfaceStyleAutomatic.
  */
