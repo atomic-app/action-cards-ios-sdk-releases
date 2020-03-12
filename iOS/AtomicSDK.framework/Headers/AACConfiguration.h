@@ -54,9 +54,19 @@ typedef NS_ENUM(NSUInteger, AACConfigurationInterfaceStyle) {
 };
 
 /**
+ Strings that can be customised in the SDK, by calling `-setValue:forCustomString:`.
+ */
+typedef NS_ENUM(NSUInteger, AACCustomString) {
+    /// The title to display at the top of the card list. Defaults to `Cards`.
+    AACCustomStringCardListTitle,
+    /// The title to display for the card snooze functionality. Defaults to `Remind me`.
+    AACCustomStringCardSnoozeTitle
+};
+
+/**
  Supports configuration of customisable elements within the SDK.
  */
-@interface AACConfiguration: NSObject
+@interface AACConfiguration: NSObject <NSCopying>
 
 /**
  The presentation style for the stream container.
@@ -66,34 +76,36 @@ typedef NS_ENUM(NSUInteger, AACConfigurationInterfaceStyle) {
 /**
  The title to display at the top of the card list.
  If not specified, defaults to `Cards`.
+ 
+ Deprecated. Please use `-setValue:forCustomString:` instead.
  */
-@property (nonatomic, copy) NSString *cardListTitle;
+@property (nonatomic, copy, nonnull) NSString *cardListTitle __deprecated_msg("Use `-setValue:forCustomString:` instead.");
 
 /**
  Optional action delegate that responds to actions triggered by the stream container.
  */
-@property (nonatomic, weak) id<AACStreamContainerActionDelegate> actionDelegate;
+@property (nonatomic, weak, nullable) id<AACStreamContainerActionDelegate> actionDelegate;
 
 /**
  The background colour of the view displayed when the SDK is first presented.
  */
-@property (nonatomic, strong) UIColor *launchBackgroundColor;
+@property (nonatomic, strong, nullable) UIColor *launchBackgroundColor;
 
 /**
  The colour of the icon displayed when the SDK is first presented.
  */
-@property (nonatomic, strong) UIColor *launchIconColor;
+@property (nonatomic, strong, nullable) UIColor *launchIconColor;
 
 /**
  The tint colour of the buttons displayed if the first load of the SDK fails
  (providing the option to retry the first load request).
  */
-@property (nonatomic, strong) UIColor *launchButtonColor;
+@property (nonatomic, strong, nullable) UIColor *launchButtonColor;
 
 /**
  The text colour to use for the view displayed when the SDK is first presented.
  */
-@property (nonatomic, strong) UIColor *launchTextColor;
+@property (nonatomic, strong, nullable) UIColor *launchTextColor;
 
 /**
  How often, in seconds, the list of cards in the stream container should be polled to fetch the latest data.
@@ -118,5 +130,11 @@ typedef NS_ENUM(NSUInteger, AACConfigurationInterfaceStyle) {
  Defaults to AACConfigurationInterfaceStyleAutomatic.
  */
 @property (nonatomic) AACConfigurationInterfaceStyle interfaceStyle;
+
+/**
+ Assigns the given value to the custom string defined by the given key.
+ `value` must be non-nil.
+ */
+- (void)setValue:(NSString* __nonnull)value forCustomString:(AACCustomString)key;
 
 @end

@@ -26,3 +26,4 @@ FOUNDATION_EXPORT const unsigned char AtomicSDKVersionString[];
 
 #import <AtomicSDK/AACCardInstance.h>
 #import <AtomicSDK/AACCardRuntimeVariable.h>
+#import <AtomicSDK/AACSingleCardView.h>

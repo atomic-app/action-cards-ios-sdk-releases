@@ -7,9 +7,11 @@ The Atomic iOS SDK is a dynamic framework for integrating an Atomic stream conta
 The SDK is written in Objective-C and supports iOS 9.0 and above.
 
 ## Installation
+
 The SDK can be installed using CocoaPods, Carthage, or manually.
 
 ### CocoaPods
+
 1. Add the path to the SDK spec repo to your Podfile, along with the default specs repo:
 
 ```ruby
@@ -26,27 +28,43 @@ pod 'AtomicSDK'
 3. Run `pod update`.
 
 ### Carthage
+
 1. Add `github "atomic-app/action-cards-ios-sdk-releases"` to your `Cartfile`.
 2. Run `carthage update`.
 3. [Follow the instructions](https://github.com/Carthage/Carthage#if-youre-building-for-ios-tvos-or-watchos) provided by Carthage to add the SDK to your app.
 
 ### Manual Installation
+
 1. You can download releases of the SDK from the [Releases page](https://github.com/atomic-app/action-cards-ios-sdk-releases/releases) on Github.
 2. Once you've downloaded the version you need, navigate to your project in Xcode and select the "General" settings tab. Drag `AtomicSDK.framework` from the directory where you unzipped the release, to the `Embedded Binaries` section. 
 3. When prompted, ensure that "Copy items if needed" is selected, and then click "Finish".
 4. You will also need to run the `strip-frameworks.sh` script (downloadable from this repository) as part of a `Run Script` phase in your target, to get around an App Store submission bug, caused by iOS simulator architectures being present in the framework.
 
 ## Setup
+
+### API base URL
+
+Before creating a stream container, you'll need to add the following to your app's `Info.plist` file, where `[orgId]` is your organisation's ID, as provided to you by Atomic:
+
+```
+<key>AACRequestBaseURL</key>
+<string>https://[orgId].client-api.atomic.io</string>
+```
+
+### Display a stream container
+
 To display an Atomic stream container in your app, create an instance of `AACStreamContainerViewController`. To create an instance, you must supply:
 
 1. A stream container ID, which uniquely identifies the stream container in the app;
-2. An object conforming to the `AACSessionDelegate` protocol, which is used to pass an authentication token to the SDK;
+2. An object conforming to the `AACSessionDelegate` protocol, which is used to pass an authentication token to the SDK, and (if applicable) resolve runtime variables;
 3. A configuration object, which provides initial styling and presentation information to the SDK for this stream container.
 
 ### Stream container ID
+
 First, you’ll need to locate your stream container ID. Navigate to the Workbench, select “Containers” and find the ID next to the stream container you are integrating.
 
 ### Session delegate
+
 The session delegate supplies a JSON Web Token (JWT) to the SDK when requested, via the method `cardSessionDidRequestAuthenticationTokenWithHandler:` (Objective-C) or `cardSessionDidRequestAuthenticationToken(handler:)` (Swift). This method is called before each API request in the SDK.
 
 You are responsible for generating, caching and handling expiry of the JWT. Once you have a valid token, call the `handler` block with the token. More information on the JWT structure is available in the [Authentication](/install/authentication) section.
@@ -59,7 +77,6 @@ The configuration object specifies the initial styling and display mode via the 
     - With no button in its top left; 
     - With an action button that triggers a custom action you handle;
     - With a contextual button, which displays `Close` for modal presentations, or `Back` when inside a navigation controller.
-- `cardListTitle`: The title to display at the top of the card list. If not specified, defaults to `Cards`.
 - `actionDelegate`: An optional delegate that handles actions triggered inside the stream container, such as the tap of the custom action button in the top left of the stream container, or link buttons with custom actions.
 - `launchBackgroundColor`: The background colour to use for the launch screen, seen on first load.
 - `launchIconColor`: The colour of the icon displayed on the launch screen, seen on first load.
@@ -71,10 +88,17 @@ The configuration object specifies the initial styling and display mode via the 
 
 !> Setting the card refresh interval to a value less than 15 seconds may negatively impact device battery life and is not recommended.
 
+The configuration object also allows you to specify custom strings for features in the SDK, using the `setValue:forCustomString:` method:
+
+- `AACCustomStringCardListTitle`: The title for the card list in this stream container - defaults to `Cards`;
+- `AACCustomStringCardSnoozeTitle`: The title for the feature allowing a user to snooze a card - defaults to `Remind me`.
+
 ### Create the stream container
+
 You can now create a stream container by supplying the stream container ID, session delegate and configuration object on instantiation:
 
 **Swift**
+
 ```swift
 let config = AACConfiguration()
 config.presentationStyle = .withContextualButton
@@ -88,6 +112,7 @@ present(streamContainer, animated: true)
 ```
 
 **Objective-C**
+
 ```objectivec
 AACConfiguration *config = [[AACConfiguration alloc] init];
 config.presentationStyle = AACConfigurationPresentationStyleWithContextualButton;
@@ -100,9 +125,68 @@ AACStreamContainerViewController *streamContainer = [[AACStreamContainerViewCont
 [self presentViewController:streamContainer animated:YES completion:nil];
 ```
 
+## Displaying a single card
+
+The Atomic iOS SDK also supports rendering a single card in your host app.
+
+Create an instance of `AACSingleCardView`, which is a `UIView` that is configured in the same way as a stream container. On instantation, you supply the following parameters:
+
+1. The ID of the stream container to render in the single card view. The single card view renders only the first card that appears in that stream container;
+2. An object conforming to the `AACSessionDelegate` protocol, which is used to pass an authentication token to the SDK, and (if applicable) resolve runtime variables;
+3. A configuration object, which provides initial styling and presentation information to the SDK for the single card view.
+
+The configuration options, supplied using the configuration object above, are the same as those for a stream container. The only configuration option that does not apply is `presentationStyle`, as the single card view does not display a header, and therefore does not show a button in its top left.
+
+**Swift**
+
+```swift
+let config = AACConfiguration()
+config.launchBackgroundColor = .white
+config.launchIconColor = .blue
+config.launchButtonColor = .blue
+config.launchTextColor = .white
+
+let cardView = AACSingleCardView(frame: view.bounds, containerId: 1234, sessionDelegate: self, configuration: config)
+view.addSubview(cardView)
+```
+
+**Objective-C**
+
+```objectivec
+AACConfiguration *config = [[AACConfiguration alloc] init];
+config.launchBackgroundColor = [UIColor whiteColor];
+config.launchIconColor = [UIColor blueColor];
+config.launchButtonColor = [UIColor blueColor];
+config.launchTextColor = [UIColor whiteColor];
+
+AACSingleCardView *singleCardView = [[AACSingleCardView alloc] initWithFrame:self.view.frame containerId:@(1234) sessionDelegate:self configuration:config];
+[self.view addSubview:singleCardView];
+```
+
+Within a single card view, toast messages - such as those seen when submitting, dismissing or snoozing a card in a stream container - do not appear. Pull to refresh functionality is also disabled in the single card view.
+
+You can set a delegate (conforming to `AACSingleCardViewDelegate`) on the single card view to be notified when the view changes height, either because a card is submitted, dismissed or snoozed, or because a new card arrived into the single card view (if polling is enabled). This allows you to animate changes to the `intrinsicContentSize` of the single card view.
+
+**Swift**
+
+```swift
+func singleCardView(_ singleCardView: AACSingleCardView, willChangeSize size: CGSize) {
+    // Perform animation here. 
+}
+```
+
+**Objective-C**
+
+```objectivec
+- (void)singleCardView:(AACSingleCardView *)cardView willChangeSize:(CGSize)newSize {
+    // Perform animation here.
+}
+```
+
 ## API and additional methods
 
 ### Push notifications
+
 To use push notifications in the SDK, you'll need to set up your notification preferences and add your iOS push certificate in the Workbench, then [request push notification permission](https://developer.apple.com/documentation/usernotifications/registering_your_app_with_apns) in your app.
 
 Once this is done, you can configure push notifications via the SDK. The steps below can occur in either order in your app.
@@ -282,6 +366,7 @@ func streamContainerDidTapLinkButton(_ streamContainer: AACStreamContainer, with
 ```
 
 ### Retrieving card count
+
 The SDK supports observing the card count for a particular stream container, even when that stream container does not exist in memory.
 
 **Swift**
@@ -361,7 +446,6 @@ This method, when called by the SDK, provides you with:
 
 - An array of objects representing the cards in the list. Each card object contains:
     - The event name that triggered the card’s creation;
-    - The title of the card;
     - The lifecycle identifier associated with the card;
     - A method that you call to resolve each variable on that card (`-resolveRuntimeVariableWithName:value:`).
 - A block callback (`completionHandler`), that must be called by the host app, with the resolved cards, once all variables are resolved.
@@ -376,7 +460,7 @@ If you do not call the `completionHandler` before the `runtimeVariableResolution
 func cardSessionDidRequestRuntimeVariables(_ cardsToResolve: [AACCardInstance], completionHandler: ([AACCardInstance]) -> Void) {
     for card in cardsToResolve {
         // Resolve variables on all cards.
-        // You can also inspect `lifecycleId`, `eventName` and `title` to determine what type of card this is.
+        // You can also inspect `lifecycleId` and `eventName` to determine what type of card this is.
         card.resolveVariableWithName("numberOfItems", value: "12")
     }
     
@@ -390,7 +474,7 @@ func cardSessionDidRequestRuntimeVariables(_ cardsToResolve: [AACCardInstance], 
 - (void)cardSessionDidRequestRuntimeVariables:(NSArray<AACCardInstance*>*)cardsToResolve completionHandler:(AACSessionRuntimeVariablesHandler)completionHandler {
     for(AACCardInstance* instance in cardsToResolve) {
         // Resolve variables on all cards.
-        // You can also inspect `lifecycleId`, `eventName` and `title` to determine what type of card this is.
+        // You can also inspect `lifecycleId` and `eventName` to determine what type of card this is.
         [instance resolveRuntimeVariableWithName:@"numberOfItems" value:@"12"];
     }
     
@@ -417,6 +501,7 @@ streamVc.updateVariables()
 ```
 
 ### Debug logging
+
 Debug logging allows you to view more verbose logs regarding events that happen in the SDK. It is turned off by default, and should not be enabled in release builds. To enable debug logging:
 
 **Swift**
@@ -430,6 +515,7 @@ AACSession.setLoggingEnabled(true)
 ```
 
 ### Purge cached data
+
 The SDK provides a method for purging the local cache of a user's card data. The intent of this method is to clear user data when a previous user logs out, so that the cache is clear when a new user logs in to your app. 
 
 To clear this in-memory cache, call:
@@ -442,14 +528,4 @@ AACSession.logout()
 **Objective-C**
 ```objectivec
 [AACSession logout];
-```
-
-## Advanced
-
-### Custom API URL
-If you need to change the base URL for all API requests in the SDK, add the following to your app's `Info.plist` file:
-
-```
-<key>AACRequestBaseURL</key>
-<string>[your custom URL]</string>
 ```

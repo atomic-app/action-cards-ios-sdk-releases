@@ -26,11 +26,6 @@
 @property (nonatomic, readonly, nonnull) NSString *lifecycleId;
 
 /**
- The title of this card, as defined in the Atomic Workbench.
- */
-@property (nonatomic, readonly, nonnull) NSString *title;
-
-/**
  All runtime variables in use by this card.
  */
 @property (nonatomic, strong, nonnull, readonly) NSArray<AACCardRuntimeVariable*>* runtimeVariables;
