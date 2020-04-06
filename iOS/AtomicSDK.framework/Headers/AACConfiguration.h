@@ -57,10 +57,54 @@ typedef NS_ENUM(NSUInteger, AACConfigurationInterfaceStyle) {
  Strings that can be customised in the SDK, by calling `-setValue:forCustomString:`.
  */
 typedef NS_ENUM(NSUInteger, AACCustomString) {
-    /// The title to display at the top of the card list. Defaults to `Cards`.
+    /**
+     The title to display at the top of the card list.
+     Defaults to `Cards`.
+     */
     AACCustomStringCardListTitle,
-    /// The title to display for the card snooze functionality. Defaults to `Remind me`.
-    AACCustomStringCardSnoozeTitle
+    /**
+     The title to display for the card snooze functionality.
+     Defaults to `Remind me`.
+     */
+    AACCustomStringCardSnoozeTitle,
+    /**
+     The message displayed over the card list, when the user has never received a card before.
+     Defaults to `Cards will appear here when there’s something to action.`.
+     */
+    AACCustomStringAwaitingFirstCard,
+    /**
+     The message displayed when the user has received at least one card before, and there are no cards to show.
+     Defaults to `All caught up`.
+     */
+    AACCustomStringAllCardsCompleted,
+    /**
+     The title to display for the action a user taps when they flag a card as useful.
+     Defaults to `This is useful`.
+     */
+    AACCustomStringVotingUseful,
+    /**
+    The title to display for the action a user taps when they flag a card as not useful.
+    Defaults to `This isn't useful`.
+    */
+    AACCustomStringVotingNotUseful,
+    /**
+     The title to display at the top of the screen allowing a user to provide feedback on why
+     they didn't find a card useful.
+     Defaults to `Send feedback`.
+     */
+    AACCustomStringVotingFeedbackTitle
+};
+
+/**
+ The voting options enabled across all cards in the stream container.
+ */
+typedef NS_OPTIONS(NSUInteger, AACCardVotingOption) {
+    /// The user is not presented with any voting options.
+    AACCardVotingOptionNone = 1 << 0,
+    /// The user can vote that the card was useful.
+    AACCardVotingOptionUseful = 1 << 1,
+    /// The user can vote that the card was not useful, and provide optional feedback.
+    AACCardVotingOptionNotUseful = 1 << 2,
 };
 
 /**
@@ -130,6 +174,11 @@ typedef NS_ENUM(NSUInteger, AACCustomString) {
  Defaults to AACConfigurationInterfaceStyleAutomatic.
  */
 @property (nonatomic) AACConfigurationInterfaceStyle interfaceStyle;
+
+/**
+ The voting options displayed for all cards in the stream container.
+ */
+@property (nonatomic) AACCardVotingOption cardVotingOptions;
 
 /**
  Assigns the given value to the custom string defined by the given key.

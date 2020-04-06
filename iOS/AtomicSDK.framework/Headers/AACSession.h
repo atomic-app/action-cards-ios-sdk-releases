@@ -16,6 +16,12 @@
 typedef void(^AACSessionCardCountChangedHandler)(NSNumber * __nullable cardCount);
 
 /**
+ Handler called when the request to track a push notification being received completes.
+ If an error occurred, the error parameter is populated with details, otherwise the error object is nil.
+ */
+typedef void(^AACSessionPushNotificationReceivedHandler)(NSError* __nullable error);
+
+/**
  Notification posted when the number of cards in a stream container changes.
  
  - The notification's `object` corresponds to the stream container ID, as an NSString.
@@ -39,6 +45,16 @@ extern NSString* __nonnull const AACSessionCardCountUserInfoKey;
 @interface AACSession: NSObject
 
 - (instancetype __nonnull)init NS_UNAVAILABLE;
+
+/**
+ Initialises the Atomic SDK with the provided site ID and API key.
+ You must call this before attempting to use any Atomic SDK functionality.
+ 
+ @param siteId The site ID, available in the Atomic Workbench.
+ @param apiKey The API key, configured in the Atomic Workbench for this site.
+ */
++ (void)initialiseWithSiteId:(NSString* __nonnull)siteId
+                      apiKey:(NSString* __nonnull)apiKey;
 
 /**
  Sets whether debug logging should be enabled within the SDK. This can be useful in debug
@@ -120,5 +136,20 @@ extern NSString* __nonnull const AACSessionCardCountUserInfoKey;
  details of the notification. Otherwise, it returns nil.
  */
 + (AACPushNotification* __nullable)notificationFromPushPayload:(NSDictionary* __nonnull)payload;
+
+/**
+ Tracks that a push notification, with the given payload, was received by this device.
+ If the payload does not represent an Atomic push notification, this method has no effect.
+ This method dispatches an analytics event back to Atomic to indicate that the user's device received the notification.
+ It is the responsibiity of the integrator to ensure that this method is called at the correct location to ensure accurate tracking.
+ 
+ @param payload The push notification payload to inspect.
+ @param sessionDelegate A session delegate that provides a JWT containing the user's ID.
+ @param completionHandler A completion handler called when the analytics request is complete. If the request
+ fails, an NSError object is provided.
+ */
++ (void)trackPushNotificationReceived:(NSDictionary* __nonnull)payload
+                  withSessionDelegate:(id<AACSessionDelegate> __nonnull)sessionDelegate
+                    completionHandler:(AACSessionPushNotificationReceivedHandler __nonnull)completionHandler;
 
 @end

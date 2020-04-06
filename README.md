@@ -42,16 +42,36 @@ pod 'AtomicSDK'
 
 ## Setup
 
+Before you can display a stream container or single card, you will need to configure your API base URL, site ID and API key.
+
 ### API base URL
 
-Before creating a stream container, you'll need to add the following to your app's `Info.plist` file, where `[orgId]` is your organisation's ID, as provided to you by Atomic:
+Add the following to your app's `Info.plist` file, replacing `[orgId]` with your organisation's ID, as provided to you by Atomic:
 
 ```
 <key>AACRequestBaseURL</key>
 <string>https://[orgId].client-api.atomic.io</string>
 ```
 
-### Display a stream container
+### Site ID and API key
+
+Within your host app, you will need to call the `+initialiseWithSiteId:apiKey:` method to configure the SDK. Your site ID is provided to you by Atomic, and your API key can be configured in the Atomic Workbench.
+
+If you do not call this method, and attempt to use any functionality in the SDK, an exception will be raised.
+
+**Swift**
+
+```swift
+AACSession.initialise(withSiteId: "<siteId>", apiKey: "<apiKey>")
+```
+
+**Objective-C**
+
+```objectivec
+[AACSession initialiseWithSiteId:@"<siteId>" apiKey:@"<apiKey>"];
+```
+
+## Display a stream container
 
 To display an Atomic stream container in your app, create an instance of `AACStreamContainerViewController`. To create an instance, you must supply:
 
@@ -85,13 +105,18 @@ The configuration object specifies the initial styling and display mode via the 
 - `cardListRefreshInterval`: How frequently the card list should be automatically refreshed. Defaults to 15 seconds, and must be at least 1 second. If set to 0, the card list will not automatically refresh after initial load.
 - `interfaceStyle`: The interface style (light, dark or automatic) to apply to the stream container;
 - `runtimeVariableResolutionTimeout`: The maximum amount of time, in seconds, allocated to the resolution of runtime variables in your session delegate's `cardSessionDidRequestRuntimeVariables:completionHandler:` method. If you do not call the provided `completionHandler` passed to this method before the timeout is reached, the default values for all runtime variables will be used. If you do not implement this delegate method, this property is not used. Defaults to 5 seconds.
+- `cardVotingOptions`: A bitmask representing the voting options that a user can choose from in a card's overflow menu. Voting options allow a user to flag a card as useful or not useful.
 
 !> Setting the card refresh interval to a value less than 15 seconds may negatively impact device battery life and is not recommended.
 
 The configuration object also allows you to specify custom strings for features in the SDK, using the `setValue:forCustomString:` method:
 
-- `AACCustomStringCardListTitle`: The title for the card list in this stream container - defaults to `Cards`;
-- `AACCustomStringCardSnoozeTitle`: The title for the feature allowing a user to snooze a card - defaults to `Remind me`.
+- `AACCustomStringCardListTitle`: The title for the card list in this stream container - defaults to "Cards".
+- `AACCustomStringCardSnoozeTitle`: The title for the feature allowing a user to snooze a card - defaults to "Remind me".
+- `AACCustomStringAwaitingFirstCard`: The message displayed over the card list, when the user has never received a card before - defaults to "Cards will appear here when there’s something to action."
+- `AACCustomStringAllCardsCompleted`: The message displayed when the user has received at least one card before, and there are no cards to show - defaults to "All caught up".
+- `AACCustomStringVotingUseful`: The title to display for the action a user taps when they flag a card as useful - defaults to "This is useful".
+- `AACCustomStringVotingNotUseful`: The title to display for the action a user taps when they flag a card as not useful - defaults to "This isn't useful".
 
 ### Create the stream container
 
@@ -327,6 +352,44 @@ func application(_ application: UIApplication, didFinishLaunchingWithOptions lau
 }
 ```
 
+#### 4. (Optional) Track when push notifications are received
+
+To track when push notifications are delivered to your user's device, you can use a [Notification Service Extension](https://developer.apple.com/documentation/usernotifications/unnotificationserviceextension), supported in iOS 10 and above. If you are supporting iOS 9, you can choose to track delivery of notifications when a user taps on your notification instead. 
+
+While the Atomic SDK does not supply this extension, it does supply a method you can call within your own extension to track delivery.
+
+From within your notification service extension's `didReceiveNotificationRequest:withContentHandler:` method, call the `+ [AACSession trackPushNotificationReceived:withSessionDelegate:completionHandler:]` method to track the delivery of a push notification. You must supply the push notification payload provided to your extension (stored in `request.content.userInfo`), as well as a session delegate, and a completion handler.
+
+**Swift**
+
+```swift
+override func didReceive(_ request: UNNotificationRequest, withContentHandler contentHandler: @escaping (UNNotificationContent) -> Void) {
+
+    // You must also ensure that your API base URL is set for your extension's Info.plist `AACRequestBaseURL` key.
+    AACSession.initialise(withSiteId: "<siteId>", apiKey: "<apiKey>")
+        
+    AACSession.trackPushNotificationReceived(request.content.userInfo, with: self) { (error) in
+        contentHandler(request.content)
+    }
+}
+```
+
+**Objective-C**
+
+```objectivec
+- (void)didReceiveNotificationRequest:(UNNotificationRequest *)request withContentHandler:(void (^)(UNNotificationContent *))contentHandler {
+    
+    // You must also ensure that your API base URL is set for your extension's Info.plist `AACRequestBaseURL` key.
+    [AACSession initialiseWithSiteId:@"<siteId>" apiKey:@"<apiKey>"];
+    
+    [AACSession trackPushNotificationReceived:request.content.userInfo withSessionDelegate:self completionHandler:^(NSError * _Nullable error) {
+        contentHandler(request.content);
+    }];
+}
+```
+
+This delivery event appears in your card's analytics as a `notification-received` event, with a timestamp indicating when the event was generated, as well as the card instance ID and stream container ID for the card.
+
 ### Supporting custom actions on link buttons
 
 In the Atomic Workbench, you can create a link button with a custom action. When such a link button is tapped, the `streamContainerDidTapLinkButton:withAction:` method is called on your action delegate. The second parameter to this method is an action object, containing the payload that was defined in the Workbench for that button.
@@ -499,6 +562,12 @@ streamVc.updateVariables()
 ```objectivec
 [streamVc updateVariables];
 ```
+
+### Card voting
+
+You can optionally allow users to flag cards as either useful or not useful, which are reported as part of a card's analytics. These voting options are displayed in a card's overflow menu, however, they are not enabled by default.
+
+To enable them, specify a bitmask on `AACConfiguration`'s `cardVotingOptions` property, which indicates the voting options to display.
 
 ### Debug logging
 
