@@ -549,7 +549,7 @@ func cardSessionDidRequestRuntimeVariables(_ cardsToResolve: [AACCardInstance], 
 
 #### Updating runtime variables manually
 
-You can manually update runtime variables at any time by calling the `updateVariables` method on `AACStreamContainerViewController`:
+You can manually update runtime variables at any time by calling the `updateVariables` method on `AACStreamContainerViewController` or `AACSingleCardView`:
 
 **Swift**
 

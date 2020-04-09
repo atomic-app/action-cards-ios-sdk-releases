@@ -55,4 +55,10 @@
 */
 @property (nonatomic, weak, nullable) id<AACSingleCardViewDelegate> delegate;
 
+/**
+ Requests that runtime variables, across the single card view, be updated.
+ Must be called from the main thread.
+ */
+- (void)updateVariables;
+
 @end

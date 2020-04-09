@@ -407,6 +407,7 @@ __44+[NSBundle(AACBundle) aac_actionCardsBundle]_block_invoke
 -[AACSingleCardView intrinsicContentSize]
 -[AACSingleCardView streamContainer:willChangeSize:]
 -[AACSingleCardView presentingViewControllerForStreamContainer:]
+-[AACSingleCardView updateVariables]
 -[AACSingleCardView delegate]
 -[AACSingleCardView setDelegate:]
 -[AACSingleCardView streamContainer]
@@ -2654,6 +2655,7 @@ ___77-[AACMainFlowCoordinator cardSnoozeViewController:didSnoozeCardWithId:until
 -[AACMainFlowCoordinator cardListViewController]
 -[AACMainFlowCoordinator cardListResultType]
 -[AACMainFlowCoordinator dispatchAnalyticsEvent:]
+___49-[AACMainFlowCoordinator dispatchAnalyticsEvent:]_block_invoke
 -[AACMainFlowCoordinator delegate]
 -[AACMainFlowCoordinator setDelegate:]
 -[AACMainFlowCoordinator navigationController]
@@ -2702,6 +2704,7 @@ _OBJC_IVAR_$_AACMainFlowCoordinator._streamContainerId
 /Users/distiller/project/ActionCardsSDK/ActionCardsSDK/Coordinator/AACMainFlowCoordinator.m
 ActionCardsSDK/Coordinator/AACMainFlowCoordinator.m
 ActionCardsSDK/Coordinator/AACMainFlowCoordinator.h
+__49-[AACMainFlowCoordinator dispatchAnalyticsEvent:]_block_invoke
 __77-[AACMainFlowCoordinator cardSnoozeViewController:didSnoozeCardWithId:until:]_block_invoke
 __destroy_helper_block_e8_32s40s48s56s64w
 __copy_helper_block_e8_32s40s48s56b64w
@@ -3228,8 +3231,8 @@ ___80-[AACCardService cachedCardFeedEvaluatingRuntimeVariablesWithCompletionHand
 ___61-[AACCardService resolveVariablesForCards:completionHandler:]_block_invoke
 ___61-[AACCardService resolveVariablesForCards:completionHandler:]_block_invoke_2
 ___copy_helper_block_e8_32s40b48s56r
-___copy_helper_block_e8_32s40s48s56b64s72r
-___destroy_helper_block_e8_32s40s48s56s64s72r
+___copy_helper_block_e8_32s40s48b56s
+___destroy_helper_block_e8_32s40s48s56s
 -[AACCardService cardCountWithCompletionHandler:]
 ___49-[AACCardService cardCountWithCompletionHandler:]_block_invoke
 ___49-[AACCardService cardCountWithCompletionHandler:]_block_invoke_2
@@ -3269,7 +3272,7 @@ ___block_descriptor_48_e8_32bs40w_e53_v32?0"NSArray"8"AACCardFeedMetadata"16
 ___block_descriptor_56_e8_32bs40w_e18_v16?0"NSString"8l
 ___block_descriptor_40_e8_32bs_e17_v16?0"NSArray"8l
 ___block_descriptor_64_e8_32s40bs48s56r_e17_v16?0"NSArray"8l
-___block_descriptor_80_e8_32s40s48s56bs64s72r_e5_v8?0l
+___block_descriptor_64_e8_32s40s48bs56s_e5_v8?0l
 ___block_descriptor_40_e8_32bs_e53_v32?0"NSArray"8"AACCardFeedMetadata"16"NSError"24l
 ___block_descriptor_48_e8_32bs40w_e18_v16?0"NSString"8l
 ___block_descriptor_56_e8_32bs40s48w_e17_v16?0"NSError"8l
@@ -3294,8 +3297,8 @@ __55-[AACCardService submitResponse:withCompletionHandler:]_block_invoke_2
 __55-[AACCardService submitResponse:withCompletionHandler:]_block_invoke
 __49-[AACCardService cardCountWithCompletionHandler:]_block_invoke_2
 __49-[AACCardService cardCountWithCompletionHandler:]_block_invoke
-__destroy_helper_block_e8_32s40s48s56s64s72r
-__copy_helper_block_e8_32s40s48s56b64s72r
+__destroy_helper_block_e8_32s40s48s56s
+__copy_helper_block_e8_32s40s48b56s
 __copy_helper_block_e8_32s40b48s56r
 __61-[AACCardService resolveVariablesForCards:completionHandler:]_block_invoke_2
 __61-[AACCardService resolveVariablesForCards:completionHandler:]_block_invoke
@@ -3675,8 +3678,6 @@ ___84-[AACCardAnimationController animateToStep:forCardWithInstanceId:completion
 ___84-[AACCardAnimationController animateToStep:forCardWithInstanceId:completionHandler:]_block_invoke.22
 ___84-[AACCardAnimationController animateToStep:forCardWithInstanceId:completionHandler:]_block_invoke_2.23
 ___84-[AACCardAnimationController animateToStep:forCardWithInstanceId:completionHandler:]_block_invoke_3.24
-___copy_helper_block_e8_32s40s48b56s
-___destroy_helper_block_e8_32s40s48s56s
 ___copy_helper_block_e8_32s40s48s56b64s
 ___destroy_helper_block_e8_32s40s48s56s64s
 ___84-[AACCardAnimationController animateToStep:forCardWithInstanceId:completionHandler:]_block_invoke.28
@@ -3715,7 +3716,6 @@ ___84-[AACCardAnimationController animateToStep:forCardWithInstanceId:completion
 -[AACCardAnimationController .cxx_destruct]
 ___block_descriptor_64_e8_32s40s48bs56s_e8_v12?0B8l
 ___block_descriptor_72_e8_32s40s48s56bs64s_e5_v8?0l
-___block_descriptor_64_e8_32s40s48bs56s_e5_v8?0l
 ___block_descriptor_72_e8_32s40s48bs56s_e5_v8?0l
 _OBJC_IVAR_$_AACCardAnimationController._delegate
 _OBJC_IVAR_$_AACCardAnimationController._collectionView
@@ -3747,8 +3747,6 @@ __84-[AACCardAnimationController animateToStep:forCardWithInstanceId:completionH
 __84-[AACCardAnimationController animateToStep:forCardWithInstanceId:completionHandler:]_block_invoke.28
 __destroy_helper_block_e8_32s40s48s56s64s
 __copy_helper_block_e8_32s40s48s56b64s
-__destroy_helper_block_e8_32s40s48s56s
-__copy_helper_block_e8_32s40s48b56s
 __84-[AACCardAnimationController animateToStep:forCardWithInstanceId:completionHandler:]_block_invoke_3.24
 __84-[AACCardAnimationController animateToStep:forCardWithInstanceId:completionHandler:]_block_invoke_2.23
 __84-[AACCardAnimationController animateToStep:forCardWithInstanceId:completionHandler:]_block_invoke.22

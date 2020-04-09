@@ -48,6 +48,7 @@ __attribute__((objc_subclassing_restricted))
 
 /**
  Requests that runtime variables, across all cards in the card list, be re-evaluated.
+ Must be called from the main thread.
  */
 - (void)updateVariables;
 
