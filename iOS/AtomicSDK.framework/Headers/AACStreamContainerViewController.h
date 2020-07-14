@@ -32,9 +32,9 @@ __attribute__((objc_subclassing_restricted))
  by the SDK.
  @param configuration (Required) A configuration object for defining behaviour of the stream container.
  */
-- (instancetype __nonnull)initWithContainerId:(NSNumber* __nonnull)containerId
-                              sessionDelegate:(id<AACSessionDelegate> __nonnull)sessionDelegate
-                                configuration:(AACConfiguration* __nonnull)configuration NS_DESIGNATED_INITIALIZER;
+- (instancetype __nonnull)initWithIdentifier:(NSString* __nonnull)containerId
+                             sessionDelegate:(id<AACSessionDelegate> __nonnull)sessionDelegate
+                               configuration:(AACConfiguration* __nonnull)configuration NS_DESIGNATED_INITIALIZER;
 
 - (instancetype __nonnull)init NS_UNAVAILABLE;
 - (instancetype __nonnull)initWithCoder:(NSCoder* __nonnull)aDecoder NS_UNAVAILABLE;
@@ -44,12 +44,25 @@ __attribute__((objc_subclassing_restricted))
 /**
  The ID of this stream container, located in the Atomic Workbench.
  */
-@property (nonatomic, copy, nonnull, readonly) NSNumber *containerId;
+@property (nonatomic, copy, nonnull, readonly) NSString *identifier;
 
 /**
  Requests that runtime variables, across all cards in the card list, be re-evaluated.
  Must be called from the main thread.
  */
 - (void)updateVariables;
+
+#pragma mark - Deprecated methods
+/**
+ Creates a new view controller that renders a stream container by its identifier.
+ */
+- (instancetype __nonnull)initWithContainerId:(NSNumber* __nonnull)containerId
+                              sessionDelegate:(id<AACSessionDelegate> __nonnull)sessionDelegate
+                                configuration:(AACConfiguration* __nonnull)configuration DEPRECATED_MSG_ATTRIBUTE("Use -initWithIdentifier:sessionDelegate:configuration: instead.");
+
+/**
+ The numeric ID of this stream container, located in the Atomic Workbench.
+ */
+@property (nonatomic, copy, nonnull, readonly) NSNumber *containerId DEPRECATED_MSG_ATTRIBUTE("Use -identifier instead.");
 
 @end

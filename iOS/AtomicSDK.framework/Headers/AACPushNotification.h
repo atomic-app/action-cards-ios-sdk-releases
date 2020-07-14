@@ -25,12 +25,18 @@
 /**
  The ID of the stream container that the card is contained within.
  */
-@property (nonatomic, copy, readonly, nonnull) NSNumber* streamContainerId;
+@property (nonatomic, copy, readonly, nonnull) NSString *containerId;
 
 /**
  Custom data that is sent with the push notification payload, or an empty dictionary if there is no custom data.
  This data is sent in the `notificationDetail` object, in the event payload sent to the Atomic Platform.
  */
 @property (nonatomic, copy, readonly, nonnull) NSDictionary *detail;
+
+#pragma mark - Deprecated properties
+/**
+ The numeric ID of the stream container that the card is contained within.
+ */
+@property (nonatomic, copy, readonly, nonnull) NSNumber* streamContainerId DEPRECATED_MSG_ATTRIBUTE("Use -containerId instead.");
 
 @end

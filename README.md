@@ -42,7 +42,7 @@ pod 'AtomicSDK'
 
 ## Setup
 
-Before you can display a stream container or single card, you will need to configure your API base URL, site ID and API key.
+Before you can display a stream container or single card, you will need to configure your API base URL, environment ID and API key.
 
 ### API base URL
 
@@ -53,22 +53,22 @@ Add the following to your app's `Info.plist` file, replacing `[orgId]` with your
 <string>https://[orgId].client-api.atomic.io</string>
 ```
 
-### Site ID and API key
+### Environment ID and API key
 
-Within your host app, you will need to call the `+initialiseWithSiteId:apiKey:` method to configure the SDK. Your site ID is provided to you by Atomic, and your API key can be configured in the Atomic Workbench.
+Within your host app, you will need to call the `+initialiseWithEnvironmentId:apiKey:` method to configure the SDK. Your environment ID and API key can be found in the Atomic Workbench.
 
 If you do not call this method, and attempt to use any functionality in the SDK, an exception will be raised.
 
 **Swift**
 
 ```swift
-AACSession.initialise(withSiteId: "<siteId>", apiKey: "<apiKey>")
+AACSession.initialise(withEnvironmentId: "<environmentId>", apiKey: "<apiKey>")
 ```
 
 **Objective-C**
 
 ```objectivec
-[AACSession initialiseWithSiteId:@"<siteId>" apiKey:@"<apiKey>"];
+[AACSession initialiseWithEnvironmentId:@"<environmentId>" apiKey:@"<apiKey>"];
 ```
 
 ## Display a stream container
@@ -81,7 +81,7 @@ To display an Atomic stream container in your app, create an instance of `AACStr
 
 ### Stream container ID
 
-First, you’ll need to locate your stream container ID. Navigate to the Workbench, select “Containers” and find the ID next to the stream container you are integrating.
+First, you’ll need to locate your stream container ID. Navigate to the Workbench, select "Settings" > "SDK" > “Containers” and find the ID next to the stream container you are integrating.
 
 ### Session delegate
 
@@ -132,7 +132,7 @@ config.launchIconColor = .blue
 config.launchButtonColor = .blue
 config.launchTextColor = .white
 
-let streamContainer = AACStreamContainerViewController(containerId: 1234, sessionDelegate: self, configuration: config)
+let streamContainer = AACStreamContainerViewController(identifier: "1234", sessionDelegate: self, configuration: config)
 present(streamContainer, animated: true)
 ```
 
@@ -146,7 +146,7 @@ config.launchIconColor = [UIColor blueColor];
 config.launchButtonColor = [UIColor blueColor];
 config.launchTextColor = [UIColor whiteColor];
 
-AACStreamContainerViewController *streamContainer = [[AACStreamContainerViewController alloc] initWithContainerId:@(1234) sessionDelegate:self configuration:config];
+AACStreamContainerViewController *streamContainer = [[AACStreamContainerViewController alloc] initWithIdentifier:@"1234" sessionDelegate:self configuration:config];
 [self presentViewController:streamContainer animated:YES completion:nil];
 ```
 
@@ -171,7 +171,7 @@ config.launchIconColor = .blue
 config.launchButtonColor = .blue
 config.launchTextColor = .white
 
-let cardView = AACSingleCardView(frame: view.bounds, containerId: 1234, sessionDelegate: self, configuration: config)
+let cardView = AACSingleCardView(frame: view.bounds, containerIdentifier: "1234", sessionDelegate: self, configuration: config)
 view.addSubview(cardView)
 ```
 
@@ -184,11 +184,11 @@ config.launchIconColor = [UIColor blueColor];
 config.launchButtonColor = [UIColor blueColor];
 config.launchTextColor = [UIColor whiteColor];
 
-AACSingleCardView *singleCardView = [[AACSingleCardView alloc] initWithFrame:self.view.frame containerId:@(1234) sessionDelegate:self configuration:config];
+AACSingleCardView *singleCardView = [[AACSingleCardView alloc] initWithFrame:self.view.frame containerIdentifier:@"1234" sessionDelegate:self configuration:config];
 [self.view addSubview:singleCardView];
 ```
 
-Within a single card view, toast messages - such as those seen when submitting, dismissing or snoozing a card in a stream container - do not appear. Pull to refresh functionality is also disabled in the single card view.
+Within a single card view, toast messages - such as those seen when submitting, dismissing or snoozing a card in a stream container - do not appear. Pull to refresh functionality is also disabled.
 
 You can set a delegate (conforming to `AACSingleCardViewDelegate`) on the single card view to be notified when the view changes height, either because a card is submitted, dismissed or snoozed, or because a new card arrived into the single card view (if polling is enabled). This allows you to animate changes to the `intrinsicContentSize` of the single card view.
 
@@ -223,13 +223,13 @@ You need to signal to the Atomic Platform which stream containers are eligible t
 **Swift**
 
 ```swift
-AACSession.registerStreamContainers(forNotifications:with:)
+AACSession.registerStreamContainers(forPushNotifications: ["1"], sessionDelegate: self)
 ```
 
 **Objective-C**
 
 ```objectivec
-+[AACSession registerStreamContainersForNotifications:withSessionDelegate:]
+[AACSession registerStreamContainersForPushNotifications:@[ @"1" ] sessionDelegate:self];
 ```
 
 You will need to do this each time the logged in user changes.
@@ -366,7 +366,7 @@ From within your notification service extension's `didReceiveNotificationRequest
 override func didReceive(_ request: UNNotificationRequest, withContentHandler contentHandler: @escaping (UNNotificationContent) -> Void) {
 
     // You must also ensure that your API base URL is set for your extension's Info.plist `AACRequestBaseURL` key.
-    AACSession.initialise(withSiteId: "<siteId>", apiKey: "<apiKey>")
+    AACSession.initialise(withEnvironmentId: "<environmentId>", apiKey: "<apiKey>")
         
     AACSession.trackPushNotificationReceived(request.content.userInfo, with: self) { (error) in
         contentHandler(request.content)
@@ -380,7 +380,7 @@ override func didReceive(_ request: UNNotificationRequest, withContentHandler co
 - (void)didReceiveNotificationRequest:(UNNotificationRequest *)request withContentHandler:(void (^)(UNNotificationContent *))contentHandler {
     
     // You must also ensure that your API base URL is set for your extension's Info.plist `AACRequestBaseURL` key.
-    [AACSession initialiseWithSiteId:@"<siteId>" apiKey:@"<apiKey>"];
+    [AACSession initialiseWithEnvironmentId:@"<environmentId>" apiKey:@"<apiKey>"];
     
     [AACSession trackPushNotificationReceived:request.content.userInfo withSessionDelegate:self completionHandler:^(NSError * _Nullable error) {
         contentHandler(request.content);
@@ -435,13 +435,17 @@ The SDK supports observing the card count for a particular stream container, eve
 **Swift**
 
 ```swift
-AACSession.observeCardCountForStreamContainer(withId:interval:sessionDelegate:handler:)
+AACSession.observeCardCountForStreamContainer(withIdentifier: "1", interval: 15, sessionDelegate: self) { (count) in
+    print("There are \(count) cards in the container.")
+}
 ```
 
 **Objective-C**
 
 ```objectivec
-+[AACSession observeCardCountForStreamContainerWithId:interval:sessionDelegate:handler:]
+[AACSession observeCardCountForStreamContainerWithIdentifier:@"1" interval:15 sessionDelegate:self handler:^(NSNumber *cardCount) {
+    NSLog(@"There are %@ cards in the container", cardCount);
+}];
 ```
 
 The card count is updated periodically at the interval you specify. When the card count changes, the `handler` block is called with the new card count, or `nil` if the card count could not be fetched.
@@ -451,13 +455,13 @@ When you want to stop observing the card count, you can remove the observer usin
 **Swift**
 
 ```swift
-AACSession.stopObservingCardCount(_)
+AACSession.stopObservingCardCount(token)
 ```
 
 **Objective-C**
 
 ```objectivec
-+[AACSession stopObservingCardCount:]
+[AACSession stopObservingCardCount:token];
 ```
 
 When a stream container is present on screen, a notification is posted (`AACSessionCardCountDidChange`) every time the card count changes, such as when a card is dismissed or completed. You can observe this notification to get the latest card count:

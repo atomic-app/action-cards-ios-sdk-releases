@@ -46,7 +46,7 @@
  @param configuration Stream container configuration to apply to this single card view.
  */
 - (instancetype __nonnull)initWithFrame:(CGRect)frame
-                            containerId:(NSNumber* __nonnull)containerId
+                    containerIdentifier:(NSString* __nonnull)containerId
                         sessionDelegate:(id<AACSessionDelegate> __nonnull)sessionDelegate
                           configuration:(AACConfiguration* __nonnull)configuration;
 
@@ -60,5 +60,14 @@
  Must be called from the main thread.
  */
 - (void)updateVariables;
+
+#pragma mark - Deprecated methods
+/**
+ Creates a new view for displaying a single card.
+ */
+- (instancetype __nonnull)initWithFrame:(CGRect)frame
+                            containerId:(NSNumber* __nonnull)containerId
+                        sessionDelegate:(id<AACSessionDelegate> __nonnull)sessionDelegate
+                          configuration:(AACConfiguration* __nonnull)configuration DEPRECATED_MSG_ATTRIBUTE("Use -initWithFrame:containerIdentifier:sessionDelegate:configuration: instead.");
 
 @end

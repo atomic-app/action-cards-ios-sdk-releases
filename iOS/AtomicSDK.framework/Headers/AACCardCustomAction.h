@@ -24,12 +24,18 @@
 /**
  The ID of the stream container that the card is contained within.
  */
-@property (nonatomic, copy, readonly, nonnull) NSNumber* streamContainerId;
+@property (nonatomic, copy, readonly, nonnull) NSString* containerId;
 
 /**
  A custom action payload that is associated with the link button.
  Inspect the data in this payload to determine which action to take.
  */
 @property (nonatomic, copy, readonly, nonnull) NSDictionary *actionPayload;
+
+#pragma mark - Deprecated properties
+/**
+ The numeric ID of the stream container that the card is contained within.
+ */
+@property (nonatomic, copy, readonly, nonnull) NSNumber* streamContainerId DEPRECATED_MSG_ATTRIBUTE("Use -containerId instead.");
 
 @end

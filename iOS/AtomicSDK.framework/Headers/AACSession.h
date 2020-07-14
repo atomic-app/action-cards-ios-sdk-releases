@@ -47,14 +47,14 @@ extern NSString* __nonnull const AACSessionCardCountUserInfoKey;
 - (instancetype __nonnull)init NS_UNAVAILABLE;
 
 /**
- Initialises the Atomic SDK with the provided site ID and API key.
+ Initialises the Atomic SDK with the provided environment ID and API key.
  You must call this before attempting to use any Atomic SDK functionality.
  
- @param siteId The site ID, available in the Atomic Workbench.
- @param apiKey The API key, configured in the Atomic Workbench for this site.
+ @param environmentId The environment ID, available in the Atomic Workbench.
+ @param apiKey The API key, configured in the Atomic Workbench for this environment.
  */
-+ (void)initialiseWithSiteId:(NSString* __nonnull)siteId
-                      apiKey:(NSString* __nonnull)apiKey;
++ (void)initialiseWithEnvironmentId:(NSString* __nonnull)environmentId
+                             apiKey:(NSString* __nonnull)apiKey;
 
 /**
  Sets whether debug logging should be enabled within the SDK. This can be useful in debug
@@ -85,14 +85,14 @@ extern NSString* __nonnull const AACSessionCardCountUserInfoKey;
  
  @return An opaque token that can be used to stop observing card count, by calling `+stopObservingCardCount:` with that token.
  */
-+ (id<NSObject> __nonnull)observeCardCountForStreamContainerWithId:(NSNumber* __nonnull)streamContainerId
-                                                          interval:(NSTimeInterval)interval
-                                                   sessionDelegate:(id<AACSessionDelegate> __nonnull)sessionDelegate
-                                                           handler:(AACSessionCardCountChangedHandler __nonnull)handler;
++ (id<NSObject> __nonnull)observeCardCountForStreamContainerWithIdentifier:(NSString* __nonnull)streamContainerId
+                                                                  interval:(NSTimeInterval)interval
+                                                           sessionDelegate:(id<AACSessionDelegate> __nonnull)sessionDelegate
+                                                                   handler:(AACSessionCardCountChangedHandler __nonnull)handler;
 
 /**
  Asks the SDK to stop observing card count for the given token, which was returned from a call to
- `+observeCardCountForStreamContainerWithId:interval:sessionDelegate:handler:`. If the token does not
+ `+observeCardCountForStreamContainerWithIdentifier:interval:sessionDelegate:handler:`. If the token does not
  correspond to a card count observer, this method does nothing.
  
  @param token The opaque token returned when registering to observe card count.
@@ -121,8 +121,8 @@ extern NSString* __nonnull const AACSessionCardCountUserInfoKey;
  Pass an empty array to unregister this device from notifications (e.g. when the user performs a complete logout from your app).
  @param sessionDelegate (Required) A delegate that supplies a user authentication token when requested by the SDK.
  */
-+ (void)registerStreamContainersForNotifications:(NSArray<NSNumber*>* __nonnull)streamContainerIds
-                             withSessionDelegate:(id<AACSessionDelegate> __nonnull)sessionDelegate;
++ (void)registerStreamContainersForPushNotifications:(NSArray<NSString*>* __nonnull)streamContainerIds
+                                     sessionDelegate:(id<AACSessionDelegate> __nonnull)sessionDelegate;
 
 /**
  Determines whether the given push notification payload is for a push notification sent by the Atomic Platform. The push
@@ -151,5 +151,30 @@ extern NSString* __nonnull const AACSessionCardCountUserInfoKey;
 + (void)trackPushNotificationReceived:(NSDictionary* __nonnull)payload
                   withSessionDelegate:(id<AACSessionDelegate> __nonnull)sessionDelegate
                     completionHandler:(AACSessionPushNotificationReceivedHandler __nonnull)completionHandler;
+
+#pragma mark - Deprecated methods
+
+/**
+ Initialises the Atomic SDK with the provided site ID and API key.
+ You must call this before attempting to use any Atomic SDK functionality.
+ */
++ (void)initialiseWithSiteId:(NSString* __nonnull)siteId
+                      apiKey:(NSString* __nonnull)apiKey DEPRECATED_MSG_ATTRIBUTE("Use +initialiseWithEnvironmentId:apiKey: instead.");
+
+/**
+ Asks the SDK to observe the card count for the given stream container, calling the `handler` every time
+ the count changes.
+ */
++ (id<NSObject> __nonnull)observeCardCountForStreamContainerWithId:(NSNumber* __nonnull)streamContainerId
+                                                          interval:(NSTimeInterval)interval
+                                                   sessionDelegate:(id<AACSessionDelegate> __nonnull)sessionDelegate
+                                                           handler:(AACSessionCardCountChangedHandler __nonnull)handler DEPRECATED_MSG_ATTRIBUTE("Use +observeCardCountForStreamContainerWithIdentifier:interval:sessionDelegate:handler: instead.");
+
+/**
+ Asks the SDK to register the currently logged in user for push notifications on the stream container IDs in the provided
+ array.
+ */
++ (void)registerStreamContainersForNotifications:(NSArray<NSNumber*>* __nonnull)streamContainerIds
+                             withSessionDelegate:(id<AACSessionDelegate> __nonnull)sessionDelegate DEPRECATED_MSG_ATTRIBUTE("Use +registerStreamContainersForPushNotifications:sessionDelegate: instead");
 
 @end
