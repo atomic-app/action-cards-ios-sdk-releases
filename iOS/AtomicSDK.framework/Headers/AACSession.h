@@ -22,6 +22,12 @@ typedef void(^AACSessionCardCountChangedHandler)(NSNumber * __nullable cardCount
 typedef void(^AACSessionPushNotificationReceivedHandler)(NSError* __nullable error);
 
 /**
+ Handler called when the request to deregister for Atomic push notifications completes.
+ If an error occurred, the error parameter is populated with details, otherwise the error parameter is nil.
+ */
+typedef void(^AACSessionPushNotificationDeregisterHandler)(NSError* __nullable error);
+
+/**
  Notification posted when the number of cards in a stream container changes.
  
  - The notification's `object` corresponds to the stream container ID, as an NSString.
@@ -109,6 +115,14 @@ extern NSString* __nonnull const AACSessionCardCountUserInfoKey;
  */
 + (void)registerDeviceForNotifications:(NSData* __nonnull)deviceToken
                    withSessionDelegate:(id<AACSessionDelegate> __nonnull)sessionDelegate;
+
+/**
+ Asks the SDK to deregister the current device for Atomic push notifications, within the current app.
+ 
+ @param completionHandler (Optional) Completion handler called when the deregistration request completes.
+ If an error occurred, the handler is passed a non-nil error object.
+ */
++ (void)deregisterDeviceForNotificationsWithCompletionHandler:(AACSessionPushNotificationDeregisterHandler __nullable)completionHandler;
 
 /**
  Asks the SDK to register the currently logged in user for push notifications on the stream container IDs in the provided

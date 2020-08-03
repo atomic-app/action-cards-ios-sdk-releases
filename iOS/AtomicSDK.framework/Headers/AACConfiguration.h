@@ -92,7 +92,13 @@ typedef NS_ENUM(NSUInteger, AACCustomString) {
      they didn't find a card useful.
      Defaults to `Send feedback`.
      */
-    AACCustomStringVotingFeedbackTitle
+    AACCustomStringVotingFeedbackTitle,
+    /**
+     Message to display below the last card in the card list, if there is at least 1 card present.
+     Has no effect in single card view, or if `cardListFooterMessageEnabled` is set to `NO`.
+     Defaults to an empty string.
+     */
+    AACCustomStringCardListFooterMessage
 };
 
 /**
@@ -108,6 +114,20 @@ typedef NS_OPTIONS(NSUInteger, AACCardVotingOption) {
 };
 
 /**
+ UI elements that can be enabled on a stream container.
+ */
+typedef NS_OPTIONS(NSUInteger, AACUIElement) {
+    /// Value indicating that none of the listed UI elements should be shown.
+    AACUIElementNone = 0,
+    /// Value indicating that toast messages should shown over the card list.
+    AACUIElementCardListToast = 1 << 0,
+    /// Value indicating that the footer message should be shown beneath the last card in the list.
+    AACUIElementCardListFooterMessage = 1 << 1,
+    /// Value indicating that the header should be shown at the top of the card list.
+    AACUIElementCardListHeader = 1 << 2,
+};
+
+/**
  Supports configuration of customisable elements within the SDK.
  */
 @interface AACConfiguration: NSObject <NSCopying>
@@ -116,14 +136,6 @@ typedef NS_OPTIONS(NSUInteger, AACCardVotingOption) {
  The presentation style for the stream container.
  */
 @property (nonatomic) AACConfigurationPresentationStyle presentationStyle;
-
-/**
- The title to display at the top of the card list.
- If not specified, defaults to `Cards`.
- 
- Deprecated. Please use `-setValue:forCustomString:` instead.
- */
-@property (nonatomic, copy, nonnull) NSString *cardListTitle __deprecated_msg("Use `-setValue:forCustomString:` instead.");
 
 /**
  Optional action delegate that responds to actions triggered by the stream container.
@@ -161,6 +173,13 @@ typedef NS_OPTIONS(NSUInteger, AACCardVotingOption) {
 @property (nonatomic) NSTimeInterval cardListRefreshInterval;
 
 /**
+ Bitmask of user interface elements that should be enabled in the stream container.
+ This property has no effect when applied to a single card view.
+ The default value enables toast messages and the card list header.
+ */
+@property (nonatomic) AACUIElement enabledUiElements;
+
+/**
  The maximum amount of time allocated when resolving variables in the `-cardSessionDidRequestRuntimeVariables:completionHandler:`
  method on `AACSessionDelegate`. If the tasks inside of the delegate method take longer than this timeout, or the completionHandler is
  not called in this time, default values will be used for all runtime variables.
@@ -177,6 +196,7 @@ typedef NS_OPTIONS(NSUInteger, AACCardVotingOption) {
 
 /**
  The voting options displayed for all cards in the stream container.
+ Defaults to `AACCardVotingOptionNone`.
  */
 @property (nonatomic) AACCardVotingOption cardVotingOptions;
 

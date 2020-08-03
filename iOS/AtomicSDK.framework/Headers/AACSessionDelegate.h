@@ -8,13 +8,12 @@
 #import "AACCardInstance.h"
 
 /**
- A block used to hand an authentication token back to the SDK when requested - either
- because there is no current token or that token has expired.
+ A block used to hand an authentication token back to the SDK when requested.
 
- @param authToken An authentication token (JWT) resolved by your application - must be
- non-nil.
+ @param authToken An authentication token (JWT) resolved by your app, or `nil` if no token is
+ available.
  */
-typedef void(^AACSessionAuthenticationTokenHandler)(NSString* __nonnull authToken);
+typedef void(^AACSessionAuthenticationTokenHandler)(NSString* __nullable authToken);
 
 /**
  A completion handler provided to the integrator when resolving runtime variables.
@@ -42,7 +41,7 @@ typedef void(^AACSessionRuntimeVariablesHandler)(NSArray<AACCardInstance*>* __no
  otherwise the API request using this token will fail.
  
  @param handler A block that you must call when an authentication token has been resolved. The sole argument
- to this block is expected to be an authentication token (JWT).
+ to this block is expected to be an authentication token (JWT), or `nil` if there is no token available.
  */
 - (void)cardSessionDidRequestAuthenticationTokenWithHandler:(AACSessionAuthenticationTokenHandler __nonnull)handler;
 

@@ -87,27 +87,42 @@ First, you’ll need to locate your stream container ID. Navigate to the Workben
 
 The session delegate supplies a JSON Web Token (JWT) to the SDK when requested, via the method `cardSessionDidRequestAuthenticationTokenWithHandler:` (Objective-C) or `cardSessionDidRequestAuthenticationToken(handler:)` (Swift). This method is called before each API request in the SDK.
 
-You are responsible for generating, caching and handling expiry of the JWT. Once you have a valid token, call the `handler` block with the token. More information on the JWT structure is available in the [Authentication](/install/authentication) section.
+You are responsible for generating, caching and handling expiry of the JWT. Once you have a valid token, call the `handler` block with the token. If you do not have a valid token, pass `nil` to the handler; this will invoke error handling within the SDK.
+
+More information on the JWT structure is available in the [Authentication](/install/authentication) section.
 
 ### Configuration object
 
-The configuration object specifies the initial styling and display mode via the following properties:
+The configuration object allows you to configure a stream container or single card view via the following properties:
+
+**Style and presentation**
 
 - `presentationStyle`: indicates how the stream container is being displayed: 
     - With no button in its top left; 
     - With an action button that triggers a custom action you handle;
     - With a contextual button, which displays `Close` for modal presentations, or `Back` when inside a navigation controller.
-- `actionDelegate`: An optional delegate that handles actions triggered inside the stream container, such as the tap of the custom action button in the top left of the stream container, or link buttons with custom actions.
 - `launchBackgroundColor`: The background colour to use for the launch screen, seen on first load.
 - `launchIconColor`: The colour of the icon displayed on the launch screen, seen on first load.
 - `launchButtonColor`: The colour of the buttons that allow the user to retry the first load, if the request fails.
 - `launchTextColor`: The text colour to use for the view displayed when the SDK is first presented.
+- `interfaceStyle`: The interface style (light, dark or automatic) to apply to the stream container.
+- `enabledUiElements`: A bitmask of UI elements that should be enabled in the stream container. Defaults to showing toast messages and the card list header in a stream container, and has no effect in single card view. Possible values are:
+    - `AACUIElementNone`: No UI elements should be displayed. Do not use in conjunction with any other values.
+    - `AACUIElementCardListToast`: Toast messages should appear at the bottom of the card list. Toast messages appear when cards are submitted, dismissed or snoozed, or when an error occurs in any of these actions.
+    - `AACUIElementCardListFooterMessage`: A footer message should be displayed below the last card in the card list, if at least one is present. The message is customised using the `AACCustomStringCardListFooterMessage` custom string.
+    - `AACUIElementCardListHeader`: The header should display at the top of the card list, allowing the user to pull down from the top of the screen to refresh the card list.
+
+**Functionality**
+
 - `cardListRefreshInterval`: How frequently the card list should be automatically refreshed. Defaults to 15 seconds, and must be at least 1 second. If set to 0, the card list will not automatically refresh after initial load.
-- `interfaceStyle`: The interface style (light, dark or automatic) to apply to the stream container;
+
+!> Setting the card refresh interval to a value less than 15 seconds may negatively impact device battery life and is not recommended.
+
+- `actionDelegate`: An optional delegate that handles actions triggered inside the stream container, such as the tap of the custom action button in the top left of the stream container, or link buttons with custom actions.
 - `runtimeVariableResolutionTimeout`: The maximum amount of time, in seconds, allocated to the resolution of runtime variables in your session delegate's `cardSessionDidRequestRuntimeVariables:completionHandler:` method. If you do not call the provided `completionHandler` passed to this method before the timeout is reached, the default values for all runtime variables will be used. If you do not implement this delegate method, this property is not used. Defaults to 5 seconds.
 - `cardVotingOptions`: A bitmask representing the voting options that a user can choose from in a card's overflow menu. Voting options allow a user to flag a card as useful or not useful.
 
-!> Setting the card refresh interval to a value less than 15 seconds may negatively impact device battery life and is not recommended.
+**Custom strings**
 
 The configuration object also allows you to specify custom strings for features in the SDK, using the `setValue:forCustomString:` method:
 
@@ -117,6 +132,7 @@ The configuration object also allows you to specify custom strings for features 
 - `AACCustomStringAllCardsCompleted`: The message displayed when the user has received at least one card before, and there are no cards to show - defaults to "All caught up".
 - `AACCustomStringVotingUseful`: The title to display for the action a user taps when they flag a card as useful - defaults to "This is useful".
 - `AACCustomStringVotingNotUseful`: The title to display for the action a user taps when they flag a card as not useful - defaults to "This isn't useful".
+- `AACCustomStringCardListFooterMessage`: The message to display below the last card in the card list, provided there is at least one present. Does not apply in single card view, and requires `enabledUiElements` to contain `AACUIElementCardListFooterMessage`. Defaults to an empty string.
 
 ### Create the stream container
 
@@ -234,7 +250,23 @@ AACSession.registerStreamContainers(forPushNotifications: ["1"], sessionDelegate
 
 You will need to do this each time the logged in user changes.
 
-To unregister the device for notifications (such as when a user completely logs out of your app), you can pass an empty array as the first argument to the method above. This will disable notifications for the device, until you make a subsequent call to the method above with an array of valid stream container IDs.
+To deregister the device for Atomic notifications for your app, such as when a user completely logs out of your app, call `deregisterDeviceForNotifications:` on `AACSession`. If the de-registration fails, the error object will be populated, and the underlying error in the error's `userInfo` dictionary will provide additional context.
+
+**Swift**
+
+```swift
+AACSession.deregisterDeviceForNotifications { (error) in
+    // Perform an action once de-registration completes.
+}
+```
+
+**Objective-C**
+
+```objectivec
+[AACSession deregisterDeviceForNotificationsWithCompletionHandler:^(NSError *error) {
+    // Perform an action once de-registration completes.
+}];
+```
 
 #### 2. Send the push token to the Atomic Platform
 
