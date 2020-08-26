@@ -36,4 +36,15 @@
 - (void)streamContainerDidTapLinkButton:(AACStreamContainerViewController* __nonnull)streamContainer
                              withAction:(AACCardCustomAction* __nonnull)action;
 
+/**
+ The user submitted a card from a submit button that is configured with a custom action in the Atomic Workbench.
+ The action object provided here includes a payload - a set of key-value pairs assigned in the Workbench to this submit button.
+ Use the information in this object to determine which action to take in your app after the card has been submitted.
+ 
+ @param streamContainer The stream container view controller where the user submitted the card.
+ @param action Information associated with the action, including the card instance ID, stream container ID and action payload.
+ */
+- (void)streamContainerDidTapSubmitButton:(AACStreamContainerViewController* __nonnull)streamContainer
+                               withAction:(AACCardCustomAction* __nonnull)action;
+
 @end

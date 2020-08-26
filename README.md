@@ -118,7 +118,7 @@ The configuration object allows you to configure a stream container or single ca
 
 !> Setting the card refresh interval to a value less than 15 seconds may negatively impact device battery life and is not recommended.
 
-- `actionDelegate`: An optional delegate that handles actions triggered inside the stream container, such as the tap of the custom action button in the top left of the stream container, or link buttons with custom actions.
+- `actionDelegate`: An optional delegate that handles actions triggered inside the stream container, such as the tap of the custom action button in the top left of the stream container, or submit and link buttons with custom actions.
 - `runtimeVariableResolutionTimeout`: The maximum amount of time, in seconds, allocated to the resolution of runtime variables in your session delegate's `cardSessionDidRequestRuntimeVariables:completionHandler:` method. If you do not call the provided `completionHandler` passed to this method before the timeout is reached, the default values for all runtime variables will be used. If you do not implement this delegate method, this property is not used. Defaults to 5 seconds.
 - `cardVotingOptions`: A bitmask representing the voting options that a user can choose from in a card's overflow menu. Voting options allow a user to flag a card as useful or not useful.
 
@@ -422,11 +422,14 @@ override func didReceive(_ request: UNNotificationRequest, withContentHandler co
 
 This delivery event appears in your card's analytics as a `notification-received` event, with a timestamp indicating when the event was generated, as well as the card instance ID and stream container ID for the card.
 
-### Supporting custom actions on link buttons
+### Supporting custom actions on submit and link buttons
 
-In the Atomic Workbench, you can create a link button with a custom action. When such a link button is tapped, the `streamContainerDidTapLinkButton:withAction:` method is called on your action delegate. The second parameter to this method is an action object, containing the payload that was defined in the Workbench for that button.
+In the Atomic Workbench, you can create a submit or link button with a custom action payload. 
 
-You can use this object to determine the action to take, within your app, when the link button is tapped.
+- When such a link button is tapped, the `streamContainerDidTapLinkButton:withAction:` method is called on your action delegate. 
+- When such a submit button is tapped, and after the card is successfully submitted, the `streamContainerDidTapSubmitButton:withAction:` method is called on your action delegate.
+
+The second parameter to each of these methods is an action object, containing the payload that was defined in the Workbench for that button. You can use this payload to determine the action to take, within your app, when the submit or link button is tapped.
 
 The action object also contains the card instance ID and stream container ID where the custom action was triggered.
 
@@ -437,10 +440,16 @@ The action object also contains the card instance ID and stream container ID whe
 AACConfiguration *config = [[AACConfiguration alloc] init];
 config.actionDelegate = self;
 
-// 2. Implement the callback
+// 2. Implement the callbacks
 - (void)streamContainerDidTapLinkButton:(AACStreamContainerViewController*)streamContainer withAction:(AACCardCustomAction*)action {
     if([action.actionPayload[@"screen"] isEqualToString:@"home-screen"]) {
         [self navigateToHomeScreen];
+    }
+}
+
+- (void)streamContainerDidTapSubmitButton:(AACStreamContainerViewController*)streamContainer withAction:(AACCardCustomAction*)action {
+    if([action.actionPayload[@"outcome"] isEqualToString:@"success"]) {
+        [self navigateToSuccessScreen];
     }
 }
 ```
@@ -452,10 +461,16 @@ config.actionDelegate = self;
 let config = AACConfiguration()
 config.actionDelegate = self
 
-// 2. Implement the callback
+// 2. Implement the callbacks
 func streamContainerDidTapLinkButton(_ streamContainer: AACStreamContainer, withAction action: AACCardCustomAction) {
     if let screenName = action.actionPayload["screen"] as? String, screenName == "home-screen" {
         navigateToHomeScreen()
+    }
+}
+
+func streamContainerDidTapSubmitButton(_ streamContainer: AACStreamContainer, withAction action: AACCardCustomAction) {
+    if let outcome = action.actionPayload["outcome"] as? String, outcome == "success" {
+        navigateToSuccessScreen()
     }
 }
 ```
