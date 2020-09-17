@@ -3140,12 +3140,10 @@ _AACSessionApiKey
 _cardCountObservers.onceToken
 _cardCountObservers.observations
 ___block_descriptor_40_e8_32r_e17_v16?0"NSError"8l
-_OBJC_CLASSLIST_REFERENCES_$_.82
-_OBJC_CLASSLIST_REFERENCES_$_.90
+_OBJC_CLASSLIST_REFERENCES_$_.92
 ___block_descriptor_40_e8_32bs_e17_v16?0"NSError"8l
-_OBJC_CLASSLIST_REFERENCES_$_.121
-_OBJC_CLASSLIST_REFERENCES_$_.132
-_OBJC_CLASSLIST_REFERENCES_$_.145
+_OBJC_CLASSLIST_REFERENCES_$_.118
+_OBJC_SELECTOR_REFERENCES_.151
 __OBJC_$_CLASS_METHODS_AACSession
 __OBJC_METACLASS_RO_$_AACSession
 __OBJC_CLASS_RO_$_AACSession
@@ -3211,7 +3209,6 @@ _sharedWriteQueue.onceToken
 _sharedWriteQueue.operationQueue
 _OBJC_CLASSLIST_REFERENCES_$_.34
 ___block_descriptor_64_e8_32s40s48bs56w_e62_v32?0"AACAppearanceCollection"8"NSDictionary"16"NSError"24l
-_OBJC_CLASSLIST_REFERENCES_$_.92
 _OBJC_CLASSLIST_REFERENCES_$_.100
 _OBJC_CLASSLIST_REFERENCES_$_.105
 _OBJC_IVAR_$_AACThemeService._themeApi
@@ -3384,6 +3381,7 @@ ActionCardsSDK/Model/Card/Layout/NodeTypes/AACCardNodeText.h
 -[AACStreamContainerViewController setPresentationDelegate:]
 -[AACStreamContainerViewController .cxx_destruct]
 _OBJC_IVAR_$_AACStreamContainerViewController._identifier
+_OBJC_CLASSLIST_REFERENCES_$_.82
 _OBJC_IVAR_$_AACStreamContainerViewController._flowCoordinator
 _OBJC_IVAR_$_AACStreamContainerViewController._containingNavigationController
 _OBJC_IVAR_$_AACStreamContainerViewController._wasParentNavigationBarHidden
@@ -3910,11 +3908,9 @@ ___49-[AACMainFlowCoordinator dispatchAnalyticsEvent:]_block_invoke
 ___block_descriptor_57_e8_32s40s48w_e45_v24?0"AACAppearanceCollection"8"NSError"16l
 ___block_descriptor_48_e8_32s40s_e53_v32?0"NSArray"8"AACCardFeedMetadata"16"NSError"24l
 ___block_descriptor_41_e8_32w_e5_v8?0l
-_OBJC_CLASSLIST_REFERENCES_$_.118
 _OBJC_CLASSLIST_REFERENCES_$_.135
 ___block_descriptor_64_e8_32s40s48s56w_e5_v8?0l
 ___block_descriptor_72_e8_32s40s48s56bs64w_e37_v24?0"AACCardInstance"8"NSError"16l
-_OBJC_SELECTOR_REFERENCES_.151
 _OBJC_CLASSLIST_REFERENCES_$_.152
 _OBJC_CLASSLIST_REFERENCES_$_.167
 _OBJC_SELECTOR_REFERENCES_.179
@@ -4096,6 +4092,8 @@ ___83-[AACCardSubviewViewController viewWillTransitionToSize:withTransitionCoord
 _OBJC_CLASSLIST_REFERENCES_$_.98
 _OBJC_CLASSLIST_REFERENCES_$_.107
 _OBJC_CLASSLIST_REFERENCES_$_.109
+_OBJC_CLASSLIST_REFERENCES_$_.121
+_OBJC_CLASSLIST_REFERENCES_$_.132
 _OBJC_IVAR_$_AACCardSubviewViewController._delegate
 _OBJC_IVAR_$_AACCardSubviewViewController._navigationBar
 _OBJC_IVAR_$_AACCardSubviewViewController._scrollView
@@ -4648,6 +4646,7 @@ ActionCardsSDK/Renderer/Layout/AACCollectionViewFlowLayout.m
 -[AACCardSnoozeViewController viewWillTransitionToSize:withTransitionCoordinator:]
 ___82-[AACCardSnoozeViewController viewWillTransitionToSize:withTransitionCoordinator:]_block_invoke
 -[AACCardSnoozeViewController preferredStatusBarStyle]
+-[AACCardSnoozeViewController keyboardAvoidingScrollView]
 -[AACCardSnoozeViewController setupDateAndTimePickers]
 -[AACCardSnoozeViewController applyTheme:]
 -[AACCardSnoozeViewController availableFontsDidChange]
@@ -4661,6 +4660,8 @@ ___82-[AACCardSnoozeViewController viewWillTransitionToSize:withTransitionCoordi
 -[AACCardSnoozeViewController setNavigationBarView:]
 -[AACCardSnoozeViewController stackView]
 -[AACCardSnoozeViewController setStackView:]
+-[AACCardSnoozeViewController scrollView]
+-[AACCardSnoozeViewController setScrollView:]
 -[AACCardSnoozeViewController cardInstanceId]
 -[AACCardSnoozeViewController setCardInstanceId:]
 -[AACCardSnoozeViewController screenTitle]
@@ -4668,10 +4669,10 @@ ___82-[AACCardSnoozeViewController viewWillTransitionToSize:withTransitionCoordi
 -[AACCardSnoozeViewController presenter]
 -[AACCardSnoozeViewController setPresenter:]
 -[AACCardSnoozeViewController .cxx_destruct]
-_OBJC_CLASSLIST_REFERENCES_$_.165
 _OBJC_IVAR_$_AACCardSnoozeViewController._delegate
 _OBJC_IVAR_$_AACCardSnoozeViewController._navigationBarView
 _OBJC_IVAR_$_AACCardSnoozeViewController._stackView
+_OBJC_IVAR_$_AACCardSnoozeViewController._scrollView
 _OBJC_IVAR_$_AACCardSnoozeViewController._cardInstanceId
 _OBJC_IVAR_$_AACCardSnoozeViewController._screenTitle
 _OBJC_IVAR_$_AACCardSnoozeViewController._presenter
@@ -4747,9 +4748,10 @@ ___block_descriptor_64_e8_32s40bs48s56r_e17_v16?0"NSArray"8l
 ___block_descriptor_64_e8_32s40s48bs56s_e5_v8?0l
 ___block_descriptor_40_e8_32bs_e53_v32?0"NSArray"8"AACCardFeedMetadata"16"NSError"24l
 ___block_descriptor_48_e8_32bs40w_e30_v24?0"NSString"8"NSError"16l
+_OBJC_CLASSLIST_REFERENCES_$_.131
 ___block_descriptor_56_e8_32bs40s48w_e17_v16?0"NSError"8l
 ___block_descriptor_56_e8_32bs40s48w_e30_v24?0"NSString"8"NSError"16l
-_OBJC_CLASSLIST_REFERENCES_$_.159
+_OBJC_CLASSLIST_REFERENCES_$_.161
 ___block_descriptor_64_e8_32bs40s48s56w_e30_v24?0"NSString"8"NSError"16l
 _OBJC_IVAR_$_AACCardService._sessionDelegate
 _OBJC_IVAR_$_AACCardService._containerId
@@ -4894,6 +4896,7 @@ ___36+[AACCardComponentView borderHeight]_block_invoke
 _borderHeight.onceToken
 _borderHeight.borderHeight
 __OBJC_PROTOCOL_REFERENCE_$_AACValidationPresenting
+_OBJC_CLASSLIST_REFERENCES_$_.145
 _OBJC_IVAR_$_AACCardComponentView._borderTopView
 _OBJC_IVAR_$_AACCardComponentView._borderBottomView
 _OBJC_IVAR_$_AACCardComponentView._renderingMode

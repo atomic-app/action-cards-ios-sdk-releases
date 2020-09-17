@@ -511,15 +511,15 @@ AACSession.stopObservingCardCount(token)
 [AACSession stopObservingCardCount:token];
 ```
 
-When a stream container is present on screen, a notification is posted (`AACSessionCardCountDidChange`) every time the card count changes, such as when a card is dismissed or completed. You can observe this notification to get the latest card count:
+When a stream container is present on screen, a notification is posted (`AACSessionCardCountDidChange`) every time the visible card count changes, such as when a card is dismissed or completed. You can observe this notification to get the latest card count:
 
 **Swift**
 ```swift
 NotificationCenter.default.addObserver(forName: NSNotification.Name(rawValue: AACSessionCardCountDidChange), object: nil, queue: nil) { (notification) in
     if let userInfo = notification.userInfo,
-        let totalCards = userInfo[AACSessionCardCountUserInfoKey],
+        let visibleCards = userInfo[AACSessionCardCountUserInfoKey],
         let streamContainerId = notification.object {
-        print("*** There are \(totalCards) cards in stream container \(streamContainerId).")
+        print("*** There are \(visibleCards) visible cards in stream container \(streamContainerId).")
     }
 }
 ```
@@ -530,12 +530,16 @@ NotificationCenter.default.addObserver(forName: NSNotification.Name(rawValue: AA
                                                         object:nil
                                                         queue:nil
                                                     usingBlock:^(NSNotification *note) {
-        NSString *cardCount = note.userInfo[AACSessionCardCountUserInfoKey];
-        NSLog(@"*** There are %@ cards in stream container %@.", cardCount, note.object);
+        NSNumber *visibleCards = note.userInfo[AACSessionCardCountUserInfoKey];
+        NSLog(@"*** There are %@ visible cards in stream container %@.", visibleCards, note.object);
     }];
 ```
 
-The count of cards is available via the `AACSessionCardCountUserInfoKey` in the `userInfo` dictionary, and the notification’s `object` represents the stream container ID. You can listen for the card count of only a particular stream container by specifying that stream container ID in the `object` parameter when adding an observer.
+The count of visible cards is available via the `AACSessionCardCountUserInfoKey` key in the `userInfo` dictionary, and the notification's `object` represents the stream container ID. You can listen for the card count of only a particular stream container by specifying that stream container ID in the `object` parameter when adding an observer.
+
+If you want to retrieve the total number of cards in the container (rather than the number visible), use the `AACSessionTotalCardCountUserInfoKey` key in the `userInfo` dictionary. 
+
+When not in single card view, `AACSessionCardCountUserInfoKey` and `AACSessionTotalCardCountUserInfoKey` report the same value.
 
 ### Dark mode
 

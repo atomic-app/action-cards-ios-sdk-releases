@@ -31,15 +31,27 @@ typedef void(^AACSessionPushNotificationDeregisterHandler)(NSError* __nullable e
  Notification posted when the number of cards in a stream container changes.
  
  - The notification's `object` corresponds to the stream container ID, as an NSString.
- - Use the `AACSessionCardCountUserInfoKey` key to retrieve the card count from the notification's `userInfo` dictionary.
+ - Use the `AACSessionCardCountUserInfoKey` key to retrieve the number of visible cards, from the notification's `userInfo` dictionary.
+ - Use the `AACSessionTotalCardCountUserInfoKey` key to retrieve the total number of cards, from the notification's `userInfo` dictionary.
  */
 extern NSString* __nonnull const AACSessionCardCountDidChange;
 
 /**
- The key for an NSNumber object containing the number of cards now in the stream container
+ The key for an NSNumber object containing the number of cards visible in the stream container
  with the given ID.
+ 
+ In a single card view, this value is either 1 or 0.
  */
 extern NSString* __nonnull const AACSessionCardCountUserInfoKey;
+
+/**
+ The key for an NSNumber object containing the total number of cards in the stream container
+ with the given ID. This can be used in single card view to determine how many cards
+ in total are present in a stream, rather than how many are visible to the user.
+ 
+ In a stream container, this value is the same as `AACSessionCardCountUserInfoKey`.
+ */
+extern NSString* __nonnull const AACSessionTotalCardCountUserInfoKey;
 
 /**
  A singleton that spans the SDK's lifecycle, and oversees all instances of stream
