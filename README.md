@@ -134,6 +134,28 @@ The configuration object also allows you to specify custom strings for features 
 - `AACCustomStringVotingNotUseful`: The title to display for the action a user taps when they flag a card as not useful - defaults to "This isn't useful".
 - `AACCustomStringCardListFooterMessage`: The message to display below the last card in the card list, provided there is at least one present. Does not apply in single card view, and requires `enabledUiElements` to contain `AACUIElementCardListFooterMessage`. Defaults to an empty string.
 
+**Single card view features**
+
+As of release 0.16.2, there is now a subclass of `AACConfiguration` - `AACSingleCardConfiguration` - which can be used to enable features that only apply to single card view.
+
+**Swift**
+
+```swift
+let config = AACSingleCardConfiguration()
+config.automaticallyLoadNextCard = true
+```
+
+**Objective-C**
+
+```objectivec
+AACSingleCardConfiguration *config = [[AACSingleCardConfiguration alloc] init];
+config.automaticallyLoadNextCard = YES;
+```
+
+Avaialable features are:
+
+- `automaticallyLoadNextCard`: When enabled, will automatically display the next card in the single card view if there is one, using a locally cached card list. Defaults to `NO`.
+
 ### Create the stream container
 
 You can now create a stream container by supplying the stream container ID, session delegate and configuration object on instantiation:
@@ -477,12 +499,18 @@ func streamContainerDidTapSubmitButton(_ streamContainer: AACStreamContainer, wi
 
 ### Retrieving card count
 
-The SDK supports observing the card count for a particular stream container, even when that stream container does not exist in memory.
+The SDK supports observing the card count for a particular stream container, or receiving a single card count, even when that stream container does not exist in memory.
 
 **Swift**
 
 ```swift
+// Observe the card count
 AACSession.observeCardCountForStreamContainer(withIdentifier: "1", interval: 15, sessionDelegate: self) { (count) in
+    print("There are \(count) cards in the container.")
+}
+
+// Retrieve a one-off card count
+AACSession.requestCardCountForStreamContainer(withIdentifier: "1", sessionDelegate: self) { (count) in
     print("There are \(count) cards in the container.")
 }
 ```
@@ -490,12 +518,18 @@ AACSession.observeCardCountForStreamContainer(withIdentifier: "1", interval: 15,
 **Objective-C**
 
 ```objectivec
+// Observe the card count
 [AACSession observeCardCountForStreamContainerWithIdentifier:@"1" interval:15 sessionDelegate:self handler:^(NSNumber *cardCount) {
+    NSLog(@"There are %@ cards in the container", cardCount);
+}];
+
+// Retrieve a one-off card count
+[AACSession requestCardCountForStreamContainerWithIdentifier:@"1" sessionDelegate:self handler:^(NSNumber *cardCount) {
     NSLog(@"There are %@ cards in the container", cardCount);
 }];
 ```
 
-The card count is updated periodically at the interval you specify. When the card count changes, the `handler` block is called with the new card count, or `nil` if the card count could not be fetched.
+If you choose to observe the card count, it is updated periodically at the interval you specify. When the card count changes, the `handler` block is called with the new card count, or `nil` if the card count could not be fetched.
 
 When you want to stop observing the card count, you can remove the observer using the token returned from the observation call above:
 
@@ -511,7 +545,7 @@ AACSession.stopObservingCardCount(token)
 [AACSession stopObservingCardCount:token];
 ```
 
-When a stream container is present on screen, a notification is posted (`AACSessionCardCountDidChange`) every time the visible card count changes, such as when a card is dismissed or completed. You can observe this notification to get the latest card count:
+When a stream container is present on screen, or when the card count is requested, a notification is posted (`AACSessionCardCountDidChange`) every time the visible card count changes, such as when a card is dismissed or completed. You can observe this notification to get the latest card count:
 
 **Swift**
 ```swift

@@ -118,6 +118,21 @@ extern NSString* __nonnull const AACSessionTotalCardCountUserInfoKey;
 + (void)stopObservingCardCount:(id<NSObject> __nonnull)token;
 
 /**
+ Asks the SDK to return the number of cards for the given stream container, calling the `handler` when the card
+ count has been determined.
+ 
+ @param streamContainerId (Required) The stream container ID to retrieve the card count for.
+ @param sessionDelegate (Required) A delegate that supplies a user authentication token when requested
+ by the SDK.
+ @param handler (Required) Handler called when the card count has been determined. If the handler returns `nil`, the
+ card count is not available for this stream container (the user may not have access or the internet connection
+ may be unavailable).
+ */
++ (void)requestCardCountForStreamContainerWithIdentifier:(NSString* __nonnull)streamContainerId
+                                         sessionDelegate:(id<AACSessionDelegate> __nonnull)sessionDelegate
+                                                 handler:(AACSessionCardCountChangedHandler __nonnull)handler;
+
+/**
  Asks the SDK to register the given device token against the currently logged in user. The logged in user
  is specified by the authentication token provided by the session delegate.
  
