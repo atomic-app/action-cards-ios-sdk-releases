@@ -52,6 +52,12 @@ __attribute__((objc_subclassing_restricted))
  */
 - (void)updateVariables;
 
+/**
+ Requests that the stream container check for new cards immediately.
+ This is equivalent to the user performing the pull-to-refresh action on the card list.
+ */
+- (void)refresh;
+
 #pragma mark - Deprecated methods
 /**
  Creates a new view controller that renders a stream container by its identifier.

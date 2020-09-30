@@ -61,6 +61,11 @@
  */
 - (void)updateVariables;
 
+/**
+ Requests that the single card view check for new cards immediately.
+ */
+- (void)refresh;
+
 #pragma mark - Deprecated methods
 /**
  Creates a new view for displaying a single card.

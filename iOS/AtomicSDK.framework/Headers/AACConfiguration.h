@@ -8,6 +8,7 @@
 @import UIKit;
 
 #import "AACStreamContainerActionDelegate.h"
+#import "AACCardEventDelegate.h"
 
 /**
  Supported methods for presenting a stream container in the SDK.
@@ -40,7 +41,7 @@ typedef NS_ENUM(NSUInteger, AACConfigurationPresentationStyle) {
 typedef NS_ENUM(NSUInteger, AACConfigurationInterfaceStyle) {
     /**
      The stream container will use the current system setting to determine whether the stream container should be light or dark.
-     This setting only applies to devices running iOS 13 - it will fall back to AACConfigurationInterfaceStyleLight on older system versions.
+     This setting only applies to devices running iOS 13+ - it will fall back to AACConfigurationInterfaceStyleLight on older system versions.
      */
     AACConfigurationInterfaceStyleAutomatic,
     /**
@@ -141,6 +142,11 @@ typedef NS_OPTIONS(NSUInteger, AACUIElement) {
  Optional action delegate that responds to actions triggered by the stream container.
  */
 @property (nonatomic, weak, nullable) id<AACStreamContainerActionDelegate> actionDelegate;
+
+/**
+ Optional delegate that responds to card events in the stream container.
+ */
+@property (nonatomic, weak, nullable) id<AACCardEventDelegate> cardEventDelegate;
 
 /**
  The background colour of the view displayed when the SDK is first presented.

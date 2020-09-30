@@ -65,6 +65,15 @@ extern NSString* __nonnull const AACSessionTotalCardCountUserInfoKey;
 - (instancetype __nonnull)init NS_UNAVAILABLE;
 
 /**
+ Configures the Atomic SDK to use the provided base URL when making API requests.
+ Alternatively, you can set your API base URL in your app's `Info.plist` file, under the key
+ `AACRequestBaseURL`.
+ 
+ @param baseUrl The base URL to use, found in the Atomic Workbench.
+ */
++ (void)setApiBaseUrl:(NSURL* __nonnull)baseUrl;
+
+/**
  Initialises the Atomic SDK with the provided environment ID and API key.
  You must call this before attempting to use any Atomic SDK functionality.
  

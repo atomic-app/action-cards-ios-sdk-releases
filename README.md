@@ -46,11 +46,35 @@ Before you can display a stream container or single card, you will need to confi
 
 ### API base URL
 
-Add the following to your app's `Info.plist` file, replacing `[orgId]` with your organisation's ID, as provided to you by Atomic:
+You must specify your API base URL when configuring the Atomic SDK. This URL is found in the Atomic Workbench:
+
+1. In the Workbench, click on the cog icon in the bottom left and select 'Settings';
+2. On the screen that appears, click the 'SDK' tab. Your API base URL is displayed in the 'API Host' section.
+
+You can specify your API base URL in two ways:
+
+1. By adding the following to your app's `Info.plist` file, replacing `API_BASE_URL` with your URL:
 
 ```
 <key>AACRequestBaseURL</key>
-<string>https://[orgId].client-api.atomic.io</string>
+<string>API_BASE_URL</string>
+```
+
+2. By declaring your API base URL in code, replacing `API_BASE_URL` with your URL:
+
+**Swift**
+
+```swift
+if let url = URL(string: "API_BASE_URL") {
+    AACSession.setApiBaseUrl(url)
+}
+```
+
+**Objective-C**
+
+```objectivec
+NSURL *url = [NSURL URLWithString:@"API_BASE_URL"];
+[AACSession setApiBaseUrl:url];
 ```
 
 ### Environment ID and API key
@@ -652,11 +676,66 @@ streamVc.updateVariables()
 [streamVc updateVariables];
 ```
 
+### Responding to card events
+
+The SDK allows you to perform custom actions in response to events occurring on a card, such as when a user:
+
+- submits a card;
+- dismisses a card;
+- snoozes a card;
+- indicates a card is useful (when card voting is enabled);
+- indicates a card is not useful (when card voting is enabled).
+
+To be notified when these happen, assign a card event delegate to your stream container:
+
+**Objective-C**
+
+```objectivec
+// 1. Assign the event delegate
+AACConfiguration *config = [[AACConfiguration alloc] init];
+config.cardEventDelegate = self;
+
+// 2. Implement the delegate
+- (void)streamContainer:(AACStreamContainerViewController *)streamContainerVc didTriggerCardEvent:(AACCardEvent *)event {
+    // Perform a custom action in response to the card event.
+}
+```
+
+**Swift**
+
+```swift
+// 1. Assign the event delegate
+let config = AACConfiguration()
+config.cardEventDelegate = self
+
+// 2. Implement the delegate
+func streamContainer(_ streamContainerVc: AACStreamContainerViewController, didTriggerCardEvent event: AACCardEvent) {
+    // Perform a custom action in response to the card event.
+}
+```
+
+
 ### Card voting
 
 You can optionally allow users to flag cards as either useful or not useful, which are reported as part of a card's analytics. These voting options are displayed in a card's overflow menu, however, they are not enabled by default.
 
 To enable them, specify a bitmask on `AACConfiguration`'s `cardVotingOptions` property, which indicates the voting options to display.
+
+### Refreshing a stream container manually
+
+You can choose to manually refresh a stream container or single card view, such as when a push notification arrives while your app is open. Refreshing will result in the stream container or single card view checking for new cards immediately, and showing any that are available.
+
+**Swift**
+
+```swift
+streamContainer.refresh()
+```
+
+**Objective-C**
+
+```objectivec
+[streamContainer refresh];
+```
 
 ### Debug logging
 
