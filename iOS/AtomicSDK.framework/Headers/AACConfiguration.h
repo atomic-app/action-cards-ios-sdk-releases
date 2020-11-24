@@ -9,6 +9,7 @@
 
 #import "AACStreamContainerActionDelegate.h"
 #import "AACCardEventDelegate.h"
+#import "AACFeatureFlags.h"
 
 /**
  Supported methods for presenting a stream container in the SDK.
@@ -149,23 +150,31 @@ typedef NS_OPTIONS(NSUInteger, AACUIElement) {
 @property (nonatomic, weak, nullable) id<AACCardEventDelegate> cardEventDelegate;
 
 /**
- The background colour of the view displayed when the SDK is first presented.
+ The background colour of the view displayed when the SDK theme is loaded for the first time.
  */
 @property (nonatomic, strong, nullable) UIColor *launchBackgroundColor;
 
 /**
- The colour of the icon displayed when the SDK is first presented.
+ (Deprecated) The colour of the icon displayed when the SDK theme is loaded for the first time.
  */
-@property (nonatomic, strong, nullable) UIColor *launchIconColor;
+@property (nonatomic, strong, nullable) UIColor *launchIconColor DEPRECATED_MSG_ATTRIBUTE("The first time loading experience has changed as of release 0.19.0. Please use `launchLoadingIndicatorColor` to change the colour of the loading spinner on the first time load screen.");
 
 /**
- The tint colour of the buttons displayed if the first load of the SDK fails
- (providing the option to retry the first load request).
+ The colour to use for the loading indicator when the SDK theme is loaded for the first time.
+ */
+@property (nonatomic, strong, nullable) UIColor *launchLoadingIndicatorColor;
+
+/**
+ The text colour of the button displayed if the first load of the SDK theme fails
+ (providing the option to retry the request).
+ 
+ If the `presentationStyle` property is set to a value that shows a button in the top left of the stream container,
+ this colour will also be used for that button's text on the first time theme loading screen.
  */
 @property (nonatomic, strong, nullable) UIColor *launchButtonColor;
 
 /**
- The text colour to use for the view displayed when the SDK is first presented.
+ The text colour to use for the message displayed if the first load of the SDK theme fails.
  */
 @property (nonatomic, strong, nullable) UIColor *launchTextColor;
 
@@ -211,5 +220,10 @@ typedef NS_OPTIONS(NSUInteger, AACUIElement) {
  `value` must be non-nil.
  */
 - (void)setValue:(NSString* __nonnull)value forCustomString:(AACCustomString)key;
+
+/**
+ Features that can be toggled on or off in the stream container.
+ */
+@property (nonatomic, readonly, nonnull) AACFeatureFlags *features;
 
 @end

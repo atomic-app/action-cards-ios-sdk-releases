@@ -8,7 +8,7 @@ The SDK is written in Objective-C and supports iOS 9.0 and above.
 
 ## Installation
 
-The SDK can be installed using CocoaPods, Carthage, or manually.
+The SDK can be installed using CocoaPods, Carthage, Swift Package Manager, or manually.
 
 ### CocoaPods
 
@@ -19,10 +19,15 @@ source 'https://github.com/atomic-app/action-cards-ios-sdk-specs.git'
 source 'https://github.com/CocoaPods/Specs.git'
 ```
 
-2. Add the SDK as a dependency:
+2. Add the SDK as a dependency. As of version 0.19.0, you have two options available:
+
+- `AtomicSDK`: the Atomic SDK distributed as an `xcframework`, with support for Apple Silicon (requires Cocoapods 1.9 or above);
+- `AtomicSDK-framework`: the Atomic SDK distributed as a fat framework, with slices for armv7, arm64, i386 and x86_64.
 
 ```ruby
 pod 'AtomicSDK'
+# or
+pod 'AtomicSDK-framework'
 ```
 
 3. Run `pod update`.
@@ -33,12 +38,23 @@ pod 'AtomicSDK'
 2. Run `carthage update`.
 3. [Follow the instructions](https://github.com/Carthage/Carthage#if-youre-building-for-ios-tvos-or-watchos) provided by Carthage to add the SDK to your app.
 
+?> Note: As Carthage does not currently support `xcframework`, this will install the fat framework version, which does not include the arm64 simulator slice.
+
+### Swift Package Manager (requires Atomic SDK 0.19.0+)
+
+1. Open your Xcode project, and choose File > Swift Packages > Add Package Dependency.
+2. When prompted to enter a package repository URL, enter `https://github.com/atomic-app/action-cards-ios-sdk-releases`.
+3. Select the `AtomicSDK` dependency, and choose the version you'd like to use.
+
 ### Manual Installation
 
 1. You can download releases of the SDK from the [Releases page](https://github.com/atomic-app/action-cards-ios-sdk-releases/releases) on Github.
-2. Once you've downloaded the version you need, navigate to your project in Xcode and select the "General" settings tab. Drag `AtomicSDK.framework` from the directory where you unzipped the release, to the `Embedded Binaries` section. 
-3. When prompted, ensure that "Copy items if needed" is selected, and then click "Finish".
-4. You will also need to run the `strip-frameworks.sh` script (downloadable from this repository) as part of a `Run Script` phase in your target, to get around an App Store submission bug, caused by iOS simulator architectures being present in the framework.
+2. Once you've downloaded the version you need, navigate to your project in Xcode and select the "General" settings tab. 
+3. Drag either `AtomicSDK.xcframework` or `AtomicSDK.framework` from the directory where you unzipped the release, to the `Embedded Binaries` section. 
+4. When prompted, ensure that "Copy items if needed" is selected, and then click "Finish".
+5. **If you chose AtomicSDK.framework above**, you will also need to run the `strip-frameworks.sh` script (downloadable from this repository) as part of a `Run Script` phase in your target, to get around an App Store submission bug, caused by iOS simulator architectures being present in the fat framework.
+
+?> Note: AtomicSDK.xcframework includes support for Apple Silicon, but requires Xcode 11 or higher, while AtomicSDK.framework is a fat framework.
 
 ## Setup
 
@@ -674,6 +690,24 @@ streamVc.updateVariables()
 
 ```objectivec
 [streamVc updateVariables];
+```
+
+#### Analytics
+
+By default, resolved values for runtime variables will be sent back to the Atomic Platform in the form of an analytics event - `runtime-vars-updated`. If you do not wish for this to happen, due to your runtime variables implementation referring to sensitive information, you can disable this behaviour by setting the `runtimeVariableAnalytics` flag on your configuration's `features` object:
+
+**Swift**
+
+```swift
+let config = AACConfiguration()
+config.features.runtimeVariableAnalytics = false
+```
+
+**Objective-C**
+
+```objectivec
+AACConfiguration *config = [[AACConfiguration alloc] init];
+config.features.runtimeVariableAnalytics = NO;
 ```
 
 ### Responding to card events
