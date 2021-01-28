@@ -7,6 +7,8 @@
 #import <Foundation/Foundation.h>
 #import "AACSessionDelegate.h"
 #import "AACPushNotification.h"
+#import "AACEventPayload.h"
+#import "AACEventResponse.h"
 
 /**
  Handler called whenever the card count changes.
@@ -26,6 +28,13 @@ typedef void(^AACSessionPushNotificationReceivedHandler)(NSError* __nullable err
  If an error occurred, the error parameter is populated with details, otherwise the error parameter is nil.
  */
 typedef void(^AACSessionPushNotificationDeregisterHandler)(NSError* __nullable error);
+
+/**
+ Handler called when the request to trigger an event on the Atomic Platform completes.
+ If the request succeeds, the response parameter is populated with details of the event that was processed.
+ If an error occurred, the error parameter is populated with details of the error that occurred.
+ */
+typedef void(^AACSessionSendEventHandler)(AACEventResponse* __nullable response, NSError* __nullable error);
 
 /**
  Notification posted when the number of cards in a stream container changes.
@@ -201,6 +210,19 @@ extern NSString* __nonnull const AACSessionTotalCardCountUserInfoKey;
 + (void)trackPushNotificationReceived:(NSDictionary* __nonnull)payload
                   withSessionDelegate:(id<AACSessionDelegate> __nonnull)sessionDelegate
                     completionHandler:(AACSessionPushNotificationReceivedHandler __nonnull)completionHandler;
+
+/**
+ Triggers an event on the Atomic Platform, exclusively for the user identified by the authentication token provided by the
+ session delegate.
+ Events must opt-in to be triggered from the SDK. To opt-in, turn on the 'Enable client trigger' option in the Atomic Workbench
+ for the event.
+ 
+ @param eventPayload The event payload used to trigger the event.
+ @param sessionDelegate A session delegate that identifies the user to trigger the event for.
+ @param completionHandler A completion handler called when the event request completes. If the request fails, an
+ NSError object is provided. If the request succeeds, details of the processed event are provided.
+ */
++ (void)sendEvent:(AACEventPayload* __nonnull)eventPayload withSessionDelegate:(id<AACSessionDelegate> __nonnull)sessionDelegate completionHandler:(AACSessionSendEventHandler __nonnull)completionHandler;
 
 #pragma mark - Deprecated methods
 

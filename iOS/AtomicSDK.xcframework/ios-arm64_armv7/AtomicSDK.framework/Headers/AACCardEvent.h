@@ -19,7 +19,13 @@ typedef NS_ENUM(NSUInteger, AACCardEventKind) {
     /// A card was voted as useful.
     AACCardEventKindVotedUseful,
     /// A card was voted as not useful.
-    AACCardEventKindVotedNotUseful
+    AACCardEventKindVotedNotUseful,
+    /// A card failed to submit, either due to an API error or lack of network connectivity.
+    AACCardEventKindSubmitFailed,
+    /// A card failed to dismiss, either due to an API error or lack of network connectivity.
+    AACCardEventKindDismissFailed,
+    /// A card failed to snooze, either due to an API error or lack of network connectivity.
+    AACCardEventKindSnoozeFailed
 };
 
 /**

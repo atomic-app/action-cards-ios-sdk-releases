@@ -118,6 +118,43 @@ __OBJC_CLASS_RO_$_AACAppearanceCacheOperation
 /Users/distiller/project/ActionCardsSDK/ActionCardsSDK/Model/Theme/CacheUpdate/AACAppearanceCacheOperation.m
 ActionCardsSDK/Model/Theme/CacheUpdate/AACAppearanceCacheOperation.m
 ActionCardsSDK/Model/Theme/CacheUpdate/AACAppearanceCacheOperation.h
+-[AACEventService initWithSessionDelegate:]
+-[AACEventService initWithSessionDelegate:eventApi:]
+-[AACEventService sendEvent:withCompletionHandler:]
+___51-[AACEventService sendEvent:withCompletionHandler:]_block_invoke
+___51-[AACEventService sendEvent:withCompletionHandler:]_block_invoke_2
+___copy_helper_block_e4_20b
+___destroy_helper_block_e4_20s
+___copy_helper_block_e4_20b24s28w
+___destroy_helper_block_e4_20s24s28w
+-[AACEventService sessionDelegate]
+-[AACEventService setSessionDelegate:]
+-[AACEventService eventApi]
+-[AACEventService setEventApi:]
+-[AACEventService .cxx_destruct]
+_OBJC_SELECTOR_REFERENCES_.12
+_OBJC_CLASSLIST_REFERENCES_$_.24
+_OBJC_CLASSLIST_REFERENCES_$_.31
+_OBJC_SELECTOR_REFERENCES_.33
+_OBJC_SELECTOR_REFERENCES_.35
+___block_descriptor_24_e4_20bs_e37_v12?0"AACEventResponse"4"NSError"8l
+___block_descriptor_32_e4_20bs24s28w_e29_v12?0"NSString"4"NSError"8l
+_OBJC_SELECTOR_REFERENCES_.41
+_OBJC_IVAR_$_AACEventService._sessionDelegate
+_OBJC_IVAR_$_AACEventService._eventApi
+__OBJC_METACLASS_RO_$_AACEventService
+__OBJC_$_INSTANCE_METHODS_AACEventService
+__OBJC_$_INSTANCE_VARIABLES_AACEventService
+__OBJC_$_PROP_LIST_AACEventService
+__OBJC_CLASS_RO_$_AACEventService
+/Users/distiller/project/ActionCardsSDK/ActionCardsSDK/Services/AACEventService.m
+ActionCardsSDK/Services/AACEventService.m
+__destroy_helper_block_e4_20s24s28w
+__copy_helper_block_e4_20b24s28w
+__destroy_helper_block_e4_20s
+__copy_helper_block_e4_20b
+__51-[AACEventService sendEvent:withCompletionHandler:]_block_invoke_2
+__51-[AACEventService sendEvent:withCompletionHandler:]_block_invoke
 -[AACCardViewButton resetView]
 -[AACCardViewButton setupWithNode:context:]
 -[AACCardViewButton beginLoading]
@@ -130,15 +167,12 @@ ActionCardsSDK/Model/Theme/CacheUpdate/AACAppearanceCacheOperation.h
 -[AACCardViewButton setCurrentButton:]
 -[AACCardViewButton .cxx_destruct]
 +[AACCardCellButton viewClass]
-_OBJC_SELECTOR_REFERENCES_.12
 _OBJC_CLASSLIST_REFERENCES_$_.13
 _OBJC_CLASSLIST_REFERENCES_$_.14
 _OBJC_CLASSLIST_REFERENCES_$_.21
 _OBJC_SELECTOR_REFERENCES_.23
 _OBJC_SELECTOR_REFERENCES_.29
 _OBJC_SELECTOR_REFERENCES_.31
-_OBJC_SELECTOR_REFERENCES_.33
-_OBJC_SELECTOR_REFERENCES_.35
 _OBJC_SELECTOR_REFERENCES_.37
 _OBJC_SELECTOR_REFERENCES_.39
 _OBJC_SELECTOR_REFERENCES_.48
@@ -274,7 +308,6 @@ ActionCardsSDK/Model/Card/Layout/AACCardLayout.h
 -[AACListHeaderView endRefreshing]
 ___34-[AACListHeaderView endRefreshing]_block_invoke
 ___copy_helper_block_e4_20s
-___destroy_helper_block_e4_20s
 +[AACListHeaderView maximumHeight]
 -[AACListHeaderView compactHeaderAlphaDidChange:]
 -[AACListHeaderView loadingSpinnerAlphaDidChange:]
@@ -426,7 +459,6 @@ __OBJC_CLASS_RO_$_AACListHeaderView
 /Users/distiller/project/ActionCardsSDK/ActionCardsSDK/Views/ListHeader/AACListHeaderView.m
 ActionCardsSDK/Views/ListHeader/AACListHeaderView.m
 ActionCardsSDK/Views/ListHeader/AACListHeaderView.h
-__destroy_helper_block_e4_20s
 __copy_helper_block_e4_20s
 __34-[AACListHeaderView endRefreshing]_block_invoke
 CGSizeMake
@@ -547,7 +579,6 @@ _OBJC_CLASSLIST_REFERENCES_$_.18
 _OBJC_CLASSLIST_REFERENCES_$_.29
 _OBJC_CLASSLIST_REFERENCES_$_.32
 _OBJC_CLASSLIST_REFERENCES_$_.33
-_OBJC_SELECTOR_REFERENCES_.41
 _OBJC_SELECTOR_REFERENCES_.53
 _OBJC_SELECTOR_REFERENCES_.55
 _OBJC_SELECTOR_REFERENCES_.61
@@ -588,7 +619,6 @@ ActionCardsSDK/Utilities/NSString+AACJWTDecoding.m
 -[AACCardViewHeading1 setHeadingTitle:]
 -[AACCardViewHeading1 .cxx_destruct]
 +[AACCardCellHeading1 viewClass]
-_OBJC_CLASSLIST_REFERENCES_$_.24
 _OBJC_IVAR_$_AACCardViewHeading1._titleLabel
 _OBJC_IVAR_$_AACCardViewHeading1._topSpacingConstraint
 _OBJC_IVAR_$_AACCardViewHeading1._trailingSpacingConstraint
@@ -604,6 +634,36 @@ __OBJC_METACLASS_RO_$_AACCardCellHeading1
 __OBJC_CLASS_RO_$_AACCardCellHeading1
 /Users/distiller/project/ActionCardsSDK/ActionCardsSDK/Renderer/Components/Heading1/AACCardViewHeading1.m
 ActionCardsSDK/Renderer/Components/Heading1/AACCardViewHeading1.m
+-[AACProcessedEvent initWithDictionary:]
+-[AACProcessedEvent name]
+-[AACProcessedEvent lifecycleId]
+-[AACProcessedEvent version]
+-[AACProcessedEvent .cxx_destruct]
+-[AACEventResponse initWithDictionary:]
+-[AACEventResponse batchId]
+-[AACEventResponse processedEvents]
+-[AACEventResponse .cxx_destruct]
+__OBJC_METACLASS_RO_$_AACProcessedEvent
+__OBJC_$_INSTANCE_METHODS_AACProcessedEvent
+_OBJC_IVAR_$_AACProcessedEvent._name
+_OBJC_IVAR_$_AACProcessedEvent._lifecycleId
+_OBJC_IVAR_$_AACProcessedEvent._version
+__OBJC_$_INSTANCE_VARIABLES_AACProcessedEvent
+__OBJC_$_PROP_LIST_AACProcessedEvent
+__OBJC_CLASS_RO_$_AACProcessedEvent
+_OBJC_CLASSLIST_REFERENCES_$_.35
+_OBJC_CLASSLIST_REFERENCES_$_.42
+_OBJC_CLASSLIST_REFERENCES_$_.43
+__OBJC_METACLASS_RO_$_AACEventResponse
+__OBJC_$_INSTANCE_METHODS_AACEventResponse
+_OBJC_IVAR_$_AACEventResponse._batchId
+_OBJC_IVAR_$_AACEventResponse._processedEvents
+__OBJC_$_INSTANCE_VARIABLES_AACEventResponse
+__OBJC_$_PROP_LIST_AACEventResponse
+__OBJC_CLASS_RO_$_AACEventResponse
+/Users/distiller/project/ActionCardsSDK/ActionCardsSDK/Model/Event/AACEventResponse.m
+ActionCardsSDK/Model/Event/AACEventResponse.m
+ActionCardsSDK/Model/Event/AACEventResponse.h
 -[AACListHeaderPresenter init]
 -[AACListHeaderPresenter updateTransitionStateWithScrollOffset:]
 -[AACListHeaderPresenter updateHeaderHeight:]
@@ -683,7 +743,6 @@ CGRectMake
 ___58-[AACLoadingSpinnerView endRefreshingAlongsideAnimations:]_block_invoke
 ___58-[AACLoadingSpinnerView endRefreshingAlongsideAnimations:]_block_invoke_2
 ___58-[AACLoadingSpinnerView endRefreshingAlongsideAnimations:]_block_invoke.34
-___copy_helper_block_e4_20b
 ___copy_helper_block_e4_20s24b
 -[AACLoadingSpinnerView updateWithScrollOffset:]
 -[AACLoadingSpinnerView layoutSubviews]
@@ -697,7 +756,6 @@ ___copy_helper_block_e4_20s24b
 -[AACLoadingSpinnerView isRefreshing]
 -[AACLoadingSpinnerView setIsRefreshing:]
 -[AACLoadingSpinnerView .cxx_destruct]
-_OBJC_CLASSLIST_REFERENCES_$_.31
 ___block_descriptor_24_e4_20s_e5_v4?0l
 ___block_descriptor_24_e4_20bs_e5_v4?0l
 ___block_descriptor_28_e4_20s24bs_e5_v4?0l
@@ -714,7 +772,6 @@ __OBJC_CLASS_RO_$_AACLoadingSpinnerView
 ActionCardsSDK/Views/LoadingSpinner/AACLoadingSpinnerView.m
 ActionCardsSDK/Views/LoadingSpinner/AACLoadingSpinnerView.h
 __copy_helper_block_e4_20s24b
-__copy_helper_block_e4_20b
 __58-[AACLoadingSpinnerView endRefreshingAlongsideAnimations:]_block_invoke.34
 __58-[AACLoadingSpinnerView endRefreshingAlongsideAnimations:]_block_invoke_2
 __58-[AACLoadingSpinnerView endRefreshingAlongsideAnimations:]_block_invoke
@@ -964,7 +1021,6 @@ ActionCardsSDK/Model/Theme/ThemeElements/AACMeasurement.m
 -[AACCardViewSubviewButton buttonTitle]
 -[AACCardViewSubviewButton setButtonTitle:]
 -[AACCardViewSubviewButton .cxx_destruct]
-_OBJC_CLASSLIST_REFERENCES_$_.43
 _OBJC_IVAR_$_AACCardViewSubviewButton._backgroundView
 _OBJC_IVAR_$_AACCardViewSubviewButton._titleLabel
 _OBJC_IVAR_$_AACCardViewSubviewButton._loadingView
@@ -1056,7 +1112,6 @@ ActionCardsSDK/Model/CardResponse/AACCardSnoozeRequest.h
 ___87-[AACThemeAPI appearanceCollectionForStreamContainerWithId:cacheTag:completionHandler:]_block_invoke
 -[AACThemeAPI isHttpStatusCodeSuccessful:]
 _OBJC_CLASSLIST_REFERENCES_$_.22
-_OBJC_CLASSLIST_REFERENCES_$_.35
 ___block_descriptor_24_e4_20bs_e36_v16?04"NSDictionary"8"NSError"12l
 __OBJC_METACLASS_RO_$_AACThemeAPI
 __OBJC_$_INSTANCE_METHODS_AACThemeAPI
@@ -1332,7 +1387,7 @@ ___65-[AACCardListViewController animateCardOutWithInstanceId:action:]_block_inv
 -[AACCardListViewController performAdditionalSetupForCell:]
 -[AACCardListViewController viewWillTransitionToSize:withTransitionCoordinator:]
 ___80-[AACCardListViewController viewWillTransitionToSize:withTransitionCoordinator:]_block_invoke
-___80-[AACCardListViewController viewWillTransitionToSize:withTransitionCoordinator:]_block_invoke.405
+___80-[AACCardListViewController viewWillTransitionToSize:withTransitionCoordinator:]_block_invoke.401
 -[AACCardListViewController didBeginLoadingCardList]
 -[AACCardListViewController didFinishLoadingCardList]
 -[AACCardListViewController didSuccessfullyLoadCardList]
@@ -1367,7 +1422,6 @@ ___70-[AACCardListViewController requestCardFeedbackForCardWithInstanceId:]_bloc
 -[AACCardListViewController didFailToSnoozeCardWithInstanceId:until:error:]
 ___75-[AACCardListViewController didFailToSnoozeCardWithInstanceId:until:error:]_block_invoke
 ___copy_helper_block_e4_20s24s28w
-___destroy_helper_block_e4_20s24s28w
 -[AACCardListViewController didSuccessfullySnoozeCardWithInstanceId:until:]
 ___75-[AACCardListViewController didSuccessfullySnoozeCardWithInstanceId:until:]_block_invoke
 -[AACCardListViewController didRefilterCardList]
@@ -1417,7 +1471,6 @@ ___39-[AACCardListViewController panAction:]_block_invoke
 -[AACCardListViewController trackRuntimeVariablesResolved:forCardWithInstanceId:]
 -[AACCardListViewController trackFeedbackOptionSelected:forCardWithInstanceId:]
 -[AACCardListViewController trackStreamDisplayed]
--[AACCardListViewController dispatchCardEventOfKind:]
 -[AACCardListViewController delegate]
 -[AACCardListViewController setDelegate:]
 -[AACCardListViewController collectionView]
@@ -1448,8 +1501,6 @@ ___39-[AACCardListViewController panAction:]_block_invoke
 -[AACCardListViewController setFeedbackPresenter:]
 -[AACCardListViewController actionDelegate]
 -[AACCardListViewController setActionDelegate:]
--[AACCardListViewController cardEventDelegate]
--[AACCardListViewController setCardEventDelegate:]
 -[AACCardListViewController activePlayer]
 -[AACCardListViewController setActivePlayer:]
 -[AACCardListViewController activePlayerObserverToken]
@@ -1463,14 +1514,16 @@ ___39-[AACCardListViewController panAction:]_block_invoke
 -[AACCardListViewController setCollectionViewInsets:]
 -[AACCardListViewController .cxx_destruct]
 ___clang_at_available_requires_core_foundation_framework
-_OBJC_CLASSLIST_REFERENCES_$_.64
+_OBJC_CLASSLIST_REFERENCES_$_.39
+_OBJC_CLASSLIST_REFERENCES_$_.60
+_OBJC_CLASSLIST_REFERENCES_$_.74
 _OBJC_CLASSLIST_REFERENCES_$_.75
-_OBJC_CLASSLIST_REFERENCES_$_.79
-_OBJC_CLASSLIST_REFERENCES_$_.82
-_OBJC_CLASSLIST_REFERENCES_$_.91
-_OBJC_CLASSLIST_REFERENCES_$_.92
-_OBJC_CLASSLIST_REFERENCES_$_.97
-_OBJC_CLASSLIST_REFERENCES_$_.120
+_OBJC_CLASSLIST_REFERENCES_$_.87
+_OBJC_CLASSLIST_REFERENCES_$_.88
+_OBJC_CLASSLIST_REFERENCES_$_.93
+_OBJC_CLASSLIST_REFERENCES_$_.116
+_OBJC_SELECTOR_REFERENCES_.118
+_OBJC_SELECTOR_REFERENCES_.120
 _OBJC_SELECTOR_REFERENCES_.122
 _OBJC_SELECTOR_REFERENCES_.124
 _OBJC_SELECTOR_REFERENCES_.126
@@ -1483,8 +1536,9 @@ _OBJC_SELECTOR_REFERENCES_.138
 _OBJC_SELECTOR_REFERENCES_.154
 _OBJC_SELECTOR_REFERENCES_.156
 _OBJC_SELECTOR_REFERENCES_.158
-_OBJC_CLASSLIST_REFERENCES_$_.173
-_OBJC_CLASSLIST_REFERENCES_$_.174
+_OBJC_CLASSLIST_REFERENCES_$_.170
+_OBJC_SELECTOR_REFERENCES_.221
+_OBJC_SELECTOR_REFERENCES_.223
 _OBJC_SELECTOR_REFERENCES_.225
 _OBJC_SELECTOR_REFERENCES_.227
 _OBJC_SELECTOR_REFERENCES_.229
@@ -1500,18 +1554,18 @@ _OBJC_SELECTOR_REFERENCES_.247
 _OBJC_SELECTOR_REFERENCES_.249
 _OBJC_SELECTOR_REFERENCES_.251
 _OBJC_SELECTOR_REFERENCES_.253
+_OBJC_IVAR_$_AACCardListViewController._isFirstLoad
 _OBJC_SELECTOR_REFERENCES_.255
 _OBJC_SELECTOR_REFERENCES_.257
-_OBJC_IVAR_$_AACCardListViewController._isFirstLoad
 _OBJC_SELECTOR_REFERENCES_.259
 _OBJC_SELECTOR_REFERENCES_.261
 _OBJC_SELECTOR_REFERENCES_.263
 _OBJC_SELECTOR_REFERENCES_.265
 _OBJC_SELECTOR_REFERENCES_.267
 _OBJC_SELECTOR_REFERENCES_.269
-_OBJC_SELECTOR_REFERENCES_.271
-_OBJC_SELECTOR_REFERENCES_.273
-_OBJC_CLASSLIST_REFERENCES_$_.274
+_OBJC_CLASSLIST_REFERENCES_$_.270
+_OBJC_SELECTOR_REFERENCES_.272
+_OBJC_SELECTOR_REFERENCES_.274
 _OBJC_SELECTOR_REFERENCES_.276
 _OBJC_SELECTOR_REFERENCES_.278
 _OBJC_SELECTOR_REFERENCES_.280
@@ -1542,25 +1596,25 @@ _OBJC_SELECTOR_REFERENCES_.328
 _OBJC_SELECTOR_REFERENCES_.330
 _OBJC_SELECTOR_REFERENCES_.332
 _OBJC_SELECTOR_REFERENCES_.334
-_OBJC_SELECTOR_REFERENCES_.336
 _OBJC_SELECTOR_REFERENCES_.338
+_OBJC_SELECTOR_REFERENCES_.340
 _OBJC_SELECTOR_REFERENCES_.342
 _OBJC_SELECTOR_REFERENCES_.344
-_OBJC_SELECTOR_REFERENCES_.346
-_OBJC_SELECTOR_REFERENCES_.348
 ___block_descriptor_24_e4_20w_e5_v4?0l
+_OBJC_SELECTOR_REFERENCES_.347
+_OBJC_SELECTOR_REFERENCES_.349
 _OBJC_SELECTOR_REFERENCES_.351
-_OBJC_SELECTOR_REFERENCES_.353
-_OBJC_SELECTOR_REFERENCES_.355
-_OBJC_SELECTOR_REFERENCES_.356
-_OBJC_SELECTOR_REFERENCES_.358
-_OBJC_CLASSLIST_REFERENCES_$_.359
-_OBJC_SELECTOR_REFERENCES_.361
-_OBJC_SELECTOR_REFERENCES_.363
-_OBJC_CLASSLIST_REFERENCES_$_.370
+_OBJC_SELECTOR_REFERENCES_.352
+_OBJC_SELECTOR_REFERENCES_.354
+_OBJC_CLASSLIST_REFERENCES_$_.355
+_OBJC_SELECTOR_REFERENCES_.357
+_OBJC_SELECTOR_REFERENCES_.359
+_OBJC_CLASSLIST_REFERENCES_$_.366
+_OBJC_SELECTOR_REFERENCES_.368
+_OBJC_SELECTOR_REFERENCES_.370
 _OBJC_SELECTOR_REFERENCES_.372
-_OBJC_SELECTOR_REFERENCES_.374
 _OBJC_SELECTOR_REFERENCES_.376
+_OBJC_SELECTOR_REFERENCES_.378
 _OBJC_SELECTOR_REFERENCES_.380
 _OBJC_SELECTOR_REFERENCES_.382
 _OBJC_SELECTOR_REFERENCES_.384
@@ -1568,62 +1622,62 @@ _OBJC_SELECTOR_REFERENCES_.386
 _OBJC_SELECTOR_REFERENCES_.388
 _OBJC_SELECTOR_REFERENCES_.390
 _OBJC_SELECTOR_REFERENCES_.392
-_OBJC_SELECTOR_REFERENCES_.394
-_OBJC_SELECTOR_REFERENCES_.396
-_OBJC_CLASSLIST_REFERENCES_$_.397
-_OBJC_SELECTOR_REFERENCES_.399
-_OBJC_SELECTOR_REFERENCES_.401
-_OBJC_SELECTOR_REFERENCES_.404
+_OBJC_CLASSLIST_REFERENCES_$_.393
+_OBJC_SELECTOR_REFERENCES_.395
+_OBJC_SELECTOR_REFERENCES_.397
+_OBJC_SELECTOR_REFERENCES_.400
+_OBJC_SELECTOR_REFERENCES_.403
+_OBJC_SELECTOR_REFERENCES_.405
 _OBJC_SELECTOR_REFERENCES_.407
 _OBJC_SELECTOR_REFERENCES_.409
-_OBJC_SELECTOR_REFERENCES_.411
-_OBJC_SELECTOR_REFERENCES_.413
-_OBJC_CLASSLIST_REFERENCES_$_.414
+_OBJC_CLASSLIST_REFERENCES_$_.410
+_OBJC_SELECTOR_REFERENCES_.414
+_OBJC_SELECTOR_REFERENCES_.416
 _OBJC_SELECTOR_REFERENCES_.418
 _OBJC_SELECTOR_REFERENCES_.420
-_OBJC_SELECTOR_REFERENCES_.422
 _OBJC_SELECTOR_REFERENCES_.424
-_OBJC_SELECTOR_REFERENCES_.428
-_OBJC_SELECTOR_REFERENCES_.430
+_OBJC_SELECTOR_REFERENCES_.426
 ___block_descriptor_28_e4_20s24s_e5_v4?0l
-_OBJC_SELECTOR_REFERENCES_.434
-_OBJC_SELECTOR_REFERENCES_.442
+_OBJC_SELECTOR_REFERENCES_.430
+_OBJC_SELECTOR_REFERENCES_.438
 ___block_descriptor_32_e4_20s24w_e5_v4?0l
-_OBJC_SELECTOR_REFERENCES_.444
+_OBJC_SELECTOR_REFERENCES_.440
 ___block_descriptor_28_e4_20s24w_e5_v4?0l
-_OBJC_SELECTOR_REFERENCES_.448
+_OBJC_SELECTOR_REFERENCES_.444
 ___block_descriptor_29_e4_20s24w_e5_v4?0l
-_OBJC_CLASSLIST_REFERENCES_$_.449
+_OBJC_CLASSLIST_REFERENCES_$_.445
+_OBJC_SELECTOR_REFERENCES_.447
+_OBJC_SELECTOR_REFERENCES_.449
 _OBJC_SELECTOR_REFERENCES_.451
-_OBJC_SELECTOR_REFERENCES_.453
-_OBJC_SELECTOR_REFERENCES_.455
-_OBJC_CLASSLIST_REFERENCES_$_.456
+_OBJC_CLASSLIST_REFERENCES_$_.452
+_OBJC_SELECTOR_REFERENCES_.454
+_OBJC_SELECTOR_REFERENCES_.456
+___block_descriptor_32_e4_20s24s_e5_v4?0l
 _OBJC_SELECTOR_REFERENCES_.458
 _OBJC_SELECTOR_REFERENCES_.460
-___block_descriptor_32_e4_20s24s_e5_v4?0l
 _OBJC_SELECTOR_REFERENCES_.462
-_OBJC_SELECTOR_REFERENCES_.464
-_OBJC_SELECTOR_REFERENCES_.466
-_OBJC_CLASSLIST_REFERENCES_$_.467
-_OBJC_SELECTOR_REFERENCES_.469
+_OBJC_CLASSLIST_REFERENCES_$_.463
+_OBJC_SELECTOR_REFERENCES_.465
 ___block_descriptor_32_e4_20s24s28w_e5_v4?0l
-_OBJC_SELECTOR_REFERENCES_.471
-_OBJC_CLASSLIST_REFERENCES_$_.472
-_OBJC_SELECTOR_REFERENCES_.474
-_OBJC_CLASSLIST_REFERENCES_$_.475
-_OBJC_SELECTOR_REFERENCES_.477
-_OBJC_CLASSLIST_REFERENCES_$_.478
+_OBJC_SELECTOR_REFERENCES_.467
+_OBJC_CLASSLIST_REFERENCES_$_.468
+_OBJC_SELECTOR_REFERENCES_.470
+_OBJC_CLASSLIST_REFERENCES_$_.471
+_OBJC_SELECTOR_REFERENCES_.473
+_OBJC_CLASSLIST_REFERENCES_$_.474
+_OBJC_SELECTOR_REFERENCES_.476
+_OBJC_SELECTOR_REFERENCES_.478
 _OBJC_SELECTOR_REFERENCES_.480
 _OBJC_SELECTOR_REFERENCES_.482
-_OBJC_SELECTOR_REFERENCES_.484
-_OBJC_SELECTOR_REFERENCES_.486
-_OBJC_CLASSLIST_REFERENCES_$_.487
+_OBJC_CLASSLIST_REFERENCES_$_.483
+_OBJC_SELECTOR_REFERENCES_.485
+_OBJC_SELECTOR_REFERENCES_.487
 _OBJC_SELECTOR_REFERENCES_.489
-_OBJC_SELECTOR_REFERENCES_.491
-_OBJC_SELECTOR_REFERENCES_.493
-_OBJC_CLASSLIST_REFERENCES_$_.494
-_OBJC_SELECTOR_REFERENCES_.496
+_OBJC_CLASSLIST_REFERENCES_$_.490
+_OBJC_SELECTOR_REFERENCES_.492
 ___block_descriptor_24_e4_20s_e23_v8?0"NSNotification"4l
+_OBJC_SELECTOR_REFERENCES_.495
+_OBJC_SELECTOR_REFERENCES_.497
 _OBJC_SELECTOR_REFERENCES_.499
 _OBJC_SELECTOR_REFERENCES_.501
 _OBJC_SELECTOR_REFERENCES_.503
@@ -1633,10 +1687,10 @@ _OBJC_SELECTOR_REFERENCES_.509
 _OBJC_SELECTOR_REFERENCES_.511
 _OBJC_SELECTOR_REFERENCES_.513
 _OBJC_SELECTOR_REFERENCES_.515
-_OBJC_SELECTOR_REFERENCES_.517
-_OBJC_SELECTOR_REFERENCES_.519
-_OBJC_CLASSLIST_REFERENCES_$_.520
+_OBJC_CLASSLIST_REFERENCES_$_.516
+_OBJC_SELECTOR_REFERENCES_.518
 _OBJC_SELECTOR_REFERENCES_.522
+_OBJC_SELECTOR_REFERENCES_.524
 _OBJC_SELECTOR_REFERENCES_.526
 _OBJC_SELECTOR_REFERENCES_.528
 _OBJC_SELECTOR_REFERENCES_.530
@@ -1647,28 +1701,28 @@ _OBJC_SELECTOR_REFERENCES_.538
 _OBJC_SELECTOR_REFERENCES_.540
 _OBJC_SELECTOR_REFERENCES_.542
 _OBJC_SELECTOR_REFERENCES_.544
-_OBJC_SELECTOR_REFERENCES_.546
-_OBJC_SELECTOR_REFERENCES_.548
 ___block_descriptor_52_e4_20s_e5_v4?0l
-_OBJC_SELECTOR_REFERENCES_.552
+_OBJC_SELECTOR_REFERENCES_.548
+_OBJC_SELECTOR_REFERENCES_.550
 _OBJC_SELECTOR_REFERENCES_.554
+_OBJC_SELECTOR_REFERENCES_.556
 _OBJC_SELECTOR_REFERENCES_.558
-_OBJC_SELECTOR_REFERENCES_.560
-_OBJC_SELECTOR_REFERENCES_.562
-_OBJC_CLASSLIST_REFERENCES_$_.563
+_OBJC_CLASSLIST_REFERENCES_$_.559
+_OBJC_SELECTOR_REFERENCES_.561
+_OBJC_SELECTOR_REFERENCES_.563
 _OBJC_SELECTOR_REFERENCES_.565
-_OBJC_SELECTOR_REFERENCES_.567
-_OBJC_SELECTOR_REFERENCES_.569
-_OBJC_CLASSLIST_REFERENCES_$_.570
+_OBJC_CLASSLIST_REFERENCES_$_.566
+_OBJC_SELECTOR_REFERENCES_.570
 _OBJC_SELECTOR_REFERENCES_.574
-_OBJC_SELECTOR_REFERENCES_.578
+_OBJC_SELECTOR_REFERENCES_.576
 _OBJC_SELECTOR_REFERENCES_.580
+_OBJC_SELECTOR_REFERENCES_.582
 _OBJC_SELECTOR_REFERENCES_.584
 _OBJC_SELECTOR_REFERENCES_.586
-_OBJC_SELECTOR_REFERENCES_.588
 _OBJC_SELECTOR_REFERENCES_.590
-_OBJC_SELECTOR_REFERENCES_.594
+_OBJC_SELECTOR_REFERENCES_.592
 _OBJC_SELECTOR_REFERENCES_.596
+_OBJC_SELECTOR_REFERENCES_.598
 _OBJC_SELECTOR_REFERENCES_.600
 _OBJC_SELECTOR_REFERENCES_.602
 _OBJC_SELECTOR_REFERENCES_.604
@@ -1678,9 +1732,9 @@ _OBJC_SELECTOR_REFERENCES_.610
 _OBJC_SELECTOR_REFERENCES_.612
 _OBJC_SELECTOR_REFERENCES_.614
 _OBJC_SELECTOR_REFERENCES_.616
-_OBJC_SELECTOR_REFERENCES_.618
-_OBJC_SELECTOR_REFERENCES_.620
-_OBJC_CLASSLIST_REFERENCES_$_.621
+_OBJC_CLASSLIST_REFERENCES_$_.617
+_OBJC_SELECTOR_REFERENCES_.619
+_OBJC_SELECTOR_REFERENCES_.621
 _OBJC_SELECTOR_REFERENCES_.623
 _OBJC_SELECTOR_REFERENCES_.625
 _OBJC_SELECTOR_REFERENCES_.627
@@ -1692,18 +1746,13 @@ _OBJC_SELECTOR_REFERENCES_.637
 _OBJC_SELECTOR_REFERENCES_.639
 _OBJC_SELECTOR_REFERENCES_.641
 _OBJC_SELECTOR_REFERENCES_.643
-_OBJC_SELECTOR_REFERENCES_.645
-_OBJC_SELECTOR_REFERENCES_.647
-_OBJC_CLASSLIST_REFERENCES_$_.648
+_OBJC_CLASSLIST_REFERENCES_$_.644
+_OBJC_SELECTOR_REFERENCES_.646
+_OBJC_SELECTOR_REFERENCES_.648
 _OBJC_SELECTOR_REFERENCES_.650
 _OBJC_SELECTOR_REFERENCES_.652
-_OBJC_SELECTOR_REFERENCES_.654
 _OBJC_SELECTOR_REFERENCES_.656
-_OBJC_SELECTOR_REFERENCES_.660
-_OBJC_SELECTOR_REFERENCES_.666
-_OBJC_SELECTOR_REFERENCES_.676
-_OBJC_CLASSLIST_REFERENCES_$_.677
-_OBJC_SELECTOR_REFERENCES_.679
+_OBJC_SELECTOR_REFERENCES_.662
 _OBJC_IVAR_$_AACCardListViewController._delegate
 _OBJC_IVAR_$_AACCardListViewController._collectionView
 _OBJC_IVAR_$_AACCardListViewController._collectionViewTopConstraint
@@ -1719,7 +1768,6 @@ _OBJC_IVAR_$_AACCardListViewController._presenter
 _OBJC_IVAR_$_AACCardListViewController._votingPresenter
 _OBJC_IVAR_$_AACCardListViewController._feedbackPresenter
 _OBJC_IVAR_$_AACCardListViewController._actionDelegate
-_OBJC_IVAR_$_AACCardListViewController._cardEventDelegate
 _OBJC_IVAR_$_AACCardListViewController._activePlayer
 _OBJC_IVAR_$_AACCardListViewController._activePlayerObserverToken
 _OBJC_IVAR_$_AACCardListViewController._didChangeMaxHeight
@@ -1801,7 +1849,6 @@ __59-[AACCardListViewController listHeader:didChangeMaxHeight:]_block_invoke
 __55-[AACCardListViewController showNoCardsStateWithStyle:]_block_invoke
 __46-[AACCardListViewController playVideoWithUrl:]_block_invoke
 __75-[AACCardListViewController didSuccessfullySnoozeCardWithInstanceId:until:]_block_invoke
-__destroy_helper_block_e4_20s24s28w
 __copy_helper_block_e4_20s24s28w
 __75-[AACCardListViewController didFailToSnoozeCardWithInstanceId:until:error:]_block_invoke
 __70-[AACCardListViewController requestCardFeedbackForCardWithInstanceId:]_block_invoke
@@ -1815,7 +1862,7 @@ __56-[AACCardListViewController didSuccessfullyPollCardList]_block_invoke
 __copy_helper_block_e4_20s24s
 __60-[AACCardListViewController didFailToLoadCardListWithError:]_block_invoke_2
 __60-[AACCardListViewController didFailToLoadCardListWithError:]_block_invoke
-__80-[AACCardListViewController viewWillTransitionToSize:withTransitionCoordinator:]_block_invoke.405
+__80-[AACCardListViewController viewWillTransitionToSize:withTransitionCoordinator:]_block_invoke.401
 __80-[AACCardListViewController viewWillTransitionToSize:withTransitionCoordinator:]_block_invoke
 __65-[AACCardListViewController animateCardOutWithInstanceId:action:]_block_invoke
 UIEdgeInsetsMake
@@ -1842,6 +1889,7 @@ ___23-[AACToastView dismiss]_block_invoke_2
 -[AACToastView .cxx_destruct]
 _OBJC_CLASSLIST_REFERENCES_$_.38
 ___block_descriptor_24_e4_20s_e7_v8?0c4l
+_OBJC_CLASSLIST_REFERENCES_$_.91
 _OBJC_IVAR_$_AACToastView._messageLabel
 _OBJC_IVAR_$_AACToastView._actionButton
 _OBJC_IVAR_$_AACToastView._messageText
@@ -2307,6 +2355,8 @@ ___44-[AACCardActionsView applyLayoutAttributes:]_block_invoke
 -[AACCardActionsView originalSnoozeButtonCenter]
 -[AACCardActionsView setOriginalSnoozeButtonCenter:]
 -[AACCardActionsView .cxx_destruct]
+_OBJC_CLASSLIST_REFERENCES_$_.64
+_OBJC_CLASSLIST_REFERENCES_$_.97
 ___block_descriptor_52_e4_20s24s_e5_v4?0l
 _OBJC_IVAR_$_AACCardActionsView._delegate
 _OBJC_IVAR_$_AACCardActionsView._cardInstanceId
@@ -2515,7 +2565,6 @@ _activeServices.pointerArray
 _apiBaseUrl.onceToken
 _apiBaseUrl.baseUrl
 ___block_literal_global.27
-_OBJC_CLASSLIST_REFERENCES_$_.42
 _OBJC_CLASSLIST_REFERENCES_$_.55
 ___block_descriptor_24_e4_20bs_e17_v8?0"NSString"4l
 __OBJC_$_CLASS_METHODS_AACService
@@ -2628,6 +2677,7 @@ _OBJC_CLASSLIST_REFERENCES_$_.76
 _OBJC_CLASSLIST_REFERENCES_$_.83
 _OBJC_CLASSLIST_REFERENCES_$_.96
 _OBJC_CLASSLIST_REFERENCES_$_.111
+_OBJC_CLASSLIST_REFERENCES_$_.120
 _OBJC_CLASSLIST_REFERENCES_$_.129
 __OBJC_$_CLASS_METHODS_AACFontRegistry
 __OBJC_METACLASS_RO_$_AACFontRegistry
@@ -3148,6 +3198,11 @@ ___65+[AACSession deregisterDeviceForNotifications:completionHandler:]_block_inv
 ___73+[AACSession registerStreamContainersForPushNotifications:deviceService:]_block_invoke
 +[AACSession registerStreamContainersForNotifications:withSessionDelegate:]
 +[AACSession notificationFromPushPayload:]
++[AACSession sendEvent:withSessionDelegate:completionHandler:]
++[AACSession sendEvent:withSessionDelegate:completionHandler:eventService:]
+___75+[AACSession sendEvent:withSessionDelegate:completionHandler:eventService:]_block_invoke
+___copy_helper_block_e4_20b24r
+___destroy_helper_block_e4_20s24r
 +[AACSession environmentId]
 +[AACSession apiKey]
 +[AACSession setEnvironmentId:]
@@ -3167,15 +3222,21 @@ _OBJC_CLASSLIST_REFERENCES_$_.105
 ___block_descriptor_24_e4_20bs_e16_v8?0"NSError"4l
 _OBJC_CLASSLIST_REFERENCES_$_.126
 _OBJC_CLASSLIST_REFERENCES_$_.131
-_OBJC_CLASSLIST_REFERENCES_$_.136
+___block_descriptor_28_e4_20bs24r_e37_v12?0"AACEventResponse"4"NSError"8l
 _OBJC_SELECTOR_REFERENCES_.151
-_OBJC_CLASSLIST_REFERENCES_$_.160
+_OBJC_CLASSLIST_REFERENCES_$_.154
+_OBJC_CLASSLIST_REFERENCES_$_.165
+_OBJC_SELECTOR_REFERENCES_.169
+_OBJC_CLASSLIST_REFERENCES_$_.178
 __OBJC_$_CLASS_METHODS_AACSession
 __OBJC_METACLASS_RO_$_AACSession
 __OBJC_CLASS_RO_$_AACSession
 /Users/distiller/project/ActionCardsSDK/ActionCardsSDK/Utilities/Session/AACSession.m
 __97+[AACSession trackPushNotificationReceived:withSessionDelegate:completionHandler:analyticsQueue:]_block_invoke
 ActionCardsSDK/Utilities/Session/AACSession.m
+__destroy_helper_block_e4_20s24r
+__copy_helper_block_e4_20b24r
+__75+[AACSession sendEvent:withSessionDelegate:completionHandler:eventService:]_block_invoke
 __73+[AACSession registerStreamContainersForPushNotifications:deviceService:]_block_invoke
 __65+[AACSession deregisterDeviceForNotifications:completionHandler:]_block_invoke
 __destroy_helper_block_e4_20r
@@ -3236,7 +3297,7 @@ _sharedWriteQueue.onceToken
 _sharedWriteQueue.operationQueue
 _OBJC_CLASSLIST_REFERENCES_$_.34
 ___block_descriptor_36_e4_20s24s28bs32w_e61_v16?0"AACAppearanceCollection"4"NSDictionary"8"NSError"12l
-_OBJC_CLASSLIST_REFERENCES_$_.87
+_OBJC_CLASSLIST_REFERENCES_$_.92
 _OBJC_CLASSLIST_REFERENCES_$_.100
 _OBJC_IVAR_$_AACThemeService._themeApi
 _OBJC_IVAR_$_AACThemeService._apiCache
@@ -3395,6 +3456,7 @@ ActionCardsSDK/Model/Card/Layout/NodeTypes/AACCardNodeText.h
 -[AACStreamContainerViewController setPresentationDelegate:]
 -[AACStreamContainerViewController .cxx_destruct]
 _OBJC_IVAR_$_AACStreamContainerViewController._identifier
+_OBJC_CLASSLIST_REFERENCES_$_.82
 _OBJC_CLASSLIST_REFERENCES_$_.107
 _OBJC_CLASSLIST_REFERENCES_$_.122
 _OBJC_IVAR_$_AACStreamContainerViewController._flowCoordinator
@@ -3800,9 +3862,12 @@ ___43-[AACViewController keyboardWillDisappear:]_block_invoke
 -[AACViewController dispatchAnalyticsEventWithName:forCardWithInstanceId:properties:]
 -[AACViewController cardViewState]
 -[AACViewController statusBarHeight]
+-[AACViewController dispatchCardEventOfKind:]
 -[AACViewController appearanceManager]
 -[AACViewController analyticsDispatcher]
 -[AACViewController setAnalyticsDispatcher:]
+-[AACViewController cardEventDelegate]
+-[AACViewController setCardEventDelegate:]
 -[AACViewController bannerView]
 -[AACViewController setBannerView:]
 -[AACViewController bannerContainerView]
@@ -3815,11 +3880,14 @@ _OBJC_CLASSLIST_REFERENCES_$_.155
 _OBJC_SELECTOR_REFERENCES_.161
 _OBJC_SELECTOR_REFERENCES_.165
 _OBJC_SELECTOR_REFERENCES_.167
-_OBJC_SELECTOR_REFERENCES_.169
-_OBJC_CLASSLIST_REFERENCES_$_.170
 _OBJC_SELECTOR_REFERENCES_.191
 _OBJC_CLASSLIST_REFERENCES_$_.192
+_OBJC_SELECTOR_REFERENCES_.200
+_OBJC_SELECTOR_REFERENCES_.202
+_OBJC_CLASSLIST_REFERENCES_$_.203
+_OBJC_SELECTOR_REFERENCES_.205
 _OBJC_IVAR_$_AACViewController._analyticsDispatcher
+_OBJC_IVAR_$_AACViewController._cardEventDelegate
 _OBJC_IVAR_$_AACViewController._bannerView
 _OBJC_IVAR_$_AACViewController._bannerContainerView
 __OBJC_METACLASS_RO_$_AACViewController
@@ -3928,11 +3996,14 @@ ___block_descriptor_28_e4_20s24s_e52_v16?0"NSArray"4"AACCardFeedMetadata"8"N
 ___block_descriptor_25_e4_20w_e5_v4?0l
 _OBJC_CLASSLIST_REFERENCES_$_.117
 _OBJC_CLASSLIST_REFERENCES_$_.124
-_OBJC_CLASSLIST_REFERENCES_$_.143
 ___block_descriptor_36_e4_20s24s28s32w_e5_v4?0l
 ___block_descriptor_40_e4_20s24s28s32bs36w_e36_v12?0"AACCardInstance"4"NSError"8l
-_OBJC_CLASSLIST_REFERENCES_$_.163
-_OBJC_SELECTOR_REFERENCES_.179
+_OBJC_CLASSLIST_REFERENCES_$_.159
+_OBJC_SELECTOR_REFERENCES_.163
+_OBJC_CLASSLIST_REFERENCES_$_.164
+_OBJC_CLASSLIST_REFERENCES_$_.167
+_OBJC_CLASSLIST_REFERENCES_$_.174
+_OBJC_CLASSLIST_REFERENCES_$_.179
 _OBJC_SELECTOR_REFERENCES_.181
 _OBJC_SELECTOR_REFERENCES_.185
 _OBJC_SELECTOR_REFERENCES_.187
@@ -3942,17 +4013,14 @@ _OBJC_SELECTOR_REFERENCES_.197
 _OBJC_SELECTOR_REFERENCES_.199
 _OBJC_SELECTOR_REFERENCES_.201
 _OBJC_SELECTOR_REFERENCES_.203
-_OBJC_SELECTOR_REFERENCES_.205
 _OBJC_SELECTOR_REFERENCES_.207
 _OBJC_SELECTOR_REFERENCES_.209
 _OBJC_SELECTOR_REFERENCES_.211
 _OBJC_SELECTOR_REFERENCES_.213
-___block_descriptor_32_e4_20s24s28s_e5_v4?0l
 _OBJC_SELECTOR_REFERENCES_.215
 _OBJC_SELECTOR_REFERENCES_.217
+___block_descriptor_32_e4_20s24s28s_e5_v4?0l
 _OBJC_SELECTOR_REFERENCES_.219
-_OBJC_SELECTOR_REFERENCES_.221
-_OBJC_SELECTOR_REFERENCES_.223
 __OBJC_$_PROTOCOL_REFS_AACNavigationPresenting
 __OBJC_$_PROTOCOL_INSTANCE_METHODS_AACNavigationPresenting
 __OBJC_$_PROTOCOL_METHOD_TYPES_AACNavigationPresenting
@@ -4007,8 +4075,8 @@ _OBJC_IVAR_$_AACMainFlowCoordinator._streamContainerId
 __OBJC_$_INSTANCE_VARIABLES_AACMainFlowCoordinator
 __OBJC_$_PROP_LIST_AACMainFlowCoordinator
 __OBJC_CLASS_RO_$_AACMainFlowCoordinator
-_OBJC_CLASSLIST_REFERENCES_$_.367
-_OBJC_SELECTOR_REFERENCES_.369
+_OBJC_CLASSLIST_REFERENCES_$_.371
+_OBJC_SELECTOR_REFERENCES_.373
 /Users/distiller/project/ActionCardsSDK/ActionCardsSDK/Coordinator/AACMainFlowCoordinator.m
 ActionCardsSDK/Coordinator/AACMainFlowCoordinator.m
 ActionCardsSDK/Coordinator/AACMainFlowCoordinator.h
@@ -4134,8 +4202,9 @@ _OBJC_CLASSLIST_REFERENCES_$_.109
 _OBJC_CLASSLIST_REFERENCES_$_.110
 _OBJC_CLASSLIST_REFERENCES_$_.118
 _OBJC_CLASSLIST_REFERENCES_$_.137
-_OBJC_CLASSLIST_REFERENCES_$_.154
-_OBJC_CLASSLIST_REFERENCES_$_.171
+_OBJC_CLASSLIST_REFERENCES_$_.156
+_OBJC_CLASSLIST_REFERENCES_$_.173
+_OBJC_SELECTOR_REFERENCES_.179
 _OBJC_IVAR_$_AACCardSubviewViewController._delegate
 _OBJC_IVAR_$_AACCardSubviewViewController._navigationBar
 _OBJC_IVAR_$_AACCardSubviewViewController._scrollView
@@ -4429,10 +4498,7 @@ ___45-[AACCardSubviewPresenter didTapNodeAtIndex:]_block_invoke_2
 -[AACCardSubviewPresenter .cxx_destruct]
 _OBJC_CLASSLIST_REFERENCES_$_.27
 ___block_descriptor_24_e4_20s_e36_v12?0"AACCardInstance"4"NSError"8l
-_OBJC_CLASSLIST_REFERENCES_$_.88
-_OBJC_CLASSLIST_REFERENCES_$_.93
-_OBJC_SELECTOR_REFERENCES_.118
-_OBJC_SELECTOR_REFERENCES_.120
+_OBJC_CLASSLIST_REFERENCES_$_.79
 ___block_descriptor_36_e4_20s24s28s_e5_v4?0l
 ___block_descriptor_32_e4_20s24s_e40_v12?0"AACCardFeedMetadata"4"NSError"8l
 _OBJC_CLASSLIST_REFERENCES_$_.128
@@ -4477,7 +4543,6 @@ ActionCardsSDK/Model/CardService/AACCardServiceConfiguration.m
 -[AACFontDownloadOperation main]
 ___32-[AACFontDownloadOperation main]_block_invoke
 ___copy_helper_block_e4_20s24r
-___destroy_helper_block_e4_20s24r
 ___32-[AACFontDownloadOperation main]_block_invoke.69
 -[AACFontDownloadOperation markFinished]
 -[AACFontDownloadOperation cancel]
@@ -4515,7 +4580,6 @@ __OBJC_CLASS_RO_$_AACFontDownloadOperation
 ActionCardsSDK/Model/Theme/CacheUpdate/AACFontDownloadOperation.m
 ActionCardsSDK/Model/Theme/CacheUpdate/AACFontDownloadOperation.h
 __32-[AACFontDownloadOperation main]_block_invoke.69
-__destroy_helper_block_e4_20s24r
 __copy_helper_block_e4_20s24r
 __32-[AACFontDownloadOperation main]_block_invoke
 -[AACErrorOverlayView awakeFromNib]
@@ -4668,10 +4732,8 @@ ActionCardsSDK/Model/Card/Layout/NodeTypes/AACCardNodeListComma.m
 -[AACCollectionViewFlowLayout theme]
 -[AACCollectionViewFlowLayout setTheme:]
 -[AACCollectionViewFlowLayout .cxx_destruct]
-_OBJC_CLASSLIST_REFERENCES_$_.60
 _OBJC_CLASSLIST_REFERENCES_$_.114
 _OBJC_CLASSLIST_REFERENCES_$_.157
-_OBJC_SELECTOR_REFERENCES_.163
 _OBJC_IVAR_$_AACCollectionViewFlowLayout._cachedLayoutAttributes
 _OBJC_IVAR_$_AACCollectionViewFlowLayout._previousLayoutAttributes
 _OBJC_IVAR_$_AACCollectionViewFlowLayout._pendingDeletions
@@ -4715,7 +4777,6 @@ ___82-[AACCardSnoozeViewController viewWillTransitionToSize:withTransitionCoordi
 -[AACCardSnoozeViewController presenter]
 -[AACCardSnoozeViewController setPresenter:]
 -[AACCardSnoozeViewController .cxx_destruct]
-_OBJC_CLASSLIST_REFERENCES_$_.167
 _OBJC_IVAR_$_AACCardSnoozeViewController._delegate
 _OBJC_IVAR_$_AACCardSnoozeViewController._navigationBarView
 _OBJC_IVAR_$_AACCardSnoozeViewController._stackView
@@ -4770,7 +4831,6 @@ ___49-[AACCardService cardCountWithCompletionHandler:]_block_invoke_2
 -[AACCardService submitResponse:withCompletionHandler:]
 ___55-[AACCardService submitResponse:withCompletionHandler:]_block_invoke
 ___55-[AACCardService submitResponse:withCompletionHandler:]_block_invoke_2
-___copy_helper_block_e4_20b24s28w
 -[AACCardService dismissCardWithInstanceId:completionHandler:]
 ___62-[AACCardService dismissCardWithInstanceId:completionHandler:]_block_invoke
 ___62-[AACCardService dismissCardWithInstanceId:completionHandler:]_block_invoke_2
@@ -4806,7 +4866,6 @@ ___block_descriptor_36_e4_20s24s28bs32s_e5_v4?0l
 ___block_descriptor_28_e4_20bs24w_e52_v16?0"NSArray"4"AACCardFeedMetadata"8"NSError"12l
 ___block_descriptor_28_e4_20bs24w_e29_v12?0"NSString"4"NSError"8l
 ___block_descriptor_32_e4_20bs24s28w_e16_v8?0"NSError"4l
-___block_descriptor_32_e4_20bs24s28w_e29_v12?0"NSString"4"NSError"8l
 _OBJC_CLASSLIST_REFERENCES_$_.177
 ___block_descriptor_36_e4_20bs24s28s32w_e29_v12?0"NSString"4"NSError"8l
 _OBJC_IVAR_$_AACCardService._sessionDelegate
@@ -4829,7 +4888,6 @@ __70-[AACCardService snoozeCardWithInstanceId:interval:completionHandler:]_block
 __70-[AACCardService snoozeCardWithInstanceId:interval:completionHandler:]_block_invoke
 __62-[AACCardService dismissCardWithInstanceId:completionHandler:]_block_invoke_2
 __62-[AACCardService dismissCardWithInstanceId:completionHandler:]_block_invoke
-__copy_helper_block_e4_20b24s28w
 __55-[AACCardService submitResponse:withCompletionHandler:]_block_invoke_2
 __55-[AACCardService submitResponse:withCompletionHandler:]_block_invoke
 __49-[AACCardService cardCountWithCompletionHandler:]_block_invoke_2
@@ -5545,12 +5603,9 @@ ___block_descriptor_24_e4_20w_e52_v16?0"NSArray"4"AACCardFeedMetadata"8"NSEr
 _OBJC_CLASSLIST_REFERENCES_$_.127
 _OBJC_CLASSLIST_REFERENCES_$_.142
 ___block_descriptor_28_e4_20s24w_e7_v8?0c4l
-_OBJC_CLASSLIST_REFERENCES_$_.164
 _OBJC_CLASSLIST_REFERENCES_$_.183
 ___block_descriptor_40_e4_20s24s28s32w_e5_v4?0l
 ___block_descriptor_32_e4_20s24w_e40_v12?0"AACCardFeedMetadata"4"NSError"8l
-_OBJC_SELECTOR_REFERENCES_.200
-_OBJC_SELECTOR_REFERENCES_.202
 _OBJC_SELECTOR_REFERENCES_.206
 ___block_descriptor_24_e4_20w_e40_v12?0"NSArray"4"AACCardFeedMetadata"8l
 ___block_descriptor_24_e4_20s_e31_c16?0"AACCardInstance"4I8^c12l
@@ -5569,8 +5624,6 @@ _OBJC_CLASSLIST_REFERENCES_$_.264
 _OBJC_SELECTOR_REFERENCES_.266
 _OBJC_SELECTOR_REFERENCES_.268
 _OBJC_SELECTOR_REFERENCES_.270
-_OBJC_SELECTOR_REFERENCES_.272
-_OBJC_SELECTOR_REFERENCES_.274
 ___block_descriptor_24_e4_20w_e16_v8?0"NSArray"4l
 _OBJC_SELECTOR_REFERENCES_.301
 _OBJC_CLASSLIST_REFERENCES_$_.302
@@ -5578,16 +5631,18 @@ _OBJC_CLASSLIST_REFERENCES_$_.307
 _OBJC_SELECTOR_REFERENCES_.309
 _OBJC_SELECTOR_REFERENCES_.311
 _OBJC_CLASSLIST_REFERENCES_$_.312
+_OBJC_SELECTOR_REFERENCES_.336
 _OBJC_CLASSLIST_REFERENCES_$_.337
 _OBJC_SELECTOR_REFERENCES_.339
 _OBJC_SELECTOR_REFERENCES_.341
 _OBJC_SELECTOR_REFERENCES_.343
 _OBJC_SELECTOR_REFERENCES_.345
-_OBJC_SELECTOR_REFERENCES_.347
-_OBJC_SELECTOR_REFERENCES_.349
-_OBJC_SELECTOR_REFERENCES_.357
-_OBJC_SELECTOR_REFERENCES_.359
-_OBJC_SELECTOR_REFERENCES_.378
+_OBJC_SELECTOR_REFERENCES_.353
+_OBJC_SELECTOR_REFERENCES_.355
+_OBJC_SELECTOR_REFERENCES_.361
+_OBJC_SELECTOR_REFERENCES_.363
+_OBJC_CLASSLIST_REFERENCES_$_.370
+_OBJC_SELECTOR_REFERENCES_.374
 _OBJC_CLASSLIST_REFERENCES_$_.381
 _OBJC_SELECTOR_REFERENCES_.383
 _OBJC_SELECTOR_REFERENCES_.385
@@ -5933,7 +5988,7 @@ _nodeMapping.nodeMapping
 _validationMapping.onceToken
 _validationMapping.validationMapping
 ___block_literal_global.50
-_OBJC_CLASSLIST_REFERENCES_$_.74
+_OBJC_CLASSLIST_REFERENCES_$_.136
 __OBJC_$_CLASS_METHODS_AACCardNode
 __OBJC_METACLASS_RO_$_AACCardNode
 __OBJC_$_INSTANCE_METHODS_AACCardNode
@@ -6010,6 +6065,7 @@ ___copy_helper_block_e8_20s36b40s44r
 ___destroy_helper_block_e8_20s36s40s44r
 -[AACCoreAPI isHttpStatusCodeSuccessful:]
 -[AACCoreAPI safeEnvironmentId]
+-[AACCoreAPI errorsToList:]
 -[AACCoreAPI session]
 -[AACCoreAPI setSession:]
 -[AACCoreAPI baseUrl]
@@ -6017,8 +6073,12 @@ ___destroy_helper_block_e8_20s36s40s44r
 -[AACCoreAPI .cxx_destruct]
 _modelIdentifier.onceToken
 _modelIdentifier.model
+_OBJC_CLASSLIST_REFERENCES_$_.190
 ___block_descriptor_52_e8_20s36bs40s44r_e45_v16?0"NSData"4"NSURLResponse"8"NSError"12l
-_OBJC_CLASSLIST_REFERENCES_$_.199
+_OBJC_CLASSLIST_REFERENCES_$_.210
+_OBJC_SELECTOR_REFERENCES_.214
+_OBJC_SELECTOR_REFERENCES_.216
+_OBJC_CLASSLIST_REFERENCES_$_.221
 __OBJC_$_CLASS_METHODS_AACCoreAPI
 __OBJC_METACLASS_RO_$_AACCoreAPI
 __OBJC_$_INSTANCE_METHODS_AACCoreAPI
@@ -6191,7 +6251,6 @@ _completeIcon.image
 _tutorialIcon.onceToken
 _tutorialIcon.image
 ___block_literal_global.13
-_OBJC_CLASSLIST_REFERENCES_$_.39
 _OBJC_IVAR_$_AACNoCardsView._iconView
 _OBJC_IVAR_$_AACNoCardsView._messageLabel
 _OBJC_IVAR_$_AACNoCardsView._theme
@@ -6208,6 +6267,32 @@ __OBJC_CLASS_RO_$_AACNoCardsView
 ActionCardsSDK/Views/NoCards/AACNoCardsView.m
 __30+[AACNoCardsView tutorialIcon]_block_invoke
 __30+[AACNoCardsView completeIcon]_block_invoke
+-[AACEventPayload initWithName:]
+-[AACEventPayload dictionaryRepresentation]
+-[AACEventPayload name]
+-[AACEventPayload lifecycleId]
+-[AACEventPayload setLifecycleId:]
+-[AACEventPayload detail]
+-[AACEventPayload setDetail:]
+-[AACEventPayload metadata]
+-[AACEventPayload setMetadata:]
+-[AACEventPayload notificationDetail]
+-[AACEventPayload setNotificationDetail:]
+-[AACEventPayload .cxx_destruct]
+__OBJC_CLASS_PROTOCOLS_$_AACEventPayload
+__OBJC_METACLASS_RO_$_AACEventPayload
+__OBJC_$_INSTANCE_METHODS_AACEventPayload
+_OBJC_IVAR_$_AACEventPayload._name
+_OBJC_IVAR_$_AACEventPayload._lifecycleId
+_OBJC_IVAR_$_AACEventPayload._detail
+_OBJC_IVAR_$_AACEventPayload._metadata
+_OBJC_IVAR_$_AACEventPayload._notificationDetail
+__OBJC_$_INSTANCE_VARIABLES_AACEventPayload
+__OBJC_$_PROP_LIST_AACEventPayload
+__OBJC_CLASS_RO_$_AACEventPayload
+/Users/distiller/project/ActionCardsSDK/ActionCardsSDK/Model/Event/AACEventPayload.m
+ActionCardsSDK/Model/Event/AACEventPayload.m
+ActionCardsSDK/Model/Event/AACEventPayload.h
 -[AACBannerView initWithSuperview:message:]
 -[AACBannerView applyTheme:]
 -[AACBannerView present]
@@ -6643,6 +6728,14 @@ __OBJC_CLASS_RO_$_AACCustomFont
 /Users/distiller/project/ActionCardsSDK/ActionCardsSDK/Model/Theme/AACCustomFont.m
 ActionCardsSDK/Model/Theme/AACCustomFont.m
 ActionCardsSDK/Model/Theme/AACCustomFont.h
+-[AACEventAPI sendEvent:withAuthenticationToken:completionHandler:]
+___67-[AACEventAPI sendEvent:withAuthenticationToken:completionHandler:]_block_invoke
+__OBJC_METACLASS_RO_$_AACEventAPI
+__OBJC_$_INSTANCE_METHODS_AACEventAPI
+__OBJC_CLASS_RO_$_AACEventAPI
+/Users/distiller/project/ActionCardsSDK/ActionCardsSDK/Services/Event/AACEventAPI.m
+__67-[AACEventAPI sendEvent:withAuthenticationToken:completionHandler:]_block_invoke
+ActionCardsSDK/Services/Event/AACEventAPI.m
 +[AACPrototypeCellProvider sharedInstance]
 ___42+[AACPrototypeCellProvider sharedInstance]_block_invoke
 -[AACPrototypeCellProvider init]

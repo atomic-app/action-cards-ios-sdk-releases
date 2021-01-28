@@ -771,6 +771,52 @@ streamContainer.refresh()
 [streamContainer refresh];
 ```
 
+## Sending events from the SDK
+
+You can send events directly to the Atomic Platform for the logged in user, via the `sendEvent:withSessionDelegate:completionHandler:` method on `AACSession`. 
+
+This allows you to trigger an event, which will generate a card, in response to some user action. The event you wish to trigger must have the 'Enable client trigger' option enabled in the Atomic Workbench.
+
+The card will be created for the user defined by the authentication token returned in the session delegate. As such, you cannot specify target user IDs using this method.
+
+```swift
+let payload = AACEventPayload(name: "myEventName")
+payload.lifecycleId = "lifecycleId" // Optional
+payload.detail = [
+    "variable1": "value1" // Optional
+]
+// You can also optionally set the `metadata` and `notificationDetail` dictionaries.
+
+AACSession.sendEvent(payload, with: self) { (response, error) in
+    guard error == nil else {
+        // Handle error here.
+        return
+    }
+    
+    // `response` contains the details of the processed event.
+}
+```
+
+```objectivec
+AACEventPayload *payload = [[AACEventPayload alloc] initWithName:@"myEventName"];
+payload.lifecycleId = @"lifecycleId"; // Optional
+payload.detail = @{
+    @"variable1": @"value1" // Optional
+};
+// You can also optionally set the `metadata` and `notificationDetail` properties.
+
+[AACSession sendEvent:payload
+    withSessionDelegate:self
+    completionHandler:^(AACEventResponse *response, NSError *error) {
+    if(error) {
+        // Handle error here.
+        return;
+    }
+    
+    // `response` contains the details of the processed event.
+}];
+```
+
 ### Debug logging
 
 Debug logging allows you to view more verbose logs regarding events that happen in the SDK. It is turned off by default, and should not be enabled in release builds. To enable debug logging:
