@@ -224,29 +224,4 @@ extern NSString* __nonnull const AACSessionTotalCardCountUserInfoKey;
  */
 + (void)sendEvent:(AACEventPayload* __nonnull)eventPayload withSessionDelegate:(id<AACSessionDelegate> __nonnull)sessionDelegate completionHandler:(AACSessionSendEventHandler __nonnull)completionHandler;
 
-#pragma mark - Deprecated methods
-
-/**
- Initialises the Atomic SDK with the provided site ID and API key.
- You must call this before attempting to use any Atomic SDK functionality.
- */
-+ (void)initialiseWithSiteId:(NSString* __nonnull)siteId
-                      apiKey:(NSString* __nonnull)apiKey DEPRECATED_MSG_ATTRIBUTE("Use +initialiseWithEnvironmentId:apiKey: instead.");
-
-/**
- Asks the SDK to observe the card count for the given stream container, calling the `handler` every time
- the count changes.
- */
-+ (id<NSObject> __nonnull)observeCardCountForStreamContainerWithId:(NSNumber* __nonnull)streamContainerId
-                                                          interval:(NSTimeInterval)interval
-                                                   sessionDelegate:(id<AACSessionDelegate> __nonnull)sessionDelegate
-                                                           handler:(AACSessionCardCountChangedHandler __nonnull)handler DEPRECATED_MSG_ATTRIBUTE("Use +observeCardCountForStreamContainerWithIdentifier:interval:sessionDelegate:handler: instead.");
-
-/**
- Asks the SDK to register the currently logged in user for push notifications on the stream container IDs in the provided
- array.
- */
-+ (void)registerStreamContainersForNotifications:(NSArray<NSNumber*>* __nonnull)streamContainerIds
-                             withSessionDelegate:(id<AACSessionDelegate> __nonnull)sessionDelegate DEPRECATED_MSG_ATTRIBUTE("Use +registerStreamContainersForPushNotifications:sessionDelegate: instead");
-
 @end

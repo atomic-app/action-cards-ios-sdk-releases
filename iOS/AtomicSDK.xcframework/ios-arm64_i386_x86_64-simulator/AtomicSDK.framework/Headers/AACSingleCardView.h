@@ -66,13 +66,4 @@
  */
 - (void)refresh;
 
-#pragma mark - Deprecated methods
-/**
- Creates a new view for displaying a single card.
- */
-- (instancetype __nonnull)initWithFrame:(CGRect)frame
-                            containerId:(NSNumber* __nonnull)containerId
-                        sessionDelegate:(id<AACSessionDelegate> __nonnull)sessionDelegate
-                          configuration:(AACConfiguration* __nonnull)configuration DEPRECATED_MSG_ATTRIBUTE("Use -initWithFrame:containerIdentifier:sessionDelegate:configuration: instead.");
-
 @end

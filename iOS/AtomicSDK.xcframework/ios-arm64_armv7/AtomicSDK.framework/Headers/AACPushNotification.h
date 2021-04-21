@@ -33,10 +33,4 @@
  */
 @property (nonatomic, copy, readonly, nonnull) NSDictionary *detail;
 
-#pragma mark - Deprecated properties
-/**
- The numeric ID of the stream container that the card is contained within.
- */
-@property (nonatomic, copy, readonly, nonnull) NSNumber* streamContainerId DEPRECATED_MSG_ATTRIBUTE("Use -containerId instead.");
-
 @end

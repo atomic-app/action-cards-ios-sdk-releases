@@ -58,17 +58,4 @@ __attribute__((objc_subclassing_restricted))
  */
 - (void)refresh;
 
-#pragma mark - Deprecated methods
-/**
- Creates a new view controller that renders a stream container by its identifier.
- */
-- (instancetype __nonnull)initWithContainerId:(NSNumber* __nonnull)containerId
-                              sessionDelegate:(id<AACSessionDelegate> __nonnull)sessionDelegate
-                                configuration:(AACConfiguration* __nonnull)configuration DEPRECATED_MSG_ATTRIBUTE("Use -initWithIdentifier:sessionDelegate:configuration: instead.");
-
-/**
- The numeric ID of this stream container, located in the Atomic Workbench.
- */
-@property (nonatomic, copy, nonnull, readonly) NSNumber *containerId DEPRECATED_MSG_ATTRIBUTE("Use -identifier instead.");
-
 @end
