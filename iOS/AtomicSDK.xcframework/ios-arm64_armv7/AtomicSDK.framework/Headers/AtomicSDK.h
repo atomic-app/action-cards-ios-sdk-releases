@@ -12,8 +12,8 @@ FOUNDATION_EXPORT double AtomicSDKVersionNumber;
 //! Project version string for Atomic SDK.
 FOUNDATION_EXPORT const unsigned char AtomicSDKVersionString[];
 
-#if __IPHONE_OS_VERSION_MIN_REQUIRED < __IPHONE_9_0
-#error The Atomic SDK supports iOS 9.0 and above.
+#if __IPHONE_OS_VERSION_MIN_REQUIRED < __IPHONE_10_0
+#error The Atomic SDK supports iOS 10.0 and above.
 #endif
 
 #import <AtomicSDK/AACSessionDelegate.h>
@@ -34,3 +34,7 @@ FOUNDATION_EXPORT const unsigned char AtomicSDKVersionString[];
 #import <AtomicSDK/AACCardInstance.h>
 #import <AtomicSDK/AACCardRuntimeVariable.h>
 #import <AtomicSDK/AACSingleCardView.h>
+
+#import <AtomicSDK/AACRequestDelegate.h>
+#import <AtomicSDK/AACRequestDisposition.h>
+#import <AtomicSDK/AACCertificatePin.h>

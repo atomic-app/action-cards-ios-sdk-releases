@@ -9,6 +9,7 @@
 #import "AACPushNotification.h"
 #import "AACEventPayload.h"
 #import "AACEventResponse.h"
+#import "AACRequestDelegate.h"
 
 /**
  Handler called whenever the card count changes.
@@ -185,11 +186,8 @@ extern NSString* __nonnull const AACSessionTotalCardCountUserInfoKey;
 
 /**
  Determines whether the given push notification payload is for a push notification sent by the Atomic Platform. The push
- notification payload is provided in the following system delegate methods:
- 
- - application:didFinishLaunchingWithOptions: (the push payload is contained in UIApplicationLaunchOptionsRemoteNotificationKey);
- - application:didReceiveRemoteNotification: (iOS < 10);
- - userNotificationCenter:didReceiveNotificationResponse:withCompletionHandler: (iOS 10+).
+ notification payload is provided in the userNotificationCenter:didReceiveNotificationResponse:withCompletionHandler:
+ method on `UNUserNotificationCenterDelegate`.
  
  If the push payload is for an Atomic push notification, this method returns an instance of `AACPushNotification` populated with
  details of the notification. Otherwise, it returns nil.
@@ -223,5 +221,20 @@ extern NSString* __nonnull const AACSessionTotalCardCountUserInfoKey;
  NSError object is provided. If the request succeeds, details of the processed event are provided.
  */
 + (void)sendEvent:(AACEventPayload* __nonnull)eventPayload withSessionDelegate:(id<AACSessionDelegate> __nonnull)sessionDelegate completionHandler:(AACSessionSendEventHandler __nonnull)completionHandler;
+
+#pragma mark - Network request handling
+
+/**
+ Sets a delegate that determines whether a request at a given URL is either allowed to proceed,
+ not allowed to proceed or allowed to proceed provided that it passes certificate validation.
+ 
+ Validation is performed using a set of public key hashes that this delegate returns.
+ 
+ To revert to the default behaviour in the SDK (that is, allow all requests to proceed), you can pass
+ `nil` as the argument to this method.
+ 
+ @param delegate A global delegate that determines whether requests across the SDK can proceed.
+ */
++ (void)setRequestDelegate:(id<AACRequestDelegate> __nullable)delegate;
 
 @end

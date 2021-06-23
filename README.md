@@ -4,7 +4,7 @@
 
 The Atomic iOS SDK is a dynamic framework for integrating an Atomic stream container into your iOS app, presenting cards from a stream to your end users.
 
-The SDK is written in Objective-C and supports iOS 9.0 and above.
+The SDK is written in Objective-C and supports iOS 10.0 and above.
 
 ## Installation
 
@@ -40,7 +40,9 @@ pod 'AtomicSDK-framework'
 
 ?> Note: As Carthage does not currently support `xcframework`, this will install the fat framework version, which does not include the arm64 simulator slice.
 
-### Swift Package Manager (requires Atomic SDK 0.19.0+)
+### Swift Package Manager
+
+_(Requires Atomic SDK 0.19.0+)_
 
 1. Open your Xcode project, and choose File > Swift Packages > Add Package Dependency.
 2. When prompted to enter a package repository URL, enter `https://github.com/atomic-app/action-cards-ios-sdk-releases`.
@@ -54,7 +56,7 @@ pod 'AtomicSDK-framework'
 4. When prompted, ensure that "Copy items if needed" is selected, and then click "Finish".
 5. **If you chose AtomicSDK.framework above**, you will also need to run the `strip-frameworks.sh` script (downloadable from this repository) as part of a `Run Script` phase in your target, to get around an App Store submission bug, caused by iOS simulator architectures being present in the fat framework.
 
-?> Note: AtomicSDK.xcframework includes support for Apple Silicon, but requires Xcode 11 or higher, while AtomicSDK.framework is a fat framework.
+?> Note: `AtomicSDK.xcframework` includes support for Apple Silicon, but requires Xcode 11 or higher, while `AtomicSDK.framework` is a fat framework.
 
 ## Setup
 
@@ -172,11 +174,12 @@ The configuration object also allows you to specify custom strings for features 
 - `AACCustomStringAllCardsCompleted`: The message displayed when the user has received at least one card before, and there are no cards to show - defaults to "All caught up".
 - `AACCustomStringVotingUseful`: The title to display for the action a user taps when they flag a card as useful - defaults to "This is useful".
 - `AACCustomStringVotingNotUseful`: The title to display for the action a user taps when they flag a card as not useful - defaults to "This isn't useful".
+- `AACCustomStringVotingFeedbackTitle`: The title to display at the top of the screen allowing a user to provide feedback on why they didn't find a card useful - defaults to "Send feedback".
 - `AACCustomStringCardListFooterMessage`: The message to display below the last card in the card list, provided there is at least one present. Does not apply in single card view, and requires `enabledUiElements` to contain `AACUIElementCardListFooterMessage`. Defaults to an empty string.
 
-**Single card view features**
+### Single card view configuration
 
-As of release 0.16.2, there is now a subclass of `AACConfiguration` - `AACSingleCardConfiguration` - which can be used to enable features that only apply to single card view.
+As of release 0.17.0, there is now a subclass of `AACConfiguration` - `AACSingleCardConfiguration` - which can be used to enable features that only apply to single card view.
 
 **Swift**
 
@@ -192,7 +195,7 @@ AACSingleCardConfiguration *config = [[AACSingleCardConfiguration alloc] init];
 config.automaticallyLoadNextCard = YES;
 ```
 
-Avaialable features are:
+Available features are:
 
 - `automaticallyLoadNextCard`: When enabled, will automatically display the next card in the single card view if there is one, using a locally cached card list. Defaults to `NO`.
 
@@ -273,8 +276,8 @@ You can set a delegate (conforming to `AACSingleCardViewDelegate`) on the single
 **Swift**
 
 ```swift
-func singleCardView(_ singleCardView: AACSingleCardView, willChangeSize size: CGSize) {
-    // Perform animation here. 
+func singleCardView(_ cardView: AACSingleCardView, willChange newSize: CGSize) {
+    // Perform animation here.
 }
 ```
 
@@ -286,15 +289,13 @@ func singleCardView(_ singleCardView: AACSingleCardView, willChangeSize size: CG
 }
 ```
 
-## API and additional methods
-
-### Push notifications
+## Push notifications
 
 To use push notifications in the SDK, you'll need to set up your notification preferences and add your iOS push certificate in the Workbench, then [request push notification permission](https://developer.apple.com/documentation/usernotifications/registering_your_app_with_apns) in your app.
 
 Once this is done, you can configure push notifications via the SDK. The steps below can occur in either order in your app.
 
-#### 1. Register the user against specific stream containers for push notifications
+### 1. Register the user against specific stream containers for push notifications
 
 You need to signal to the Atomic Platform which stream containers are eligible to receive push notifications in your app for the current device.
 
@@ -330,14 +331,14 @@ AACSession.deregisterDeviceForNotifications { (error) in
 }];
 ```
 
-#### 2. Send the push token to the Atomic Platform
+### 2. Send the push token to the Atomic Platform
 
 Send the device's push token to the Atomic platform when it changes, by calling: 
 
 **Swift**
 
 ```swift
-AACSession.registerDeviceForNotifications(_:with:)
+AACSession.registerDevice(forNotifications:with:)
 ```
 
 **Objective-C**
@@ -352,39 +353,9 @@ You can also call this SDK method any time you want to update the push token sto
 
 You will also need to update this token every time the logged in user changes in your app, so the Atomic Platform knows who to send notifications to.
 
-#### 3. (Optional) Perform a custom action when tapping on a push notification
+### 3. (Optional) Perform a custom action when tapping on a push notification
 
 When a user taps on a push notification delivered to your app, you can ask the SDK whether the push notification payload originated from Atomic. If so, you will be provided with a structured object that you can inspect, to perform custom actions based on the payload. The custom data for the notification, that was sent with the original event to Atomic, is in the `detail` property.
-
-For a consistent experience, you should handle the scenarios where the push notification triggers your app to open when already running, and when not previously running.
-
-**While app is running - targeting iOS 9+**
-
-**Objective-C**
-
-```objectivec
-- (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo {    
-    AACPushNotification *notification = [AACSession notificationFromPushPayload:userInfo];
-    
-    if(notification != nil) {
-        // The payload originated from Atomic - use the properties on the object to determine the action to take.
-    }
-}
-```
-
-**Swift**
-
-```swift
-func application(_ application: UIApplication, didReceiveRemoteNotification userInfo: [AnyHashable : Any]) {
-    if let payload = userInfo as? NSDictionary {
-        if let notification = AACSession.notificationFromPushPayload(payload) {
-            // The payload originated from Atomic - use the properties on the object to determine the action to take.
-        }
-    }
-}
-```
-
-**While app is running - targeting iOS 10+**
 
 **Objective-C**
 
@@ -396,9 +367,9 @@ func application(_ application: UIApplication, didReceiveRemoteNotification user
         if(notification != nil) {
             // The payload originated from Atomic - use the properties on the object to determine the action to take.
         }
-        
-        completionHandler();
     }
+
+    completionHandler();
 }
 ```
 
@@ -406,49 +377,17 @@ func application(_ application: UIApplication, didReceiveRemoteNotification user
 
 ```swift
 func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Void) {
-    if response.actionIdentifier == UNNotificationDefaultActionIdentifier,
-        let payload = response.notification.request.content.userInfo as? NSDictionary {
-        if let notification = AACSession.notificationFromPushPayload(payload) {
+    if response.actionIdentifier == UNNotificationDefaultActionIdentifier, let notification = AACSession.notification(fromPushPayload: response.notification.request.content.userInfo) {
             // The payload originated from Atomic - use the properties on the object to determine the action to take.
-        }
     }
+
+    completionHandler()
 }
 ```
 
-**When app is not running**
+### 4. (Optional) Track when push notifications are received
 
-**Objective-C**
-
-```objectivec
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    ...
-    if(launchOptions[UIApplicationLaunchOptionsRemoteNotificationKey] != nil) {
-        AACPushNotification *notification = [AACSession notificationFromPushPayload:launchOptions[UIApplicationLaunchOptionsRemoteNotificationKey]];
-        
-        if(notification != nil) {
-            // The payload originated from Atomic - use the properties on the object to determine the action to take.
-        }
-    }
-    
-    return YES;
-}
-```
-
-**Swift**
-
-```swift
-func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
-    if let payload = launchOptions?[.remoteNotification] as? NSDictionary {
-        if let notification = AACSession.notificationFromPushPayload(payload) {
-            // The payload originated from Atomic - use the properties on the object to determine the action to take.
-        }
-    }
-}
-```
-
-#### 4. (Optional) Track when push notifications are received
-
-To track when push notifications are delivered to your user's device, you can use a [Notification Service Extension](https://developer.apple.com/documentation/usernotifications/unnotificationserviceextension), supported in iOS 10 and above. If you are supporting iOS 9, you can choose to track delivery of notifications when a user taps on your notification instead. 
+To track when push notifications are delivered to your user's device, you can use a [Notification Service Extension](https://developer.apple.com/documentation/usernotifications/unnotificationserviceextension).
 
 While the Atomic SDK does not supply this extension, it does supply a method you can call within your own extension to track delivery.
 
@@ -484,7 +423,7 @@ override func didReceive(_ request: UNNotificationRequest, withContentHandler co
 
 This delivery event appears in your card's analytics as a `notification-received` event, with a timestamp indicating when the event was generated, as well as the card instance ID and stream container ID for the card.
 
-### Supporting custom actions on submit and link buttons
+## Supporting custom actions on submit and link buttons
 
 In the Atomic Workbench, you can create a submit or link button with a custom action payload. 
 
@@ -524,20 +463,20 @@ let config = AACConfiguration()
 config.actionDelegate = self
 
 // 2. Implement the callbacks
-func streamContainerDidTapLinkButton(_ streamContainer: AACStreamContainer, withAction action: AACCardCustomAction) {
+func streamContainerDidTapLinkButton(_ streamContainer: AACStreamContainerViewController, with action: AACCardCustomAction) {
     if let screenName = action.actionPayload["screen"] as? String, screenName == "home-screen" {
-        navigateToHomeScreen()
+        // Perform an action
     }
 }
 
-func streamContainerDidTapSubmitButton(_ streamContainer: AACStreamContainer, withAction action: AACCardCustomAction) {
+func streamContainerDidTapSubmitButton(_ streamContainer: AACStreamContainerViewController, with action: AACCardCustomAction) {
     if let outcome = action.actionPayload["outcome"] as? String, outcome == "success" {
-        navigateToSuccessScreen()
+        // Perform an action
     }
 }
 ```
 
-### Retrieving card count
+## Retrieving card count
 
 The SDK supports observing the card count for a particular stream container, or receiving a single card count, even when that stream container does not exist in memory.
 
@@ -615,7 +554,7 @@ If you want to retrieve the total number of cards in the container (rather than 
 
 When not in single card view, `AACSessionCardCountUserInfoKey` and `AACSessionTotalCardCountUserInfoKey` report the same value.
 
-### Dark mode
+## Dark mode
 
 Stream containers in the Atomic iOS SDK support dark mode. You configure an (optional) dark theme for your stream container in the Atomic Workbench.
 
@@ -626,7 +565,7 @@ The interface style determines which theme is rendered:
 
 To change the interface style, set the corresponding value for the `interfaceStyle` property on the `AACConfiguration` object when creating the stream container.
 
-### Runtime variables
+## Runtime variables
 
 Runtime variables are resolved in the SDK at runtime, rather than from an event payload when the card is assembled. Runtime variables are defined in the Atomic Workbench.
 
@@ -649,11 +588,11 @@ If you do not call the `completionHandler` before the `runtimeVariableResolution
 **Swift**
 
 ```swift
-func cardSessionDidRequestRuntimeVariables(_ cardsToResolve: [AACCardInstance], completionHandler: ([AACCardInstance]) -> Void) {
+func cardSessionDidRequestRuntimeVariables(_ cardsToResolve: [AACCardInstance], completionHandler: @escaping AACSessionRuntimeVariablesHandler) {
     for card in cardsToResolve {
         // Resolve variables on all cards.
         // You can also inspect `lifecycleId` and `eventName` to determine what type of card this is.
-        card.resolveVariableWithName("numberOfItems", value: "12")
+        card.resolveRuntimeVariable(withName: "numberOfItems", value: "12")
     }
     
     completionHandler(cardsToResolve)
@@ -676,7 +615,7 @@ func cardSessionDidRequestRuntimeVariables(_ cardsToResolve: [AACCardInstance], 
 
 !> Runtime variables can currently only be resolved to string values.
 
-#### Updating runtime variables manually
+### Updating runtime variables manually
 
 You can manually update runtime variables at any time by calling the `updateVariables` method on `AACStreamContainerViewController` or `AACSingleCardView`:
 
@@ -692,7 +631,7 @@ streamVc.updateVariables()
 [streamVc updateVariables];
 ```
 
-#### Analytics
+### Analytics
 
 By default, resolved values for runtime variables will be sent back to the Atomic Platform in the form of an analytics event - `runtime-vars-updated`. If you do not wish for this to happen, due to your runtime variables implementation referring to sensitive information, you can disable this behaviour by setting the `runtimeVariableAnalytics` flag on your configuration's `features` object:
 
@@ -710,7 +649,7 @@ AACConfiguration *config = [[AACConfiguration alloc] init];
 config.features.runtimeVariableAnalytics = NO;
 ```
 
-### Responding to card events
+## Responding to card events
 
 The SDK allows you to perform custom actions in response to events occurring on a card, such as when a user:
 
@@ -749,7 +688,7 @@ func streamContainer(_ streamContainerVc: AACStreamContainerViewController, didT
 ```
 
 
-### Card voting
+## Card voting
 
 You can optionally allow users to flag cards as either useful or not useful, which are reported as part of a card's analytics. These voting options are displayed in a card's overflow menu, however, they are not enabled by default.
 
@@ -779,6 +718,8 @@ This allows you to trigger an event, which will generate a card, in response to 
 
 The card will be created for the user defined by the authentication token returned in the session delegate. As such, you cannot specify target user IDs using this method.
 
+**Swift**
+
 ```swift
 let payload = AACEventPayload(name: "myEventName")
 payload.lifecycleId = "lifecycleId" // Optional
@@ -797,13 +738,15 @@ AACSession.sendEvent(payload, with: self) { (response, error) in
 }
 ```
 
+**Objective-C**
+
 ```objectivec
 AACEventPayload *payload = [[AACEventPayload alloc] initWithName:@"myEventName"];
 payload.lifecycleId = @"lifecycleId"; // Optional
 payload.detail = @{
     @"variable1": @"value1" // Optional
 };
-// You can also optionally set the `metadata` and `notificationDetail` properties.
+// You can also optionally set the `metadata` and `notificationDetail` dictionaries.
 
 [AACSession sendEvent:payload
     withSessionDelegate:self
@@ -816,6 +759,109 @@ payload.detail = @{
     // `response` contains the details of the processed event.
 }];
 ```
+
+## Network request security
+
+The Atomic iOS SDK provides functionality to further secure the SDK implementation in your own app.
+
+### Allow or deny network requests
+
+You can choose to implement a request delegate, which determines whether requests originating from the Atomic SDK are allowed to proceed. This enables you to permit network requests only to domains or subdomains that you approve.
+
+The request delegate is called before every network request in the SDK, and during SSL certificate validation.
+
+To enable this functionality, create a request delegate conforming to the `AACRequestDelegate` protocol, implement the `dispositionForAtomicRequest:` method and call `setRequestDelegate` on `AACSession` to assign it to the SDK. The request delegate is used for every network request from the SDK.
+
+Within the `dispositionForAtomicRequest:` method, you can inspect the request URL and return one of the following dispositions:
+
+- `allow`: The request is allowed to proceed.
+- `deny`: The request is not allowed to proceed and will be cancelled.
+- `allowWithCertificatePins`: The request can proceed if a hash of the subject public key info (SPKI) from the certificate matches one of the pin objects provided (see below for more information).
+
+All of these dispositions are available as static methods on `AACRequestDisposition`.
+
+If you do not implement this request delegate, all requests are permitted.
+
+### Allow requests with certificate pinning
+
+When you return `allowWithCertificatePins` in the `AACRequestDelegate` above, you will be required to supply a set of `AACCertificatePin` objects. Each object contains a SHA-256 hash of the subject public key info (SPKI) from the domain's certificate, which is base64 encoded. You can generate this using the following command, replacing `[url]` with the domain you want to generate the hash for:
+
+```
+openssl s_client -servername [url] -connect [url]:443 | openssl x509 -pubkey -noout | openssl pkey -pubin -outform der | openssl dgst -sha256 -binary | openssl enc -base64
+```
+
+If the hashed, base64-encoded SPKI from the request's certificate matches any of the provided pin objects, the request is allowed to proceed. If it does not match any of the provided pins, the request is denied.
+
+If the `allowWithCertificatePins` disposition is used with a non-HTTPS URL, the request will be denied.
+
+**Swift**
+
+```swift
+func disposition(forAtomicRequest requestUrl: URL) -> AACRequestDisposition {
+    guard let host = requestUrl.host else {
+        // Deny requests without a host.
+        return .deny()
+    }
+    
+    switch(host) {
+    case "atomic.io":
+        // Allow requests to atomic.io with certificate pinning.
+        let pins = Set([
+            AACCertificatePin(sha256Hash: "AAAAAA=")
+        ])
+        return .allow(with: pins)
+    case "placeholder.com":
+        // Always allow requests to placeholder.com.
+        return .allow()
+    default:
+        // Deny all other requests.
+        return .deny()
+    }
+}
+
+AACSession.setRequestDelegate(self)
+```
+
+**Objective-C**
+
+```objectivec
+- (AACRequestDisposition *)dispositionForAtomicRequest:(NSURL *)requestUrl {
+    if([[requestUrl host] isEqualToString:@"atomic.io"]) {
+        // Allow requests to atomic.io with certificate pinning.
+        NSSet *pins = [NSSet setWithArray:@[
+            [AACCertificatePin pinWithSha256Hash:@"AAAAAAAA="]
+        ]];
+        return [AACRequestDisposition allowWithCertificatePins:pins];
+    }
+    
+    if([[requestUrl host] isEqualToString:@"placeholder.com"]) {
+        // Always allow requests to placeholder.com.
+        return [AACRequestDisposition allow];
+    }
+    
+    // Deny all other requests.
+    return [AACRequestDisposition deny];
+}
+
+[AACSession setRequestDelegate:self];
+```
+
+## Dynamic Type
+
+The Atomic iOS SDK supports Dynamic Type, on an opt-in basis and per-typography style. 
+
+To opt-in to Dynamic Type for a typography style:
+
+1. Open the [Atomic Workbench](https://workbench.atomic.io/);
+2. Navigate to Settings > Settings > Themes. Select the theme you want to edit.
+3. When editing a typography style in the theme, turn `Dynamic scaling` on.
+4. Optionally specify a minimum and maximum font size to use when scaling is applied.
+
+The SDK automatically scales the typography style from the base font size that you specify, adding or subtracting a pixel value from this base font size, to create a size tailored to each Dynamic Type level. The minimum font size is 1px - this is enforced by the SDK.
+
+The pixel value that is added or subtracted for each Dynamic Type level is determined inside the SDK and is not customisable.
+
+## Utility methods
 
 ### Debug logging
 
@@ -846,3 +892,4 @@ AACSession.logout()
 ```objectivec
 [AACSession logout];
 ```
+
