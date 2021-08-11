@@ -289,6 +289,30 @@ func singleCardView(_ cardView: AACSingleCardView, willChange newSize: CGSize) {
 }
 ```
 
+## Filtering cards
+
+_(Requires Atomic SDK 0.23.0+)_
+
+Stream containers and single card views can have an optional filter applied, which affects the cards displayed. 
+
+One filter is currently supported - `AACCardListFilter.filter(byCardInstanceId:)`. This filter requests that the stream container or single card view show only a card matching the specified card instance ID, if it exists. An instance of this filter can be created using the corresponding static method on the `AACCardListFilter` class.
+
+The card instance ID can be found in the [push notification payload](/install/ios?id=_3-optional-perform-a-custom-action-when-tapping-on-a-push-notification), allowing you to apply the filter in response to a push notification being tapped.
+
+**Swift**
+
+```swift
+let filter = AACCardListFilter.filter(byCardInstanceId: "ABCD-1234")
+streamContainer.apply(filter)
+```
+
+**Objective-C**
+
+```objectivec
+AACCardFilter *filter = [AACCardListFilter filterByCardInstanceId:@"ABCD-1234"];
+[streamContainer applyFilter:filter];
+```
+
 ## Push notifications
 
 To use push notifications in the SDK, you'll need to set up your notification preferences and add your iOS push certificate in the Workbench, then [request push notification permission](https://developer.apple.com/documentation/usernotifications/registering_your_app_with_apns) in your app.
@@ -633,20 +657,24 @@ streamVc.updateVariables()
 
 ### Analytics
 
-By default, resolved values for runtime variables will be sent back to the Atomic Platform in the form of an analytics event - `runtime-vars-updated`. If you do not wish for this to happen, due to your runtime variables implementation referring to sensitive information, you can disable this behaviour by setting the `runtimeVariableAnalytics` flag on your configuration's `features` object:
+!> In iOS SDK versions prior to 0.23.0, the default behaviour was to send analytics for resolved runtime variables. As of release 0.23.0, this behaviour has changed to default to **not** sending these analytics. Therefore, when upgrading to release 0.23.0, you must explicitly enable this feature to use it.
+
+If you use runtime variables on a card, you can optionally choose to send the resolved values of any runtime variables back to the Atomic Platform as an analytics event. This per-card analytics event - `runtime-vars-updated` - contains the values of runtime variables rendered in the card and seen by the end user. Therefore, you should not enable this feature if your runtime variables contain sensitive data that you do not wish to store on the Atomic Platform.
+
+To enable this feature, set the `runtimeVariableAnalytics` flag on your configuration's `features` object:
 
 **Swift**
 
 ```swift
 let config = AACConfiguration()
-config.features.runtimeVariableAnalytics = false
+config.features.runtimeVariableAnalytics = true
 ```
 
 **Objective-C**
 
 ```objectivec
 AACConfiguration *config = [[AACConfiguration alloc] init];
-config.features.runtimeVariableAnalytics = NO;
+config.features.runtimeVariableAnalytics = YES;
 ```
 
 ## Responding to card events

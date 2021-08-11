@@ -38,3 +38,5 @@ FOUNDATION_EXPORT const unsigned char AtomicSDKVersionString[];
 #import <AtomicSDK/AACRequestDelegate.h>
 #import <AtomicSDK/AACRequestDisposition.h>
 #import <AtomicSDK/AACCertificatePin.h>
+
+#import <AtomicSDK/AACCardFilter.h>

@@ -5,7 +5,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "AACCertificatePin.h"
+#import <AtomicSDK/AACCertificatePin.h>
 
 /**
  A request disposition represents the action that the SDK should take in response to a network request.

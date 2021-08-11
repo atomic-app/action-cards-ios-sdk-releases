@@ -5,7 +5,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "AACRequestDisposition.h"
+#import <AtomicSDK/AACRequestDisposition.h>
 
 /**
  Optional delegate that provides logic for allowing or denying network requests originating

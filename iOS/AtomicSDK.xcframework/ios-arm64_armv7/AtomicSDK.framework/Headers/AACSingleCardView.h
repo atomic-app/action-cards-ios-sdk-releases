@@ -5,8 +5,9 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "AACSessionDelegate.h"
-#import "AACConfiguration.h"
+#import <AtomicSDK/AACSessionDelegate.h>
+#import <AtomicSDK/AACConfiguration.h>
+#import <AtomicSDK/AACCardFilter.h>
 
 @class AACSingleCardView;
 
@@ -65,5 +66,14 @@
  Requests that the single card view check for new cards immediately.
  */
 - (void)refresh;
+
+/**
+ Applies the specified card list filter to the single card view.
+ The single card view will render the first card that matches the specified filter, or no cards if there are no matches.
+ Calling this method immediately updates the single card view and does not require waiting until the next polling interval.
+ 
+ @param filter The filter to apply. Pass `nil` to clear the active filter.
+ */
+- (void)applyFilter:(AACCardFilter* __nullable)filter;
 
 @end

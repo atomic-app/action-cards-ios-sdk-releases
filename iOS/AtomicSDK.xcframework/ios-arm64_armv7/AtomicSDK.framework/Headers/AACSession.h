@@ -5,11 +5,11 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "AACSessionDelegate.h"
-#import "AACPushNotification.h"
-#import "AACEventPayload.h"
-#import "AACEventResponse.h"
-#import "AACRequestDelegate.h"
+#import <AtomicSDK/AACSessionDelegate.h>
+#import <AtomicSDK/AACPushNotification.h>
+#import <AtomicSDK/AACEventPayload.h>
+#import <AtomicSDK/AACEventResponse.h>
+#import <AtomicSDK/AACRequestDelegate.h>
 
 /**
  Handler called whenever the card count changes.

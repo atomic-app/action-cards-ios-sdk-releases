@@ -12,11 +12,11 @@
 @interface AACFeatureFlags: NSObject <NSCopying>
 
 /**
- Whether the `runtime-vars-updated` analytics event should be sent when runtime variables
- are resolved. Defaults to `YES`.
+ Whether the `runtime-vars-updated` analytics event, which includes resolved values of each
+ runtime variable, should be sent when runtime variables are resolved. Defaults to `NO`.
  
- If your runtime variables implementation includes sensitive data, you can set this
- feature flag to `NO` to prevent such analytics events from being sent.
+ When setting this flag to `YES`, ensure that the resolved values of your runtime variables
+ do not include any sensitive information that should not appear in analytics.
  */
 @property (nonatomic) BOOL runtimeVariableAnalytics;
 

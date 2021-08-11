@@ -5,7 +5,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "AACCardInstance.h"
+#import <AtomicSDK/AACCardInstance.h>
 
 /**
  A block used to hand an authentication token back to the SDK when requested.

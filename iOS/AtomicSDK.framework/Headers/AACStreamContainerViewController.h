@@ -5,8 +5,9 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "AACSessionDelegate.h"
-#import "AACConfiguration.h"
+#import <AtomicSDK/AACSessionDelegate.h>
+#import <AtomicSDK/AACConfiguration.h>
+#import <AtomicSDK/AACCardFilter.h>
 
 /**
  Creates an instance of a stream container, which renders a list of
@@ -57,5 +58,16 @@ __attribute__((objc_subclassing_restricted))
  This is equivalent to the user performing the pull-to-refresh action on the card list.
  */
 - (void)refresh;
+
+/**
+ Updates the filter applied to cards in the stream container or single card view,
+ and updates the card list to reflect the filter.
+ 
+ Pass `nil` to clear the active filter.
+ 
+ @param filter A filter to apply, retrieved from static methods on `AACCardListFilter`,
+ or `nil` to clear the active filter.
+ */
+- (void)applyFilter:(AACCardFilter* __nonnull)filter;
 
 @end

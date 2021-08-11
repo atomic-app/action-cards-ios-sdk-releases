@@ -7,9 +7,9 @@
 #import <Foundation/Foundation.h>
 @import UIKit;
 
-#import "AACStreamContainerActionDelegate.h"
-#import "AACCardEventDelegate.h"
-#import "AACFeatureFlags.h"
+#import <AtomicSDK/AACStreamContainerActionDelegate.h>
+#import <AtomicSDK/AACCardEventDelegate.h>
+#import <AtomicSDK/AACFeatureFlags.h>
 
 /**
  Supported methods for presenting a stream container in the SDK.

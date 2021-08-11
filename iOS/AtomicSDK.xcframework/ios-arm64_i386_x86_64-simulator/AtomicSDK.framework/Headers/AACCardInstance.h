@@ -5,7 +5,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "AACCardRuntimeVariable.h"
+#import <AtomicSDK/AACCardRuntimeVariable.h>
 
 /**
  Represents an individual card displayed to the end user.
