@@ -40,3 +40,6 @@ FOUNDATION_EXPORT const unsigned char AtomicSDKVersionString[];
 #import <AtomicSDK/AACCertificatePin.h>
 
 #import <AtomicSDK/AACCardFilter.h>
+
+#import <AtomicSDK/AACEmbeddedFont.h>
+#import <AtomicSDK/AACUserMetrics.h>

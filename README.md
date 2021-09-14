@@ -502,6 +502,8 @@ func streamContainerDidTapSubmitButton(_ streamContainer: AACStreamContainerView
 
 ## Retrieving card count
 
+!> As of iOS SDK version 0.24.0, it is recommended that you use _user metrics_ to retrieve the card count instead. See the next section for more information.
+
 The SDK supports observing the card count for a particular stream container, or receiving a single card count, even when that stream container does not exist in memory.
 
 **Swift**
@@ -577,6 +579,46 @@ The count of visible cards is available via the `AACSessionCardCountUserInfoKey`
 If you want to retrieve the total number of cards in the container (rather than the number visible), use the `AACSessionTotalCardCountUserInfoKey` key in the `userInfo` dictionary. 
 
 When not in single card view, `AACSessionCardCountUserInfoKey` and `AACSessionTotalCardCountUserInfoKey` report the same value.
+
+## Retrieving the count of active and unseen cards
+
+_(Requires Atomic SDK 0.24.0+)_
+
+The Atomic iOS SDK exposes an object known as _user metrics_. These metrics include:
+- The number of cards available to the user across all stream containers;
+- The number of cards that haven't been seen across all stream containers;
+- The number of cards available to the user in a specific stream container (equivalent to the card count functionality in the previous section);
+- The number of cards not yet seen by the user in a specific stream container.
+
+These metrics allow you to display badges in your UI that indicate how many cards are available to the user but not yet viewed, or the total number of cards in a given stream container.
+
+**Swift**
+
+```swift
+AACSession.userMetrics(with: sessionDelegate) { metrics, error in
+    if let userMetrics = metrics {
+        print("Total cards across all containers: \(userMetrics.totalCards())")
+        print("Total cards across a specific container: \(userMetrics.totalCardsForStreamContainer(withId: "containerId"))")
+        
+        print("Unseen cards across all containers: \(userMetrics.unseenCards())")
+        print("Unseen cards across a specific container: \(userMetrics.unseenCardsForStreamContainer(withId: "containerId"))")
+    }
+}
+```
+
+**Objective-C**
+
+```objectivec
+[AACSession userMetricsWithSessionDelegate:sessionDelegate completionHandler:^(AACUserMetrics *response, NSError *error) {
+    if(response != nil) {
+        NSLog(@"Total cards: %i", [response totalCards]);
+        NSLog(@"Total cards in stream container: %i", [response totalCardsForStreamContainerWithId:@"containerId"]);
+        
+        NSLog(@"Unseen cards: %i", [response unseenCards]);
+        NSLog(@"Unseen cards in stream container: %i", [response unseenCardsForStreamContainerWithId:@"containerId"]);
+    }
+}];
+```
 
 ## Dark mode
 

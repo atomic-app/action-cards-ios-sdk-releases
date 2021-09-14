@@ -10,6 +10,8 @@
 #import <AtomicSDK/AACEventPayload.h>
 #import <AtomicSDK/AACEventResponse.h>
 #import <AtomicSDK/AACRequestDelegate.h>
+#import <AtomicSDK/AACUserMetrics.h>
+#import <AtomicSDK/AACEmbeddedFont.h>
 
 /**
  Handler called whenever the card count changes.
@@ -36,6 +38,13 @@ typedef void(^AACSessionPushNotificationDeregisterHandler)(NSError* __nullable e
  If an error occurred, the error parameter is populated with details of the error that occurred.
  */
 typedef void(^AACSessionSendEventHandler)(AACEventResponse* __nullable response, NSError* __nullable error);
+
+/**
+ Handler called when the request for user metrics completes.
+ If the request succeeds, the `response` parameter is non-nil and the `error` parameter is nil.
+ If the request fails, the `response` parameter is nil and the `error` parameter is non-nil.
+ */
+typedef void(^AACSessionUserMetricsHandler)(AACUserMetrics* __nullable response, NSError* __nullable error);
 
 /**
  Notification posted when the number of cards in a stream container changes.
@@ -73,6 +82,13 @@ extern NSString* __nonnull const AACSessionTotalCardCountUserInfoKey;
 @interface AACSession: NSObject
 
 - (instancetype __nonnull)init NS_UNAVAILABLE;
+
+/**
+ Registers the specified local fonts with the SDK. The fonts are defined in the theme created in the Atomic Workbench
+ and integrated locally with the app.
+ @param embeddedFonts The font list to be registered.
+ */
++ (void)registerEmbeddedFonts:(NSArray<AACEmbeddedFont *>* __nonnull)embeddedFonts;
 
 /**
  Configures the Atomic SDK to use the provided base URL when making API requests.
@@ -174,8 +190,11 @@ extern NSString* __nonnull const AACSessionTotalCardCountUserInfoKey;
  Asks the SDK to register the currently logged in user for push notifications on the stream container IDs in the provided
  array.
  
- Push notifications will not be delivered to a user unless they have registered for push notifications first (using the above
- method). However, the registration of device token and registration of stream container IDs can occur in either order.
+ Push notifications will not be delivered to a user unless they have also registered their device token (using the
+ `registerDeviceForNotifications:withSessionDelegate:`). The registration of device token and registration
+ of stream container IDs can occur in either order.
+ 
+ This method does not alter the user's `notificationsEnabled` preference in the Atomic Platform.
  
  @param streamContainerIds (Required) The stream container IDs to register the current user against for push notifications.
  Pass an empty array to unregister this device from notifications (e.g. when the user performs a complete logout from your app).
@@ -183,6 +202,25 @@ extern NSString* __nonnull const AACSessionTotalCardCountUserInfoKey;
  */
 + (void)registerStreamContainersForPushNotifications:(NSArray<NSString*>* __nonnull)streamContainerIds
                                      sessionDelegate:(id<AACSessionDelegate> __nonnull)sessionDelegate;
+
+/**
+ Asks the SDK to register the currently logged in user for push notifications on the stream container IDs in the provided
+ array with notifications enabled or disabled.
+ 
+ Push notifications will not be delivered to a user unless they have registered their device token (using the
+ `registerDeviceForNotifications:withSessionDelegate:` method). The registration of device token and registration
+ of stream container IDs can occur in either order.
+ 
+ The `notificationsEnabled` parameter will set the user's preference in the Atomic Platform to true or false accordingly.
+ 
+ @param streamContainerIds (Required) The stream container IDs to register the current user against for push notifications.
+ Pass an empty array to unregister this device from notifications (e.g. when the user performs a complete logout from your app).
+ @param sessionDelegate (Required) A delegate that supplies a user authentication token when requested by the SDK.
+ @param notificationsEnabled (Required) Whether push notifications, for the current user, should be enabled or disabled.
+ */
++ (void)registerStreamContainersForPushNotifications:(NSArray<NSString*>* __nonnull)streamContainerIds
+                                     sessionDelegate:(id<AACSessionDelegate> __nonnull)sessionDelegate
+                                notificationsEnabled:(BOOL)notificationsEnabled;
 
 /**
  Determines whether the given push notification payload is for a push notification sent by the Atomic Platform. The push
@@ -236,5 +274,19 @@ extern NSString* __nonnull const AACSessionTotalCardCountUserInfoKey;
  @param delegate A global delegate that determines whether requests across the SDK can proceed.
  */
 + (void)setRequestDelegate:(id<AACRequestDelegate> __nullable)delegate;
+
+#pragma mark - User metrics
+
+/**
+ Requests user metrics for the currently logged in user, identified by the authentication token returned by the
+ `sessionDelegate`. User metrics include the total number of cards available to the user, the number of cards
+ that haven't yet been seen by the user, and the number of available and unseen cards in a specific stream container.
+ Use the returned `AACUserMetrics` object to obtain these values.
+ 
+ @param sessionDelegate A session delegate providing an authentication token for the user.
+ @param completionHandler Completion handler called when the request for user metrics completes.
+ */
++ (void)userMetricsWithSessionDelegate:(id<AACSessionDelegate> __nonnull)sessionDelegate
+                     completionHandler:(AACSessionUserMetricsHandler __nonnull)completionHandler;
 
 @end

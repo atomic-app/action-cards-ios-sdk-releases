@@ -100,7 +100,22 @@ typedef NS_ENUM(NSUInteger, AACCustomString) {
      Has no effect in single card view, or if `cardListFooterMessageEnabled` is set to `NO`.
      Defaults to an empty string.
      */
-    AACCustomStringCardListFooterMessage
+    AACCustomStringCardListFooterMessage,
+    /**
+     Message to display on the first load screen and card list when there is no internet connection.
+     Defaults to `No internet connection`.
+     */
+    AACCustomStringNoInternetConnectionMessage,
+    /**
+     Message to display on the first load screen and card list when data fails to load.
+     Defaults to `Couldn't load data`.
+     */
+    AACCustomStringDataLoadFailedMessage,
+    /**
+     The title for the button on the first load screen and card list, allowing the user to retry the request.
+     Defaults to `Try again`.
+     */
+    AACCustomStringTryAgainTitle
 };
 
 /**
