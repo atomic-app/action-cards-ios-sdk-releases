@@ -27,6 +27,12 @@ typedef void(^AACSessionCardCountChangedHandler)(NSNumber * __nullable cardCount
 typedef void(^AACSessionPushNotificationReceivedHandler)(NSError* __nullable error);
 
 /**
+ Handler called when the request to register for Atomic push notifications completes.
+ If an error occurred, the error parameter is populated with details, otherwise the error parameter is nil.
+ */
+typedef void(^AACSessionPushNotificationRegistrationHandler)(NSError* __nullable error);
+
+/**
  Handler called when the request to deregister for Atomic push notifications completes.
  If an error occurred, the error parameter is populated with details, otherwise the error parameter is nil.
  */
@@ -176,7 +182,21 @@ extern NSString* __nonnull const AACSessionTotalCardCountUserInfoKey;
  @param sessionDelegate (Required) A delegate that supplies a user authentication token when requested by the SDK.
  */
 + (void)registerDeviceForNotifications:(NSData* __nonnull)deviceToken
-                   withSessionDelegate:(id<AACSessionDelegate> __nonnull)sessionDelegate;
+                   withSessionDelegate:(id<AACSessionDelegate> __nonnull)sessionDelegate DEPRECATED_MSG_ATTRIBUTE("A nullable completion handler is added to this method since release 0.25.0. Please use `registerDeviceForNotifications:withSessionDelegate:completionHandler:` to register the given device token.");
+
+/**
+ Asks the SDK to register the given device token against the currently logged in user. The logged in user
+ is specified by the authentication token provided by the session delegate.
+ 
+ @param deviceToken (Required) A device token supplied from `application:didRegisterForRemoteNotificationsWithDeviceToken:`
+ in your app delegate.
+ @param sessionDelegate (Required) A delegate that supplies a user authentication token when requested by the SDK. 
+ @param completionHandler (Optional) Completion handler called when the request completes. If `error` is nil,
+ the request succeeded, otherwise the request failed.
+ */
++ (void)registerDeviceForNotifications:(NSData* __nonnull)deviceToken
+                   withSessionDelegate:(id<AACSessionDelegate> __nonnull)sessionDelegate
+                     completionHandler:(AACSessionPushNotificationRegistrationHandler __nullable)completionHandler;
 
 /**
  Asks the SDK to deregister the current device for Atomic push notifications, within the current app.
@@ -201,7 +221,27 @@ extern NSString* __nonnull const AACSessionTotalCardCountUserInfoKey;
  @param sessionDelegate (Required) A delegate that supplies a user authentication token when requested by the SDK.
  */
 + (void)registerStreamContainersForPushNotifications:(NSArray<NSString*>* __nonnull)streamContainerIds
-                                     sessionDelegate:(id<AACSessionDelegate> __nonnull)sessionDelegate;
+                                     sessionDelegate:(id<AACSessionDelegate> __nonnull)sessionDelegate DEPRECATED_MSG_ATTRIBUTE("A nullable completion handler is added to this method since release 0.25.0. Please use `registerStreamContainersForPushNotifications:sessionDelegate:completionHandler:` to register stream containers for push notifications.");
+
+/**
+ Asks the SDK to register the currently logged in user for push notifications on the stream container IDs in the provided
+ array.
+ 
+ Push notifications will not be delivered to a user unless they have also registered their device token (using the
+ `registerDeviceForNotifications:withSessionDelegate:`). The registration of device token and registration
+ of stream container IDs can occur in either order.
+ 
+ This method does not alter the user's `notificationsEnabled` preference in the Atomic Platform.
+ 
+ @param streamContainerIds (Required) The stream container IDs to register the current user against for push notifications.
+ Pass an empty array to unregister this device from notifications (e.g. when the user performs a complete logout from your app).
+ @param sessionDelegate (Required) A delegate that supplies a user authentication token when requested by the SDK.
+ @param completionHandler (Optional) Completion handler called when the request completes. If `error` is nil,
+ the request succeeded, otherwise the request failed.
+ */
++ (void)registerStreamContainersForPushNotifications:(NSArray<NSString*>* __nonnull)streamContainerIds
+                                     sessionDelegate:(id<AACSessionDelegate> __nonnull)sessionDelegate
+                                   completionHandler:(AACSessionPushNotificationRegistrationHandler __nullable)completionHandler;
 
 /**
  Asks the SDK to register the currently logged in user for push notifications on the stream container IDs in the provided
@@ -220,7 +260,29 @@ extern NSString* __nonnull const AACSessionTotalCardCountUserInfoKey;
  */
 + (void)registerStreamContainersForPushNotifications:(NSArray<NSString*>* __nonnull)streamContainerIds
                                      sessionDelegate:(id<AACSessionDelegate> __nonnull)sessionDelegate
-                                notificationsEnabled:(BOOL)notificationsEnabled;
+                                notificationsEnabled:(BOOL)notificationsEnabled DEPRECATED_MSG_ATTRIBUTE("A nullable completion handler is added to this method since release 0.25.0. Please use `registerStreamContainersForPushNotifications:sessionDelegate:notificationsEnabled:completionHandler:` to register stream containers for push notifications");
+
+/**
+ Asks the SDK to register the currently logged in user for push notifications on the stream container IDs in the provided
+ array with notifications enabled or disabled.
+ 
+ Push notifications will not be delivered to a user unless they have registered their device token (using the
+ `registerDeviceForNotifications:withSessionDelegate:` method). The registration of device token and registration
+ of stream container IDs can occur in either order.
+ 
+ The `notificationsEnabled` parameter will set the user's preference in the Atomic Platform to true or false accordingly.
+ 
+ @param streamContainerIds (Required) The stream container IDs to register the current user against for push notifications.
+ Pass an empty array to unregister this device from notifications (e.g. when the user performs a complete logout from your app).
+ @param sessionDelegate (Required) A delegate that supplies a user authentication token when requested by the SDK.
+ @param notificationsEnabled (Required) Whether push notifications, for the current user, should be enabled or disabled.
+ @param completionHandler (Optional) Completion handler called when the request completes. If `error` is nil,
+ the request succeeded, otherwise the request failed.
+ */
++ (void)registerStreamContainersForPushNotifications:(NSArray<NSString*>* __nonnull)streamContainerIds
+                                     sessionDelegate:(id<AACSessionDelegate> __nonnull)sessionDelegate
+                                notificationsEnabled:(BOOL)notificationsEnabled
+                                   completionHandler:(AACSessionPushNotificationRegistrationHandler __nullable)completionHandler;
 
 /**
  Determines whether the given push notification payload is for a push notification sent by the Atomic Platform. The push
@@ -236,7 +298,7 @@ extern NSString* __nonnull const AACSessionTotalCardCountUserInfoKey;
  Tracks that a push notification, with the given payload, was received by this device.
  If the payload does not represent an Atomic push notification, this method has no effect.
  This method dispatches an analytics event back to Atomic to indicate that the user's device received the notification.
- It is the responsibiity of the integrator to ensure that this method is called at the correct location to ensure accurate tracking.
+ It is the responsibility of the integrator to ensure that this method is called at the correct location to ensure accurate tracking.
  
  @param payload The push notification payload to inspect.
  @param sessionDelegate A session delegate that provides a JWT containing the user's ID.
