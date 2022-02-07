@@ -4112,9 +4112,10 @@ __43+[AACAnalyticsQueue analyticsDispatchQueue]_block_invoke
 __32+[AACAnalyticsQueue sharedQueue]_block_invoke
 -[AACCardViewMediaInlineLayout resetView]
 -[AACCardViewMediaInlineLayout setupWithNode:context:]
+-[AACCardViewMediaInlineLayout updateOverlayViewStatus]
 -[AACCardViewMediaInlineLayout applyTheme:]
 ___43-[AACCardViewMediaInlineLayout applyTheme:]_block_invoke
-___43-[AACCardViewMediaInlineLayout applyTheme:]_block_invoke.61
+___43-[AACCardViewMediaInlineLayout applyTheme:]_block_invoke.67
 -[AACCardViewMediaInlineLayout cardComponentLayoutDidDisappear]
 -[AACCardViewMediaInlineLayout didBeginPlaying]
 -[AACCardViewMediaInlineLayout didFinishPlaying]
@@ -4130,16 +4131,18 @@ ___43-[AACCardViewMediaInlineLayout applyTheme:]_block_invoke.61
 -[AACCardViewMediaInlineLayout setMediaUrl:]
 -[AACCardViewMediaInlineLayout thumbnailUrlToLoad]
 -[AACCardViewMediaInlineLayout setThumbnailUrlToLoad:]
+-[AACCardViewMediaInlineLayout hasPlaceholderImageToLoad]
+-[AACCardViewMediaInlineLayout setHasPlaceholderImageToLoad:]
 -[AACCardViewMediaInlineLayout alternateText]
 -[AACCardViewMediaInlineLayout setAlternateText:]
 -[AACCardViewMediaInlineLayout .cxx_destruct]
-_OBJC_CLASSLIST_REFERENCES_$_.52
 _OBJC_IVAR_$_AACCardViewMediaInlineLayout._imageView
 _OBJC_IVAR_$_AACCardViewMediaInlineLayout._overlayView
 _OBJC_IVAR_$_AACCardViewMediaInlineLayout._containerView
 _OBJC_IVAR_$_AACCardViewMediaInlineLayout._mediaKind
 _OBJC_IVAR_$_AACCardViewMediaInlineLayout._mediaUrl
 _OBJC_IVAR_$_AACCardViewMediaInlineLayout._thumbnailUrlToLoad
+_OBJC_IVAR_$_AACCardViewMediaInlineLayout._hasPlaceholderImageToLoad
 _OBJC_IVAR_$_AACCardViewMediaInlineLayout._alternateText
 __OBJC_$_PROTOCOL_INSTANCE_METHODS_AACVideoOverlayViewDelegate
 __OBJC_$_PROTOCOL_METHOD_TYPES_AACVideoOverlayViewDelegate
@@ -4153,7 +4156,7 @@ __OBJC_$_PROP_LIST_AACCardViewMediaInlineLayout
 __OBJC_CLASS_RO_$_AACCardViewMediaInlineLayout
 /Users/distiller/project/ActionCardsSDK/ActionCardsSDK/Renderer/Components/Media/Layouts/AACCardViewMediaInlineLayout.m
 ActionCardsSDK/Renderer/Components/Media/Layouts/AACCardViewMediaInlineLayout.m
-__43-[AACCardViewMediaInlineLayout applyTheme:]_block_invoke.61
+__43-[AACCardViewMediaInlineLayout applyTheme:]_block_invoke.67
 __43-[AACCardViewMediaInlineLayout applyTheme:]_block_invoke
 -[AACCardSnoozePresenter initWithDefaultDate:]
 -[AACCardSnoozePresenter updateSnoozeDate:]
@@ -4966,6 +4969,7 @@ ___destroy_helper_block_e4_20s24s28s32s
 -[AACCardSubviewPresenter setCardResponse:]
 -[AACCardSubviewPresenter .cxx_destruct]
 ___block_descriptor_24_e4_20s_e36_v12?0"AACCardInstance"4"NSError"8l
+_OBJC_CLASSLIST_REFERENCES_$_.52
 ___block_descriptor_40_e4_20s24s28s32s_e5_v4?0l
 ___block_descriptor_36_e4_20s24s28s_e40_v12?0"AACCardFeedMetadata"4"NSError"8l
 _OBJC_CLASSLIST_REFERENCES_$_.132
@@ -5790,9 +5794,10 @@ __OBJC_CLASS_RO_$_AACValidationMinimumDate
 ActionCardsSDK/Model/Validation/Date/AACValidationMinimumDate.m
 -[AACCardViewMediaThumbnailLayout resetView]
 -[AACCardViewMediaThumbnailLayout setupWithNode:context:]
+-[AACCardViewMediaThumbnailLayout updateOverlayViewStatus]
 -[AACCardViewMediaThumbnailLayout applyTheme:]
 ___46-[AACCardViewMediaThumbnailLayout applyTheme:]_block_invoke
-___46-[AACCardViewMediaThumbnailLayout applyTheme:]_block_invoke.109
+___46-[AACCardViewMediaThumbnailLayout applyTheme:]_block_invoke.115
 -[AACCardViewMediaThumbnailLayout titleLabel]
 -[AACCardViewMediaThumbnailLayout setTitleLabel:]
 -[AACCardViewMediaThumbnailLayout subtitleLabel]
@@ -5821,6 +5826,8 @@ ___46-[AACCardViewMediaThumbnailLayout applyTheme:]_block_invoke.109
 -[AACCardViewMediaThumbnailLayout setLinkTitle:]
 -[AACCardViewMediaThumbnailLayout thumbnailUrlToLoad]
 -[AACCardViewMediaThumbnailLayout setThumbnailUrlToLoad:]
+-[AACCardViewMediaThumbnailLayout hasPlaceholderImageToLoad]
+-[AACCardViewMediaThumbnailLayout setHasPlaceholderImageToLoad:]
 -[AACCardViewMediaThumbnailLayout mediaUrl]
 -[AACCardViewMediaThumbnailLayout setMediaUrl:]
 -[AACCardViewMediaThumbnailLayout .cxx_destruct]
@@ -5838,6 +5845,7 @@ _OBJC_IVAR_$_AACCardViewMediaThumbnailLayout._mediaTitle
 _OBJC_IVAR_$_AACCardViewMediaThumbnailLayout._mediaDescription
 _OBJC_IVAR_$_AACCardViewMediaThumbnailLayout._linkTitle
 _OBJC_IVAR_$_AACCardViewMediaThumbnailLayout._thumbnailUrlToLoad
+_OBJC_IVAR_$_AACCardViewMediaThumbnailLayout._hasPlaceholderImageToLoad
 _OBJC_IVAR_$_AACCardViewMediaThumbnailLayout._mediaUrl
 __OBJC_METACLASS_RO_$_AACCardViewMediaThumbnailLayout
 __OBJC_$_INSTANCE_METHODS_AACCardViewMediaThumbnailLayout
@@ -5846,7 +5854,7 @@ __OBJC_$_PROP_LIST_AACCardViewMediaThumbnailLayout
 __OBJC_CLASS_RO_$_AACCardViewMediaThumbnailLayout
 /Users/distiller/project/ActionCardsSDK/ActionCardsSDK/Renderer/Components/Media/Layouts/AACCardViewMediaThumbnailLayout.m
 ActionCardsSDK/Renderer/Components/Media/Layouts/AACCardViewMediaThumbnailLayout.m
-__46-[AACCardViewMediaThumbnailLayout applyTheme:]_block_invoke.109
+__46-[AACCardViewMediaThumbnailLayout applyTheme:]_block_invoke.115
 __46-[AACCardViewMediaThumbnailLayout applyTheme:]_block_invoke
 +[AACLogger sharedLogger]
 ___25+[AACLogger sharedLogger]_block_invoke
@@ -6500,7 +6508,7 @@ __OBJC_CLASS_RO_$_AACTypographyRenderingOptions
 _contentSizeCategoryAdjustments.onceToken
 _contentSizeCategoryAdjustments.contentSizeCategories
 _OBJC_CLASSLIST_REFERENCES_$_.104
-_OBJC_CLASSLIST_REFERENCES_$_.126
+_OBJC_CLASSLIST_REFERENCES_$_.125
 __OBJC_$_CLASS_METHODS_AACTypography
 __OBJC_METACLASS_RO_$_AACTypography
 __OBJC_$_INSTANCE_METHODS_AACTypography
@@ -6518,8 +6526,6 @@ _OBJC_IVAR_$_AACTypography._currentSizeCategory
 __OBJC_$_INSTANCE_VARIABLES_AACTypography
 __OBJC_$_PROP_LIST_AACTypography
 __OBJC_CLASS_RO_$_AACTypography
-_OBJC_CLASSLIST_REFERENCES_$_.207
-_OBJC_SELECTOR_REFERENCES_.209
 /Users/distiller/project/ActionCardsSDK/ActionCardsSDK/Model/Theme/ThemeElements/AACTypography.m
 ActionCardsSDK/Model/Theme/ThemeElements/AACTypography.m
 __47+[AACTypography contentSizeCategoryAdjustments]_block_invoke
@@ -7440,6 +7446,7 @@ ___42+[AACPrototypeCellProvider sharedInstance]_block_invoke
 -[AACPrototypeCellProvider init]
 +[AACPrototypeCellProvider prototypeCellForClass:]
 +[AACPrototypeCellProvider prototypeViewForClass:]
++[AACPrototypeCellProvider clear]
 -[AACPrototypeCellProvider prototypeCells]
 -[AACPrototypeCellProvider setPrototypeCells:]
 -[AACPrototypeCellProvider prototypeViews]
@@ -7518,9 +7525,10 @@ ActionCardsSDK/Model/Analytics/AACAnalyticsEvent.m
 ActionCardsSDK/Model/Analytics/AACAnalyticsEvent.h
 -[AACCardViewMediaBannerLayout resetView]
 -[AACCardViewMediaBannerLayout setupWithNode:context:]
+-[AACCardViewMediaBannerLayout updateOverlayViewStatus]
 -[AACCardViewMediaBannerLayout applyTheme:]
 ___43-[AACCardViewMediaBannerLayout applyTheme:]_block_invoke
-___43-[AACCardViewMediaBannerLayout applyTheme:]_block_invoke.67
+___43-[AACCardViewMediaBannerLayout applyTheme:]_block_invoke.73
 -[AACCardViewMediaBannerLayout cardComponentLayoutDidDisappear]
 -[AACCardViewMediaBannerLayout didBeginPlaying]
 -[AACCardViewMediaBannerLayout didFinishPlaying]
@@ -7536,6 +7544,8 @@ ___43-[AACCardViewMediaBannerLayout applyTheme:]_block_invoke.67
 -[AACCardViewMediaBannerLayout setThumbnailUrlToLoad:]
 -[AACCardViewMediaBannerLayout mediaUrl]
 -[AACCardViewMediaBannerLayout setMediaUrl:]
+-[AACCardViewMediaBannerLayout hasPlaceholderImageToLoad]
+-[AACCardViewMediaBannerLayout setHasPlaceholderImageToLoad:]
 -[AACCardViewMediaBannerLayout alternateText]
 -[AACCardViewMediaBannerLayout setAlternateText:]
 -[AACCardViewMediaBannerLayout .cxx_destruct]
@@ -7545,6 +7555,7 @@ _OBJC_IVAR_$_AACCardViewMediaBannerLayout._topSpacingConstraint
 _OBJC_IVAR_$_AACCardViewMediaBannerLayout._mediaKind
 _OBJC_IVAR_$_AACCardViewMediaBannerLayout._thumbnailUrlToLoad
 _OBJC_IVAR_$_AACCardViewMediaBannerLayout._mediaUrl
+_OBJC_IVAR_$_AACCardViewMediaBannerLayout._hasPlaceholderImageToLoad
 _OBJC_IVAR_$_AACCardViewMediaBannerLayout._alternateText
 __OBJC_CLASS_PROTOCOLS_$_AACCardViewMediaBannerLayout
 __OBJC_METACLASS_RO_$_AACCardViewMediaBannerLayout
@@ -7554,7 +7565,7 @@ __OBJC_$_PROP_LIST_AACCardViewMediaBannerLayout
 __OBJC_CLASS_RO_$_AACCardViewMediaBannerLayout
 /Users/distiller/project/ActionCardsSDK/ActionCardsSDK/Renderer/Components/Media/Layouts/AACCardViewMediaBannerLayout.m
 ActionCardsSDK/Renderer/Components/Media/Layouts/AACCardViewMediaBannerLayout.m
-__43-[AACCardViewMediaBannerLayout applyTheme:]_block_invoke.67
+__43-[AACCardViewMediaBannerLayout applyTheme:]_block_invoke.73
 __43-[AACCardViewMediaBannerLayout applyTheme:]_block_invoke
 -[AACValidator init]
 -[AACValidator addValidation:]
