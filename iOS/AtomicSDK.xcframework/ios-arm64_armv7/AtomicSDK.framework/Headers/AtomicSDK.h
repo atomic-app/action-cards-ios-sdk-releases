@@ -17,6 +17,7 @@ FOUNDATION_EXPORT const unsigned char AtomicSDKVersionString[];
 #endif
 
 #import <AtomicSDK/AACSessionDelegate.h>
+#import <AtomicSDK/AACRuntimeVariableDelegate.h>
 #import <AtomicSDK/AACCardEventDelegate.h>
 #import <AtomicSDK/AACCardEvent.h>
 #import <AtomicSDK/AACEventPayload.h>

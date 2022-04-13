@@ -10,6 +10,7 @@
 #import <AtomicSDK/AACStreamContainerActionDelegate.h>
 #import <AtomicSDK/AACCardEventDelegate.h>
 #import <AtomicSDK/AACFeatureFlags.h>
+#import <AtomicSDK/AACRuntimeVariableDelegate.h>
 
 /**
  Supported methods for presenting a stream container in the SDK.
@@ -160,6 +161,11 @@ typedef NS_OPTIONS(NSUInteger, AACUIElement) {
 @property (nonatomic, weak, nullable) id<AACStreamContainerActionDelegate> actionDelegate;
 
 /**
+ Optional runtime variable delegate that resolves runtime variable for the cards.
+ */
+@property (nonatomic, weak, nullable) id<AACRuntimeVariableDelegate> runtimeVariableDelegate;
+
+/**
  Optional delegate that responds to card events in the stream container.
  */
 @property (nonatomic, weak, nullable) id<AACCardEventDelegate> cardEventDelegate;
@@ -211,7 +217,7 @@ typedef NS_OPTIONS(NSUInteger, AACUIElement) {
 
 /**
  The maximum amount of time allocated when resolving variables in the `-cardSessionDidRequestRuntimeVariables:completionHandler:`
- method on `AACSessionDelegate`. If the tasks inside of the delegate method take longer than this timeout, or the completionHandler is
+ method on `AACRuntimeVariableDelegate`. If the tasks inside of the delegate method take longer than this timeout, or the completionHandler is
  not called in this time, default values will be used for all runtime variables.
  
  Defaults to 5 seconds, and cannot be negative.

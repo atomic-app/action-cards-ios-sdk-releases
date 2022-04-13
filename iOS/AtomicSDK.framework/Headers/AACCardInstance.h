@@ -31,6 +31,21 @@
 @property (nonatomic, strong, nonnull, readonly) NSArray<AACCardRuntimeVariable*>* runtimeVariables;
 
 /**
+ The priority of the card, the value of which can be any number from 1 - 10, with 1 being the highest priority,
+ and 10 being the lowest priority. Cards with higher priority appear higher in the card feed.
+ 
+ For example a card with priority 3 will be ordered above a card with priority 4.
+ 
+ If no priority is supplied, the default priority is 5.
+ */
+@property (nonatomic, readonly) NSInteger priority;
+
+/**
+ The last active time of the card.
+ */
+@property (nonatomic, strong, nonnull, readonly) NSDate* lastCardActiveTime;
+
+/**
  Assigns the given `value` to the variable with the given `name`.
  If the variable with the given name does not exist on this card, this method does nothing for that variable.
  

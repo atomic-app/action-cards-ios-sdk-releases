@@ -5,7 +5,6 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <AtomicSDK/AACCardInstance.h>
 
 /**
  A block used to hand an authentication token back to the SDK when requested.
@@ -14,15 +13,6 @@
  available.
  */
 typedef void(^AACSessionAuthenticationTokenHandler)(NSString* __nullable authToken);
-
-/**
- A completion handler provided to the integrator when resolving runtime variables.
- Once you have resolved all runtime variables, this completion handler must be called with the array of resolved cards.
- 
- @param resolvedCards The cards provided to the delegate, but with all variables resolved. If a variable is not
- resolved, that variable uses its default value as defined in the Atomic Workbench.
- */
-typedef void(^AACSessionRuntimeVariablesHandler)(NSArray<AACCardInstance*>* __nonnull resolvedCards);
 
 /**
  An AACSessionDelegate supplies information to the SDK relating to the user's session.
@@ -36,9 +26,7 @@ typedef void(^AACSessionRuntimeVariablesHandler)(NSArray<AACCardInstance*>* __no
 @required
 
 /**
- Called when the card session has requested a authentication token to make an authenticated
- request. It is the responsibility of the implementer to ensure that the token hasn't expired,
- otherwise the API request using this token will fail.
+ Called when the SDK has requested an authentication token.
  
  @param handler A block that you must call when an authentication token has been resolved. The sole argument
  to this block is expected to be an authentication token (JWT), or `nil` if there is no token available.
@@ -48,17 +36,12 @@ typedef void(^AACSessionRuntimeVariablesHandler)(NSArray<AACCardInstance*>* __no
 @optional
 
 /**
- An optional delegate method that can be implemented when one or more cards include runtime variables.
- If the card includes runtime variables to be resolved, the SDK will call this method to ask that you resolve them.
- If this method is not implemented, or you do not resolve a given variable, the default values for that variable
- will be used (as defined in the Atomic Workbench).
+ (Optional) Returns the time interval used to determine whether the authentication token has expired. If the interval between the
+ current time and the token's `exp` field is smaller than that interval, the token is considered to be expired.
  
- Variables are resolved on each card by calling `resolveRuntimeVariableWithName:value:`.
+ If this method is not set, the default value is 300 seconds. The interval must not be smaller than zero.
  
- @param cardsToResolve An array of cards containing runtime variables that need to be resolved.
- @param completionHandler A completion handler to call, with a resolved array of cards, when variable resolution is complete.
+ You must return a constant value from this method, as the value is only retrieved by the SDK once.
  */
-- (void)cardSessionDidRequestRuntimeVariables:(NSArray<AACCardInstance*>* __nonnull)cardsToResolve
-                            completionHandler:(AACSessionRuntimeVariablesHandler __nonnull)completionHandler;
-
+- (NSTimeInterval)expiryInterval;
 @end
