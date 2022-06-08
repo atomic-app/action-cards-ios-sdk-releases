@@ -173,7 +173,16 @@ typedef NS_ERROR_ENUM(AACSessionLogoutErrorDomain, AACSessionLogoutErrorCode) {
  
  @param enabled Whether logging should be enabled within the SDK.
  */
-+ (void)setLoggingEnabled:(BOOL)enabled;
++ (void)setLoggingEnabled:(BOOL)enabled DEPRECATED_MSG_ATTRIBUTE("The setLoggingEnabled method has been deprecated. Call +[AACSession enableDebugMode:] to set the log message level.");
+
+/**
+ Sets the debug logging level within the SDK. This can be useful in debug
+ builds when integrating the SDK. Defaults to `0`, which means no logs. Setting this takes immediate effect.
+ 
+ @param level The logging message level that controls the details of logging information.
+ Must be one of the following values: 0, 1, 2, 3.
+ */
++ (void)enableDebugMode:(NSInteger)level;
 
 /**
  Purges all cached card data stored by the SDK, and sends any pending analytics events to the Atomic Platform.
