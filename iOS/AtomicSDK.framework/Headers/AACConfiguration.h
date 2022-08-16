@@ -33,6 +33,8 @@ typedef NS_ENUM(NSUInteger, AACConfigurationPresentationStyle) {
      on context:
      - If presented inside of a navigation controller, a 'Back' button is presented.
      - If presented modally, a 'Close' button is presented.
+     This style has the same effect as `AACConfigurationPresentationStyleWithActionButton`
+     in horizontal container mode.
      */
     AACConfigurationPresentationStyleWithContextualButton
 };

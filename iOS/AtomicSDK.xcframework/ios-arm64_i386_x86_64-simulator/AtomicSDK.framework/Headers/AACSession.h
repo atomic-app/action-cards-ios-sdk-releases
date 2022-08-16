@@ -149,6 +149,23 @@ typedef NS_ERROR_ENUM(AACSessionLogoutErrorDomain, AACSessionLogoutErrorCode) {
 + (void)setApiBaseUrl:(NSURL* __nonnull)baseUrl;
 
 /**
+ Supported network protocol types in the SDK.
+ */
+typedef NS_ENUM(NSUInteger, AACApiProtocol) {
+    /// Represent the WebSockets protocol
+    AACApiProtocolWebSockets,
+    /// Represent the HTTP protocol
+    AACApiProtocolHttp
+};
+
+/**
+ Set up the network protocol used by the SDK to acquire cards. Calling it takes immediate effect.
+ 
+ @param protocol The protocol that is going to be used by the SDK.
+ */
++ (void)setApiProtocol:(AACApiProtocol)protocol;
+
+/**
  Set up a session delegate used by the SDK to acquire an authentication token.
  The token is requested once by the SDK, and provided that the token is valid and contains a user ID, the
  token is retained in memory by the SDK until it is due to expire - at which point, a new token is requested.
@@ -226,8 +243,8 @@ typedef NS_ERROR_ENUM(AACSessionLogoutErrorDomain, AACSessionLogoutErrorCode) {
  the count changes.
  
  @param streamContainerId (Required) The stream container ID to observe the card count for.
- @param interval (Required) How frequently the card count should be updated. Must be at least 1 second,
- otherwise defaults to 1 second.
+ @param interval (Required) How frequently the card count should be updated when the WebSockets service is not available.
+ Must be at least 1 second, otherwise defaults to 1 second.
  @param handler (Required) Handler called whenever the card count changes. If the handler returns `nil`, the
  card count is not available for this stream container (the user may not have access or the internet connection
  may be unavailable).

@@ -26,6 +26,7 @@ FOUNDATION_EXPORT const unsigned char AtomicSDKVersionString[];
 #import <AtomicSDK/AACConfiguration.h>
 #import <AtomicSDK/AACFeatureFlags.h>
 #import <AtomicSDK/AACSingleCardConfiguration.h>
+#import <AtomicSDK/AACHorizontalContainerConfiguration.h>
 #import <AtomicSDK/AACStreamContainerViewController.h>
 #import <AtomicSDK/AACSession.h>
 #import <AtomicSDK/AACStreamContainerActionDelegate.h>
@@ -35,6 +36,7 @@ FOUNDATION_EXPORT const unsigned char AtomicSDKVersionString[];
 #import <AtomicSDK/AACCardInstance.h>
 #import <AtomicSDK/AACCardRuntimeVariable.h>
 #import <AtomicSDK/AACSingleCardView.h>
+#import <AtomicSDK/AACHorizontalContainerView.h>
 
 #import <AtomicSDK/AACRequestDelegate.h>
 #import <AtomicSDK/AACRequestDisposition.h>

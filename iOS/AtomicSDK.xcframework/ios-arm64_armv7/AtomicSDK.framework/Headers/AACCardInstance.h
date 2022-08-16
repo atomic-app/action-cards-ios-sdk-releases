@@ -6,6 +6,7 @@
 
 #import <Foundation/Foundation.h>
 #import <AtomicSDK/AACCardRuntimeVariable.h>
+@import UIKit;
 
 /**
  Represents an individual card displayed to the end user.
@@ -55,4 +56,8 @@
 - (void)resolveRuntimeVariableWithName:(NSString* __nonnull)name
                                  value:(NSString* __nonnull)value;
 
+/**
+ Stretch the node by providing a height value so it reaches the expected height.
+ */
+- (void)stretchCardWithHeight:(CGFloat)height;
 @end

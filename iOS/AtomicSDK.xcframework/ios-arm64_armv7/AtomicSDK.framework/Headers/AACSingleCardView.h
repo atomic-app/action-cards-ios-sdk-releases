@@ -20,7 +20,7 @@
 @optional
 /**
  The single card view is about to change to the provided size, as a result of a card
- appearing due to polling, being dismissed, snoozed or disappearing due to polling.
+ (dis)appearing due to card feed updating, being dismissed or snoozed.
  
  @param cardView The single card view affected by the change.
  @param newSize The new size of the single card view.
@@ -82,7 +82,7 @@
 /**
  Applies the specified card list filter to the single card view.
  The single card view will render the first card that matches the specified filter, or no cards if there are no matches.
- Calling this method immediately updates the single card view and does not require waiting until the next polling interval.
+ In HTTP polling mode, calling this method immediately updates the single card view and does not require waiting until the next polling interval.
  
  @param filter The filter to apply. Pass `nil` to clear the active filter.
  */

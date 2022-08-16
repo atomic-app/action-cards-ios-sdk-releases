@@ -36,6 +36,14 @@
 		<data>
 		mm+67dS+zIfqPM4dF8hAyK8t5dw=
 		</data>
+		<key>AACCardActionsViewHorizon.nib/objects-11.0+.nib</key>
+		<data>
+		HZvsreHbeWGoqDobLzqoDMm+Jq4=
+		</data>
+		<key>AACCardActionsViewHorizon.nib/runtime.nib</key>
+		<data>
+		dMoQpWV+MJ0/1xr+iVpkWZhKRP0=
+		</data>
 		<key>AACCardFeedbackViewController.nib/objects-11.0+.nib</key>
 		<data>
 		77kI/Z3+eeMTTrUr0F6eQv3jigE=
@@ -46,15 +54,15 @@
 		</data>
 		<key>AACCardFooterView.nib</key>
 		<data>
-		3ddjrjOBqy7WF95hJCjyFgZBqQI=
+		GzajoXnmZTcmUn2CeV7xshp0xh4=
 		</data>
 		<key>AACCardListViewController.nib/objects-11.0+.nib</key>
 		<data>
-		OaCwpY7XypFANKjC4WxtQ+Fots8=
+		kQK21QN2ocH3Vbntn8vvp4uETNo=
 		</data>
 		<key>AACCardListViewController.nib/runtime.nib</key>
 		<data>
-		WlLQ7PyeI5Aw8qIbSIHKfN4Pdyc=
+		4Ig/U2jsLbJicTPbCtZg7X+14kA=
 		</data>
 		<key>AACCardOverflowView.nib/objects-11.0+.nib</key>
 		<data>
@@ -66,11 +74,11 @@
 		</data>
 		<key>AACCardShadowView.nib/objects-11.0+.nib</key>
 		<data>
-		9kbnfYaRSZxsCvb9c/do96mxGOg=
+		1bMLQx3p/385GflQw+sMCmGmpI4=
 		</data>
 		<key>AACCardShadowView.nib/runtime.nib</key>
 		<data>
-		x3/2xlkaBgvKyjWuQ7Po3uWz2po=
+		Edkbtx7EsLBYA5x66KcdfKjnI0Q=
 		</data>
 		<key>AACCardSnoozeViewController.nib/objects-11.0+.nib</key>
 		<data>
@@ -114,11 +122,11 @@
 		</data>
 		<key>AACCardViewListButton.nib/objects-11.0+.nib</key>
 		<data>
-		hB9YMMyJkwIWXwqKsCC7OrZSjOw=
+		w9kmmOFhiGFP2yGlxEL5gMLOGLU=
 		</data>
 		<key>AACCardViewListButton.nib/runtime.nib</key>
 		<data>
-		NOrDrFWBYqVofwZBTUe8M+8Fruw=
+		8SzqNtJXM/BFAyvf2mFPbOUIQKw=
 		</data>
 		<key>AACCardViewListComma.nib/objects-11.0+.nib</key>
 		<data>
@@ -130,11 +138,11 @@
 		</data>
 		<key>AACCardViewListItem.nib/objects-11.0+.nib</key>
 		<data>
-		N3Hhpu+h4m6138bafiRcD1SzWqg=
+		Z0LT6ympw29sXJMcAv5OV4to4ic=
 		</data>
 		<key>AACCardViewListItem.nib/runtime.nib</key>
 		<data>
-		DmjmLh8XlAwJ/Usx0146FMl3Zow=
+		alG4hG4713Rrn5PBDVjNp3AlKeI=
 		</data>
 		<key>AACCardViewMedia.nib/objects-11.0+.nib</key>
 		<data>
@@ -143,6 +151,10 @@
 		<key>AACCardViewMedia.nib/runtime.nib</key>
 		<data>
 		1R0WCP0Ib4baHIH47EOozxxkaEI=
+		</data>
+		<key>AACCardViewPlaceholder.nib</key>
+		<data>
+		GjKtkOfTQfPQXFOOmTGcYG0Dw1w=
 		</data>
 		<key>AACCardViewRadioGroup.nib/objects-11.0+.nib</key>
 		<data>
@@ -224,13 +236,9 @@
 		<data>
 		foAGIISwdKGlWZlc+/bE0jYeHl0=
 		</data>
-		<key>AACListHeaderView.nib/objects-11.0+.nib</key>
+		<key>AACListHeaderView.nib</key>
 		<data>
-		pUoCWukh9/EqaVLW1daaL1xBkPY=
-		</data>
-		<key>AACListHeaderView.nib/runtime.nib</key>
-		<data>
-		NWCKNEedtzy2rr5ZOr0/cnvTtCc=
+		G3YJvOUGgF49OcO2Ztuy6VRKLm4=
 		</data>
 		<key>AACLoadingSpinnerView.nib/objects-11.0+.nib</key>
 		<data>
@@ -286,7 +294,7 @@
 		</data>
 		<key>Assets.car</key>
 		<data>
-		lxIushiwjnZx399IB6cEh+wruh8=
+		gzpFRqoZwuQf0DWMdZKfiv8Gw94=
 		</data>
 		<key>Headers/AACCardCustomAction.h</key>
 		<data>
@@ -306,7 +314,7 @@
 		</data>
 		<key>Headers/AACCardInstance.h</key>
 		<data>
-		8eQVNmwR4n8ZUH8ZmxJdfuPfXzc=
+		WiwpczhFmJ6VSKZbc4v9IjClcas=
 		</data>
 		<key>Headers/AACCardRuntimeVariable.h</key>
 		<data>
@@ -318,7 +326,7 @@
 		</data>
 		<key>Headers/AACConfiguration.h</key>
 		<data>
-		a5Qb+0191SBI88X8Hm09eOSPnpM=
+		L7gAcMc5FXPD7VCggz/DI8WheRk=
 		</data>
 		<key>Headers/AACEmbeddedFont.h</key>
 		<data>
@@ -335,6 +343,14 @@
 		<key>Headers/AACFeatureFlags.h</key>
 		<data>
 		Zd62Iphwdt6+kAn56rCWBqdwFoU=
+		</data>
+		<key>Headers/AACHorizontalContainerConfiguration.h</key>
+		<data>
+		6rQIN/94fEmNJhOL9oF3J/iCVM4=
+		</data>
+		<key>Headers/AACHorizontalContainerView.h</key>
+		<data>
+		zXu7ZLrAzaSK7kYu7BASCWBBY48=
 		</data>
 		<key>Headers/AACPushNotification.h</key>
 		<data>
@@ -354,7 +370,7 @@
 		</data>
 		<key>Headers/AACSession.h</key>
 		<data>
-		k6Gr2UZlu/G+h8TmZR3/kY+15F0=
+		rRw3LgTej8LKlnGQtOHSEKFmA18=
 		</data>
 		<key>Headers/AACSessionDelegate.h</key>
 		<data>
@@ -366,7 +382,7 @@
 		</data>
 		<key>Headers/AACSingleCardView.h</key>
 		<data>
-		tfeJ8HqGICp/i2Xec/27Y+vLj7E=
+		aWtyUgdRbvE3lzEJamKc4jwDfvY=
 		</data>
 		<key>Headers/AACStreamContainerActionDelegate.h</key>
 		<data>
@@ -382,11 +398,11 @@
 		</data>
 		<key>Headers/AtomicSDK.h</key>
 		<data>
-		+7dcEtVxZS+kOYED6zeq9wjybYA=
+		b5lvWXcfMbeheQYABagBr0xoZ4U=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		qmZslCvgvIeQ5ENcX6DSG7NAqS0=
+		z7G0DbLXpso9yzgTb59qHLSwCqQ=
 		</data>
 		<key>LICENSE-FontAwesome.txt</key>
 		<data>
@@ -394,7 +410,7 @@
 		</data>
 		<key>LICENSES.html</key>
 		<data>
-		BE0WoZtUMBuhPXAHv65r9oo+0vQ=
+		H6zea9RmhJe35y6hV1gVJBvGtaI=
 		</data>
 		<key>Localizable.strings</key>
 		<data>
@@ -406,7 +422,7 @@
 		</data>
 		<key>SDKInfo.plist</key>
 		<data>
-		q+J9nBIl1QHl+vl5qu0IjyLInhY=
+		AYESXcI8hfiv9VBcvZU4S8rgjyo=
 		</data>
 		<key>fontawesome-5-solid.otf</key>
 		<data>
@@ -503,6 +519,28 @@
 			jrt7QowHy9+v5OneIPwF5Lwj34A17+FIfu8h6EHhtM8=
 			</data>
 		</dict>
+		<key>AACCardActionsViewHorizon.nib/objects-11.0+.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			HZvsreHbeWGoqDobLzqoDMm+Jq4=
+			</data>
+			<key>hash2</key>
+			<data>
+			d9OArf7NKGMhkQEn5d1aRyykzSL/NR4HjEEx1hP477o=
+			</data>
+		</dict>
+		<key>AACCardActionsViewHorizon.nib/runtime.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			dMoQpWV+MJ0/1xr+iVpkWZhKRP0=
+			</data>
+			<key>hash2</key>
+			<data>
+			K6haHx4sNP/CXbzpemQSzD9xYveStXr8pUo53C4/Uf0=
+			</data>
+		</dict>
 		<key>AACCardFeedbackViewController.nib/objects-11.0+.nib</key>
 		<dict>
 			<key>hash</key>
@@ -529,33 +567,33 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			3ddjrjOBqy7WF95hJCjyFgZBqQI=
+			GzajoXnmZTcmUn2CeV7xshp0xh4=
 			</data>
 			<key>hash2</key>
 			<data>
-			rWb89CPw6pReWFBR25GEJa0kFBUsTY84hpfGk0+k7E4=
+			+yKJ1UjsEyhbi3Q7ZBjtLfMcGDBM3LqJoTXeroyKf6M=
 			</data>
 		</dict>
 		<key>AACCardListViewController.nib/objects-11.0+.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			OaCwpY7XypFANKjC4WxtQ+Fots8=
+			kQK21QN2ocH3Vbntn8vvp4uETNo=
 			</data>
 			<key>hash2</key>
 			<data>
-			0yHWJmssSGUznBSZJgiYtUoyDxn8f1cLq5tF6CZApfE=
+			WbuK/Mpec09SW7PPSvcrU2/5xnSHc2OsO0/4n5tcsfs=
 			</data>
 		</dict>
 		<key>AACCardListViewController.nib/runtime.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			WlLQ7PyeI5Aw8qIbSIHKfN4Pdyc=
+			4Ig/U2jsLbJicTPbCtZg7X+14kA=
 			</data>
 			<key>hash2</key>
 			<data>
-			gKu2KDHZ1qzfSEx7F5qJfVkwtQjDbIKCdMMP2PjnsHA=
+			NBzE9Dw4rSopVBDLg+Mp+sya8OBzrnprYWvv+4tREXU=
 			</data>
 		</dict>
 		<key>AACCardOverflowView.nib/objects-11.0+.nib</key>
@@ -584,22 +622,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			9kbnfYaRSZxsCvb9c/do96mxGOg=
+			1bMLQx3p/385GflQw+sMCmGmpI4=
 			</data>
 			<key>hash2</key>
 			<data>
-			iy8bzbJEg4E2sdkH7XG5WN3L7C2EL/WXrBUCZ5SzqXs=
+			5zF3WLVhPsrgukjpbG+Ap3fFPaTCA1cf8c2m/KDKmsI=
 			</data>
 		</dict>
 		<key>AACCardShadowView.nib/runtime.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			x3/2xlkaBgvKyjWuQ7Po3uWz2po=
+			Edkbtx7EsLBYA5x66KcdfKjnI0Q=
 			</data>
 			<key>hash2</key>
 			<data>
-			BQbN3odgyt+9WyS7b05QHXjcAUzjO3LGP96fwmAaNtI=
+			kHvO7dHdKnV98zGOcb61kiiC1GQCFoA9R4V+29DiZg0=
 			</data>
 		</dict>
 		<key>AACCardSnoozeViewController.nib/objects-11.0+.nib</key>
@@ -716,22 +754,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			hB9YMMyJkwIWXwqKsCC7OrZSjOw=
+			w9kmmOFhiGFP2yGlxEL5gMLOGLU=
 			</data>
 			<key>hash2</key>
 			<data>
-			8STE+17jtyPlMqNjsD2tQcf9M/079/YbShNKOPFyhMM=
+			eUzHzZcoqF7+l7MJopwk5KRmo5lpnv40/xFRkR5scqc=
 			</data>
 		</dict>
 		<key>AACCardViewListButton.nib/runtime.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			NOrDrFWBYqVofwZBTUe8M+8Fruw=
+			8SzqNtJXM/BFAyvf2mFPbOUIQKw=
 			</data>
 			<key>hash2</key>
 			<data>
-			EmnyS28G3Nwk0z0Zgz1+GjDeETznhs940/4rpggV5OE=
+			lQRfI68zI59+wt/a2snCKq0nEivsyHAz2iF2/MAwvL0=
 			</data>
 		</dict>
 		<key>AACCardViewListComma.nib/objects-11.0+.nib</key>
@@ -760,22 +798,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			N3Hhpu+h4m6138bafiRcD1SzWqg=
+			Z0LT6ympw29sXJMcAv5OV4to4ic=
 			</data>
 			<key>hash2</key>
 			<data>
-			1Xw1KULBNbKZ4zQN+/qVBwTmD19wVYPPOe1UVF/uAMk=
+			w7ozb9tpyDLTvaMecLLIqQCsJaKNh+bXUNhDhj4u94U=
 			</data>
 		</dict>
 		<key>AACCardViewListItem.nib/runtime.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			DmjmLh8XlAwJ/Usx0146FMl3Zow=
+			alG4hG4713Rrn5PBDVjNp3AlKeI=
 			</data>
 			<key>hash2</key>
 			<data>
-			9uS6g7ZefvzYiyG/OvwcMg0YBHDmBe5+LqujbvXGxl8=
+			JwM1I0LaoIondn0OEACjma5pBnOigZwiBBs/9K0qfIA=
 			</data>
 		</dict>
 		<key>AACCardViewMedia.nib/objects-11.0+.nib</key>
@@ -798,6 +836,17 @@
 			<key>hash2</key>
 			<data>
 			YzoMsFO3jXDcJj6Cw5oClCWehD/EvTDGDK3PB57GGJc=
+			</data>
+		</dict>
+		<key>AACCardViewPlaceholder.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			GjKtkOfTQfPQXFOOmTGcYG0Dw1w=
+			</data>
+			<key>hash2</key>
+			<data>
+			ioltV9sXUSuG2Jjzpduq0Qowj4nOdYYbB8E0jeG0T0w=
 			</data>
 		</dict>
 		<key>AACCardViewRadioGroup.nib/objects-11.0+.nib</key>
@@ -1020,26 +1069,15 @@
 			ncgmxh4mxHO7yo69RWX+K5rQLjSdive2Ghm2CY+ezMA=
 			</data>
 		</dict>
-		<key>AACListHeaderView.nib/objects-11.0+.nib</key>
+		<key>AACListHeaderView.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			pUoCWukh9/EqaVLW1daaL1xBkPY=
+			G3YJvOUGgF49OcO2Ztuy6VRKLm4=
 			</data>
 			<key>hash2</key>
 			<data>
-			QIUwXS+51XCBY1xDoo97I0XRc0K0HkF4XgOIJmabJPw=
-			</data>
-		</dict>
-		<key>AACListHeaderView.nib/runtime.nib</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			NWCKNEedtzy2rr5ZOr0/cnvTtCc=
-			</data>
-			<key>hash2</key>
-			<data>
-			NeEejUuOHO3/E45dAwCQoG8GU6jaf1OzJUvW9fJh2Z0=
+			WwS5aPVk8UrXAPB7HlKGjJ63vAVaRu4NnJna3j6LgIk=
 			</data>
 		</dict>
 		<key>AACLoadingSpinnerView.nib/objects-11.0+.nib</key>
@@ -1189,11 +1227,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			lxIushiwjnZx399IB6cEh+wruh8=
+			gzpFRqoZwuQf0DWMdZKfiv8Gw94=
 			</data>
 			<key>hash2</key>
 			<data>
-			6jCS26NDcU16JSFdr48NcnWJV3csUV7j+f6MEO7oQrw=
+			yWDJDmcQ5svnD9z5dpK0ZoOWwLlHJdtMN3lqEhVnSbo=
 			</data>
 		</dict>
 		<key>Headers/AACCardCustomAction.h</key>
@@ -1244,11 +1282,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			8eQVNmwR4n8ZUH8ZmxJdfuPfXzc=
+			WiwpczhFmJ6VSKZbc4v9IjClcas=
 			</data>
 			<key>hash2</key>
 			<data>
-			hFQdGVxKT8cWPxm/tEvuQutxbdtZ0mc4GK9LFCAz8io=
+			Rx0QUez3gbEAJ9IQRwb67vuMQu/8URRZGPae73QFEPg=
 			</data>
 		</dict>
 		<key>Headers/AACCardRuntimeVariable.h</key>
@@ -1277,11 +1315,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			a5Qb+0191SBI88X8Hm09eOSPnpM=
+			L7gAcMc5FXPD7VCggz/DI8WheRk=
 			</data>
 			<key>hash2</key>
 			<data>
-			x2tyMfzN2qlF+fslCbDStvPcqgyWbY5/FcvzgtUrg0Q=
+			rBSUeOzjDJs50IV/QYW39dviYR655Tfd4u4eFXt1A0w=
 			</data>
 		</dict>
 		<key>Headers/AACEmbeddedFont.h</key>
@@ -1326,6 +1364,28 @@
 			<key>hash2</key>
 			<data>
 			KnV4On4DnM8Z+NdBFeHvVj5HSqyBFhg3dVW6KW3o+pg=
+			</data>
+		</dict>
+		<key>Headers/AACHorizontalContainerConfiguration.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			6rQIN/94fEmNJhOL9oF3J/iCVM4=
+			</data>
+			<key>hash2</key>
+			<data>
+			6FCDvZLSswh8T+E/JeMrPxlQGUgpbCHSmmppGPD6nBw=
+			</data>
+		</dict>
+		<key>Headers/AACHorizontalContainerView.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zXu7ZLrAzaSK7kYu7BASCWBBY48=
+			</data>
+			<key>hash2</key>
+			<data>
+			y7Sjqv0anwKRbmzUV4WvZOGP/BSukXtE1YyABM4wFuM=
 			</data>
 		</dict>
 		<key>Headers/AACPushNotification.h</key>
@@ -1376,11 +1436,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			k6Gr2UZlu/G+h8TmZR3/kY+15F0=
+			rRw3LgTej8LKlnGQtOHSEKFmA18=
 			</data>
 			<key>hash2</key>
 			<data>
-			OVFC1QdqXxBIvLlg4mUX5VIPBhBL6e6lvwLOnU0z+wo=
+			xcVlvwBuQUpLstOo+8l5f8hn6OMKaCkYA+zRXfiOb+c=
 			</data>
 		</dict>
 		<key>Headers/AACSessionDelegate.h</key>
@@ -1409,11 +1469,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			tfeJ8HqGICp/i2Xec/27Y+vLj7E=
+			aWtyUgdRbvE3lzEJamKc4jwDfvY=
 			</data>
 			<key>hash2</key>
 			<data>
-			jXOGckvrfdOdTT+O9f7CR+8rBo5tI2Pyw23HTrE4Wrw=
+			9RVPEVuj4Vd8sSMCfO8t5hhVYBlK9SzNEaha0jWI+GM=
 			</data>
 		</dict>
 		<key>Headers/AACStreamContainerActionDelegate.h</key>
@@ -1453,11 +1513,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			+7dcEtVxZS+kOYED6zeq9wjybYA=
+			b5lvWXcfMbeheQYABagBr0xoZ4U=
 			</data>
 			<key>hash2</key>
 			<data>
-			9bmqI1Syx9ht44MIqxd8ubxim9EWP1966O1CCaFUqS8=
+			9XOwb3tTMS+49ZczGV2ODMDgbYM4rsXknbSSL5pUJj4=
 			</data>
 		</dict>
 		<key>LICENSE-FontAwesome.txt</key>
@@ -1475,11 +1535,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			BE0WoZtUMBuhPXAHv65r9oo+0vQ=
+			H6zea9RmhJe35y6hV1gVJBvGtaI=
 			</data>
 			<key>hash2</key>
 			<data>
-			b677zRYpC+bTACKSj/QBnpL5vC2uIfBBCPeaWahaB70=
+			Q+aGRR26JWzjeu99xbV4M02eXezUrSSeyIvgNJnVl08=
 			</data>
 		</dict>
 		<key>Localizable.strings</key>
@@ -1508,11 +1568,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			q+J9nBIl1QHl+vl5qu0IjyLInhY=
+			AYESXcI8hfiv9VBcvZU4S8rgjyo=
 			</data>
 			<key>hash2</key>
 			<data>
-			VpEgr4YufmBJfkdgibqMDzl817qmfhhgG640QQCcpZg=
+			RXm1NzMry7hFxJ/TdrFF3FKG8qX/iGBXs4D3oQSIL20=
 			</data>
 		</dict>
 		<key>fontawesome-5-solid.otf</key>
