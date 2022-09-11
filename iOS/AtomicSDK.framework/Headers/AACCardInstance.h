@@ -16,6 +16,10 @@
 - (instancetype __nonnull)init NS_UNAVAILABLE;
 
 /**
+ A fake card instance for displaying a custom header.
+ */
++ (instancetype __nonnull)customHeaderInstance;
+/**
  The name of the event, as defined in the Atomic Workbench, that caused this card
  to be created.
  */

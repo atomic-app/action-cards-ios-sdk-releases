@@ -8,6 +8,7 @@
 @import UIKit;
 
 #import <AtomicSDK/AACStreamContainerActionDelegate.h>
+#import <AtomicSDK/AACStreamContainerHeaderDelegate.h>
 #import <AtomicSDK/AACCardEventDelegate.h>
 #import <AtomicSDK/AACFeatureFlags.h>
 #import <AtomicSDK/AACRuntimeVariableDelegate.h>
@@ -171,6 +172,11 @@ typedef NS_OPTIONS(NSUInteger, AACUIElement) {
  Optional delegate that responds to card events in the stream container.
  */
 @property (nonatomic, weak, nullable) id<AACCardEventDelegate> cardEventDelegate;
+
+/**
+ Optional delegate that provides a custom header.
+ */
+@property (nonatomic, weak, nullable) id<AACStreamContainerHeaderDelegate> customHeaderDelegate;
 
 /**
  The background colour of the view displayed when the SDK theme is loaded for the first time.

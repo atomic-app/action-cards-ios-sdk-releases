@@ -100,6 +100,10 @@
 		<data>
 		7wEEXvVLYH4j33PtA2K4DEStmIs=
 		</data>
+		<key>AACCardViewCustomHeader.nib</key>
+		<data>
+		rIwmOMfFiSEAltPlTD8aXV3LgzQ=
+		</data>
 		<key>AACCardViewDropdown.nib/objects-11.0+.nib</key>
 		<data>
 		pO4XzoqfGUZT1wJK5QN1h/ub8ek=
@@ -138,11 +142,11 @@
 		</data>
 		<key>AACCardViewListItem.nib/objects-11.0+.nib</key>
 		<data>
-		Z0LT6ympw29sXJMcAv5OV4to4ic=
+		CoD5FAtbDpGnnwxUIBLsYQ/9OHs=
 		</data>
 		<key>AACCardViewListItem.nib/runtime.nib</key>
 		<data>
-		alG4hG4713Rrn5PBDVjNp3AlKeI=
+		BHQuRt4IwidganmWYoU+DxutIEY=
 		</data>
 		<key>AACCardViewMedia.nib/objects-11.0+.nib</key>
 		<data>
@@ -171,6 +175,14 @@
 		<key>AACCardViewRadioItem.nib/runtime.nib</key>
 		<data>
 		gU+OY8IKkxCEhJDbq3FLmbTesqg=
+		</data>
+		<key>AACCardViewRichListItem.nib/objects-11.0+.nib</key>
+		<data>
+		CoD5FAtbDpGnnwxUIBLsYQ/9OHs=
+		</data>
+		<key>AACCardViewRichListItem.nib/runtime.nib</key>
+		<data>
+		BHQuRt4IwidganmWYoU+DxutIEY=
 		</data>
 		<key>AACCardViewStepper.nib/objects-11.0+.nib</key>
 		<data>
@@ -294,7 +306,7 @@
 		</data>
 		<key>Assets.car</key>
 		<data>
-		gzpFRqoZwuQf0DWMdZKfiv8Gw94=
+		lxIushiwjnZx399IB6cEh+wruh8=
 		</data>
 		<key>Headers/AACCardCustomAction.h</key>
 		<data>
@@ -314,7 +326,7 @@
 		</data>
 		<key>Headers/AACCardInstance.h</key>
 		<data>
-		WiwpczhFmJ6VSKZbc4v9IjClcas=
+		eBaVasZnACswOE3dCIE7eWn8ucE=
 		</data>
 		<key>Headers/AACCardRuntimeVariable.h</key>
 		<data>
@@ -326,7 +338,7 @@
 		</data>
 		<key>Headers/AACConfiguration.h</key>
 		<data>
-		L7gAcMc5FXPD7VCggz/DI8WheRk=
+		l7ul4YG6gNkgqGNOVj2fTW4N4JI=
 		</data>
 		<key>Headers/AACEmbeddedFont.h</key>
 		<data>
@@ -388,6 +400,10 @@
 		<data>
 		6/RCFO0UowjY6woWAjvolzYDltQ=
 		</data>
+		<key>Headers/AACStreamContainerHeaderDelegate.h</key>
+		<data>
+		+rRHf2qy3shZkQ7/UTEWvyGunb0=
+		</data>
 		<key>Headers/AACStreamContainerViewController.h</key>
 		<data>
 		YoBsqGFVJ6vANXhZXJJFvEnWzDk=
@@ -402,7 +418,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		K1V5cLBHvbvkM73TjztbsZ/OFuk=
+		ncsVZA9Lbol6KJPXndaWMn0Ypgg=
 		</data>
 		<key>LICENSE-FontAwesome.txt</key>
 		<data>
@@ -410,7 +426,7 @@
 		</data>
 		<key>LICENSES.html</key>
 		<data>
-		vku+bN0bcMoisl3UjVNTOR6arlg=
+		KI7siVC9fHBlmYbKpyQ/2ddcdbI=
 		</data>
 		<key>Localizable.strings</key>
 		<data>
@@ -422,7 +438,7 @@
 		</data>
 		<key>SDKInfo.plist</key>
 		<data>
-		gVVGjnbF4QA6B8owCt+liv/0U5M=
+		eg8cyZ1QrFNpHmNlw+OC9+KyotQ=
 		</data>
 		<key>fontawesome-5-solid.otf</key>
 		<data>
@@ -695,6 +711,17 @@
 			//Km4IIzoHxHtoYHy+8Gvl2nC2HEDSG7nHGDBx1PrKo=
 			</data>
 		</dict>
+		<key>AACCardViewCustomHeader.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			rIwmOMfFiSEAltPlTD8aXV3LgzQ=
+			</data>
+			<key>hash2</key>
+			<data>
+			neXAFt3W7RkxfNsKs4YVA48COFfMbUlCM20duxFl3T4=
+			</data>
+		</dict>
 		<key>AACCardViewDropdown.nib/objects-11.0+.nib</key>
 		<dict>
 			<key>hash</key>
@@ -798,22 +825,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Z0LT6ympw29sXJMcAv5OV4to4ic=
+			CoD5FAtbDpGnnwxUIBLsYQ/9OHs=
 			</data>
 			<key>hash2</key>
 			<data>
-			w7ozb9tpyDLTvaMecLLIqQCsJaKNh+bXUNhDhj4u94U=
+			FM1iQwHjUSGtY5NqGchj9bYP2pR38s0/QsFcKs+8ZBw=
 			</data>
 		</dict>
 		<key>AACCardViewListItem.nib/runtime.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			alG4hG4713Rrn5PBDVjNp3AlKeI=
+			BHQuRt4IwidganmWYoU+DxutIEY=
 			</data>
 			<key>hash2</key>
 			<data>
-			JwM1I0LaoIondn0OEACjma5pBnOigZwiBBs/9K0qfIA=
+			+6Oovd1qmH167bohftRhPmDSZJ6ckj09RIipf9AyMYU=
 			</data>
 		</dict>
 		<key>AACCardViewMedia.nib/objects-11.0+.nib</key>
@@ -891,6 +918,28 @@
 			<key>hash2</key>
 			<data>
 			jhyFBu97IxHMfPQxXHXdbS+5rH4vTonJF35A7dwG+dY=
+			</data>
+		</dict>
+		<key>AACCardViewRichListItem.nib/objects-11.0+.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			CoD5FAtbDpGnnwxUIBLsYQ/9OHs=
+			</data>
+			<key>hash2</key>
+			<data>
+			FM1iQwHjUSGtY5NqGchj9bYP2pR38s0/QsFcKs+8ZBw=
+			</data>
+		</dict>
+		<key>AACCardViewRichListItem.nib/runtime.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			BHQuRt4IwidganmWYoU+DxutIEY=
+			</data>
+			<key>hash2</key>
+			<data>
+			+6Oovd1qmH167bohftRhPmDSZJ6ckj09RIipf9AyMYU=
 			</data>
 		</dict>
 		<key>AACCardViewStepper.nib/objects-11.0+.nib</key>
@@ -1227,11 +1276,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			gzpFRqoZwuQf0DWMdZKfiv8Gw94=
+			lxIushiwjnZx399IB6cEh+wruh8=
 			</data>
 			<key>hash2</key>
 			<data>
-			yWDJDmcQ5svnD9z5dpK0ZoOWwLlHJdtMN3lqEhVnSbo=
+			6jCS26NDcU16JSFdr48NcnWJV3csUV7j+f6MEO7oQrw=
 			</data>
 		</dict>
 		<key>Headers/AACCardCustomAction.h</key>
@@ -1282,11 +1331,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			WiwpczhFmJ6VSKZbc4v9IjClcas=
+			eBaVasZnACswOE3dCIE7eWn8ucE=
 			</data>
 			<key>hash2</key>
 			<data>
-			Rx0QUez3gbEAJ9IQRwb67vuMQu/8URRZGPae73QFEPg=
+			qY8TrnTsMrY2SulKrfCIrqLIhr6Y3uNZP/88uHhYtBY=
 			</data>
 		</dict>
 		<key>Headers/AACCardRuntimeVariable.h</key>
@@ -1315,11 +1364,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			L7gAcMc5FXPD7VCggz/DI8WheRk=
+			l7ul4YG6gNkgqGNOVj2fTW4N4JI=
 			</data>
 			<key>hash2</key>
 			<data>
-			rBSUeOzjDJs50IV/QYW39dviYR655Tfd4u4eFXt1A0w=
+			eGoHPD/LTHmFe51iZiWuuVx4aBi5YiHk6DxiueA81OU=
 			</data>
 		</dict>
 		<key>Headers/AACEmbeddedFont.h</key>
@@ -1487,6 +1536,17 @@
 			xWj9znGPTwjyjf+viM4Khfig0h3fh+b/HhkNrv2nvf4=
 			</data>
 		</dict>
+		<key>Headers/AACStreamContainerHeaderDelegate.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			+rRHf2qy3shZkQ7/UTEWvyGunb0=
+			</data>
+			<key>hash2</key>
+			<data>
+			ui+R8DI5nkc9k2wxpSwJI5WNrQw8e/OW7GRaPmvCVbo=
+			</data>
+		</dict>
 		<key>Headers/AACStreamContainerViewController.h</key>
 		<dict>
 			<key>hash</key>
@@ -1535,11 +1595,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			vku+bN0bcMoisl3UjVNTOR6arlg=
+			KI7siVC9fHBlmYbKpyQ/2ddcdbI=
 			</data>
 			<key>hash2</key>
 			<data>
-			ot1WqmBLmMMctw/t2vxpkxrBV9iTPLnodap3rayYF4w=
+			UEcpJ0oBZmT0a3fh2Y5M7wOo1pVbBDCtriKy5sUZoAA=
 			</data>
 		</dict>
 		<key>Localizable.strings</key>
@@ -1568,11 +1628,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			gVVGjnbF4QA6B8owCt+liv/0U5M=
+			eg8cyZ1QrFNpHmNlw+OC9+KyotQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			c1pQQqG4KrMxiP0VD41E5CANq3+VSvMIUhwHJ7fxZnM=
+			S9VyxxX0PMKAGoPW3k0/yHPFA0FXs+UyVDj2YIXQFY8=
 			</data>
 		</dict>
 		<key>fontawesome-5-solid.otf</key>
