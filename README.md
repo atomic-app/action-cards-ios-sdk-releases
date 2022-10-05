@@ -22,7 +22,7 @@ source 'https://github.com/CocoaPods/Specs.git'
 2. Add the SDK as a dependency. As of version 0.19.0, you have two options available:
 
 - `AtomicSDK`: the Atomic SDK distributed as an `xcframework`, with support for Apple Silicon (requires Cocoapods 1.9 or above);
-- `AtomicSDK-framework`: the Atomic SDK distributed as a fat framework, with slices for armv7, arm64, i386 and x86_64.
+- `AtomicSDK-framework`: the Atomic SDK distributed as a fat framework, with slices for arm64 and x86_64.
 
 ```ruby
 pod 'AtomicSDK'
