@@ -39,9 +39,21 @@ typedef void(^AACSessionAuthenticationTokenHandler)(NSString* __nullable authTok
  (Optional) Returns the time interval used to determine whether the authentication token has expired. If the interval between the
  current time and the token's `exp` field is smaller than that interval, the token is considered to be expired.
  
- If this method is not set, the default value is 300 seconds. The interval must not be smaller than zero.
+ If this method is not set, the default value is 60 seconds. The interval must not be smaller than zero.
  
  You must return a constant value from this method, as the value is only retrieved by the SDK once.
  */
 - (NSTimeInterval)expiryInterval;
+
+/**
+ (Optional) Returns the time interval used to determine whether Atomic SDK should retry to fetch a token from the session delegate.
+ The SDK won't fetch the JWT in a frequency higher than `1/interval`.
+ 
+ If this method is not set, the default interval is 0 seconds, which means the SDK will retry immediately after failing to get a valid
+ token.
+ 
+ You must return a constant value from this method, as the value is only retrieved by the SDK once.
+ */
+- (NSTimeInterval)retryInterval;
+
 @end

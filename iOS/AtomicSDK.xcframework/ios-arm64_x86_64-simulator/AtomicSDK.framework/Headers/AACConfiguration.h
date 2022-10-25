@@ -119,7 +119,23 @@ typedef NS_ENUM(NSUInteger, AACCustomString) {
      The title for the button on the first load screen and card list, allowing the user to retry the request.
      Defaults to `Try again`.
      */
-    AACCustomStringTryAgainTitle
+    AACCustomStringTryAgainTitle,
+    /**
+     Customised toast message for when the user dismisses a card - defaults to "Card dismissed".
+     */
+    AACCustomStringToastCardDismissedMessage,
+    /**
+     Customised toast message for when the user completes a card - defaults to "Card completed".
+     */
+    AACCustomStringToastCardCompletedMessage,
+    /**
+     Customised toast messages for when the user snoozes a card - defaults to "Snoozed until X" where X is the time the user dismissed the card until.
+     */
+    AACCustomStringToastCardSnoozeMessage,
+    /**
+     Customised toast message for when the user sends feedback (votes) for a card - defaults to "Feedback received".
+     */
+    AACCustomStringToastCardFeedbackMessage
 };
 
 /**

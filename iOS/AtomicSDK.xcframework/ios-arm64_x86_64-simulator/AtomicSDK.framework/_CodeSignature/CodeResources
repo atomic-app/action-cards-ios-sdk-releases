@@ -330,11 +330,11 @@
 		</data>
 		<key>Headers/AACConfiguration.h</key>
 		<data>
-		l7ul4YG6gNkgqGNOVj2fTW4N4JI=
+		H+7tAvyggJmsJ0SAvwEOgF2stTY=
 		</data>
 		<key>Headers/AACEmbeddedFont.h</key>
 		<data>
-		xQLegZmTmKIUpbXvl/dF1rJjI34=
+		+jgETyCNXbHC8pXnKD53mnAGA8M=
 		</data>
 		<key>Headers/AACEventPayload.h</key>
 		<data>
@@ -378,7 +378,7 @@
 		</data>
 		<key>Headers/AACSessionDelegate.h</key>
 		<data>
-		TdUR1FV2LgHktCHOO1+zKpkY7oU=
+		ps0OCdspdoUIxOd6pRSL+xKJvLQ=
 		</data>
 		<key>Headers/AACSingleCardConfiguration.h</key>
 		<data>
@@ -410,7 +410,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		g5TMkvq63+5D/6WEvlbJY1xdfdU=
+		V+9JVWhj2jdNTAifqKxIGc7A/6s=
 		</data>
 		<key>LICENSE-FontAwesome.txt</key>
 		<data>
@@ -418,11 +418,11 @@
 		</data>
 		<key>LICENSES.html</key>
 		<data>
-		wY8bHEYpy7DuXSc7NXHIIqoUN88=
+		FmfsU+SeVpEFB+xqicmYmmiaxnI=
 		</data>
 		<key>Localizable.strings</key>
 		<data>
-		AouGygpUjkfn0eAGGFyFMn/V4v0=
+		iHxo702AGhioAGFdO8nr6wrp3Hk=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -430,7 +430,7 @@
 		</data>
 		<key>SDKInfo.plist</key>
 		<data>
-		l7Qe2Y3Eq/qIQwtTWGKUMUCwA7U=
+		xC+xtUin/8xLKFlT/mmdh1Ho27k=
 		</data>
 		<key>fontawesome-5-solid.otf</key>
 		<data>
@@ -1334,22 +1334,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			l7ul4YG6gNkgqGNOVj2fTW4N4JI=
+			H+7tAvyggJmsJ0SAvwEOgF2stTY=
 			</data>
 			<key>hash2</key>
 			<data>
-			eGoHPD/LTHmFe51iZiWuuVx4aBi5YiHk6DxiueA81OU=
+			pHlqGCBXWhU2B+3OuNoOvHmy2zjM5yaWGkNzFitLRnA=
 			</data>
 		</dict>
 		<key>Headers/AACEmbeddedFont.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			xQLegZmTmKIUpbXvl/dF1rJjI34=
+			+jgETyCNXbHC8pXnKD53mnAGA8M=
 			</data>
 			<key>hash2</key>
 			<data>
-			nu9frhiWwi8K/sWVVWBF5HqHyZFaGZF/6mnJ5SzVCIA=
+			CMQMcInAlBPmM5QXeBPZZT4mjmIAch3X5izfhz6Yezs=
 			</data>
 		</dict>
 		<key>Headers/AACEventPayload.h</key>
@@ -1466,11 +1466,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			TdUR1FV2LgHktCHOO1+zKpkY7oU=
+			ps0OCdspdoUIxOd6pRSL+xKJvLQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			aUpzmIgSobVmEgajAiiVo8xrjy+ZhhIZZ+DIlCK645w=
+			tMnMqdHpIshSLj0uetVokYIJn8aXyUPx6nW+mjP0Hmo=
 			</data>
 		</dict>
 		<key>Headers/AACSingleCardConfiguration.h</key>
@@ -1565,22 +1565,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			wY8bHEYpy7DuXSc7NXHIIqoUN88=
+			FmfsU+SeVpEFB+xqicmYmmiaxnI=
 			</data>
 			<key>hash2</key>
 			<data>
-			7p0SaxtTjYptBuEBZ84RuBqIKIxeUVvlzu5ksR1ENkY=
+			Ps4OnjWWH/F1oxT3RUl/AnfxzybkXWUP/C6ODyDNYEo=
 			</data>
 		</dict>
 		<key>Localizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			AouGygpUjkfn0eAGGFyFMn/V4v0=
+			iHxo702AGhioAGFdO8nr6wrp3Hk=
 			</data>
 			<key>hash2</key>
 			<data>
-			UY9fV1Bv1BXNxc0hjfOIK4zPDZ+kvbyiE1H+tzD+y0c=
+			/SCDJqX9mcrIXHQnDdbYoJEnHe+/wqNaSDwUcVKSB9g=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -1598,11 +1598,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			l7Qe2Y3Eq/qIQwtTWGKUMUCwA7U=
+			xC+xtUin/8xLKFlT/mmdh1Ho27k=
 			</data>
 			<key>hash2</key>
 			<data>
-			5FZJve5Gj3UEtQbeyU32ftLpwU9gUCps0zYaH96dNv0=
+			P2JyX2s9Gz/EThnmYhe3FmvtyLiJurtkNyeQmQcwRDg=
 			</data>
 		</dict>
 		<key>fontawesome-5-solid.otf</key>

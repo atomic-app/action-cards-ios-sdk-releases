@@ -6,15 +6,34 @@
 
 #import <Foundation/Foundation.h>
 
-
 /**
  Font weights supported by the SDK.
  */
 typedef NS_ENUM(NSUInteger, AACFontWeight) {
-    /// Regular font weight.
+    /// Regular font weight defined in the workbench.
     AACFontWeightRegular,
-    /// Bold font weight.
-    AACFontWeightBold
+    /// Bold font weight defined in the workbench.
+    AACFontWeightBold,
+    /// Font weight 100 defined in the Workbench.
+    AACFontWeight100,
+    /// Font weight 200 defined in the Workbench.
+    AACFontWeight200,
+    /// Font weight 300 defined in the Workbench.
+    AACFontWeight300,
+    /// Font weight 400 defined in the Workbench, equivalent to `AACFontWeightRegular`.
+    AACFontWeight400,
+    /// Font weight 500 defined in the Workbench.
+    AACFontWeight500,
+    /// Font weight 600 defined in the Workbench.
+    AACFontWeight600,
+    /// Font weight 700 defined in the Workbench, equivalent to `AACFontWeightBold`.
+    AACFontWeight700,
+    /// Font weight 800 defined in the Workbench.
+    AACFontWeight800,
+    /// Font weight 900 defined in the Workbench.
+    AACFontWeight900,
+    /// Font weight 950 defined in the Workbench.
+    AACFontWeight950
 };
 
 /**
