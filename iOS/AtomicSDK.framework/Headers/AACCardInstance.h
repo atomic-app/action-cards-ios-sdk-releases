@@ -16,10 +16,6 @@
 - (instancetype __nonnull)init NS_UNAVAILABLE;
 
 /**
- A fake card instance for displaying a custom header.
- */
-+ (instancetype __nonnull)customHeaderInstance;
-/**
  The name of the event, as defined in the Atomic Workbench, that caused this card
  to be created.
  */
@@ -60,8 +56,4 @@
 - (void)resolveRuntimeVariableWithName:(NSString* __nonnull)name
                                  value:(NSString* __nonnull)value;
 
-/**
- Stretch the node by providing a height value so it reaches the expected height.
- */
-- (void)stretchCardWithHeight:(CGFloat)height;
 @end

@@ -12,6 +12,7 @@
 #import <AtomicSDK/AACRequestDelegate.h>
 #import <AtomicSDK/AACUserMetrics.h>
 #import <AtomicSDK/AACEmbeddedFont.h>
+#import <AtomicSDK/AACCustomEvent.h>
 
 /**
  Handler called whenever the card count changes.
@@ -58,6 +59,13 @@ typedef void(^AACSessionUserMetricsHandler)(AACUserMetrics* __nullable response,
  Possible error codes are found in the `AACSessionLogoutErrorCode` enumeration.
  */
 typedef void(^AACSessionLogoutCompletionHandler)(NSError* __nullable error);
+
+/**
+ Handler called when the request to send a custom event completes.
+ If the request failed, a non-nil error object is returned, with an error in the `AACSessionSendCustomEventErrorDomain` error domain.
+ Possible error codes are found in the `AACSessionSendCustomEventErrorCode` enumeration.
+ */
+typedef void(^AACSessionSendCustomEventCompletionHandler)(NSError* __nullable error);
 
 /**
  Notification posted when the number of cards in a stream container changes.
@@ -185,6 +193,26 @@ typedef NS_ERROR_ENUM(AACSessionSendEventErrorDomain, AACSessionSendEventErrorCo
 };
 
 /**
+ Error domain for errors arising from an unsuccessful attempt to send a custom event to the platform.
+ */
+extern NSString* __nonnull const AACSessionSendCustomEventErrorDomain;
+
+/**
+ Error codes associated with the custom event error domain.
+ The underlying error is supplied with `NSUnderlyingErrorKey` in the error's `userInfo` dictionary.
+ */
+typedef NS_ERROR_ENUM(AACSessionSendCustomEventErrorDomain, AACSessionSendCustomEventErrorCode) {
+    /**
+     The SDK failed to send the custom event due to a network error.
+     */
+    AACSessionSendCustomEventErrorCodeNetworkError,
+    /**
+     The SDK failed to send the custom event due to a data error.
+     */
+    AACSessionSendCustomEventErrorCodeDataError
+};
+
+/**
  A singleton that spans the SDK's lifecycle, and oversees all instances of stream
  containers throughout the SDK.
  
@@ -274,7 +302,7 @@ typedef NS_ENUM(NSUInteger, AACApiProtocol) {
  Purges all cached card data stored by the SDK, and sends any pending analytics events to the Atomic Platform.
  Call this method when a user logs out of your app or the active user changes.
  
- @param completionHandler A completion handler invoked with a nil error object if any pending
+ @param completionHandler (Optional) A completion handler invoked with a nil error object if any pending
  analytics events were successfully sent, or a non-nil error object if the sending of pending analytics failed.
  If the `error` object is non-nil, the error domain will be `AACSessionLogoutErrorDomain` -
  look for a specific error code in the `AACSessionLogoutErrorCode` enumeration to determine the
@@ -623,5 +651,20 @@ typedef NS_ENUM(NSUInteger, AACApiProtocol) {
  @param completionHandler Completion handler called when the request for user metrics completes.
  */
 + (void)userMetricsWithCompletionHandler:(AACSessionUserMetricsHandler __nonnull)completionHandler;
+
+/**
+ Send out a custom event to the Atomic Platform, exclusively for the user identified by the authentication token provided by the
+ session delegate that is registered when initiating the SDK.
+ 
+ Custom events are handled in the Atomic Platform.
+ 
+ @param customEvent The event object being sent.
+ @param completionHandler (Optional) A completion handler invoked with a nil error object if the custom event was successfully sent,
+ or a non-nil error object if the sending failed.
+ If the `error` object is non-nil, the error domain will be `AACSessionSendCustomEventErrorDomain` -
+ look for a specific error code in the `AACSessionSendCustomEventErrorCode` enumeration to determine the
+ cause of the error. `NSUnderlyingErrorKey` will also be populated in the error's `userInfo` dictionary.
+ */
++ (void)sendCustomEvent:(AACCustomEvent* __nonnull)customEvent completionHandler:(AACSessionSendCustomEventCompletionHandler __nullable)completionHandler;
 
 @end

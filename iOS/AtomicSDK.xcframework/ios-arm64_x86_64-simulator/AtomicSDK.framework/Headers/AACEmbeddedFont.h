@@ -86,12 +86,13 @@ typedef NS_ENUM(NSUInteger, AACFontStyle) {
 @property (nonatomic, readonly, nonnull) NSString *postscriptName;
 
 /**
- The weight of the font family; either `bold` or `regular`.
+ The weight of the font family, as defined in your stream container's theme in the Atomic Workbench.
  */
 @property (nonatomic, readonly) AACFontWeight weight;
 
 /**
- The style of the font family; either `italic` or `normal`.
+ The style of the font family; either `italic` or `normal`, as defined in your stream container's theme
+ in the Atomic Workbench..
  */
 @property (nonatomic, readonly) AACFontStyle style;
 
