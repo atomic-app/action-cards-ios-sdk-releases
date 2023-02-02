@@ -298,7 +298,7 @@
 		</data>
 		<key>Assets.car</key>
 		<data>
-		Jegnab6kvuaB1xZ8yJgwE8UvBhk=
+		2ikjCwgzTvxxLrR9+FOo0oO6dDA=
 		</data>
 		<key>Headers/AACCardCustomAction.h</key>
 		<data>
@@ -378,7 +378,7 @@
 		</data>
 		<key>Headers/AACSession.h</key>
 		<data>
-		M7QTE/hJ6UMY4KYdJmYFiG0VFIs=
+		ty3sq2MhB7+vKqv4u2lcDY4N7rY=
 		</data>
 		<key>Headers/AACSessionDelegate.h</key>
 		<data>
@@ -418,7 +418,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		jTF4q8wXXMTPHInQ+tqwMd88ebs=
+		P1Vp/Kq2kOYLOwueQS8K3Olor1I=
 		</data>
 		<key>LICENSE-FontAwesome.txt</key>
 		<data>
@@ -426,7 +426,7 @@
 		</data>
 		<key>LICENSES.html</key>
 		<data>
-		mgOEKTRGKn1xqbNPZj2zwCH0SdI=
+		aCQj+881AxgcB8jCjvDJw2442gs=
 		</data>
 		<key>Localizable.strings</key>
 		<data>
@@ -438,7 +438,7 @@
 		</data>
 		<key>SDKInfo.plist</key>
 		<data>
-		B5BwDA2jcn/VkHOrCZ6GwenBxWQ=
+		l0WhsbOMsBbgOAOatFfC9Weho+I=
 		</data>
 		<key>fontawesome-5-solid.otf</key>
 		<data>
@@ -1254,11 +1254,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Jegnab6kvuaB1xZ8yJgwE8UvBhk=
+			2ikjCwgzTvxxLrR9+FOo0oO6dDA=
 			</data>
 			<key>hash2</key>
 			<data>
-			uCfcc38YUJrfn91xU3VZT23788gothnXyjRnv2KTd+8=
+			GlHCK3rmMz65IXBN/WuH9EXTOrQu+g+MrPL7o5ChHMU=
 			</data>
 		</dict>
 		<key>Headers/AACCardCustomAction.h</key>
@@ -1474,11 +1474,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			M7QTE/hJ6UMY4KYdJmYFiG0VFIs=
+			ty3sq2MhB7+vKqv4u2lcDY4N7rY=
 			</data>
 			<key>hash2</key>
 			<data>
-			ulmfv74LxMYtCgpNjahI989sRW1yl0XcFjZ45usysr4=
+			HrDlK4u89gRD4Kt3KL3itO5N4bXPCjAVjfUBqB7GvBk=
 			</data>
 		</dict>
 		<key>Headers/AACSessionDelegate.h</key>
@@ -1595,11 +1595,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			mgOEKTRGKn1xqbNPZj2zwCH0SdI=
+			aCQj+881AxgcB8jCjvDJw2442gs=
 			</data>
 			<key>hash2</key>
 			<data>
-			1QVoZzTgSBhbSUR3TEGNF+jdIXSS3gWl4AWfAmuMkss=
+			vKa2Y//vBvK9efoj2BzZmQrvNtnwu3MycAL6hODvAq4=
 			</data>
 		</dict>
 		<key>Localizable.strings</key>
@@ -1628,11 +1628,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			B5BwDA2jcn/VkHOrCZ6GwenBxWQ=
+			l0WhsbOMsBbgOAOatFfC9Weho+I=
 			</data>
 			<key>hash2</key>
 			<data>
-			pdk0rOeIEREKW8UemNdI83R6i4IKeYTyl/dIuSj7szQ=
+			OKIfceazZx24QsQm6JTIUIQjWBRhwQKqxgJPseqYXBc=
 			</data>
 		</dict>
 		<key>fontawesome-5-solid.otf</key>
