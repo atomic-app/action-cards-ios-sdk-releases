@@ -13,6 +13,8 @@
 #import <AtomicSDK/AACUserMetrics.h>
 #import <AtomicSDK/AACEmbeddedFont.h>
 #import <AtomicSDK/AACCustomEvent.h>
+#import <AtomicSDK/AACUserSettings.h>
+#import <AtomicSDK/AACCardFilter.h>
 
 /**
  Handler called whenever the card count changes.
@@ -66,6 +68,13 @@ typedef void(^AACSessionLogoutCompletionHandler)(NSError* __nullable error);
  Possible error codes are found in the `AACSessionSendCustomEventErrorCode` enumeration.
  */
 typedef void(^AACSessionSendCustomEventCompletionHandler)(NSError* __nullable error);
+
+/**
+ Handler called when the request to update a user setting completes.
+ If the request failed, a non-nil error object is returned, with an error in the `AACSessionUpdateUserErrorDomain` error domain.
+ Possible error codes are found in the `AACSessionUpdateUserErrorCode` enumeration.
+ */
+typedef void(^AACSessionUpdateUserCompletionHandler)(NSError* __nullable error);
 
 /**
  Notification posted when the number of cards in a stream container changes.
@@ -213,6 +222,26 @@ typedef NS_ERROR_ENUM(AACSessionSendCustomEventErrorDomain, AACSessionSendCustom
 };
 
 /**
+ Error domain for errors arising from an unsuccessful attempt to update user information on the platform.
+ */
+extern NSString* __nonnull const AACSessionUpdateUserErrorDomain;
+
+/**
+ Error codes associated with the user update error domain.
+ The underlying error is supplied with `NSUnderlyingErrorKey` in the error's `userInfo` dictionary.
+ */
+typedef NS_ERROR_ENUM(AACSessionUpdateUserErrorDomain, AACSessionUpdateUserErrorCode) {
+    /**
+     The SDK failed to update user due to a network error.
+     */
+    AACSessionUpdateUserErrorCodeNetworkError,
+    /**
+     The SDK failed to update user due to a data error.
+     */
+    AACSessionUpdateUserErrorCodeDataError
+};
+
+/**
  A singleton that spans the SDK's lifecycle, and oversees all instances of stream
  containers throughout the SDK.
  
@@ -260,6 +289,8 @@ typedef NS_ENUM(NSUInteger, AACApiProtocol) {
  Set up a session delegate used by the SDK to acquire an authentication token.
  The token is requested once by the SDK, and provided that the token is valid and contains a user ID, the
  token is retained in memory by the SDK until it is due to expire - at which point, a new token is requested.
+ 
+ The SDK keeps a strong reference to the delegate until your app exits.
  
  @param sessionDelegate A delegate that supplies a user authentication token when requested by the SDK.
  */
@@ -333,6 +364,8 @@ typedef NS_ENUM(NSUInteger, AACApiProtocol) {
  Asks the SDK to observe the card count for the given stream container, calling the `handler` every time
  the count changes.
  
+ Calling this method is the same as calling the filterable version of card count observer with a `nil` filter.
+ 
  @param streamContainerId (Required) The stream container ID to observe the card count for.
  @param interval (Required) How frequently the card count should be updated when the WebSockets service is not available.
  Must be at least 1 second, otherwise defaults to 1 second.
@@ -345,6 +378,27 @@ typedef NS_ENUM(NSUInteger, AACApiProtocol) {
 + (id<NSObject> __nonnull)observeCardCountForStreamContainerWithIdentifier:(NSString* __nonnull)streamContainerId
                                                                   interval:(NSTimeInterval)interval
                                                                    handler:(AACSessionCardCountChangedHandler __nonnull)handler;
+
+/**
+ Asks the SDK to observe the card count for the given stream container with filter(s) applied to cards, calling the `handler` every time
+ the count changes.
+ 
+ @param streamContainerId (Required) The stream container ID to observe the card count for.
+ @param interval (Required) How frequently the card count should be updated when the WebSockets service is not available.
+ Must be at least 1 second, otherwise defaults to 1 second.
+ @param filters (Optional) An array of filters to apply or `nil` to clear the active filter.
+ Filters are retrieved from static methods on `AACCardListFilter`.
+ @param handler (Required) Handler called whenever the card count changes. If the handler returns `nil`, the
+ card count is not available for this stream container (the user may not have access or the internet connection
+ may be unavailable).
+ 
+ @return An opaque token that can be used to stop observing card count, by calling `+stopObservingCardCount:` with that token.
+ */
++ (id<NSObject> __nonnull)observeCardCountForStreamContainerWithIdentifier:(NSString* __nonnull)streamContainerId
+                                                                  interval:(NSTimeInterval)interval
+                                                                   filters:(NSArray<AACCardFilter*>* __nullable)filters
+                                                                   handler:(AACSessionCardCountChangedHandler __nonnull)handler;
+
 /**
  Asks the SDK to stop observing card count for the given token, which was returned from a call to
  `+observeCardCountForStreamContainerWithIdentifier:interval:handler:`. If the token does not
@@ -666,5 +720,18 @@ typedef NS_ENUM(NSUInteger, AACApiProtocol) {
  cause of the error. `NSUnderlyingErrorKey` will also be populated in the error's `userInfo` dictionary.
  */
 + (void)sendCustomEvent:(AACCustomEvent* __nonnull)customEvent completionHandler:(AACSessionSendCustomEventCompletionHandler __nullable)completionHandler;
+
+/**
+ Update the user profile and preferences on the Atomic Platform, exclusively for the user identified by the authentication token provided by the
+ session delegate that is registered when initiating the SDK.
+ 
+ @param userSettings The new user settings to update to.
+ @param completionHandler (Optional) A completion handler invoked with a nil error object if the update succeeded,
+ or a non-nil error object if the update failed.
+ If the `error` object is non-nil, the error domain will be `AACSessionUpdateUserErrorDomain` -
+ look for a specific error code in the `AACSessionUpdateUserErrorCode` enumeration to determine the
+ cause of the error. `NSUnderlyingErrorKey` will also be populated in the error's `userInfo` dictionary. 
+ */
++ (void)updateUser:(AACUserSettings* __nonnull)userSettings completionHandler:(AACSessionUpdateUserCompletionHandler __nullable)completionHandler;
 
 @end

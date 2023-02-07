@@ -75,4 +75,17 @@
  @param filter The filter to apply. Pass `nil` to clear the active filter.
  */
 - (void)applyFilter:(AACCardFilter* __nullable)filter;
+
+/**
+ Applies specified card list filters to the horizontal container view.
+ The horizontal container view will render the cards that match the specified filters, or no cards if there are no matches.
+ In HTTP polling mode, calling this method immediately updates the horizontal container view and does not require waiting until the next feed update.
+ 
+ Note: Due to the nature of card instance ID, only the first filter will take effect if there are multiple `[AACCardListFilter:filterByCardInstanceId:]` filters.
+ 
+ @param filters An array of filters to apply or `nil` to clear the active filter.
+ Filters are retrieved from static methods on `AACCardListFilter`.
+ */
+- (void)applyFilters:(NSArray<AACCardFilter*>* __nullable)filters;
+
 @end

@@ -76,6 +76,17 @@ __attribute__((objc_subclassing_restricted))
  @param filter A filter to apply, retrieved from static methods on `AACCardListFilter`,
  or `nil` to clear the active filter.
  */
-- (void)applyFilter:(AACCardFilter* __nonnull)filter;
+- (void)applyFilter:(AACCardFilter* __nullable)filter;
+
+/**
+ Updates the filters applied to cards in the stream container or single card view,
+ and updates the card list to reflect the filters.
+ 
+ Pass `nil` to clear all active filters.
+ 
+ @param filters An array of filters to apply or `nil` to clear the active filter.
+ Filters are retrieved from static methods on `AACCardListFilter`.
+ */
+- (void)applyFilters:(NSArray<AACCardFilter*>* __nullable)filters;
 
 @end
