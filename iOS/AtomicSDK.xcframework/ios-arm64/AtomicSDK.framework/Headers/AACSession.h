@@ -330,8 +330,11 @@ typedef NS_ENUM(NSUInteger, AACApiProtocol) {
 + (void)logout DEPRECATED_MSG_ATTRIBUTE("The logout method now takes a completion handler, invoked after any pending analytics events are sent to the Atomic Platform (as of release 1.0.0). Please use `+[AACSession logout:]` instead.");
 
 /**
- Purges all cached card data stored by the SDK, and sends any pending analytics events to the Atomic Platform.
+ Purges all cached card data stored by the SDK, invalidates the current JWT token and sends any pending analytics events to the Atomic Platform.
  Call this method when a user logs out of your app or the active user changes.
+ 
+ Note: This method does not intervene in existing stream containers, single card views and card count observers. You must deallocate them as well
+ for a full log-out.
  
  @param completionHandler (Optional) A completion handler invoked with a nil error object if any pending
  analytics events were successfully sent, or a non-nil error object if the sending of pending analytics failed.
