@@ -314,7 +314,7 @@
 		</data>
 		<key>Headers/AACCardFilter.h</key>
 		<data>
-		0vVE1RlqNMY81XUp0a3WQsFfxxE=
+		M7ukKoE/aUlA3yl9I23tTuA5mc0=
 		</data>
 		<key>Headers/AACCardInstance.h</key>
 		<data>
@@ -358,7 +358,7 @@
 		</data>
 		<key>Headers/AACHorizontalContainerView.h</key>
 		<data>
-		BXAkBcIL8x3EbMFpVHcC6p9sFyA=
+		zXu7ZLrAzaSK7kYu7BASCWBBY48=
 		</data>
 		<key>Headers/AACPushNotification.h</key>
 		<data>
@@ -378,7 +378,7 @@
 		</data>
 		<key>Headers/AACSession.h</key>
 		<data>
-		ty3sq2MhB7+vKqv4u2lcDY4N7rY=
+		K+RoeNGR/laBjeJ/ggyGYADcX4I=
 		</data>
 		<key>Headers/AACSessionDelegate.h</key>
 		<data>
@@ -390,7 +390,7 @@
 		</data>
 		<key>Headers/AACSingleCardView.h</key>
 		<data>
-		h0s3qUgveKooQM0mpDARvz5nQYM=
+		aWtyUgdRbvE3lzEJamKc4jwDfvY=
 		</data>
 		<key>Headers/AACStreamContainerActionDelegate.h</key>
 		<data>
@@ -402,23 +402,19 @@
 		</data>
 		<key>Headers/AACStreamContainerViewController.h</key>
 		<data>
-		hfb1Fh2aECi6xe41qhV+c3BmW9k=
+		YoBsqGFVJ6vANXhZXJJFvEnWzDk=
 		</data>
 		<key>Headers/AACUserMetrics.h</key>
 		<data>
 		8OU+0Wy6WMECtjHjYXFApv7Plpk=
 		</data>
-		<key>Headers/AACUserSettings.h</key>
-		<data>
-		kERWwxUoHI/0GrxJfRYIRHM1YrI=
-		</data>
 		<key>Headers/AtomicSDK.h</key>
 		<data>
-		ZZJ8CzKp8KyqtzkxFRDeYhcF7I0=
+		JXo/UsYIxbUJKeeV4l6MnV9efVI=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		EXfZfEEf0m6JOQ6PQazlh8SnpCE=
+		juUBwkSMEbx/G2QKoCboHzpkWus=
 		</data>
 		<key>LICENSE-FontAwesome.txt</key>
 		<data>
@@ -426,7 +422,7 @@
 		</data>
 		<key>LICENSES.html</key>
 		<data>
-		+TJzdFwSYChr8atUEo+sXv1T3C4=
+		6lqpKyLkRVq2rN5EzfZllUGFqSk=
 		</data>
 		<key>Localizable.strings</key>
 		<data>
@@ -438,7 +434,7 @@
 		</data>
 		<key>SDKInfo.plist</key>
 		<data>
-		fbdEZqrGelcUPwVgSSpKZdQW0dc=
+		40qAziBGK9jcgVWbVJTVkJ/caag=
 		</data>
 		<key>fontawesome-5-solid.otf</key>
 		<data>
@@ -1298,11 +1294,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			0vVE1RlqNMY81XUp0a3WQsFfxxE=
+			M7ukKoE/aUlA3yl9I23tTuA5mc0=
 			</data>
 			<key>hash2</key>
 			<data>
-			NY1VPOyWRELNnVjmDi2yYN1iit4XAD0QLzVAFbn/H7s=
+			/nh8ONwLkuCHUsomtesUUONl+R4zSKHtpO61XhsylRc=
 			</data>
 		</dict>
 		<key>Headers/AACCardInstance.h</key>
@@ -1419,11 +1415,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			BXAkBcIL8x3EbMFpVHcC6p9sFyA=
+			zXu7ZLrAzaSK7kYu7BASCWBBY48=
 			</data>
 			<key>hash2</key>
 			<data>
-			IdhUcIkB3OFxOKWOAPoNG1jMj8IKeYTS5vTMnorU0cY=
+			y7Sjqv0anwKRbmzUV4WvZOGP/BSukXtE1YyABM4wFuM=
 			</data>
 		</dict>
 		<key>Headers/AACPushNotification.h</key>
@@ -1474,11 +1470,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ty3sq2MhB7+vKqv4u2lcDY4N7rY=
+			K+RoeNGR/laBjeJ/ggyGYADcX4I=
 			</data>
 			<key>hash2</key>
 			<data>
-			HrDlK4u89gRD4Kt3KL3itO5N4bXPCjAVjfUBqB7GvBk=
+			t6OJEmPOW/7mypdsbeoEPywUjp0GJG2L+58J35Y5JzY=
 			</data>
 		</dict>
 		<key>Headers/AACSessionDelegate.h</key>
@@ -1507,11 +1503,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			h0s3qUgveKooQM0mpDARvz5nQYM=
+			aWtyUgdRbvE3lzEJamKc4jwDfvY=
 			</data>
 			<key>hash2</key>
 			<data>
-			r6/3dg2pKS2SXvkD3iECbXT7JeXR9n4/4k87j/qaK0M=
+			9RVPEVuj4Vd8sSMCfO8t5hhVYBlK9SzNEaha0jWI+GM=
 			</data>
 		</dict>
 		<key>Headers/AACStreamContainerActionDelegate.h</key>
@@ -1540,11 +1536,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			hfb1Fh2aECi6xe41qhV+c3BmW9k=
+			YoBsqGFVJ6vANXhZXJJFvEnWzDk=
 			</data>
 			<key>hash2</key>
 			<data>
-			USozZ/Ud48rz0dxBu0XxahEoEY+PTuUWPrj4X9fC6hg=
+			46s7Sc5ofTi5S2szNpLvaU7/sREgVj07YqU/7mhJf1M=
 			</data>
 		</dict>
 		<key>Headers/AACUserMetrics.h</key>
@@ -1558,26 +1554,15 @@
 			4EUK8YlrvAzif2vQantbAZXEXiYGm0K3DBKsc5GVkT4=
 			</data>
 		</dict>
-		<key>Headers/AACUserSettings.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			kERWwxUoHI/0GrxJfRYIRHM1YrI=
-			</data>
-			<key>hash2</key>
-			<data>
-			Ln9SnafG1hqrsl0L7Vemad9wEZN5dF3/eH7VhfyZyn8=
-			</data>
-		</dict>
 		<key>Headers/AtomicSDK.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			ZZJ8CzKp8KyqtzkxFRDeYhcF7I0=
+			JXo/UsYIxbUJKeeV4l6MnV9efVI=
 			</data>
 			<key>hash2</key>
 			<data>
-			3BSobNFusLMN3htPSBqmV5PYM55s64zi+tkdfo7XWgc=
+			W/FNJP84y8p56UER6jJ9E8Wr50UNmmzSDS85mpri9xE=
 			</data>
 		</dict>
 		<key>LICENSE-FontAwesome.txt</key>
@@ -1595,11 +1580,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			+TJzdFwSYChr8atUEo+sXv1T3C4=
+			6lqpKyLkRVq2rN5EzfZllUGFqSk=
 			</data>
 			<key>hash2</key>
 			<data>
-			AJ+ngDDzoslmlcsLQjJc4mt7zKimrt091NSW/3CrX5Y=
+			96Gxq5egJGwYXzcV3LBmKGujPPf43sVVigZHMzWkfS0=
 			</data>
 		</dict>
 		<key>Localizable.strings</key>
@@ -1628,11 +1613,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			fbdEZqrGelcUPwVgSSpKZdQW0dc=
+			40qAziBGK9jcgVWbVJTVkJ/caag=
 			</data>
 			<key>hash2</key>
 			<data>
-			WN4yoqo+LNfxnX0Fz0hWYe7VkO3UD1Gy1PTI0HyTplo=
+			U176wgGTkWPALWY6sXukAlu1pEVaVTqelGh/CrTWivE=
 			</data>
 		</dict>
 		<key>fontawesome-5-solid.otf</key>
