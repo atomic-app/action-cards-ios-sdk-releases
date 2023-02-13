@@ -737,4 +737,15 @@ typedef NS_ENUM(NSUInteger, AACApiProtocol) {
  */
 + (void)updateUser:(AACUserSettings* __nonnull)userSettings completionHandler:(AACSessionUpdateUserCompletionHandler __nullable)completionHandler;
 
+/**
+ Set the current version of your app. An app version is used with analytics to make it easy to track issues between app versions and general analytics around versions.
+ 
+ If you do not call this method, the client app version defaults to `unknown`.
+ 
+ Strings longer than 128 characters will be trimmed to that length.
+ 
+ @param appVersion Any string representing the app version, such as "Version 14.2 (14C18)".
+ */
++ (void)setClientAppVersion:(NSString* __nonnull)appVersion;
+
 @end
