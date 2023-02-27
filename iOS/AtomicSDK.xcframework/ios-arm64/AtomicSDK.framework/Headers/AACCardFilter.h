@@ -50,11 +50,11 @@
 + (AACCardFilterValue* __nonnull)byCardTemplateName:(NSString* __nonnull)templateName;
 
 /**
- Generates a card created date that can be used to filter cards.
+ Generates a date when a card instance is created, which can be used to filter cards.
  
- Card created date works on all operators.
+ Created date works on all operators.
  
- @param createdDate The date when a card is created.
+ @param createdDate The date when a card instance is created, in UTC timezone.
  */
 + (AACCardFilterValue* __nonnull)byCreatedDate:(NSDate* __nonnull)createdDate;
 
