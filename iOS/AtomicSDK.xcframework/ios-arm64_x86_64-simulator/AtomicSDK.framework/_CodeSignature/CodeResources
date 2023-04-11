@@ -298,7 +298,7 @@
 		</data>
 		<key>Assets.car</key>
 		<data>
-		2ikjCwgzTvxxLrR9+FOo0oO6dDA=
+		zpA0Vq14jT8VPD+YpDxvk23giHQ=
 		</data>
 		<key>Headers/AACCardCustomAction.h</key>
 		<data>
@@ -418,7 +418,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		HdXiI8RJaeqbm1SKG682qHIzrlM=
+		NrpF6UP2MEoYk/AJTtOWT6POuoM=
 		</data>
 		<key>LICENSE-FontAwesome.txt</key>
 		<data>
@@ -426,7 +426,7 @@
 		</data>
 		<key>LICENSES.html</key>
 		<data>
-		5xQ+XOtzhPb37binmoUM6/BeILw=
+		MECTElHB2qthDDJByjgqxR3dHts=
 		</data>
 		<key>Localizable.strings</key>
 		<data>
@@ -438,7 +438,7 @@
 		</data>
 		<key>SDKInfo.plist</key>
 		<data>
-		+/5sqDaevnlUrpyJJoFOyOgwvMo=
+		nL3HJEs2dsGT/HcXEwTR/UG5eUE=
 		</data>
 		<key>fontawesome-5-solid.otf</key>
 		<data>
@@ -1254,11 +1254,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			2ikjCwgzTvxxLrR9+FOo0oO6dDA=
+			zpA0Vq14jT8VPD+YpDxvk23giHQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			GlHCK3rmMz65IXBN/WuH9EXTOrQu+g+MrPL7o5ChHMU=
+			i1jolFTix905q3LwrRCIXa2mxeCo4F7ATgTlcJpGqmM=
 			</data>
 		</dict>
 		<key>Headers/AACCardCustomAction.h</key>
@@ -1595,11 +1595,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			5xQ+XOtzhPb37binmoUM6/BeILw=
+			MECTElHB2qthDDJByjgqxR3dHts=
 			</data>
 			<key>hash2</key>
 			<data>
-			iaKYrzhzNCKAfHIpv1KKwgmDfa0HjgsVKG/KAPrN3hQ=
+			l8DyTjWII/KqLEf+A7FNEQz6KyZbxKDbJM0kmRQ4G4Q=
 			</data>
 		</dict>
 		<key>Localizable.strings</key>
@@ -1628,11 +1628,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			+/5sqDaevnlUrpyJJoFOyOgwvMo=
+			nL3HJEs2dsGT/HcXEwTR/UG5eUE=
 			</data>
 			<key>hash2</key>
 			<data>
-			ysd7Umqh/vHbeMHdxCsS0I+0pVUbYPhvu7QhrLRaMn4=
+			VCXV+SCanrIqU6keD76qV/6RiXc7DRJ3YsuHV2KDpjc=
 			</data>
 		</dict>
 		<key>fontawesome-5-solid.otf</key>
