@@ -324,17 +324,35 @@ typedef NS_ENUM(NSUInteger, AACApiProtocol) {
 + (void)enableDebugMode:(NSInteger)level;
 
 /**
+ Login to the Atomic SDK with credentials. It's the equivalent of calling `initialiseWithEnvironmentId:apiKey:`, `setSessionDelegate:` and
+ `setApiBaseUrl` in sequence.
+ 
+ @param environmentId (Required) The environment ID, available in the Atomic Workbench.
+ @param apiKey (Required) The API key, configured in the Atomic Workbench for this environment.
+ @param sessionDelegate (Required) A delegate that supplies a user authentication token when requested by the SDK.
+ @param baseUrl (Optional) The base URL to use when making API requests, found in the Atomic Workbench.
+ Alternatively, you can set your API base URL in your app's `Info.plist` file, under the key `AACRequestBaseURL`.
+ */
++ (void)loginWithEnvironmentId:(NSString *__nonnull)environmentId
+                        apiKey:(NSString *__nonnull)apiKey
+               sessionDelegate:(id<AACSessionDelegate> __nonnull)sessionDelegate
+                    apiBaseUrl:(NSURL* __nullable)baseUrl;
+
+/**
  Purges all cached card data stored by the SDK, and sends any pending analytics events to the Atomic Platform.
  Call this method when a user logs out of your app or the active user changes.
  */
 + (void)logout DEPRECATED_MSG_ATTRIBUTE("The logout method now takes a completion handler, invoked after any pending analytics events are sent to the Atomic Platform (as of release 1.0.0). Please use `+[AACSession logout:]` instead.");
 
 /**
- Purges all cached card data stored by the SDK, invalidates the current JWT token and sends any pending analytics events to the Atomic Platform.
- Call this method when a user logs out of your app or the active user changes.
+ Purges all cached card data stored by the SDK, disable all SDK activities and sends any pending analytics events to the Atomic Platform.
+ Call this method when a user logs out of your app or when the active user changes.
  
- Note: This method does not intervene in existing stream containers, single card views and card count observers. You must deallocate them as well
- for a full log-out.
+ - By default, push notifications will NOT be de-registered for the current user. To de-register push notifications, call `+[AACSession logoutWithNotificationsDeregistered:completionHandler:]` with the `deregisterNotifications` parameter set to `YES`.
+ 
+ - This method invalidates existing stream containers, single card views, and card count observers but does not deallocate them in order to prevent visual flickering. For a complete log-out, you must handle deallocation yourself.
+ 
+ - After logging out, you must log in to the SDK (by calling either `+[AACSession loginWithEnvironmentId:...]` or the appropriate initialisation methods) to proceed with another user. Otherwise, the Atomic SDK will raise exceptions.
  
  @param completionHandler (Optional) A completion handler invoked with a nil error object if any pending
  analytics events were successfully sent, or a non-nil error object if the sending of pending analytics failed.
@@ -343,6 +361,24 @@ typedef NS_ENUM(NSUInteger, AACApiProtocol) {
  cause of the error. `NSUnderlyingErrorKey` will also be populated in the error's `userInfo` dictionary.
  */
 + (void)logout:(AACSessionLogoutCompletionHandler __nullable)completionHandler;
+
+/**
+ Purges all cached card data stored by the SDK, disable all SDK activities and sends any pending analytics events to the Atomic Platform, with notifications deregistered or not.
+ Call this method when a user logs out of your app or when the active user changes.
+ 
+ - This method invalidates existing stream containers, single card views, and card count observers but does not deallocate them in order to prevent visual flickering. For a complete log-out, you must handle deallocation yourself.
+ 
+ - After logging out, you must log in to the SDK (by calling either `+[AACSession loginWithEnvironmentId:...]` or the appropriate initialisation methods) to proceed with another user. Otherwise, the Atomic SDK will raise exceptions.
+ 
+ @param deregisterNotifications Whether push notifications, for the current user, should also be deregistered.
+ @param completionHandler (Optional) A completion handler invoked with a nil error object if any pending
+ analytics events were successfully sent, or a non-nil error object if the sending of pending analytics failed.
+ If the `error` object is non-nil, the error domain will be `AACSessionLogoutErrorDomain` -
+ look for a specific error code in the `AACSessionLogoutErrorCode` enumeration to determine the
+ cause of the error. `NSUnderlyingErrorKey` will also be populated in the error's `userInfo` dictionary.
+ */
++ (void)logoutWithNotificationsDeregistered:(BOOL)deregisterNotifications
+                          completionHandler:(AACSessionLogoutCompletionHandler __nullable)completionHandler;
 
 /**
  Asks the SDK to observe the card count for the given stream container, calling the `handler` every time

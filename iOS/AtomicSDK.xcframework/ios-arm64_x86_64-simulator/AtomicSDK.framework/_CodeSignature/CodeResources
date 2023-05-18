@@ -298,7 +298,7 @@
 		</data>
 		<key>Assets.car</key>
 		<data>
-		2ikjCwgzTvxxLrR9+FOo0oO6dDA=
+		zpA0Vq14jT8VPD+YpDxvk23giHQ=
 		</data>
 		<key>Headers/AACCardCustomAction.h</key>
 		<data>
@@ -378,7 +378,7 @@
 		</data>
 		<key>Headers/AACSession.h</key>
 		<data>
-		W75fhzJQ33ewrz8gWlXDMIy8eRY=
+		O2+cdxPaILqSAC9+8NNSVGg4kH8=
 		</data>
 		<key>Headers/AACSessionDelegate.h</key>
 		<data>
@@ -418,7 +418,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		aumWcxtqV70L0wjLRPG1KEwQKtg=
+		ElqyBlPAeVN8483P2y4jANy7EOA=
 		</data>
 		<key>LICENSE-FontAwesome.txt</key>
 		<data>
@@ -426,11 +426,11 @@
 		</data>
 		<key>LICENSES.html</key>
 		<data>
-		MECTElHB2qthDDJByjgqxR3dHts=
+		M+trvixY8y2XgC6PHC/g1fEfkb4=
 		</data>
 		<key>Localizable.strings</key>
 		<data>
-		7PNpVXABEUXnz9uVFU14KhD3M8U=
+		OsMOBqacILhXwNue4Pb1tifPCNY=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -438,7 +438,7 @@
 		</data>
 		<key>SDKInfo.plist</key>
 		<data>
-		nL3HJEs2dsGT/HcXEwTR/UG5eUE=
+		AsjxufEOYHTRS/7yfbqnbcdrUpU=
 		</data>
 		<key>fontawesome-5-solid.otf</key>
 		<data>
@@ -1254,11 +1254,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			2ikjCwgzTvxxLrR9+FOo0oO6dDA=
+			zpA0Vq14jT8VPD+YpDxvk23giHQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			GlHCK3rmMz65IXBN/WuH9EXTOrQu+g+MrPL7o5ChHMU=
+			i1jolFTix905q3LwrRCIXa2mxeCo4F7ATgTlcJpGqmM=
 			</data>
 		</dict>
 		<key>Headers/AACCardCustomAction.h</key>
@@ -1474,11 +1474,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			W75fhzJQ33ewrz8gWlXDMIy8eRY=
+			O2+cdxPaILqSAC9+8NNSVGg4kH8=
 			</data>
 			<key>hash2</key>
 			<data>
-			A4oGFaninFEXtMUGaOf03ahPtuYBjf2rFpSgOfckxMs=
+			i+Rz3edd2LQKtfRwgSIgmRasasoVpI9bSWtn0wdRteA=
 			</data>
 		</dict>
 		<key>Headers/AACSessionDelegate.h</key>
@@ -1595,22 +1595,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			MECTElHB2qthDDJByjgqxR3dHts=
+			M+trvixY8y2XgC6PHC/g1fEfkb4=
 			</data>
 			<key>hash2</key>
 			<data>
-			l8DyTjWII/KqLEf+A7FNEQz6KyZbxKDbJM0kmRQ4G4Q=
+			ad/xBnAlBQhWlyNASgFSNVKNfsO8gfYSRIZvMJq26W4=
 			</data>
 		</dict>
 		<key>Localizable.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			7PNpVXABEUXnz9uVFU14KhD3M8U=
+			OsMOBqacILhXwNue4Pb1tifPCNY=
 			</data>
 			<key>hash2</key>
 			<data>
-			GiC02rAgfuj6L//x9tWIMo0JmhpBAbN5K0Gr8GP/jUU=
+			CPYg9n1w30mUOnFzYVSCtoWNZhfBSKRnx7/xEmABSUE=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -1628,11 +1628,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			nL3HJEs2dsGT/HcXEwTR/UG5eUE=
+			AsjxufEOYHTRS/7yfbqnbcdrUpU=
 			</data>
 			<key>hash2</key>
 			<data>
-			VCXV+SCanrIqU6keD76qV/6RiXc7DRJ3YsuHV2KDpjc=
+			j0FV1OlkpKRtrFOlH/Uz2JudgZC3x/dUy4mdUzBSUDU=
 			</data>
 		</dict>
 		<key>fontawesome-5-solid.otf</key>
