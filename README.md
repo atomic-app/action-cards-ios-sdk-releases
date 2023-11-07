@@ -4,7 +4,7 @@
 
 The Atomic iOS SDK is a dynamic framework for integrating an Atomic stream container into your iOS app, presenting cards from a stream to your end users.
 
-The SDK is written in Objective-C and supports iOS 10.0 and above.
+The SDK is written in Objective-C and supports iOS 12.0 and above.
 
 ## Installation
 
