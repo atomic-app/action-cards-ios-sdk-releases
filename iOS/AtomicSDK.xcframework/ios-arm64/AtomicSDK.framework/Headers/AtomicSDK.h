@@ -50,5 +50,3 @@ FOUNDATION_EXPORT const unsigned char AtomicSDKVersionString[];
 #import <AtomicSDK/AACCustomEvent.h>
 
 #import <AtomicSDK/AACUserSettings.h>
-
-#import <AtomicSDK/AACSDKEvent.h>
