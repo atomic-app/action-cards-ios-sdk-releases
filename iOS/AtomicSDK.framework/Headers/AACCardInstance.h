@@ -5,31 +5,37 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <AtomicSDK/AACCardRuntimeVariable.h>
 #import <UIKit/UIKit.h>
+#import <AtomicSDK/AACCardRuntimeVariable.h>
+#import <AtomicSDK/AACCardLayout.h>
+#import <AtomicSDK/AACCardDetail.h>
+#import <AtomicSDK/AACCardActionFlags.h>
+#import <AtomicSDK/AACCardMetadata.h>
+
+NS_ASSUME_NONNULL_BEGIN
 
 /**
  Represents an individual card displayed to the end user.
  */
 @interface AACCardInstance: NSObject
 
-- (instancetype __nonnull)init NS_UNAVAILABLE;
+- (instancetype)init NS_UNAVAILABLE;
 
 /**
  The name of the event, as defined in the Atomic Workbench, that caused this card
  to be created.
  */
-@property (nonatomic, readonly, nonnull) NSString *eventName;
+@property (nonatomic, readonly) NSString *eventName;
 
 /**
  The lifecycle ID sent with the event that created this card.
  */
-@property (nonatomic, readonly, nonnull) NSString *lifecycleId;
+@property (nonatomic, readonly) NSString *lifecycleId;
 
 /**
  All runtime variables in use by this card.
  */
-@property (nonatomic, strong, nonnull, readonly) NSArray<AACCardRuntimeVariable*>* runtimeVariables;
+@property (nonatomic, readonly) NSArray<AACCardRuntimeVariable*>* runtimeVariables;
 
 /**
  The priority of the card, the value of which can be any number from 1 - 10, with 1 being the highest priority,
@@ -44,7 +50,7 @@
 /**
  The last active time of the card.
  */
-@property (nonatomic, strong, nonnull, readonly) NSDate* lastCardActiveTime;
+@property (nonatomic, readonly) NSDate* lastCardActiveTime;
 
 /**
  Assigns the given `value` to the variable with the given `name`.
@@ -53,7 +59,42 @@
  @param name The name of the variable.
  @param value The resolved, string value for that variable.
  */
-- (void)resolveRuntimeVariableWithName:(NSString* __nonnull)name
-                                 value:(NSString* __nonnull)value;
+- (void)resolveRuntimeVariableWithName:(NSString *)name
+                                 value:(NSString *)value;
+
+/**
+ The default layout that should be used when rendering this card.
+ 
+ @return The default layout for the card.
+ */
+@property (nonatomic, readonly) AACCardLayout *defaultLayout;
+
+/**
+ Returns the layout matching the given `name`, or `nil` if no such layout
+ exists for this card.
+ */
+- (AACCardLayout* __nullable)layoutWithName:(NSString *)name;
+
+/**
+ Information pertaining to the card's creation.
+ */
+@property (nonatomic, readonly) AACCardDetail *detail;
+
+/**
+ Information pertaining to the card's creation.
+ */
+@property (nonatomic, readonly) AACCardActionFlags *actionFlags;
+
+/**
+ Additional information relating to the card instance.
+ */
+@property (nonatomic, readonly) AACCardMetadata *metadata;
+
+/**
+ Whether the card has runtime variables.
+ */
+@property (nonatomic, readonly) BOOL hasRuntimeVariables;
 
 @end
+
+NS_ASSUME_NONNULL_END
