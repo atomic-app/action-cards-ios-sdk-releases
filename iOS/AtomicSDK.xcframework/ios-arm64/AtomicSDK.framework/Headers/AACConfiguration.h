@@ -271,4 +271,22 @@ typedef NS_OPTIONS(NSUInteger, AACUIElement) {
  */
 @property (nonatomic, readonly, nonnull) AACFeatureFlags *features;
 
+/**
+ Specifies the maximum width for each card displayed within the stream container. Cards will be centre-aligned.
+
+ Defaults to `0`, indicating that the card's width will automatically adjust to match the width of the stream container.
+
+ Constraints:
+
+ - Setting a value less than `200` for this property is not recommended, as it may lead to layout constraint warnings. This occurs when cards cannot accommodate their content within the constrained width.
+
+ - Negative values assigned to this property are automatically reset to `0`.
+ 
+ - In vertical stream containers, the stream container disregards this property if its value exceeds the container's current width.
+ 
+ - In horizontal stream containers, this property functions identically to the `cardWidth` property.
+ */
+
+ @property (nonatomic) CGFloat cardMaxWidth;
+
 @end
