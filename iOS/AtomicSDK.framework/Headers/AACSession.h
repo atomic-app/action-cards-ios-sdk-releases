@@ -15,6 +15,7 @@
 #import <AtomicSDK/AACCustomEvent.h>
 #import <AtomicSDK/AACUserSettings.h>
 #import <AtomicSDK/AACCardFilter.h>
+#import <AtomicSDK/AACSDKEvent.h>
 
 /**
  Handler called whenever the card count changes.
@@ -54,6 +55,13 @@ typedef void(^AACSessionSendEventHandler)(AACEventResponse* __nullable response,
  If the request fails, the `response` parameter is nil and the `error` parameter is non-nil.
  */
 typedef void(^AACSessionUserMetricsHandler)(AACUserMetrics* __nullable response, NSError* __nullable error);
+
+/**
+ Handler called when an SDK event is triggered.
+ 
+ Use `eventType` or `[sdkEvent isKindOfClass]` to determine the real type of the event.
+ */
+typedef void(^AACSessionSDKEventsHandler)(AACSDKEvent* __nonnull sdkEvent);
 
 /**
  Handler called when the request to log the user out within the SDK completes.
@@ -783,5 +791,19 @@ typedef NS_ENUM(NSUInteger, AACApiProtocol) {
  @param appVersion Any string representing the app version, such as "Version 14.2 (14C18)".
  */
 + (void)setClientAppVersion:(NSString* __nonnull)appVersion;
+
+/**
+ Asks the SDK to observe SDK events, calling the `completionHandler` every time an event occurs. To stop the observation, call this method with a `nil` completion handler.
+ 
+ An SDK event symbolises an identifiable SDK activity such as card feed changes or user interactions with cards.
+ 
+ @param completionHandler A completion handler called whenever an SDK event occurs. Pass `nil` to this parameter to stop the observation.
+ */
++ (void)observeSDKEventsWithCompletionHandler:(AACSessionSDKEventsHandler __nullable)completionHandler;
+
+/**
+ A convenient method to stop observing SDK events. This method is the equivalent of calling `observeSDKEventsWithCompletionHandler:` with a `nil` parameter.
+ */
++ (void)stopObservingSDKEvents;
 
 @end
