@@ -16,6 +16,22 @@
 #import <AtomicSDK/AACUserSettings.h>
 #import <AtomicSDK/AACCardFilter.h>
 #import <AtomicSDK/AACSDKEvent.h>
+#import <AtomicSDK/AACCardInstance.h>
+#import <AtomicSDK/AACStreamContainerObserverConfiguration.h>
+#import <AtomicSDK/AACSessionCardAction.h>
+
+/**
+ Handler called whenever a card action returns a result.
+ If an error occurred, the error parameter is populated with details, otherwise the error object is nil.
+ */
+typedef void(^AACSessionOnCardActionHandler)(NSError* __nullable error);
+
+/**
+ Handler called whenever the card feed in the observed stream container changes.
+ 
+ @param cards The list of current cards in the observed stream container, or `nil` if the cards are not available.
+ */
+typedef void(^AACSessionStreamContainerChangedHandler)(NSArray<AACCardInstance*> * __nullable cards);
 
 /**
  Handler called whenever the card count changes.
@@ -114,6 +130,26 @@ extern NSString* __nonnull const AACSessionTotalCardCountUserInfoKey;
  Error domain for errors arising from a failure to fetch the user metrics.
  */
 extern NSString* __nonnull const AACSessionUserMetricsErrorDomain;
+
+/**
+ Error domain for errors arising from a failure to perform card actions, such as dismissing, snoozing or submitting.
+ */
+extern NSString* __nonnull const AACSessionCardActionsErrorDomain;
+
+/**
+ Error code associated with the card actions error domain.
+ The underlying error is supplied in the `NSUnderlyingErrorKey` in the error's `userInfo` dictionary.
+ */
+typedef NS_ERROR_ENUM(AACSessionCardActionsErrorDomain, AACSessionCardActionsErrorCode) {
+    /**
+     Failed to perform card actions because the user's device was offline.
+     */
+    AACSessionCardActionsErrorCodeNetworkError,
+    /**
+     Failed to perform card actions because an internal data error has happened.
+     */
+    AACSessionCardActionsErrorCodeDataError
+};
 
 /**
  Error code associated with the user metrics fetching error domain.
@@ -805,5 +841,38 @@ typedef NS_ENUM(NSUInteger, AACApiProtocol) {
  A convenient method to stop observing SDK events. This method is the equivalent of calling `observeSDKEventsWithCompletionHandler:` with a `nil` parameter.
  */
 + (void)stopObservingSDKEvents;
+
+/**
+ Asks the SDK to monitor changes in a stream container, invoking the specified `handler` whenever there are updates.
+ This method can be used to track changes of the card feed within the stream container.
+
+ @param streamContainerId (Required) The identifier of the stream container to be observed.
+ @param configuration (Required) A configuration object for defining behaviour of the stream container observer.
+ @param completionHandler (Required) The callback handler that is invoked whenever there is a change in the stream container.
+ The handler receives updated information, or `nil` if the data is not accessible (due to reasons like lack of user access or network issues).
+
+ @return A non-null opaque token which can be used to cease monitoring changes by passing it to the `+stopObservingStreamContainer:` method.
+ */
++ (id<NSObject> __nonnull)observeStreamContainerWithIdentifier:(NSString* __nonnull)streamContainerId
+                                                 configuration:(AACStreamContainerObserverConfiguration* __nullable)configuration
+                                             completionHandler:(AACSessionStreamContainerChangedHandler __nonnull)completionHandler NS_SWIFT_NAME(observeStreamContainer(identifier:configuration:handler:));
+
+/**
+ Requests the SDK to cease monitoring changes in the stream container associated with the given token.
+ This method stops the updates that were being sent to the handler registered via `+observeStreamContainerWithIdentifier:configuration:completionHandler:`.
+ If the provided token does not correspond to an active stream container observer, this method has no effect.
+
+ @param token The non-null opaque token obtained from `+observeStreamContainerWithIdentifier:interval:filters:handler:`. This token identifies the specific monitoring process to be stopped.
+ */
++ (void)stopObservingStreamContainer:(id<NSObject> __nonnull)token NS_SWIFT_NAME(stopObservingStreamContainer(token:));
+
+/**
+ Executes the specified card action and calls the completion handler upon completion.
+ Card actions include dismissing, snoozing or submitting a card.
+ 
+ @param action The object representing a card action.
+ @param completionHandler A handler block to be executed when the action is completed. This handler is called with either an error if the action fails, or nil on success.
+ */
++ (void)onCardAction:(AACSessionCardAction* __nonnull)action completionHandler:(AACSessionOnCardActionHandler __nonnull)completionHandler;
 
 @end
