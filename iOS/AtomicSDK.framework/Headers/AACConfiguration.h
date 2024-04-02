@@ -5,7 +5,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <UIKit/UIKit.h>
+@import UIKit;
 
 #import <AtomicSDK/AACStreamContainerActionDelegate.h>
 #import <AtomicSDK/AACStreamContainerHeaderDelegate.h>
@@ -156,7 +156,7 @@ typedef NS_OPTIONS(NSUInteger, AACCardVotingOption) {
 typedef NS_OPTIONS(NSUInteger, AACUIElement) {
     /// Value indicating that none of the listed UI elements should be shown.
     AACUIElementNone = 0,
-    /// Value indicating that toast messages should shown at the bottom of the screen.
+    /// Value indicating that toast messages should shown over the card list.
     AACUIElementCardListToast = 1 << 0,
     /// Value indicating that the footer message should be shown beneath the last card in the list.
     AACUIElementCardListFooterMessage = 1 << 1,
@@ -234,8 +234,8 @@ typedef NS_OPTIONS(NSUInteger, AACUIElement) {
 
 /**
  Bitmask of user interface elements that should be enabled in the stream container.
+ This property has no effect when applied to a single card view.
  The default value enables toast messages and the card list header.
- For single card view only the toast message option takes effect.
  */
 @property (nonatomic) AACUIElement enabledUiElements;
 
