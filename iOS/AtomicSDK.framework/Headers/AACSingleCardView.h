@@ -44,19 +44,6 @@
  
  @param frame The initial size of the single card view. The `intrinsicSize` is updated when the card view resizes.
  @param containerId The ID of the stream container to render the first card from.
- @param sessionDelegate A session delegate that provides a user's JWT and resolves runtime variables.
- @param configuration Stream container configuration to apply to this single card view.
- */
-- (instancetype __nonnull)initWithFrame:(CGRect)frame
-                    containerIdentifier:(NSString* __nonnull)containerId
-                        sessionDelegate:(id<AACSessionDelegate> __nonnull)sessionDelegate
-                          configuration:(AACConfiguration* __nonnull)configuration DEPRECATED_MSG_ATTRIBUTE("Session delegates are now configured globally, and are no longer supplied as a parameter (as of release 1.0.0). Please pass your session delegate to +[AACSession setSessionDelegate:], and use `initWithFrame:containerIdentifier:configuration:` instead.");
-
-/**
- Creates a new view for displaying a single card.
- 
- @param frame The initial size of the single card view. The `intrinsicSize` is updated when the card view resizes.
- @param containerId The ID of the stream container to render the first card from.
  @param configuration Stream container configuration to apply to this single card view. 
  */
 - (instancetype __nonnull)initWithFrame:(CGRect)frame
