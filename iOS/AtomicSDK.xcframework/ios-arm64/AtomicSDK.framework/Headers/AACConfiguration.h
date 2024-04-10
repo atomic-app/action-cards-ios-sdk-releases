@@ -5,7 +5,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <UIKit/UIKit.h>
+@import UIKit;
 
 #import <AtomicSDK/AACStreamContainerActionDelegate.h>
 #import <AtomicSDK/AACStreamContainerHeaderDelegate.h>
@@ -156,7 +156,7 @@ typedef NS_OPTIONS(NSUInteger, AACCardVotingOption) {
 typedef NS_OPTIONS(NSUInteger, AACUIElement) {
     /// Value indicating that none of the listed UI elements should be shown.
     AACUIElementNone = 0,
-    /// Value indicating that toast messages should shown at the bottom of the screen.
+    /// Value indicating that toast messages should shown over the card list.
     AACUIElementCardListToast = 1 << 0,
     /// Value indicating that the footer message should be shown beneath the last card in the list.
     AACUIElementCardListFooterMessage = 1 << 1,
@@ -200,6 +200,11 @@ typedef NS_OPTIONS(NSUInteger, AACUIElement) {
 @property (nonatomic, strong, nullable) UIColor *launchBackgroundColor;
 
 /**
+ (Deprecated) The colour of the icon displayed when the SDK theme is loaded for the first time.
+ */
+@property (nonatomic, strong, nullable) UIColor *launchIconColor DEPRECATED_MSG_ATTRIBUTE("The first time loading experience has changed as of release 0.19.0. Please use `launchLoadingIndicatorColor` to change the colour of the loading spinner on the first time load screen.");
+
+/**
  The colour to use for the loading indicator when the SDK theme is loaded for the first time.
  */
 @property (nonatomic, strong, nullable) UIColor *launchLoadingIndicatorColor;
@@ -229,8 +234,8 @@ typedef NS_OPTIONS(NSUInteger, AACUIElement) {
 
 /**
  Bitmask of user interface elements that should be enabled in the stream container.
+ This property has no effect when applied to a single card view.
  The default value enables toast messages and the card list header.
- For single card view only the toast message option takes effect.
  */
 @property (nonatomic) AACUIElement enabledUiElements;
 
@@ -265,23 +270,5 @@ typedef NS_OPTIONS(NSUInteger, AACUIElement) {
  Features that can be toggled on or off in the stream container.
  */
 @property (nonatomic, readonly, nonnull) AACFeatureFlags *features;
-
-/**
- Specifies the maximum width for each card displayed within the stream container. Cards will be centre-aligned.
-
- Defaults to `0`, indicating that the card's width will automatically adjust to match the width of the stream container.
-
- Constraints:
-
- - Setting a value less than `200` for this property is not recommended, as it may lead to layout constraint warnings. This occurs when cards cannot accommodate their content within the constrained width.
-
- - Negative values assigned to this property are automatically reset to `0`.
- 
- - In vertical stream containers, the stream container disregards this property if its value exceeds the container's current width.
- 
- - In horizontal stream containers, this property functions identically to the `cardWidth` property.
- */
-
- @property (nonatomic) CGFloat cardMaxWidth;
 
 @end
