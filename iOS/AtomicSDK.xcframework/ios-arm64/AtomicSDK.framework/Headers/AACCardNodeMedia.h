@@ -32,20 +32,6 @@ typedef NS_ENUM(NSUInteger, AACCardNodeMediaFormat) {
     AACCardNodeMediaFormatThumbnail
 };
 
-/**
- Possible actions that a media element can take.
- */
-typedef NS_ENUM(NSUInteger, AACCardNodeMediaActionType) {
-    /// The media would display an image or video.
-    AACCardNodeMediaActionTypeMedia,
-    /// The media would redirect to a URL.
-    AACCardNodeMediaActionTypeURL,
-    /// The media would redirect to a subview.
-    AACCardNodeMediaActionTypeSubview,
-    /// The media would redirect to a custom payload.
-    AACCardNodeMediaActionTypePayload
-};
-
 @interface AACCardNodeMedia: AACCardNode
 
 /// The kind of media represented by this object.
@@ -71,22 +57,5 @@ typedef NS_ENUM(NSUInteger, AACCardNodeMediaActionType) {
 
 /// The alternate text, provided in the Atomic Workbench, that describes the source media.
 @property (nonatomic, copy, nullable) NSString *alternateText;
-
-/// The action URL to jump to when set in the Atomic Workbench.
-@property (nonatomic, strong, nullable) NSURL* actionUrl;
-
-/// The name of the layout to navigate to on tap. If this property is `nil`, the document at `url` will be presented instead.
-@property (nonatomic, copy, nullable) NSString* actionLayoutName;
-
-/**
- A payload of key-value pairs that are sent to the host app, to determine the custom action taken
- when tapping on this button. We use the same callback in the `AACStreamContainerActionDelegate` that's used by a link button.
- */
-@property (nonatomic, copy, nullable) NSDictionary *actionPayload;
-
-/**
- The action to be taken by this object.
- */
-@property (nonatomic) AACCardNodeMediaActionType actionType;
 
 @end

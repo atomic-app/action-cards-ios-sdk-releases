@@ -127,20 +127,17 @@ typedef NS_ENUM(NSUInteger, AACSDKEventRedirectLinkMethod) {
 };
 
 /**
- The types of card components from which a user can be redirected.
+The types of possible sources that can trigger card actions, such as snoozing, dismissal or voting.
  */
-typedef NS_ENUM(NSUInteger, AACSDKEventRedirectDetailType) {
-    /// The user is redirected from an image.
-    AACSDKEventRedirectDetailTypeImage = 0,
-    
-    /// The user is redirected from a link button.
-    AACSDKEventRedirectDetailTypeLinkButton,
-    
-    /// The user is redirected from a submit button.
-    AACSDKEventRedirectDetailTypeSubmitButton,
-    
-    /// The user is redirected from a hyperlink in markdown text.
-    AACSDKEventRedirectDetailTypeTextLink
+typedef NS_ENUM(NSUInteger, AACSDKEventActionSource) {
+    /// The action is initiated from an unknown source.
+    AACSDKEventActionSourceUnknown,
+    /// The action is initiated from the overflow menu.
+    AACSDKEventActionSourceOverflow,
+    /// The action is initiated from the swipe gesture.
+    AACSDKEventActionSourceSwipe,
+    /// The action is initiated from buttons on the card.
+    AACSDKEventActionSourceCardButton
 };
 
 /**
@@ -317,12 +314,23 @@ typedef NS_ENUM(NSUInteger, AACSDKEventRedirectDetailType) {
  Represents an event in which the user taps on the “This is useful” option in the card overflow menu.
  */
 @interface AACSDKEventCardVotedUp : AACSDKEventCREVT
+
+/**
+ The source from which this voting event was initiated.
+ */
+@property (nonatomic, readonly) AACSDKEventActionSource source;
+
 @end
 
 /**
  Represents an event in which the user taps the “Submit” button on the card feedback screen, which is brought up by tapping on the “This isn't useful” option in the card overflow menu.
  */
 @interface AACSDKEventCardVotedDown : AACSDKEventCREVT
+
+/**
+ The source from which this voting event was initiated.
+ */
+@property (nonatomic, readonly) AACSDKEventActionSource source;
 
 /**
  The reason that the user chooses on the card feedback screen.
@@ -376,10 +384,8 @@ typedef NS_ENUM(NSUInteger, AACSDKEventRedirectDetailType) {
  Represents an event in which the user is redirected by a URL or a custom payload.
  
  The event occurs when
- - The user taps an image that is set to open a URL or has a custom action payload.
  - The user opens a URL on a link button or after submitting a card.
  - The user taps on a link or submit button with a custom action payload.
- - The user taps on a hyperlink in markdown text.
  
  This event can occur on either the top-level or subview of a card.
  */
@@ -403,11 +409,6 @@ typedef NS_ENUM(NSUInteger, AACSDKEventRedirectDetailType) {
  This will be `nil` if the redirection did not involve a custom action payload (for example, if it was a URL redirection).
  */
 @property (nonatomic, readonly, nullable) NSDictionary *redirectPayload;
-
-/**
- The card component from which a user gets redirected.
- */
-@property (nonatomic, readonly) AACSDKEventRedirectDetailType detail;
 
 @end
 
