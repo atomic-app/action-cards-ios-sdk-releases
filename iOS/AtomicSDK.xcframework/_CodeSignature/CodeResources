@@ -4,97 +4,53 @@
 <dict>
 	<key>files</key>
 	<dict>
-		<key>ios-arm64/AtomicSDK.framework/AACActionSheetItemView.nib/objects-11.0+.nib</key>
+		<key>ios-arm64/AtomicSDK.framework/AACActionSheetItemView.nib</key>
 		<data>
 		2DLwgnYOeL+k+ntvmIKKMpdvEXQ=
 		</data>
-		<key>ios-arm64/AtomicSDK.framework/AACActionSheetItemView.nib/runtime.nib</key>
-		<data>
-		FG2p+fG7JRqL0pJobVLlkc9mQog=
-		</data>
-		<key>ios-arm64/AtomicSDK.framework/AACActionSheetViewController.nib/objects-11.0+.nib</key>
+		<key>ios-arm64/AtomicSDK.framework/AACActionSheetViewController.nib</key>
 		<data>
 		SH5G2LstOeKT0Pj9+SH+GBHjLKM=
 		</data>
-		<key>ios-arm64/AtomicSDK.framework/AACActionSheetViewController.nib/runtime.nib</key>
-		<data>
-		bgC8OKjVt5T5ObI5Pg+4K7LgC+Q=
-		</data>
-		<key>ios-arm64/AtomicSDK.framework/AACBannerView.nib/objects-11.0+.nib</key>
+		<key>ios-arm64/AtomicSDK.framework/AACBannerView.nib</key>
 		<data>
 		tLBfipJjiv3dBim+msPQ0QeC3ro=
 		</data>
-		<key>ios-arm64/AtomicSDK.framework/AACBannerView.nib/runtime.nib</key>
-		<data>
-		piyFUMx3lg934XYMrI6MzdtRQTs=
-		</data>
-		<key>ios-arm64/AtomicSDK.framework/AACCardActionsView.nib/objects-11.0+.nib</key>
+		<key>ios-arm64/AtomicSDK.framework/AACCardActionsView.nib</key>
 		<data>
 		MrXkrcapsNLddsTy0wLb8psCzXw=
 		</data>
-		<key>ios-arm64/AtomicSDK.framework/AACCardActionsView.nib/runtime.nib</key>
-		<data>
-		+VrmoT+s6/yaUusV3q963Uyu3IY=
-		</data>
-		<key>ios-arm64/AtomicSDK.framework/AACCardActionsViewHorizon.nib/objects-11.0+.nib</key>
+		<key>ios-arm64/AtomicSDK.framework/AACCardActionsViewHorizon.nib</key>
 		<data>
 		AwQxHfLX/aQiT/9jVtg/fcgFBBc=
 		</data>
-		<key>ios-arm64/AtomicSDK.framework/AACCardActionsViewHorizon.nib/runtime.nib</key>
-		<data>
-		1KK7TaMWCT/KFzRBbUCgYhSlamU=
-		</data>
-		<key>ios-arm64/AtomicSDK.framework/AACCardFeedbackViewController.nib/objects-11.0+.nib</key>
+		<key>ios-arm64/AtomicSDK.framework/AACCardFeedbackViewController.nib</key>
 		<data>
 		77kI/Z3+eeMTTrUr0F6eQv3jigE=
-		</data>
-		<key>ios-arm64/AtomicSDK.framework/AACCardFeedbackViewController.nib/runtime.nib</key>
-		<data>
-		HBaBHKHFZa0gVWsJZADnnTrNSAg=
 		</data>
 		<key>ios-arm64/AtomicSDK.framework/AACCardFooterView.nib</key>
 		<data>
 		1sceiF/ItRImWJF3+PMTXDDFScI=
 		</data>
-		<key>ios-arm64/AtomicSDK.framework/AACCardListViewController.nib/objects-11.0+.nib</key>
+		<key>ios-arm64/AtomicSDK.framework/AACCardListViewController.nib</key>
 		<data>
 		urn1HRG9U22VVfvfDEBUysJNRVA=
 		</data>
-		<key>ios-arm64/AtomicSDK.framework/AACCardListViewController.nib/runtime.nib</key>
-		<data>
-		Smxg0ZxIA4e5ab1xkzaUWuBmstM=
-		</data>
-		<key>ios-arm64/AtomicSDK.framework/AACCardOverflowView.nib/objects-11.0+.nib</key>
+		<key>ios-arm64/AtomicSDK.framework/AACCardOverflowView.nib</key>
 		<data>
 		fkm9ASeGqu1G20TdJl9sprX/g5o=
 		</data>
-		<key>ios-arm64/AtomicSDK.framework/AACCardOverflowView.nib/runtime.nib</key>
-		<data>
-		v5pot8sSzw3jMgDpkGYohN1zmfk=
-		</data>
-		<key>ios-arm64/AtomicSDK.framework/AACCardShadowView.nib/objects-11.0+.nib</key>
+		<key>ios-arm64/AtomicSDK.framework/AACCardShadowView.nib</key>
 		<data>
 		1bMLQx3p/385GflQw+sMCmGmpI4=
 		</data>
-		<key>ios-arm64/AtomicSDK.framework/AACCardShadowView.nib/runtime.nib</key>
-		<data>
-		Edkbtx7EsLBYA5x66KcdfKjnI0Q=
-		</data>
-		<key>ios-arm64/AtomicSDK.framework/AACCardSnoozeViewController.nib/objects-11.0+.nib</key>
+		<key>ios-arm64/AtomicSDK.framework/AACCardSnoozeViewController.nib</key>
 		<data>
 		SmezXb0E8DyJxfQr3yJENZ/P68g=
 		</data>
-		<key>ios-arm64/AtomicSDK.framework/AACCardSnoozeViewController.nib/runtime.nib</key>
-		<data>
-		OHqsv4tIZuw4INwOuapIB8TZVIc=
-		</data>
-		<key>ios-arm64/AtomicSDK.framework/AACCardSubviewViewController.nib/objects-11.0+.nib</key>
+		<key>ios-arm64/AtomicSDK.framework/AACCardSubviewViewController.nib</key>
 		<data>
 		/Tkyeq8xZjGog2Tv2zBAk6a91lg=
-		</data>
-		<key>ios-arm64/AtomicSDK.framework/AACCardSubviewViewController.nib/runtime.nib</key>
-		<data>
-		bXAmp7PiyZoy8r7+FGtOPLOXkcM=
 		</data>
 		<key>ios-arm64/AtomicSDK.framework/AACCardViewButton.nib</key>
 		<data>
@@ -168,81 +124,53 @@
 		<data>
 		n1Y8qzAmZ7qAl0cOsMDodjTvdbo=
 		</data>
-		<key>ios-arm64/AtomicSDK.framework/AACErrorOverlayView.nib/objects-11.0+.nib</key>
+		<key>ios-arm64/AtomicSDK.framework/AACErrorOverlayView.nib</key>
 		<data>
 		Pw/OwLtw4ppzzKBNJj5jAA0/ZOU=
 		</data>
-		<key>ios-arm64/AtomicSDK.framework/AACErrorOverlayView.nib/runtime.nib</key>
-		<data>
-		npDQ6U5f4KM20/hl+Hdtpo++3SY=
-		</data>
-		<key>ios-arm64/AtomicSDK.framework/AACFullImageViewController.nib/objects-11.0+.nib</key>
+		<key>ios-arm64/AtomicSDK.framework/AACFullImageViewController.nib</key>
 		<data>
 		9b4t6Iwxv18TJKX0ueVE+/YGSLw=
-		</data>
-		<key>ios-arm64/AtomicSDK.framework/AACFullImageViewController.nib/runtime.nib</key>
-		<data>
-		foAGIISwdKGlWZlc+/bE0jYeHl0=
 		</data>
 		<key>ios-arm64/AtomicSDK.framework/AACListHeaderView.nib</key>
 		<data>
 		Eghdpv26vec0KwmJ1vyvrNOvVic=
 		</data>
-		<key>ios-arm64/AtomicSDK.framework/AACLoadingSpinnerView.nib/objects-11.0+.nib</key>
+		<key>ios-arm64/AtomicSDK.framework/AACLoadingSpinnerView.nib</key>
 		<data>
 		Rrc4G29Zyh2ApFRrv2Rezszh9Qg=
 		</data>
-		<key>ios-arm64/AtomicSDK.framework/AACLoadingSpinnerView.nib/runtime.nib</key>
-		<data>
-		3CLj7/3q0qbsIdA7rp+jt48yjfU=
-		</data>
-		<key>ios-arm64/AtomicSDK.framework/AACLoadingViewController.nib/objects-11.0+.nib</key>
+		<key>ios-arm64/AtomicSDK.framework/AACLoadingViewController.nib</key>
 		<data>
 		HGOrss+RpcQGVMAZBEEUaPfWW1U=
 		</data>
-		<key>ios-arm64/AtomicSDK.framework/AACLoadingViewController.nib/runtime.nib</key>
-		<data>
-		f3Q09FFgy9xaTJVnLGpoqVhLKOo=
-		</data>
-		<key>ios-arm64/AtomicSDK.framework/AACNavigationBarView.nib/objects-11.0+.nib</key>
+		<key>ios-arm64/AtomicSDK.framework/AACNavigationBarView.nib</key>
 		<data>
 		K+g96jishj0EYsotn0/ezjQDAVk=
 		</data>
-		<key>ios-arm64/AtomicSDK.framework/AACNavigationBarView.nib/runtime.nib</key>
-		<data>
-		EwNufc7/CWo0pbiMmuEv+NoeUZQ=
-		</data>
-		<key>ios-arm64/AtomicSDK.framework/AACNoCardsView.nib/objects-11.0+.nib</key>
+		<key>ios-arm64/AtomicSDK.framework/AACNoCardsView.nib</key>
 		<data>
 		r56d4ox54TPhs+7I3U7l0ru7lYQ=
 		</data>
-		<key>ios-arm64/AtomicSDK.framework/AACNoCardsView.nib/runtime.nib</key>
-		<data>
-		lf997pJB9EAxou0tkKnS17+ZbyE=
-		</data>
 		<key>ios-arm64/AtomicSDK.framework/AACToastViewController.nib</key>
 		<data>
-		W2gpAvRjxpnU4AV0Wk5BxaHxVbw=
+		HHL6C+E+DUGKvQjDyOhJ3BnQMpc=
 		</data>
 		<key>ios-arm64/AtomicSDK.framework/AACValidationMessageView.nib</key>
 		<data>
 		Nu1t9aNCPAVNGK3Sv50LmyETQ5A=
 		</data>
-		<key>ios-arm64/AtomicSDK.framework/AACVideoOverlayView.nib/objects-11.0+.nib</key>
+		<key>ios-arm64/AtomicSDK.framework/AACVideoOverlayView.nib</key>
 		<data>
 		qDEM8vQ0VztiAtXwTnerXGzPWIM=
 		</data>
-		<key>ios-arm64/AtomicSDK.framework/AACVideoOverlayView.nib/runtime.nib</key>
-		<data>
-		2YAzTpOLXJlmlklzeegl2TqK8tA=
-		</data>
 		<key>ios-arm64/AtomicSDK.framework/Assets.car</key>
 		<data>
-		7S5onHv2cAfSOEMG37/+MZuct+U=
+		w5XeLOec1YdF47wcNngRAL9ZKdw=
 		</data>
 		<key>ios-arm64/AtomicSDK.framework/AtomicSDK</key>
 		<data>
-		XP6P6utxReaofn33WFTyZYzZk38=
+		Nv8wFqd6jrK9GRqkQH4xOSdl5/M=
 		</data>
 		<key>ios-arm64/AtomicSDK.framework/Headers/AACCardCustomAction.h</key>
 		<data>
@@ -262,7 +190,7 @@
 		</data>
 		<key>ios-arm64/AtomicSDK.framework/Headers/AACCardInstance.h</key>
 		<data>
-		EqtAO28P/dNq7NTZFG/D2gWWcSI=
+		0E1Vt1HzJUVrc7eN8+JNjG2D7lk=
 		</data>
 		<key>ios-arm64/AtomicSDK.framework/Headers/AACCardRuntimeVariable.h</key>
 		<data>
@@ -274,7 +202,7 @@
 		</data>
 		<key>ios-arm64/AtomicSDK.framework/Headers/AACConfiguration.h</key>
 		<data>
-		H+7tAvyggJmsJ0SAvwEOgF2stTY=
+		iEvIH6eQPPsgMJHFinBOjDg4xK0=
 		</data>
 		<key>ios-arm64/AtomicSDK.framework/Headers/AACCustomEvent.h</key>
 		<data>
@@ -320,9 +248,13 @@
 		<data>
 		lY6hgLFNpl37Wkg3caO8Q/rbS8U=
 		</data>
+		<key>ios-arm64/AtomicSDK.framework/Headers/AACSDKEvent.h</key>
+		<data>
+		MJywjjK5+q/qxFCiVCVP3g9UV+Y=
+		</data>
 		<key>ios-arm64/AtomicSDK.framework/Headers/AACSession.h</key>
 		<data>
-		O2+cdxPaILqSAC9+8NNSVGg4kH8=
+		rNXr6PMvyg+FFyCj9+MHNbid4NQ=
 		</data>
 		<key>ios-arm64/AtomicSDK.framework/Headers/AACSessionDelegate.h</key>
 		<data>
@@ -358,11 +290,11 @@
 		</data>
 		<key>ios-arm64/AtomicSDK.framework/Headers/AtomicSDK.h</key>
 		<data>
-		ZZJ8CzKp8KyqtzkxFRDeYhcF7I0=
+		FbeDCgIs+L78rfg0yY+/L798ON4=
 		</data>
 		<key>ios-arm64/AtomicSDK.framework/Info.plist</key>
 		<data>
-		kBXas6B7yH0+p7LoxC8nxWh0LzA=
+		8RpKtt0MeFGyA2Zh5PzVaeZ/ERE=
 		</data>
 		<key>ios-arm64/AtomicSDK.framework/LICENSE-FontAwesome.txt</key>
 		<data>
@@ -370,7 +302,7 @@
 		</data>
 		<key>ios-arm64/AtomicSDK.framework/LICENSES.html</key>
 		<data>
-		2rn7HVeujAjIHkwS6viQ1H5GBzk=
+		9sUgu4N7VNb+kprVe57xjORTU0Q=
 		</data>
 		<key>ios-arm64/AtomicSDK.framework/Localizable.strings</key>
 		<data>
@@ -386,103 +318,59 @@
 		</data>
 		<key>ios-arm64/AtomicSDK.framework/SDKInfo.plist</key>
 		<data>
-		sjuuWV1sIwQv36I3YmHyr6pWrBs=
+		Ou6PS8+6xVco+d0Kyjb11SI/OIw=
 		</data>
 		<key>ios-arm64/AtomicSDK.framework/fontawesome-5-solid.otf</key>
 		<data>
 		4/V8+sjFjdNet7j8RMEb3OS33CQ=
 		</data>
-		<key>ios-arm64_x86_64-simulator/AtomicSDK.framework/AACActionSheetItemView.nib/objects-11.0+.nib</key>
+		<key>ios-arm64_x86_64-simulator/AtomicSDK.framework/AACActionSheetItemView.nib</key>
 		<data>
 		2DLwgnYOeL+k+ntvmIKKMpdvEXQ=
 		</data>
-		<key>ios-arm64_x86_64-simulator/AtomicSDK.framework/AACActionSheetItemView.nib/runtime.nib</key>
-		<data>
-		FG2p+fG7JRqL0pJobVLlkc9mQog=
-		</data>
-		<key>ios-arm64_x86_64-simulator/AtomicSDK.framework/AACActionSheetViewController.nib/objects-11.0+.nib</key>
+		<key>ios-arm64_x86_64-simulator/AtomicSDK.framework/AACActionSheetViewController.nib</key>
 		<data>
 		SH5G2LstOeKT0Pj9+SH+GBHjLKM=
 		</data>
-		<key>ios-arm64_x86_64-simulator/AtomicSDK.framework/AACActionSheetViewController.nib/runtime.nib</key>
-		<data>
-		bgC8OKjVt5T5ObI5Pg+4K7LgC+Q=
-		</data>
-		<key>ios-arm64_x86_64-simulator/AtomicSDK.framework/AACBannerView.nib/objects-11.0+.nib</key>
+		<key>ios-arm64_x86_64-simulator/AtomicSDK.framework/AACBannerView.nib</key>
 		<data>
 		tLBfipJjiv3dBim+msPQ0QeC3ro=
 		</data>
-		<key>ios-arm64_x86_64-simulator/AtomicSDK.framework/AACBannerView.nib/runtime.nib</key>
-		<data>
-		piyFUMx3lg934XYMrI6MzdtRQTs=
-		</data>
-		<key>ios-arm64_x86_64-simulator/AtomicSDK.framework/AACCardActionsView.nib/objects-11.0+.nib</key>
+		<key>ios-arm64_x86_64-simulator/AtomicSDK.framework/AACCardActionsView.nib</key>
 		<data>
 		MrXkrcapsNLddsTy0wLb8psCzXw=
 		</data>
-		<key>ios-arm64_x86_64-simulator/AtomicSDK.framework/AACCardActionsView.nib/runtime.nib</key>
-		<data>
-		+VrmoT+s6/yaUusV3q963Uyu3IY=
-		</data>
-		<key>ios-arm64_x86_64-simulator/AtomicSDK.framework/AACCardActionsViewHorizon.nib/objects-11.0+.nib</key>
+		<key>ios-arm64_x86_64-simulator/AtomicSDK.framework/AACCardActionsViewHorizon.nib</key>
 		<data>
 		AwQxHfLX/aQiT/9jVtg/fcgFBBc=
 		</data>
-		<key>ios-arm64_x86_64-simulator/AtomicSDK.framework/AACCardActionsViewHorizon.nib/runtime.nib</key>
-		<data>
-		1KK7TaMWCT/KFzRBbUCgYhSlamU=
-		</data>
-		<key>ios-arm64_x86_64-simulator/AtomicSDK.framework/AACCardFeedbackViewController.nib/objects-11.0+.nib</key>
+		<key>ios-arm64_x86_64-simulator/AtomicSDK.framework/AACCardFeedbackViewController.nib</key>
 		<data>
 		77kI/Z3+eeMTTrUr0F6eQv3jigE=
-		</data>
-		<key>ios-arm64_x86_64-simulator/AtomicSDK.framework/AACCardFeedbackViewController.nib/runtime.nib</key>
-		<data>
-		HBaBHKHFZa0gVWsJZADnnTrNSAg=
 		</data>
 		<key>ios-arm64_x86_64-simulator/AtomicSDK.framework/AACCardFooterView.nib</key>
 		<data>
 		1sceiF/ItRImWJF3+PMTXDDFScI=
 		</data>
-		<key>ios-arm64_x86_64-simulator/AtomicSDK.framework/AACCardListViewController.nib/objects-11.0+.nib</key>
+		<key>ios-arm64_x86_64-simulator/AtomicSDK.framework/AACCardListViewController.nib</key>
 		<data>
 		urn1HRG9U22VVfvfDEBUysJNRVA=
 		</data>
-		<key>ios-arm64_x86_64-simulator/AtomicSDK.framework/AACCardListViewController.nib/runtime.nib</key>
-		<data>
-		Smxg0ZxIA4e5ab1xkzaUWuBmstM=
-		</data>
-		<key>ios-arm64_x86_64-simulator/AtomicSDK.framework/AACCardOverflowView.nib/objects-11.0+.nib</key>
+		<key>ios-arm64_x86_64-simulator/AtomicSDK.framework/AACCardOverflowView.nib</key>
 		<data>
 		fkm9ASeGqu1G20TdJl9sprX/g5o=
 		</data>
-		<key>ios-arm64_x86_64-simulator/AtomicSDK.framework/AACCardOverflowView.nib/runtime.nib</key>
-		<data>
-		v5pot8sSzw3jMgDpkGYohN1zmfk=
-		</data>
-		<key>ios-arm64_x86_64-simulator/AtomicSDK.framework/AACCardShadowView.nib/objects-11.0+.nib</key>
+		<key>ios-arm64_x86_64-simulator/AtomicSDK.framework/AACCardShadowView.nib</key>
 		<data>
 		1bMLQx3p/385GflQw+sMCmGmpI4=
 		</data>
-		<key>ios-arm64_x86_64-simulator/AtomicSDK.framework/AACCardShadowView.nib/runtime.nib</key>
-		<data>
-		Edkbtx7EsLBYA5x66KcdfKjnI0Q=
-		</data>
-		<key>ios-arm64_x86_64-simulator/AtomicSDK.framework/AACCardSnoozeViewController.nib/objects-11.0+.nib</key>
+		<key>ios-arm64_x86_64-simulator/AtomicSDK.framework/AACCardSnoozeViewController.nib</key>
 		<data>
 		SmezXb0E8DyJxfQr3yJENZ/P68g=
 		</data>
-		<key>ios-arm64_x86_64-simulator/AtomicSDK.framework/AACCardSnoozeViewController.nib/runtime.nib</key>
-		<data>
-		OHqsv4tIZuw4INwOuapIB8TZVIc=
-		</data>
-		<key>ios-arm64_x86_64-simulator/AtomicSDK.framework/AACCardSubviewViewController.nib/objects-11.0+.nib</key>
+		<key>ios-arm64_x86_64-simulator/AtomicSDK.framework/AACCardSubviewViewController.nib</key>
 		<data>
 		/Tkyeq8xZjGog2Tv2zBAk6a91lg=
-		</data>
-		<key>ios-arm64_x86_64-simulator/AtomicSDK.framework/AACCardSubviewViewController.nib/runtime.nib</key>
-		<data>
-		bXAmp7PiyZoy8r7+FGtOPLOXkcM=
 		</data>
 		<key>ios-arm64_x86_64-simulator/AtomicSDK.framework/AACCardViewButton.nib</key>
 		<data>
@@ -556,81 +444,53 @@
 		<data>
 		n1Y8qzAmZ7qAl0cOsMDodjTvdbo=
 		</data>
-		<key>ios-arm64_x86_64-simulator/AtomicSDK.framework/AACErrorOverlayView.nib/objects-11.0+.nib</key>
+		<key>ios-arm64_x86_64-simulator/AtomicSDK.framework/AACErrorOverlayView.nib</key>
 		<data>
 		Pw/OwLtw4ppzzKBNJj5jAA0/ZOU=
 		</data>
-		<key>ios-arm64_x86_64-simulator/AtomicSDK.framework/AACErrorOverlayView.nib/runtime.nib</key>
-		<data>
-		npDQ6U5f4KM20/hl+Hdtpo++3SY=
-		</data>
-		<key>ios-arm64_x86_64-simulator/AtomicSDK.framework/AACFullImageViewController.nib/objects-11.0+.nib</key>
+		<key>ios-arm64_x86_64-simulator/AtomicSDK.framework/AACFullImageViewController.nib</key>
 		<data>
 		9b4t6Iwxv18TJKX0ueVE+/YGSLw=
-		</data>
-		<key>ios-arm64_x86_64-simulator/AtomicSDK.framework/AACFullImageViewController.nib/runtime.nib</key>
-		<data>
-		foAGIISwdKGlWZlc+/bE0jYeHl0=
 		</data>
 		<key>ios-arm64_x86_64-simulator/AtomicSDK.framework/AACListHeaderView.nib</key>
 		<data>
 		Eghdpv26vec0KwmJ1vyvrNOvVic=
 		</data>
-		<key>ios-arm64_x86_64-simulator/AtomicSDK.framework/AACLoadingSpinnerView.nib/objects-11.0+.nib</key>
+		<key>ios-arm64_x86_64-simulator/AtomicSDK.framework/AACLoadingSpinnerView.nib</key>
 		<data>
 		Rrc4G29Zyh2ApFRrv2Rezszh9Qg=
 		</data>
-		<key>ios-arm64_x86_64-simulator/AtomicSDK.framework/AACLoadingSpinnerView.nib/runtime.nib</key>
-		<data>
-		3CLj7/3q0qbsIdA7rp+jt48yjfU=
-		</data>
-		<key>ios-arm64_x86_64-simulator/AtomicSDK.framework/AACLoadingViewController.nib/objects-11.0+.nib</key>
+		<key>ios-arm64_x86_64-simulator/AtomicSDK.framework/AACLoadingViewController.nib</key>
 		<data>
 		HGOrss+RpcQGVMAZBEEUaPfWW1U=
 		</data>
-		<key>ios-arm64_x86_64-simulator/AtomicSDK.framework/AACLoadingViewController.nib/runtime.nib</key>
-		<data>
-		f3Q09FFgy9xaTJVnLGpoqVhLKOo=
-		</data>
-		<key>ios-arm64_x86_64-simulator/AtomicSDK.framework/AACNavigationBarView.nib/objects-11.0+.nib</key>
+		<key>ios-arm64_x86_64-simulator/AtomicSDK.framework/AACNavigationBarView.nib</key>
 		<data>
 		K+g96jishj0EYsotn0/ezjQDAVk=
 		</data>
-		<key>ios-arm64_x86_64-simulator/AtomicSDK.framework/AACNavigationBarView.nib/runtime.nib</key>
-		<data>
-		EwNufc7/CWo0pbiMmuEv+NoeUZQ=
-		</data>
-		<key>ios-arm64_x86_64-simulator/AtomicSDK.framework/AACNoCardsView.nib/objects-11.0+.nib</key>
+		<key>ios-arm64_x86_64-simulator/AtomicSDK.framework/AACNoCardsView.nib</key>
 		<data>
 		r56d4ox54TPhs+7I3U7l0ru7lYQ=
 		</data>
-		<key>ios-arm64_x86_64-simulator/AtomicSDK.framework/AACNoCardsView.nib/runtime.nib</key>
-		<data>
-		lf997pJB9EAxou0tkKnS17+ZbyE=
-		</data>
 		<key>ios-arm64_x86_64-simulator/AtomicSDK.framework/AACToastViewController.nib</key>
 		<data>
-		W2gpAvRjxpnU4AV0Wk5BxaHxVbw=
+		HHL6C+E+DUGKvQjDyOhJ3BnQMpc=
 		</data>
 		<key>ios-arm64_x86_64-simulator/AtomicSDK.framework/AACValidationMessageView.nib</key>
 		<data>
 		Nu1t9aNCPAVNGK3Sv50LmyETQ5A=
 		</data>
-		<key>ios-arm64_x86_64-simulator/AtomicSDK.framework/AACVideoOverlayView.nib/objects-11.0+.nib</key>
+		<key>ios-arm64_x86_64-simulator/AtomicSDK.framework/AACVideoOverlayView.nib</key>
 		<data>
 		qDEM8vQ0VztiAtXwTnerXGzPWIM=
 		</data>
-		<key>ios-arm64_x86_64-simulator/AtomicSDK.framework/AACVideoOverlayView.nib/runtime.nib</key>
-		<data>
-		2YAzTpOLXJlmlklzeegl2TqK8tA=
-		</data>
 		<key>ios-arm64_x86_64-simulator/AtomicSDK.framework/Assets.car</key>
 		<data>
-		7S5onHv2cAfSOEMG37/+MZuct+U=
+		w5XeLOec1YdF47wcNngRAL9ZKdw=
 		</data>
 		<key>ios-arm64_x86_64-simulator/AtomicSDK.framework/AtomicSDK</key>
 		<data>
-		uT3mrXJGb+uqJ+i2evVcmRYh/SM=
+		lsFu8vp00D+2IfB5sNTp4aKVjlo=
 		</data>
 		<key>ios-arm64_x86_64-simulator/AtomicSDK.framework/Headers/AACCardCustomAction.h</key>
 		<data>
@@ -650,7 +510,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/AtomicSDK.framework/Headers/AACCardInstance.h</key>
 		<data>
-		EqtAO28P/dNq7NTZFG/D2gWWcSI=
+		0E1Vt1HzJUVrc7eN8+JNjG2D7lk=
 		</data>
 		<key>ios-arm64_x86_64-simulator/AtomicSDK.framework/Headers/AACCardRuntimeVariable.h</key>
 		<data>
@@ -662,7 +522,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/AtomicSDK.framework/Headers/AACConfiguration.h</key>
 		<data>
-		H+7tAvyggJmsJ0SAvwEOgF2stTY=
+		iEvIH6eQPPsgMJHFinBOjDg4xK0=
 		</data>
 		<key>ios-arm64_x86_64-simulator/AtomicSDK.framework/Headers/AACCustomEvent.h</key>
 		<data>
@@ -708,9 +568,13 @@
 		<data>
 		lY6hgLFNpl37Wkg3caO8Q/rbS8U=
 		</data>
+		<key>ios-arm64_x86_64-simulator/AtomicSDK.framework/Headers/AACSDKEvent.h</key>
+		<data>
+		MJywjjK5+q/qxFCiVCVP3g9UV+Y=
+		</data>
 		<key>ios-arm64_x86_64-simulator/AtomicSDK.framework/Headers/AACSession.h</key>
 		<data>
-		O2+cdxPaILqSAC9+8NNSVGg4kH8=
+		rNXr6PMvyg+FFyCj9+MHNbid4NQ=
 		</data>
 		<key>ios-arm64_x86_64-simulator/AtomicSDK.framework/Headers/AACSessionDelegate.h</key>
 		<data>
@@ -746,11 +610,11 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/AtomicSDK.framework/Headers/AtomicSDK.h</key>
 		<data>
-		ZZJ8CzKp8KyqtzkxFRDeYhcF7I0=
+		FbeDCgIs+L78rfg0yY+/L798ON4=
 		</data>
 		<key>ios-arm64_x86_64-simulator/AtomicSDK.framework/Info.plist</key>
 		<data>
-		6ZGp13JHFlJa/0zblKCSZC1eqR8=
+		Y8wty6f/biNUbJlIkRCc/Ib9NCA=
 		</data>
 		<key>ios-arm64_x86_64-simulator/AtomicSDK.framework/LICENSE-FontAwesome.txt</key>
 		<data>
@@ -758,7 +622,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/AtomicSDK.framework/LICENSES.html</key>
 		<data>
-		2rn7HVeujAjIHkwS6viQ1H5GBzk=
+		9sUgu4N7VNb+kprVe57xjORTU0Q=
 		</data>
 		<key>ios-arm64_x86_64-simulator/AtomicSDK.framework/Localizable.strings</key>
 		<data>
@@ -774,11 +638,11 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/AtomicSDK.framework/SDKInfo.plist</key>
 		<data>
-		sjuuWV1sIwQv36I3YmHyr6pWrBs=
+		Ou6PS8+6xVco+d0Kyjb11SI/OIw=
 		</data>
 		<key>ios-arm64_x86_64-simulator/AtomicSDK.framework/_CodeSignature/CodeResources</key>
 		<data>
-		M4ZfCMNd9jVhre98NBbXXEmnF5I=
+		3pVxZQ/hLmK3hkT/5vn7ARm9v+0=
 		</data>
 		<key>ios-arm64_x86_64-simulator/AtomicSDK.framework/fontawesome-5-solid.otf</key>
 		<data>
@@ -787,7 +651,7 @@
 	</dict>
 	<key>files2</key>
 	<dict>
-		<key>ios-arm64/AtomicSDK.framework/AACActionSheetItemView.nib/objects-11.0+.nib</key>
+		<key>ios-arm64/AtomicSDK.framework/AACActionSheetItemView.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
@@ -798,18 +662,7 @@
 			NRH4dH/VomA90PypzeFXV19nhzBtq2Y74EDQW/WUFs8=
 			</data>
 		</dict>
-		<key>ios-arm64/AtomicSDK.framework/AACActionSheetItemView.nib/runtime.nib</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			FG2p+fG7JRqL0pJobVLlkc9mQog=
-			</data>
-			<key>hash2</key>
-			<data>
-			RwBOPklzB/fVUSxbPepnywPXdZ/89N4CE2+isycIjqk=
-			</data>
-		</dict>
-		<key>ios-arm64/AtomicSDK.framework/AACActionSheetViewController.nib/objects-11.0+.nib</key>
+		<key>ios-arm64/AtomicSDK.framework/AACActionSheetViewController.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
@@ -820,18 +673,7 @@
 			985iJW0IEUIUawJb7wb5emm7O+gYsinM2sjk/Jc5tqI=
 			</data>
 		</dict>
-		<key>ios-arm64/AtomicSDK.framework/AACActionSheetViewController.nib/runtime.nib</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			bgC8OKjVt5T5ObI5Pg+4K7LgC+Q=
-			</data>
-			<key>hash2</key>
-			<data>
-			PC4ngrTtEmT/M7q5/WZxMS7Dfth/ePKkkMS9//YUlDo=
-			</data>
-		</dict>
-		<key>ios-arm64/AtomicSDK.framework/AACBannerView.nib/objects-11.0+.nib</key>
+		<key>ios-arm64/AtomicSDK.framework/AACBannerView.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
@@ -842,18 +684,7 @@
 			1dX7t+Z3zrm6srwmJ2Tedm0yDuvpwMg8u+3xhFl2SnE=
 			</data>
 		</dict>
-		<key>ios-arm64/AtomicSDK.framework/AACBannerView.nib/runtime.nib</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			piyFUMx3lg934XYMrI6MzdtRQTs=
-			</data>
-			<key>hash2</key>
-			<data>
-			4An31/CjgsJ15lvgTkJzIzyOHDAvXyhSlzR8e4WJ/3Q=
-			</data>
-		</dict>
-		<key>ios-arm64/AtomicSDK.framework/AACCardActionsView.nib/objects-11.0+.nib</key>
+		<key>ios-arm64/AtomicSDK.framework/AACCardActionsView.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
@@ -864,18 +695,7 @@
 			y1OFqLW1NUbBC27oaOV4zL96kK+hYhgQyse2nPD0HYs=
 			</data>
 		</dict>
-		<key>ios-arm64/AtomicSDK.framework/AACCardActionsView.nib/runtime.nib</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			+VrmoT+s6/yaUusV3q963Uyu3IY=
-			</data>
-			<key>hash2</key>
-			<data>
-			ixJP5QPoW34UTGEQz6xWgr8pGfAbeA3Tx8FrebK0ulc=
-			</data>
-		</dict>
-		<key>ios-arm64/AtomicSDK.framework/AACCardActionsViewHorizon.nib/objects-11.0+.nib</key>
+		<key>ios-arm64/AtomicSDK.framework/AACCardActionsViewHorizon.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
@@ -886,18 +706,7 @@
 			t+BZTsXUudIVHL2ZvmSTcHZmhx6OI7L3z2RcXLguGNQ=
 			</data>
 		</dict>
-		<key>ios-arm64/AtomicSDK.framework/AACCardActionsViewHorizon.nib/runtime.nib</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			1KK7TaMWCT/KFzRBbUCgYhSlamU=
-			</data>
-			<key>hash2</key>
-			<data>
-			7RWxZT6qRJiW+RHaA26cS4Dd4LuCdJrqvncoI6EAXcw=
-			</data>
-		</dict>
-		<key>ios-arm64/AtomicSDK.framework/AACCardFeedbackViewController.nib/objects-11.0+.nib</key>
+		<key>ios-arm64/AtomicSDK.framework/AACCardFeedbackViewController.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
@@ -906,17 +715,6 @@
 			<key>hash2</key>
 			<data>
 			f1tTqMmVknbuF0ahs+Zpq/Ost6HgoYKAooUylKRSdwM=
-			</data>
-		</dict>
-		<key>ios-arm64/AtomicSDK.framework/AACCardFeedbackViewController.nib/runtime.nib</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			HBaBHKHFZa0gVWsJZADnnTrNSAg=
-			</data>
-			<key>hash2</key>
-			<data>
-			oMnJ9dJElY67y4CakBcb0AI0qNYPWlce6RkICYc417o=
 			</data>
 		</dict>
 		<key>ios-arm64/AtomicSDK.framework/AACCardFooterView.nib</key>
@@ -930,7 +728,7 @@
 			cwus3QgMf6/7q3dt2GMcH/YAg3x29NVU6IJKC83U8cY=
 			</data>
 		</dict>
-		<key>ios-arm64/AtomicSDK.framework/AACCardListViewController.nib/objects-11.0+.nib</key>
+		<key>ios-arm64/AtomicSDK.framework/AACCardListViewController.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
@@ -941,18 +739,7 @@
 			ku+qdVNV1xgrioWf2Kn91NGFwpjfLrMqgaW5ZB70PBE=
 			</data>
 		</dict>
-		<key>ios-arm64/AtomicSDK.framework/AACCardListViewController.nib/runtime.nib</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			Smxg0ZxIA4e5ab1xkzaUWuBmstM=
-			</data>
-			<key>hash2</key>
-			<data>
-			92ZruVBfNCOg0TMfreFwZEspc8aQVwyWTRy/lVMw3qE=
-			</data>
-		</dict>
-		<key>ios-arm64/AtomicSDK.framework/AACCardOverflowView.nib/objects-11.0+.nib</key>
+		<key>ios-arm64/AtomicSDK.framework/AACCardOverflowView.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
@@ -963,18 +750,7 @@
 			D0mrGqj1BKgF53Lsxp+pXkOP3M0sMJiQG8mAUnsJ/ps=
 			</data>
 		</dict>
-		<key>ios-arm64/AtomicSDK.framework/AACCardOverflowView.nib/runtime.nib</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			v5pot8sSzw3jMgDpkGYohN1zmfk=
-			</data>
-			<key>hash2</key>
-			<data>
-			+JhcuDZJw+ed8OAbocLh6IAR6d4lkNV1Iiozmmx3lJU=
-			</data>
-		</dict>
-		<key>ios-arm64/AtomicSDK.framework/AACCardShadowView.nib/objects-11.0+.nib</key>
+		<key>ios-arm64/AtomicSDK.framework/AACCardShadowView.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
@@ -985,18 +761,7 @@
 			5zF3WLVhPsrgukjpbG+Ap3fFPaTCA1cf8c2m/KDKmsI=
 			</data>
 		</dict>
-		<key>ios-arm64/AtomicSDK.framework/AACCardShadowView.nib/runtime.nib</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			Edkbtx7EsLBYA5x66KcdfKjnI0Q=
-			</data>
-			<key>hash2</key>
-			<data>
-			kHvO7dHdKnV98zGOcb61kiiC1GQCFoA9R4V+29DiZg0=
-			</data>
-		</dict>
-		<key>ios-arm64/AtomicSDK.framework/AACCardSnoozeViewController.nib/objects-11.0+.nib</key>
+		<key>ios-arm64/AtomicSDK.framework/AACCardSnoozeViewController.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
@@ -1007,18 +772,7 @@
 			8eSMMpzolK6xuRTZZiBXvOO1ezezuWDBKTd5qOY/nBI=
 			</data>
 		</dict>
-		<key>ios-arm64/AtomicSDK.framework/AACCardSnoozeViewController.nib/runtime.nib</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			OHqsv4tIZuw4INwOuapIB8TZVIc=
-			</data>
-			<key>hash2</key>
-			<data>
-			a6Pu6i6EBpq6XIGUGAAvKNQiP7moog+jcgqUZOFBmRI=
-			</data>
-		</dict>
-		<key>ios-arm64/AtomicSDK.framework/AACCardSubviewViewController.nib/objects-11.0+.nib</key>
+		<key>ios-arm64/AtomicSDK.framework/AACCardSubviewViewController.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
@@ -1027,17 +781,6 @@
 			<key>hash2</key>
 			<data>
 			zY379BsTSuWutqbMjldyzU+Zh4MM3BElzPWu5FR+wBY=
-			</data>
-		</dict>
-		<key>ios-arm64/AtomicSDK.framework/AACCardSubviewViewController.nib/runtime.nib</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			bXAmp7PiyZoy8r7+FGtOPLOXkcM=
-			</data>
-			<key>hash2</key>
-			<data>
-			cW+CBr0J7JpMjm5p78opH8DTKN2uu2utBUbQ2DX2NSI=
 			</data>
 		</dict>
 		<key>ios-arm64/AtomicSDK.framework/AACCardViewButton.nib</key>
@@ -1238,7 +981,7 @@
 			DJhF4BDS421s54mfibLpoAElybtvkIROrZriiRkgsaQ=
 			</data>
 		</dict>
-		<key>ios-arm64/AtomicSDK.framework/AACErrorOverlayView.nib/objects-11.0+.nib</key>
+		<key>ios-arm64/AtomicSDK.framework/AACErrorOverlayView.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
@@ -1249,18 +992,7 @@
 			F160pGl2aLTVk63xA9yL7+qSqNKcS6HfHNyByUT3YXQ=
 			</data>
 		</dict>
-		<key>ios-arm64/AtomicSDK.framework/AACErrorOverlayView.nib/runtime.nib</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			npDQ6U5f4KM20/hl+Hdtpo++3SY=
-			</data>
-			<key>hash2</key>
-			<data>
-			gRbzFCrr/gbDMva4J4ypvKkDpOc/11hVxMu3KnzWwj4=
-			</data>
-		</dict>
-		<key>ios-arm64/AtomicSDK.framework/AACFullImageViewController.nib/objects-11.0+.nib</key>
+		<key>ios-arm64/AtomicSDK.framework/AACFullImageViewController.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
@@ -1269,17 +1001,6 @@
 			<key>hash2</key>
 			<data>
 			YUIFOPAJeaLLemiSyJ2aVoeBAkrbGF665wypNfZTYEQ=
-			</data>
-		</dict>
-		<key>ios-arm64/AtomicSDK.framework/AACFullImageViewController.nib/runtime.nib</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			foAGIISwdKGlWZlc+/bE0jYeHl0=
-			</data>
-			<key>hash2</key>
-			<data>
-			ncgmxh4mxHO7yo69RWX+K5rQLjSdive2Ghm2CY+ezMA=
 			</data>
 		</dict>
 		<key>ios-arm64/AtomicSDK.framework/AACListHeaderView.nib</key>
@@ -1293,7 +1014,7 @@
 			2Q0avLG+J3nmayyB7sdYA0YQmmRz2gqW28q6ZL3w1is=
 			</data>
 		</dict>
-		<key>ios-arm64/AtomicSDK.framework/AACLoadingSpinnerView.nib/objects-11.0+.nib</key>
+		<key>ios-arm64/AtomicSDK.framework/AACLoadingSpinnerView.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
@@ -1304,18 +1025,7 @@
 			CdSt85W9qljH+lDCMgCzPwPQEhcustv+onnxQO7dZmc=
 			</data>
 		</dict>
-		<key>ios-arm64/AtomicSDK.framework/AACLoadingSpinnerView.nib/runtime.nib</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			3CLj7/3q0qbsIdA7rp+jt48yjfU=
-			</data>
-			<key>hash2</key>
-			<data>
-			IRLB9/9yvwO/RMbpsaFklV4ad9uwguRIcZ+U1shzT8U=
-			</data>
-		</dict>
-		<key>ios-arm64/AtomicSDK.framework/AACLoadingViewController.nib/objects-11.0+.nib</key>
+		<key>ios-arm64/AtomicSDK.framework/AACLoadingViewController.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
@@ -1326,18 +1036,7 @@
 			yrTfVknMOAm0Tig3LzYMUaWwYyfO1e/YG+R/wFNrov4=
 			</data>
 		</dict>
-		<key>ios-arm64/AtomicSDK.framework/AACLoadingViewController.nib/runtime.nib</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			f3Q09FFgy9xaTJVnLGpoqVhLKOo=
-			</data>
-			<key>hash2</key>
-			<data>
-			GPfdr2OmiTd8xLq+ZkNKyAJFHc2DYb0OXnlzszoh5u8=
-			</data>
-		</dict>
-		<key>ios-arm64/AtomicSDK.framework/AACNavigationBarView.nib/objects-11.0+.nib</key>
+		<key>ios-arm64/AtomicSDK.framework/AACNavigationBarView.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
@@ -1348,18 +1047,7 @@
 			tbDBX7r8637w+aVIOFe/g/8+82wU0B+h5GQf9A2lW+c=
 			</data>
 		</dict>
-		<key>ios-arm64/AtomicSDK.framework/AACNavigationBarView.nib/runtime.nib</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			EwNufc7/CWo0pbiMmuEv+NoeUZQ=
-			</data>
-			<key>hash2</key>
-			<data>
-			rBdfuNh5xgxHaM1bu1ReEbeieQTA8bsip9xhzo/cWws=
-			</data>
-		</dict>
-		<key>ios-arm64/AtomicSDK.framework/AACNoCardsView.nib/objects-11.0+.nib</key>
+		<key>ios-arm64/AtomicSDK.framework/AACNoCardsView.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
@@ -1370,26 +1058,15 @@
 			PpzwZSBeWFbHhd1fCUPO2Km4RE9YvyeymypUDpGg1I0=
 			</data>
 		</dict>
-		<key>ios-arm64/AtomicSDK.framework/AACNoCardsView.nib/runtime.nib</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			lf997pJB9EAxou0tkKnS17+ZbyE=
-			</data>
-			<key>hash2</key>
-			<data>
-			3boipQjNBbTJXWM03vLwR/zOH4/agzFkaEfWDoeFvN0=
-			</data>
-		</dict>
 		<key>ios-arm64/AtomicSDK.framework/AACToastViewController.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			W2gpAvRjxpnU4AV0Wk5BxaHxVbw=
+			HHL6C+E+DUGKvQjDyOhJ3BnQMpc=
 			</data>
 			<key>hash2</key>
 			<data>
-			a0rm8K67Rcc3IOgz8E59i5NlTJ9sx6YQJqovRpdH2N0=
+			wpfJqqJKdn+Eh3Qe5dk/A3P8m/52HQBKDSSm5kUkjxE=
 			</data>
 		</dict>
 		<key>ios-arm64/AtomicSDK.framework/AACValidationMessageView.nib</key>
@@ -1403,7 +1080,7 @@
 			GKb7y+eEyEFrHYaWataq8TW5C1kmSuW6olufTUMP5NY=
 			</data>
 		</dict>
-		<key>ios-arm64/AtomicSDK.framework/AACVideoOverlayView.nib/objects-11.0+.nib</key>
+		<key>ios-arm64/AtomicSDK.framework/AACVideoOverlayView.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
@@ -1414,37 +1091,26 @@
 			kf5DmzomliL17URFxpzBk3jjNi3RSXqqUpRSqev3N6o=
 			</data>
 		</dict>
-		<key>ios-arm64/AtomicSDK.framework/AACVideoOverlayView.nib/runtime.nib</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			2YAzTpOLXJlmlklzeegl2TqK8tA=
-			</data>
-			<key>hash2</key>
-			<data>
-			xMa5OxpFlbGAGqD8Nts8KMbVgvx+wzY7jv4+AaXzXlQ=
-			</data>
-		</dict>
 		<key>ios-arm64/AtomicSDK.framework/Assets.car</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			7S5onHv2cAfSOEMG37/+MZuct+U=
+			w5XeLOec1YdF47wcNngRAL9ZKdw=
 			</data>
 			<key>hash2</key>
 			<data>
-			q90tUPFKZk1xcWuZRhsZePs6J8AsC5S0yakJrvFF0f0=
+			gyZwb5F4y3jykoC3Vb0FIAVpkVDU9UnslvDVtD/j/bs=
 			</data>
 		</dict>
 		<key>ios-arm64/AtomicSDK.framework/AtomicSDK</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			XP6P6utxReaofn33WFTyZYzZk38=
+			Nv8wFqd6jrK9GRqkQH4xOSdl5/M=
 			</data>
 			<key>hash2</key>
 			<data>
-			NzB4+9QYHKUbdPB9C2PvS9hFUcWD/I8T3kq4WODv5Os=
+			Dxz2GrLS+BRA+kRxtNPv94W4w51R9zdEPUr5vNkGezg=
 			</data>
 		</dict>
 		<key>ios-arm64/AtomicSDK.framework/Headers/AACCardCustomAction.h</key>
@@ -1495,11 +1161,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			EqtAO28P/dNq7NTZFG/D2gWWcSI=
+			0E1Vt1HzJUVrc7eN8+JNjG2D7lk=
 			</data>
 			<key>hash2</key>
 			<data>
-			3GldEBZtvFjlpNaYURE6wP90BaP37AAUeLMdec2ssNc=
+			BgyncXeLabH9irZY79Gv22E2uMfPR6DwoPo54fnDmgU=
 			</data>
 		</dict>
 		<key>ios-arm64/AtomicSDK.framework/Headers/AACCardRuntimeVariable.h</key>
@@ -1528,11 +1194,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			H+7tAvyggJmsJ0SAvwEOgF2stTY=
+			iEvIH6eQPPsgMJHFinBOjDg4xK0=
 			</data>
 			<key>hash2</key>
 			<data>
-			pHlqGCBXWhU2B+3OuNoOvHmy2zjM5yaWGkNzFitLRnA=
+			EuDzmua6UdxxBMx23tt4uHkgNMxi+NzHukfrJNwF3fs=
 			</data>
 		</dict>
 		<key>ios-arm64/AtomicSDK.framework/Headers/AACCustomEvent.h</key>
@@ -1656,15 +1322,26 @@
 			AEF3YcVpyJeQh5/BtkbLgS90/6dx6kVxcFtag3SgdDo=
 			</data>
 		</dict>
+		<key>ios-arm64/AtomicSDK.framework/Headers/AACSDKEvent.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			MJywjjK5+q/qxFCiVCVP3g9UV+Y=
+			</data>
+			<key>hash2</key>
+			<data>
+			Yb4h4n7t3KacyfwglasqYFp9ijiu5owM9WvFXWMNxPA=
+			</data>
+		</dict>
 		<key>ios-arm64/AtomicSDK.framework/Headers/AACSession.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			O2+cdxPaILqSAC9+8NNSVGg4kH8=
+			rNXr6PMvyg+FFyCj9+MHNbid4NQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			i+Rz3edd2LQKtfRwgSIgmRasasoVpI9bSWtn0wdRteA=
+			32M2rrF/7Di/hyJybpW+eQLbjrn6m3/+rnSqnD/GaA0=
 			</data>
 		</dict>
 		<key>ios-arm64/AtomicSDK.framework/Headers/AACSessionDelegate.h</key>
@@ -1759,22 +1436,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ZZJ8CzKp8KyqtzkxFRDeYhcF7I0=
+			FbeDCgIs+L78rfg0yY+/L798ON4=
 			</data>
 			<key>hash2</key>
 			<data>
-			3BSobNFusLMN3htPSBqmV5PYM55s64zi+tkdfo7XWgc=
+			43prTnozsqQyVaIPL3bc2MWRPH74ALBtMr0DpPuyjnI=
 			</data>
 		</dict>
 		<key>ios-arm64/AtomicSDK.framework/Info.plist</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			kBXas6B7yH0+p7LoxC8nxWh0LzA=
+			8RpKtt0MeFGyA2Zh5PzVaeZ/ERE=
 			</data>
 			<key>hash2</key>
 			<data>
-			bsRG4EnQ+veeDbmX9p16EWIKJPl4eD39+1q6oZy43Xo=
+			WNo0D8L+Wm3C0HzYYPDXOHjMBots9Xef3WVkeRGduVE=
 			</data>
 		</dict>
 		<key>ios-arm64/AtomicSDK.framework/LICENSE-FontAwesome.txt</key>
@@ -1792,11 +1469,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			2rn7HVeujAjIHkwS6viQ1H5GBzk=
+			9sUgu4N7VNb+kprVe57xjORTU0Q=
 			</data>
 			<key>hash2</key>
 			<data>
-			EI5ds0qD4DWVdGXgRvVoB8LnJUGxP36hT60pDmoV0m8=
+			ZWRm1A5wDoQlmfAmgWkGN48ThEpQkEJ72TK8Fx1cjHI=
 			</data>
 		</dict>
 		<key>ios-arm64/AtomicSDK.framework/Localizable.strings</key>
@@ -1836,11 +1513,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			sjuuWV1sIwQv36I3YmHyr6pWrBs=
+			Ou6PS8+6xVco+d0Kyjb11SI/OIw=
 			</data>
 			<key>hash2</key>
 			<data>
-			YVvSqW1TGbzydgSk64IafUoG0s1LNgBCnw3ejuqjI6Q=
+			6Tj3X7yVz0GRIKjuBbd5HpNK5WHT8EfjSsE8ShGRQoQ=
 			</data>
 		</dict>
 		<key>ios-arm64/AtomicSDK.framework/fontawesome-5-solid.otf</key>
@@ -1854,7 +1531,7 @@
 			xQfbmPZ3I+LntwnrFj0mcAmx8TYGgIQjhyk3c1w19jw=
 			</data>
 		</dict>
-		<key>ios-arm64_x86_64-simulator/AtomicSDK.framework/AACActionSheetItemView.nib/objects-11.0+.nib</key>
+		<key>ios-arm64_x86_64-simulator/AtomicSDK.framework/AACActionSheetItemView.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
@@ -1865,18 +1542,7 @@
 			NRH4dH/VomA90PypzeFXV19nhzBtq2Y74EDQW/WUFs8=
 			</data>
 		</dict>
-		<key>ios-arm64_x86_64-simulator/AtomicSDK.framework/AACActionSheetItemView.nib/runtime.nib</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			FG2p+fG7JRqL0pJobVLlkc9mQog=
-			</data>
-			<key>hash2</key>
-			<data>
-			RwBOPklzB/fVUSxbPepnywPXdZ/89N4CE2+isycIjqk=
-			</data>
-		</dict>
-		<key>ios-arm64_x86_64-simulator/AtomicSDK.framework/AACActionSheetViewController.nib/objects-11.0+.nib</key>
+		<key>ios-arm64_x86_64-simulator/AtomicSDK.framework/AACActionSheetViewController.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
@@ -1887,18 +1553,7 @@
 			985iJW0IEUIUawJb7wb5emm7O+gYsinM2sjk/Jc5tqI=
 			</data>
 		</dict>
-		<key>ios-arm64_x86_64-simulator/AtomicSDK.framework/AACActionSheetViewController.nib/runtime.nib</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			bgC8OKjVt5T5ObI5Pg+4K7LgC+Q=
-			</data>
-			<key>hash2</key>
-			<data>
-			PC4ngrTtEmT/M7q5/WZxMS7Dfth/ePKkkMS9//YUlDo=
-			</data>
-		</dict>
-		<key>ios-arm64_x86_64-simulator/AtomicSDK.framework/AACBannerView.nib/objects-11.0+.nib</key>
+		<key>ios-arm64_x86_64-simulator/AtomicSDK.framework/AACBannerView.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
@@ -1909,18 +1564,7 @@
 			1dX7t+Z3zrm6srwmJ2Tedm0yDuvpwMg8u+3xhFl2SnE=
 			</data>
 		</dict>
-		<key>ios-arm64_x86_64-simulator/AtomicSDK.framework/AACBannerView.nib/runtime.nib</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			piyFUMx3lg934XYMrI6MzdtRQTs=
-			</data>
-			<key>hash2</key>
-			<data>
-			4An31/CjgsJ15lvgTkJzIzyOHDAvXyhSlzR8e4WJ/3Q=
-			</data>
-		</dict>
-		<key>ios-arm64_x86_64-simulator/AtomicSDK.framework/AACCardActionsView.nib/objects-11.0+.nib</key>
+		<key>ios-arm64_x86_64-simulator/AtomicSDK.framework/AACCardActionsView.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
@@ -1931,18 +1575,7 @@
 			y1OFqLW1NUbBC27oaOV4zL96kK+hYhgQyse2nPD0HYs=
 			</data>
 		</dict>
-		<key>ios-arm64_x86_64-simulator/AtomicSDK.framework/AACCardActionsView.nib/runtime.nib</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			+VrmoT+s6/yaUusV3q963Uyu3IY=
-			</data>
-			<key>hash2</key>
-			<data>
-			ixJP5QPoW34UTGEQz6xWgr8pGfAbeA3Tx8FrebK0ulc=
-			</data>
-		</dict>
-		<key>ios-arm64_x86_64-simulator/AtomicSDK.framework/AACCardActionsViewHorizon.nib/objects-11.0+.nib</key>
+		<key>ios-arm64_x86_64-simulator/AtomicSDK.framework/AACCardActionsViewHorizon.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
@@ -1953,18 +1586,7 @@
 			t+BZTsXUudIVHL2ZvmSTcHZmhx6OI7L3z2RcXLguGNQ=
 			</data>
 		</dict>
-		<key>ios-arm64_x86_64-simulator/AtomicSDK.framework/AACCardActionsViewHorizon.nib/runtime.nib</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			1KK7TaMWCT/KFzRBbUCgYhSlamU=
-			</data>
-			<key>hash2</key>
-			<data>
-			7RWxZT6qRJiW+RHaA26cS4Dd4LuCdJrqvncoI6EAXcw=
-			</data>
-		</dict>
-		<key>ios-arm64_x86_64-simulator/AtomicSDK.framework/AACCardFeedbackViewController.nib/objects-11.0+.nib</key>
+		<key>ios-arm64_x86_64-simulator/AtomicSDK.framework/AACCardFeedbackViewController.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
@@ -1973,17 +1595,6 @@
 			<key>hash2</key>
 			<data>
 			f1tTqMmVknbuF0ahs+Zpq/Ost6HgoYKAooUylKRSdwM=
-			</data>
-		</dict>
-		<key>ios-arm64_x86_64-simulator/AtomicSDK.framework/AACCardFeedbackViewController.nib/runtime.nib</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			HBaBHKHFZa0gVWsJZADnnTrNSAg=
-			</data>
-			<key>hash2</key>
-			<data>
-			oMnJ9dJElY67y4CakBcb0AI0qNYPWlce6RkICYc417o=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/AtomicSDK.framework/AACCardFooterView.nib</key>
@@ -1997,7 +1608,7 @@
 			cwus3QgMf6/7q3dt2GMcH/YAg3x29NVU6IJKC83U8cY=
 			</data>
 		</dict>
-		<key>ios-arm64_x86_64-simulator/AtomicSDK.framework/AACCardListViewController.nib/objects-11.0+.nib</key>
+		<key>ios-arm64_x86_64-simulator/AtomicSDK.framework/AACCardListViewController.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
@@ -2008,18 +1619,7 @@
 			ku+qdVNV1xgrioWf2Kn91NGFwpjfLrMqgaW5ZB70PBE=
 			</data>
 		</dict>
-		<key>ios-arm64_x86_64-simulator/AtomicSDK.framework/AACCardListViewController.nib/runtime.nib</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			Smxg0ZxIA4e5ab1xkzaUWuBmstM=
-			</data>
-			<key>hash2</key>
-			<data>
-			92ZruVBfNCOg0TMfreFwZEspc8aQVwyWTRy/lVMw3qE=
-			</data>
-		</dict>
-		<key>ios-arm64_x86_64-simulator/AtomicSDK.framework/AACCardOverflowView.nib/objects-11.0+.nib</key>
+		<key>ios-arm64_x86_64-simulator/AtomicSDK.framework/AACCardOverflowView.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
@@ -2030,18 +1630,7 @@
 			D0mrGqj1BKgF53Lsxp+pXkOP3M0sMJiQG8mAUnsJ/ps=
 			</data>
 		</dict>
-		<key>ios-arm64_x86_64-simulator/AtomicSDK.framework/AACCardOverflowView.nib/runtime.nib</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			v5pot8sSzw3jMgDpkGYohN1zmfk=
-			</data>
-			<key>hash2</key>
-			<data>
-			+JhcuDZJw+ed8OAbocLh6IAR6d4lkNV1Iiozmmx3lJU=
-			</data>
-		</dict>
-		<key>ios-arm64_x86_64-simulator/AtomicSDK.framework/AACCardShadowView.nib/objects-11.0+.nib</key>
+		<key>ios-arm64_x86_64-simulator/AtomicSDK.framework/AACCardShadowView.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
@@ -2052,18 +1641,7 @@
 			5zF3WLVhPsrgukjpbG+Ap3fFPaTCA1cf8c2m/KDKmsI=
 			</data>
 		</dict>
-		<key>ios-arm64_x86_64-simulator/AtomicSDK.framework/AACCardShadowView.nib/runtime.nib</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			Edkbtx7EsLBYA5x66KcdfKjnI0Q=
-			</data>
-			<key>hash2</key>
-			<data>
-			kHvO7dHdKnV98zGOcb61kiiC1GQCFoA9R4V+29DiZg0=
-			</data>
-		</dict>
-		<key>ios-arm64_x86_64-simulator/AtomicSDK.framework/AACCardSnoozeViewController.nib/objects-11.0+.nib</key>
+		<key>ios-arm64_x86_64-simulator/AtomicSDK.framework/AACCardSnoozeViewController.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
@@ -2074,18 +1652,7 @@
 			8eSMMpzolK6xuRTZZiBXvOO1ezezuWDBKTd5qOY/nBI=
 			</data>
 		</dict>
-		<key>ios-arm64_x86_64-simulator/AtomicSDK.framework/AACCardSnoozeViewController.nib/runtime.nib</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			OHqsv4tIZuw4INwOuapIB8TZVIc=
-			</data>
-			<key>hash2</key>
-			<data>
-			a6Pu6i6EBpq6XIGUGAAvKNQiP7moog+jcgqUZOFBmRI=
-			</data>
-		</dict>
-		<key>ios-arm64_x86_64-simulator/AtomicSDK.framework/AACCardSubviewViewController.nib/objects-11.0+.nib</key>
+		<key>ios-arm64_x86_64-simulator/AtomicSDK.framework/AACCardSubviewViewController.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
@@ -2094,17 +1661,6 @@
 			<key>hash2</key>
 			<data>
 			zY379BsTSuWutqbMjldyzU+Zh4MM3BElzPWu5FR+wBY=
-			</data>
-		</dict>
-		<key>ios-arm64_x86_64-simulator/AtomicSDK.framework/AACCardSubviewViewController.nib/runtime.nib</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			bXAmp7PiyZoy8r7+FGtOPLOXkcM=
-			</data>
-			<key>hash2</key>
-			<data>
-			cW+CBr0J7JpMjm5p78opH8DTKN2uu2utBUbQ2DX2NSI=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/AtomicSDK.framework/AACCardViewButton.nib</key>
@@ -2305,7 +1861,7 @@
 			DJhF4BDS421s54mfibLpoAElybtvkIROrZriiRkgsaQ=
 			</data>
 		</dict>
-		<key>ios-arm64_x86_64-simulator/AtomicSDK.framework/AACErrorOverlayView.nib/objects-11.0+.nib</key>
+		<key>ios-arm64_x86_64-simulator/AtomicSDK.framework/AACErrorOverlayView.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
@@ -2316,18 +1872,7 @@
 			F160pGl2aLTVk63xA9yL7+qSqNKcS6HfHNyByUT3YXQ=
 			</data>
 		</dict>
-		<key>ios-arm64_x86_64-simulator/AtomicSDK.framework/AACErrorOverlayView.nib/runtime.nib</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			npDQ6U5f4KM20/hl+Hdtpo++3SY=
-			</data>
-			<key>hash2</key>
-			<data>
-			gRbzFCrr/gbDMva4J4ypvKkDpOc/11hVxMu3KnzWwj4=
-			</data>
-		</dict>
-		<key>ios-arm64_x86_64-simulator/AtomicSDK.framework/AACFullImageViewController.nib/objects-11.0+.nib</key>
+		<key>ios-arm64_x86_64-simulator/AtomicSDK.framework/AACFullImageViewController.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
@@ -2336,17 +1881,6 @@
 			<key>hash2</key>
 			<data>
 			YUIFOPAJeaLLemiSyJ2aVoeBAkrbGF665wypNfZTYEQ=
-			</data>
-		</dict>
-		<key>ios-arm64_x86_64-simulator/AtomicSDK.framework/AACFullImageViewController.nib/runtime.nib</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			foAGIISwdKGlWZlc+/bE0jYeHl0=
-			</data>
-			<key>hash2</key>
-			<data>
-			ncgmxh4mxHO7yo69RWX+K5rQLjSdive2Ghm2CY+ezMA=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/AtomicSDK.framework/AACListHeaderView.nib</key>
@@ -2360,7 +1894,7 @@
 			2Q0avLG+J3nmayyB7sdYA0YQmmRz2gqW28q6ZL3w1is=
 			</data>
 		</dict>
-		<key>ios-arm64_x86_64-simulator/AtomicSDK.framework/AACLoadingSpinnerView.nib/objects-11.0+.nib</key>
+		<key>ios-arm64_x86_64-simulator/AtomicSDK.framework/AACLoadingSpinnerView.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
@@ -2371,18 +1905,7 @@
 			CdSt85W9qljH+lDCMgCzPwPQEhcustv+onnxQO7dZmc=
 			</data>
 		</dict>
-		<key>ios-arm64_x86_64-simulator/AtomicSDK.framework/AACLoadingSpinnerView.nib/runtime.nib</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			3CLj7/3q0qbsIdA7rp+jt48yjfU=
-			</data>
-			<key>hash2</key>
-			<data>
-			IRLB9/9yvwO/RMbpsaFklV4ad9uwguRIcZ+U1shzT8U=
-			</data>
-		</dict>
-		<key>ios-arm64_x86_64-simulator/AtomicSDK.framework/AACLoadingViewController.nib/objects-11.0+.nib</key>
+		<key>ios-arm64_x86_64-simulator/AtomicSDK.framework/AACLoadingViewController.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
@@ -2393,18 +1916,7 @@
 			yrTfVknMOAm0Tig3LzYMUaWwYyfO1e/YG+R/wFNrov4=
 			</data>
 		</dict>
-		<key>ios-arm64_x86_64-simulator/AtomicSDK.framework/AACLoadingViewController.nib/runtime.nib</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			f3Q09FFgy9xaTJVnLGpoqVhLKOo=
-			</data>
-			<key>hash2</key>
-			<data>
-			GPfdr2OmiTd8xLq+ZkNKyAJFHc2DYb0OXnlzszoh5u8=
-			</data>
-		</dict>
-		<key>ios-arm64_x86_64-simulator/AtomicSDK.framework/AACNavigationBarView.nib/objects-11.0+.nib</key>
+		<key>ios-arm64_x86_64-simulator/AtomicSDK.framework/AACNavigationBarView.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
@@ -2415,18 +1927,7 @@
 			tbDBX7r8637w+aVIOFe/g/8+82wU0B+h5GQf9A2lW+c=
 			</data>
 		</dict>
-		<key>ios-arm64_x86_64-simulator/AtomicSDK.framework/AACNavigationBarView.nib/runtime.nib</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			EwNufc7/CWo0pbiMmuEv+NoeUZQ=
-			</data>
-			<key>hash2</key>
-			<data>
-			rBdfuNh5xgxHaM1bu1ReEbeieQTA8bsip9xhzo/cWws=
-			</data>
-		</dict>
-		<key>ios-arm64_x86_64-simulator/AtomicSDK.framework/AACNoCardsView.nib/objects-11.0+.nib</key>
+		<key>ios-arm64_x86_64-simulator/AtomicSDK.framework/AACNoCardsView.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
@@ -2437,26 +1938,15 @@
 			PpzwZSBeWFbHhd1fCUPO2Km4RE9YvyeymypUDpGg1I0=
 			</data>
 		</dict>
-		<key>ios-arm64_x86_64-simulator/AtomicSDK.framework/AACNoCardsView.nib/runtime.nib</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			lf997pJB9EAxou0tkKnS17+ZbyE=
-			</data>
-			<key>hash2</key>
-			<data>
-			3boipQjNBbTJXWM03vLwR/zOH4/agzFkaEfWDoeFvN0=
-			</data>
-		</dict>
 		<key>ios-arm64_x86_64-simulator/AtomicSDK.framework/AACToastViewController.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			W2gpAvRjxpnU4AV0Wk5BxaHxVbw=
+			HHL6C+E+DUGKvQjDyOhJ3BnQMpc=
 			</data>
 			<key>hash2</key>
 			<data>
-			a0rm8K67Rcc3IOgz8E59i5NlTJ9sx6YQJqovRpdH2N0=
+			wpfJqqJKdn+Eh3Qe5dk/A3P8m/52HQBKDSSm5kUkjxE=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/AtomicSDK.framework/AACValidationMessageView.nib</key>
@@ -2470,7 +1960,7 @@
 			GKb7y+eEyEFrHYaWataq8TW5C1kmSuW6olufTUMP5NY=
 			</data>
 		</dict>
-		<key>ios-arm64_x86_64-simulator/AtomicSDK.framework/AACVideoOverlayView.nib/objects-11.0+.nib</key>
+		<key>ios-arm64_x86_64-simulator/AtomicSDK.framework/AACVideoOverlayView.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
@@ -2481,37 +1971,26 @@
 			kf5DmzomliL17URFxpzBk3jjNi3RSXqqUpRSqev3N6o=
 			</data>
 		</dict>
-		<key>ios-arm64_x86_64-simulator/AtomicSDK.framework/AACVideoOverlayView.nib/runtime.nib</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			2YAzTpOLXJlmlklzeegl2TqK8tA=
-			</data>
-			<key>hash2</key>
-			<data>
-			xMa5OxpFlbGAGqD8Nts8KMbVgvx+wzY7jv4+AaXzXlQ=
-			</data>
-		</dict>
 		<key>ios-arm64_x86_64-simulator/AtomicSDK.framework/Assets.car</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			7S5onHv2cAfSOEMG37/+MZuct+U=
+			w5XeLOec1YdF47wcNngRAL9ZKdw=
 			</data>
 			<key>hash2</key>
 			<data>
-			q90tUPFKZk1xcWuZRhsZePs6J8AsC5S0yakJrvFF0f0=
+			gyZwb5F4y3jykoC3Vb0FIAVpkVDU9UnslvDVtD/j/bs=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/AtomicSDK.framework/AtomicSDK</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			uT3mrXJGb+uqJ+i2evVcmRYh/SM=
+			lsFu8vp00D+2IfB5sNTp4aKVjlo=
 			</data>
 			<key>hash2</key>
 			<data>
-			J3O1CiMz/uQrBcv1NsifiOf6p9ato90JXUwq2xn49Cc=
+			YpHM9WVKvwLdM+BRsQQZeDCd5qYtVVUHdSVGpdNxyy8=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/AtomicSDK.framework/Headers/AACCardCustomAction.h</key>
@@ -2562,11 +2041,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			EqtAO28P/dNq7NTZFG/D2gWWcSI=
+			0E1Vt1HzJUVrc7eN8+JNjG2D7lk=
 			</data>
 			<key>hash2</key>
 			<data>
-			3GldEBZtvFjlpNaYURE6wP90BaP37AAUeLMdec2ssNc=
+			BgyncXeLabH9irZY79Gv22E2uMfPR6DwoPo54fnDmgU=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/AtomicSDK.framework/Headers/AACCardRuntimeVariable.h</key>
@@ -2595,11 +2074,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			H+7tAvyggJmsJ0SAvwEOgF2stTY=
+			iEvIH6eQPPsgMJHFinBOjDg4xK0=
 			</data>
 			<key>hash2</key>
 			<data>
-			pHlqGCBXWhU2B+3OuNoOvHmy2zjM5yaWGkNzFitLRnA=
+			EuDzmua6UdxxBMx23tt4uHkgNMxi+NzHukfrJNwF3fs=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/AtomicSDK.framework/Headers/AACCustomEvent.h</key>
@@ -2723,15 +2202,26 @@
 			AEF3YcVpyJeQh5/BtkbLgS90/6dx6kVxcFtag3SgdDo=
 			</data>
 		</dict>
+		<key>ios-arm64_x86_64-simulator/AtomicSDK.framework/Headers/AACSDKEvent.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			MJywjjK5+q/qxFCiVCVP3g9UV+Y=
+			</data>
+			<key>hash2</key>
+			<data>
+			Yb4h4n7t3KacyfwglasqYFp9ijiu5owM9WvFXWMNxPA=
+			</data>
+		</dict>
 		<key>ios-arm64_x86_64-simulator/AtomicSDK.framework/Headers/AACSession.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			O2+cdxPaILqSAC9+8NNSVGg4kH8=
+			rNXr6PMvyg+FFyCj9+MHNbid4NQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			i+Rz3edd2LQKtfRwgSIgmRasasoVpI9bSWtn0wdRteA=
+			32M2rrF/7Di/hyJybpW+eQLbjrn6m3/+rnSqnD/GaA0=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/AtomicSDK.framework/Headers/AACSessionDelegate.h</key>
@@ -2826,22 +2316,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ZZJ8CzKp8KyqtzkxFRDeYhcF7I0=
+			FbeDCgIs+L78rfg0yY+/L798ON4=
 			</data>
 			<key>hash2</key>
 			<data>
-			3BSobNFusLMN3htPSBqmV5PYM55s64zi+tkdfo7XWgc=
+			43prTnozsqQyVaIPL3bc2MWRPH74ALBtMr0DpPuyjnI=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/AtomicSDK.framework/Info.plist</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			6ZGp13JHFlJa/0zblKCSZC1eqR8=
+			Y8wty6f/biNUbJlIkRCc/Ib9NCA=
 			</data>
 			<key>hash2</key>
 			<data>
-			0NM7Y5yGSOTDUmjWfcm2JPYrjn6nFmAdAOe56keyD9E=
+			GU3BPEE57IrPJdd2EixxMt63RtXjlq1DyoHQkn8rztk=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/AtomicSDK.framework/LICENSE-FontAwesome.txt</key>
@@ -2859,11 +2349,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			2rn7HVeujAjIHkwS6viQ1H5GBzk=
+			9sUgu4N7VNb+kprVe57xjORTU0Q=
 			</data>
 			<key>hash2</key>
 			<data>
-			EI5ds0qD4DWVdGXgRvVoB8LnJUGxP36hT60pDmoV0m8=
+			ZWRm1A5wDoQlmfAmgWkGN48ThEpQkEJ72TK8Fx1cjHI=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/AtomicSDK.framework/Localizable.strings</key>
@@ -2903,22 +2393,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			sjuuWV1sIwQv36I3YmHyr6pWrBs=
+			Ou6PS8+6xVco+d0Kyjb11SI/OIw=
 			</data>
 			<key>hash2</key>
 			<data>
-			YVvSqW1TGbzydgSk64IafUoG0s1LNgBCnw3ejuqjI6Q=
+			6Tj3X7yVz0GRIKjuBbd5HpNK5WHT8EfjSsE8ShGRQoQ=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/AtomicSDK.framework/_CodeSignature/CodeResources</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			M4ZfCMNd9jVhre98NBbXXEmnF5I=
+			3pVxZQ/hLmK3hkT/5vn7ARm9v+0=
 			</data>
 			<key>hash2</key>
 			<data>
-			eTSHNm6+SUufCrrpIvUuAUCUrryfHbparGA1j/p6d/Q=
+			uD8YzBohUj0VJeUQsqPOcgrwLWm4Cdg0SWshkPNOp5k=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/AtomicSDK.framework/fontawesome-5-solid.otf</key>
