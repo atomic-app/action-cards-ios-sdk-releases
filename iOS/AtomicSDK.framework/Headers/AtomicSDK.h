@@ -12,8 +12,8 @@ FOUNDATION_EXPORT double AtomicSDKVersionNumber;
 //! Project version string for Atomic SDK.
 FOUNDATION_EXPORT const unsigned char AtomicSDKVersionString[];
 
-#if __IPHONE_OS_VERSION_MIN_REQUIRED < __IPHONE_10_0
-#error The Atomic SDK supports iOS 10.0 and above.
+#if __IPHONE_OS_VERSION_MIN_REQUIRED < __IPHONE_12_0
+#error The Atomic SDK supports iOS 12.0 and above.
 #endif
 
 #import <AtomicSDK/AACSessionDelegate.h>
@@ -52,3 +52,33 @@ FOUNDATION_EXPORT const unsigned char AtomicSDKVersionString[];
 #import <AtomicSDK/AACUserSettings.h>
 
 #import <AtomicSDK/AACSDKEvent.h>
+
+#import <AtomicSDK/AACCardActionButton.h>
+#import <AtomicSDK/AACCardNodeImage.h>
+#import <AtomicSDK/AACCardNodeLinkButton.h>
+#import <AtomicSDK/AACCardNodeList.h>
+#import <AtomicSDK/AACCardNodeListItem.h>
+#import <AtomicSDK/AACCardNodeText.h>
+#import <AtomicSDK/AACCardNodeVideo.h>
+#import <AtomicSDK/AACCardNodeDatePicker.h>
+#import <AtomicSDK/AACCardNodeDropdown.h>
+#import <AtomicSDK/AACCardNodeListComma.h>
+#import <AtomicSDK/AACCardNodeNumberInput.h>
+#import <AtomicSDK/AACCardNodeSnoozeButton.h>
+#import <AtomicSDK/AACCardNodeStepper.h>
+#import <AtomicSDK/AACCardNodeSwitch.h>
+#import <AtomicSDK/AACCardNodeTextInput.h>
+
+#import <AtomicSDK/AACAppearanceCollection.h>
+#import <AtomicSDK/AACAppearance.h>
+#import <AtomicSDK/AACFontFamily.h>
+#import <AtomicSDK/AACFeedTheme.h>
+#import <AtomicSDK/AACTheme.h>
+#import <AtomicSDK/AACColor.h>
+#import <AtomicSDK/AACTypography.h>
+#import <AtomicSDK/AACMeasurement.h>
+#import <AtomicSDK/AACEdgeInsets.h>
+#import <AtomicSDK/AACThemeShadow.h>
+#import <AtomicSDK/AACSubviewTheme.h>
+#import <AtomicSDK/AACAppearanceManager.h>
+#import <AtomicSDK/AACSwiftUISession.h>

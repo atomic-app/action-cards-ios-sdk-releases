@@ -16,6 +16,23 @@
 #import <AtomicSDK/AACUserSettings.h>
 #import <AtomicSDK/AACCardFilter.h>
 #import <AtomicSDK/AACSDKEvent.h>
+#import <AtomicSDK/AACCardInstance.h>
+#import <AtomicSDK/AACStreamContainerObserverConfiguration.h>
+#import <AtomicSDK/AACSessionCardAction.h>
+#import <AtomicSDK/AACAppearanceCollection.h>
+
+/**
+ Handler called whenever a card action returns a result.
+ If an error occurred, the error parameter is populated with details, otherwise the error object is nil.
+ */
+typedef void(^AACSessionOnCardActionHandler)(NSError* __nullable error);
+
+/**
+ Handler called whenever the card feed in the observed stream container changes.
+ 
+ @param cards The list of current cards in the observed stream container, or `nil` if the cards are not available.
+ */
+typedef void(^AACSessionStreamContainerChangedHandler)(NSArray<AACCardInstance*> * __nullable cards);
 
 /**
  Handler called whenever the card count changes.
@@ -114,6 +131,26 @@ extern NSString* __nonnull const AACSessionTotalCardCountUserInfoKey;
  Error domain for errors arising from a failure to fetch the user metrics.
  */
 extern NSString* __nonnull const AACSessionUserMetricsErrorDomain;
+
+/**
+ Error domain for errors arising from a failure to perform card actions, such as dismissing, snoozing or submitting.
+ */
+extern NSString* __nonnull const AACSessionCardActionsErrorDomain;
+
+/**
+ Error code associated with the card actions error domain.
+ The underlying error is supplied in the `NSUnderlyingErrorKey` in the error's `userInfo` dictionary.
+ */
+typedef NS_ERROR_ENUM(AACSessionCardActionsErrorDomain, AACSessionCardActionsErrorCode) {
+    /**
+     Failed to perform card actions because the user's device was offline.
+     */
+    AACSessionCardActionsErrorCodeNetworkError,
+    /**
+     Failed to perform card actions because an internal data error has happened.
+     */
+    AACSessionCardActionsErrorCodeDataError
+};
 
 /**
  Error code associated with the user metrics fetching error domain.
@@ -315,14 +352,6 @@ typedef NS_ENUM(NSUInteger, AACApiProtocol) {
                              apiKey:(NSString *__nonnull)apiKey;
 
 /**
- Sets whether debug logging should be enabled within the SDK. This can be useful in debug
- builds when integrating the SDK. Defaults to `NO`. Turning this on or off takes immediate effect.
- 
- @param enabled Whether logging should be enabled within the SDK.
- */
-+ (void)setLoggingEnabled:(BOOL)enabled DEPRECATED_MSG_ATTRIBUTE("The setLoggingEnabled method has been deprecated. Call +[AACSession enableDebugMode:] to set the log message level.");
-
-/**
  Sets the debug logging level within the SDK. This can be useful in debug
  builds when integrating the SDK. Defaults to `0`, which means no logs. Setting this takes immediate effect.
  
@@ -345,12 +374,6 @@ typedef NS_ENUM(NSUInteger, AACApiProtocol) {
                         apiKey:(NSString *__nonnull)apiKey
                sessionDelegate:(id<AACSessionDelegate> __nonnull)sessionDelegate
                     apiBaseUrl:(NSURL* __nullable)baseUrl;
-
-/**
- Purges all cached card data stored by the SDK, and sends any pending analytics events to the Atomic Platform.
- Call this method when a user logs out of your app or the active user changes.
- */
-+ (void)logout DEPRECATED_MSG_ATTRIBUTE("The logout method now takes a completion handler, invoked after any pending analytics events are sent to the Atomic Platform (as of release 1.0.0). Please use `+[AACSession logout:]` instead.");
 
 /**
  Purges all cached card data stored by the SDK, disable all SDK activities and sends any pending analytics events to the Atomic Platform.
@@ -388,25 +411,6 @@ typedef NS_ENUM(NSUInteger, AACApiProtocol) {
 + (void)logoutWithNotificationsDeregistered:(BOOL)deregisterNotifications
                           completionHandler:(AACSessionLogoutCompletionHandler __nullable)completionHandler;
 
-/**
- Asks the SDK to observe the card count for the given stream container, calling the `handler` every time
- the count changes.
- 
- @param streamContainerId (Required) The stream container ID to observe the card count for.
- @param interval (Required) How frequently the card count should be updated. Must be at least 1 second,
- otherwise defaults to 1 second.
- @param sessionDelegate (Required) A delegate that supplies a user authentication token when requested
- by the SDK.
- @param handler (Required) Handler called whenever the card count changes. If the handler returns `nil`, the
- card count is not available for this stream container (the user may not have access or the internet connection
- may be unavailable).
- 
- @return An opaque token that can be used to stop observing card count, by calling `+stopObservingCardCount:` with that token.
- */
-+ (id<NSObject> __nonnull)observeCardCountForStreamContainerWithIdentifier:(NSString* __nonnull)streamContainerId
-                                                                  interval:(NSTimeInterval)interval
-                                                           sessionDelegate:(id<AACSessionDelegate> __nonnull)sessionDelegate
-                                                                   handler:(AACSessionCardCountChangedHandler __nonnull)handler DEPRECATED_MSG_ATTRIBUTE("Session delegates are now configured globally, and are no longer supplied as a parameter (as of release 1.0.0). Please pass your session delegate to +[AACSession setSessionDelegate:], and use `observeCardCountForStreamContainerWithIdentifier:interval:handler:` instead.");
 /**
  Asks the SDK to observe the card count for the given stream container, calling the `handler` every time
  the count changes.
@@ -460,52 +464,12 @@ typedef NS_ENUM(NSUInteger, AACApiProtocol) {
  count has been determined.
  
  @param streamContainerId (Required) The stream container ID to retrieve the card count for.
- @param sessionDelegate (Required) A delegate that supplies a user authentication token when requested
- by the SDK.
- @param handler (Required) Handler called when the card count has been determined. If the handler returns `nil`, the
- card count is not available for this stream container (the user may not have access or the internet connection
- may be unavailable).
- */
-+ (void)requestCardCountForStreamContainerWithIdentifier:(NSString* __nonnull)streamContainerId
-                                         sessionDelegate:(id<AACSessionDelegate> __nonnull)sessionDelegate
-                                                 handler:(AACSessionCardCountChangedHandler __nonnull)handler DEPRECATED_MSG_ATTRIBUTE("Session delegates are now configured globally, and are no longer supplied as a parameter (as of release 1.0.0). Please pass your session delegate to +[AACSession setSessionDelegate:], and use `requestCardCountForStreamContainerWithIdentifier:handler:` instead.");
-
-/**
- Asks the SDK to return the number of cards for the given stream container, calling the `handler` when the card
- count has been determined.
- 
- @param streamContainerId (Required) The stream container ID to retrieve the card count for.
  @param handler (Required) Handler called when the card count has been determined. If the handler returns `nil`, the
  card count is not available for this stream container (the user may not have access or the internet connection
  may be unavailable).
  */
 + (void)requestCardCountForStreamContainerWithIdentifier:(NSString* __nonnull)streamContainerId
                                                  handler:(AACSessionCardCountChangedHandler __nonnull)handler;
-
-/**
- Asks the SDK to register the given device token against the currently logged in user. The logged in user
- is specified by the authentication token provided by the session delegate.
- 
- @param deviceToken (Required) A device token supplied from `application:didRegisterForRemoteNotificationsWithDeviceToken:`
- in your app delegate.
- @param sessionDelegate (Required) A delegate that supplies a user authentication token when requested by the SDK.
- */
-+ (void)registerDeviceForNotifications:(NSData* __nonnull)deviceToken
-                   withSessionDelegate:(id<AACSessionDelegate> __nonnull)sessionDelegate DEPRECATED_MSG_ATTRIBUTE("A nullable completion handler is added to this method since release 0.25.0. Plus, session delegates are now configured globally, and are no longer supplied as a parameter (as of release 1.0.0). Please pass your session delegate to +[AACSession setSessionDelegate:], and use `registerDeviceForNotifications:completionHandler:` instead.");
-
-/**
- Asks the SDK to register the given device token against the currently logged in user. The logged in user
- is specified by the authentication token provided by the session delegate.
- 
- @param deviceToken (Required) A device token supplied from `application:didRegisterForRemoteNotificationsWithDeviceToken:`
- in your app delegate.
- @param sessionDelegate (Required) A delegate that supplies a user authentication token when requested by the SDK. 
- @param completionHandler (Optional) Completion handler called when the request completes. If `error` is nil,
- the request succeeded, otherwise the request failed.
- */
-+ (void)registerDeviceForNotifications:(NSData* __nonnull)deviceToken
-                   withSessionDelegate:(id<AACSessionDelegate> __nonnull)sessionDelegate
-                     completionHandler:(AACSessionPushNotificationRegistrationHandler __nullable)completionHandler DEPRECATED_MSG_ATTRIBUTE("Session delegates are now configured globally, and are no longer supplied as a parameter (as of release 1.0.0). Please pass your session delegate to +[AACSession setSessionDelegate:], and use `registerDeviceForNotifications:completionHandler:` instead.");
 
 /**
  Asks the SDK to register the given device token against the currently logged in user. The logged in user
@@ -543,43 +507,6 @@ typedef NS_ENUM(NSUInteger, AACApiProtocol) {
  
  @param streamContainerIds (Required) The stream container IDs to register the current user against for push notifications.
  Pass an empty array to unregister this device from notifications (e.g. when the user performs a complete logout from your app).
- @param sessionDelegate (Required) A delegate that supplies a user authentication token when requested by the SDK.
- */
-+ (void)registerStreamContainersForPushNotifications:(NSArray<NSString*>* __nonnull)streamContainerIds
-                                     sessionDelegate:(id<AACSessionDelegate> __nonnull)sessionDelegate DEPRECATED_MSG_ATTRIBUTE("A nullable completion handler is added to this method since release 0.25.0. Plus, session delegates are now configured globally, and are no longer supplied as a parameter (as of release 1.0.0). Please pass your session delegate to +[AACSession setSessionDelegate:], and use `registerStreamContainersForPushNotifications:completionHandler:` instead.");
-
-/**
- Asks the SDK to register the currently logged in user for push notifications on the stream container IDs in the provided
- array.
- 
- Push notifications will not be delivered to a user unless they have also registered their device token (using the
- `registerDeviceForNotifications:completionHandler:`). The registration of device token and registration
- of stream container IDs can occur in either order.
- 
- This method does not alter the user's `notificationsEnabled` preference in the Atomic Platform.
- 
- @param streamContainerIds (Required) The stream container IDs to register the current user against for push notifications.
- Pass an empty array to unregister this device from notifications (e.g. when the user performs a complete logout from your app).
- @param sessionDelegate (Required) A delegate that supplies a user authentication token when requested by the SDK.
- @param completionHandler (Optional) Completion handler called when the request completes. If `error` is nil,
- the request succeeded, otherwise the request failed.
- */
-+ (void)registerStreamContainersForPushNotifications:(NSArray<NSString*>* __nonnull)streamContainerIds
-                                     sessionDelegate:(id<AACSessionDelegate> __nonnull)sessionDelegate
-                                   completionHandler:(AACSessionPushNotificationRegistrationHandler __nullable)completionHandler DEPRECATED_MSG_ATTRIBUTE("Session delegates are now configured globally, and are no longer supplied as a parameter (as of release 1.0.0). Please pass your session delegate to +[AACSession setSessionDelegate:], and use `registerStreamContainersForPushNotifications:completionHandler:` instead.");
-
-/**
- Asks the SDK to register the currently logged in user for push notifications on the stream container IDs in the provided
- array.
- 
- Push notifications will not be delivered to a user unless they have also registered their device token (using the
- `registerDeviceForNotifications:completionHandler:`). The registration of device token and registration
- of stream container IDs can occur in either order.
- 
- This method does not alter the user's `notificationsEnabled` preference in the Atomic Platform.
- 
- @param streamContainerIds (Required) The stream container IDs to register the current user against for push notifications.
- Pass an empty array to unregister this device from notifications (e.g. when the user performs a complete logout from your app).
  @param completionHandler (Optional) Completion handler called when the request completes. If `error` is nil,
  the request succeeded, otherwise the request failed. If the `error` object is non-nil, the error domain will
  be `AACSessionPushRegistrationErrorDomain` - look for a specific error code in the `AACSessionPushRegistrationErrorCode`
@@ -587,47 +514,6 @@ typedef NS_ENUM(NSUInteger, AACApiProtocol) {
  */
 + (void)registerStreamContainersForPushNotifications:(NSArray<NSString*>* __nonnull)streamContainerIds
                                    completionHandler:(AACSessionPushNotificationRegistrationHandler __nullable)completionHandler;
-
-/**
- Asks the SDK to register the currently logged in user for push notifications on the stream container IDs in the provided
- array with notifications enabled or disabled.
- 
- Push notifications will not be delivered to a user unless they have registered their device token (using the
- `registerDeviceForNotifications:completionHandler:` method). The registration of device token and registration
- of stream container IDs can occur in either order.
- 
- The `notificationsEnabled` parameter will set the user's preference in the Atomic Platform to true or false accordingly.
- 
- @param streamContainerIds (Required) The stream container IDs to register the current user against for push notifications.
- Pass an empty array to unregister this device from notifications (e.g. when the user performs a complete logout from your app).
- @param sessionDelegate (Required) A delegate that supplies a user authentication token when requested by the SDK.
- @param notificationsEnabled (Required) Whether push notifications, for the current user, should be enabled or disabled.
- */
-+ (void)registerStreamContainersForPushNotifications:(NSArray<NSString*>* __nonnull)streamContainerIds
-                                     sessionDelegate:(id<AACSessionDelegate> __nonnull)sessionDelegate
-                                notificationsEnabled:(BOOL)notificationsEnabled DEPRECATED_MSG_ATTRIBUTE("A nullable completion handler is added to this method since release 0.25.0. Plus, session delegates are now configured globally, and are no longer supplied as a parameter (as of release 1.0.0). Please pass your session delegate to +[AACSession setSessionDelegate:], and use `registerStreamContainersForPushNotifications:notificationsEnabled:completionHandler:` instead.");
-
-/**
- Asks the SDK to register the currently logged in user for push notifications on the stream container IDs in the provided
- array with notifications enabled or disabled.
- 
- Push notifications will not be delivered to a user unless they have registered their device token (using the
- `registerDeviceForNotifications:completionHandler:` method). The registration of device token and registration
- of stream container IDs can occur in either order.
- 
- The `notificationsEnabled` parameter will set the user's preference in the Atomic Platform to true or false accordingly.
- 
- @param streamContainerIds (Required) The stream container IDs to register the current user against for push notifications.
- Pass an empty array to unregister this device from notifications (e.g. when the user performs a complete logout from your app).
- @param sessionDelegate (Required) A delegate that supplies a user authentication token when requested by the SDK.
- @param notificationsEnabled (Required) Whether push notifications, for the current user, should be enabled or disabled.
- @param completionHandler (Optional) Completion handler called when the request completes. If `error` is nil,
- the request succeeded, otherwise the request failed.
- */
-+ (void)registerStreamContainersForPushNotifications:(NSArray<NSString*>* __nonnull)streamContainerIds
-                                     sessionDelegate:(id<AACSessionDelegate> __nonnull)sessionDelegate
-                                notificationsEnabled:(BOOL)notificationsEnabled
-                                   completionHandler:(AACSessionPushNotificationRegistrationHandler __nullable)completionHandler DEPRECATED_MSG_ATTRIBUTE("Session delegates are now configured globally, and are no longer supplied as a parameter (as of release 1.0.0). Please pass your session delegate to +[AACSession setSessionDelegate:], and use `registerStreamContainersForPushNotifications:notificationsEnabled:completionHandler:` instead.");
 
 /**
  Asks the SDK to register the currently logged in user for push notifications on the stream container IDs in the provided
@@ -668,39 +554,11 @@ typedef NS_ENUM(NSUInteger, AACApiProtocol) {
  It is the responsibility of the integrator to ensure that this method is called at the correct location to ensure accurate tracking.
  
  @param payload The push notification payload to inspect.
- @param sessionDelegate A session delegate that provides a JWT containing the user's ID.
- @param completionHandler A completion handler called when the analytics request is complete. If the request
- fails, an NSError object is provided.
- */
-+ (void)trackPushNotificationReceived:(NSDictionary* __nonnull)payload
-                  withSessionDelegate:(id<AACSessionDelegate> __nonnull)sessionDelegate
-                    completionHandler:(AACSessionPushNotificationReceivedHandler __nonnull)completionHandler DEPRECATED_MSG_ATTRIBUTE("Session delegates are now configured globally, and are no longer supplied as a parameter (as of release 1.0.0). Please pass your session delegate to +[AACSession setSessionDelegate:], and use `trackPushNotificationReceived:completionHandler:` instead.");
-
-/**
- Tracks that a push notification, with the given payload, was received by this device.
- If the payload does not represent an Atomic push notification, this method has no effect.
- This method dispatches an analytics event back to Atomic to indicate that the user's device received the notification.
- It is the responsibility of the integrator to ensure that this method is called at the correct location to ensure accurate tracking.
- 
- @param payload The push notification payload to inspect.
  @param completionHandler A completion handler called when the analytics request is complete. If the request
  fails, an NSError object is provided.
  */
 + (void)trackPushNotificationReceived:(NSDictionary* __nonnull)payload
                     completionHandler:(AACSessionPushNotificationReceivedHandler __nonnull)completionHandler;
-
-/**
- Triggers an event on the Atomic Platform, exclusively for the user identified by the authentication token provided by the
- session delegate.
- Events must opt-in to be triggered from the SDK. To opt-in, turn on the 'Enable client trigger' option in the Atomic Workbench
- for the event.
- 
- @param eventPayload The event payload used to trigger the event.
- @param sessionDelegate A session delegate that identifies the user to trigger the event for.
- @param completionHandler A completion handler called when the event request completes. If the request fails, an
- NSError object is provided. If the request succeeds, details of the processed event are provided.
- */
-+ (void)sendEvent:(AACEventPayload* __nonnull)eventPayload withSessionDelegate:(id<AACSessionDelegate> __nonnull)sessionDelegate completionHandler:(AACSessionSendEventHandler __nonnull)completionHandler DEPRECATED_MSG_ATTRIBUTE("Session delegates are now configured globally, and are no longer supplied as a parameter (as of release 1.0.0). Please pass your session delegate to +[AACSession setSessionDelegate:], and use `sendEvent:withCompletionHandler:` instead.");
 
 /**
  Triggers an event on the Atomic Platform, exclusively for the user identified by the authentication token provided by the
@@ -712,7 +570,7 @@ typedef NS_ENUM(NSUInteger, AACApiProtocol) {
  @param completionHandler A completion handler called when the event request completes. If the request fails, an
  NSError object is provided. If the request succeeds, details of the processed event are provided.
  */
-+ (void)sendEvent:(AACEventPayload* __nonnull)eventPayload withCompletionHandler:(AACSessionSendEventHandler __nonnull)completionHandler;
++ (void)sendEvent:(AACEventPayload* __nonnull)eventPayload withCompletionHandler:(AACSessionSendEventHandler __nonnull)completionHandler DEPRECATED_MSG_ATTRIBUTE("The sendEvent method has been deprecated and will be removed in future releases.");
 
 #pragma mark - Network request handling
 
@@ -730,18 +588,6 @@ typedef NS_ENUM(NSUInteger, AACApiProtocol) {
 + (void)setRequestDelegate:(id<AACRequestDelegate> __nullable)delegate;
 
 #pragma mark - User metrics
-
-/**
- Requests user metrics for the currently logged in user, identified by the authentication token returned by the
- `sessionDelegate`. User metrics include the total number of cards available to the user, the number of cards
- that haven't yet been seen by the user, and the number of available and unseen cards in a specific stream container.
- Use the returned `AACUserMetrics` object to obtain these values.
- 
- @param sessionDelegate A session delegate providing an authentication token for the user.
- @param completionHandler Completion handler called when the request for user metrics completes.
- */
-+ (void)userMetricsWithSessionDelegate:(id<AACSessionDelegate> __nonnull)sessionDelegate
-                     completionHandler:(AACSessionUserMetricsHandler __nonnull)completionHandler DEPRECATED_MSG_ATTRIBUTE("Session delegates are now configured globally, and are no longer supplied as a parameter (as of release 1.0.0). Please pass your session delegate to +[AACSession setSessionDelegate:], and use `userMetricsWithCompletionHandler:` instead.");
 
 /**
  Requests user metrics for the currently logged in user, identified by the authentication token returned by the
@@ -805,5 +651,38 @@ typedef NS_ENUM(NSUInteger, AACApiProtocol) {
  A convenient method to stop observing SDK events. This method is the equivalent of calling `observeSDKEventsWithCompletionHandler:` with a `nil` parameter.
  */
 + (void)stopObservingSDKEvents;
+
+/**
+ Asks the SDK to monitor changes in a stream container, invoking the specified `handler` whenever there are updates.
+ This method can be used to track changes of the card feed within the stream container.
+
+ @param streamContainerId (Required) The identifier of the stream container to be observed.
+ @param configuration (Required) A configuration object for defining behaviour of the stream container observer.
+ @param completionHandler (Required) The callback handler that is invoked whenever there is a change in the stream container.
+ The handler receives updated information, or `nil` if the data is not accessible (due to reasons like lack of user access or network issues).
+
+ @return A non-null opaque token which can be used to cease monitoring changes by passing it to the `+stopObservingStreamContainer:` method.
+ */
++ (id<NSObject> __nonnull)observeStreamContainerWithIdentifier:(NSString* __nonnull)streamContainerId
+                                                 configuration:(AACStreamContainerObserverConfiguration* __nullable)configuration
+                                             completionHandler:(AACSessionStreamContainerChangedHandler __nonnull)completionHandler NS_SWIFT_NAME(observeStreamContainer(identifier:configuration:handler:));
+
+/**
+ Requests the SDK to cease monitoring changes in the stream container associated with the given token.
+ This method stops the updates that were being sent to the handler registered via `+observeStreamContainerWithIdentifier:configuration:completionHandler:`.
+ If the provided token does not correspond to an active stream container observer, this method has no effect.
+
+ @param token The non-null opaque token obtained from `+observeStreamContainerWithIdentifier:interval:filters:handler:`. This token identifies the specific monitoring process to be stopped.
+ */
++ (void)stopObservingStreamContainer:(id<NSObject> __nonnull)token NS_SWIFT_NAME(stopObservingStreamContainer(token:));
+
+/**
+ Executes the specified card action and calls the completion handler upon completion.
+ Card actions include dismissing, snoozing or submitting a card.
+ 
+ @param action The object representing a card action.
+ @param completionHandler A handler block to be executed when the action is completed. This handler is called with either an error if the action fails, or nil on success.
+ */
++ (void)onCardAction:(AACSessionCardAction* __nonnull)action completionHandler:(AACSessionOnCardActionHandler __nonnull)completionHandler;
 
 @end
