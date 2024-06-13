@@ -24,7 +24,7 @@
     - Allow the request, provided that the request's certificate validates against a set of provided pins;
     - Deny the request.
  
- @param requestUrl The URL to validate.
+ @param requestUrl The URL to validate. Note: The URL is percent-encoded.
  @return The request disposition. Supported dispositions are exposed as static methods on `AACRequestDisposition`.
  */
 - (AACRequestDisposition* __nonnull)dispositionForAtomicRequest:(NSURL* __nonnull)requestUrl;

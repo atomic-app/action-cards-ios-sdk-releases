@@ -55,34 +55,34 @@ typedef NS_ENUM(NSUInteger, AACCardNodeMediaActionType) {
 @property (nonatomic) AACCardNodeMediaFormat format;
 
 /// The label to display for the media if the `format` is `text` or `thumbnail`.
-@property (nonatomic, copy) NSString* label;
+@property (nonatomic, copy, nullable) NSString* label;
 
 /// A description of the media - e.g. `JPEG` for a JPEG image, or `01:41` for a video.
-@property (nonatomic, copy) NSString* mediaDescription;
+@property (nonatomic, copy, nullable) NSString* mediaDescription;
 
 /// The URL to the thumbnail image for the media.
-@property (nonatomic, strong) NSURL* thumbnailUrl;
+@property (nonatomic, strong, nullable) NSURL* thumbnailUrl;
 
 /// The URL to the full version of the media.
-@property (nonatomic, strong) NSURL* url;
+@property (nonatomic, strong, nullable) NSURL* url;
 
 /// The alternate text, provided in the Atomic Workbench, that describes the thumbnail image.
-@property (nonatomic, copy) NSString *thumbnailAlternateText;
+@property (nonatomic, copy, nullable) NSString *thumbnailAlternateText;
 
 /// The alternate text, provided in the Atomic Workbench, that describes the source media.
-@property (nonatomic, copy) NSString *alternateText;
+@property (nonatomic, copy, nullable) NSString *alternateText;
 
 /// The action URL to jump to when set in the Atomic Workbench.
-@property (nonatomic, strong) NSURL* actionUrl;
+@property (nonatomic, strong, nullable) NSURL* actionUrl;
 
 /// The name of the layout to navigate to on tap. If this property is `nil`, the document at `url` will be presented instead.
-@property (nonatomic, copy) NSString* actionLayoutName;
+@property (nonatomic, copy, nullable) NSString* actionLayoutName;
 
 /**
  A payload of key-value pairs that are sent to the host app, to determine the custom action taken
  when tapping on this button. We use the same callback in the `AACStreamContainerActionDelegate` that's used by a link button.
  */
-@property (nonatomic, copy) NSDictionary *actionPayload;
+@property (nonatomic, copy, nullable) NSDictionary *actionPayload;
 
 /**
  The action to be taken by this object.

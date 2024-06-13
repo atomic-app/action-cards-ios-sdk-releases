@@ -144,6 +144,20 @@ typedef NS_ENUM(NSUInteger, AACSDKEventRedirectDetailType) {
 };
 
 /**
+ The types of possible sources that can trigger card actions, such as snoozing, dismissal or voting.
+ */
+typedef NS_ENUM(NSUInteger, AACSDKEventActionSource) {
+    /// The action is initiated from an unknown source.
+    AACSDKEventActionSourceUnknown,
+    /// The action is initiated from the overflow menu.
+    AACSDKEventActionSourceOverflow,
+    /// The action is initiated from the swipe gesture.
+    AACSDKEventActionSourceSwipe,
+    /// The action is initiated from buttons on the card.
+    AACSDKEventActionSourceCardButton
+};
+
+/**
  Protocol that some events conform to. Events conforming to this protocol can happen on either the top-level or a subview of a card.
  */
 @protocol AACSDKEventHasViewState <NSObject>
@@ -317,12 +331,23 @@ typedef NS_ENUM(NSUInteger, AACSDKEventRedirectDetailType) {
  Represents an event in which the user taps on the “This is useful” option in the card overflow menu.
  */
 @interface AACSDKEventCardVotedUp : AACSDKEventCREVT
+
+/**
+ The source from which this voting event was initiated.
+ */
+@property (nonatomic, readonly) AACSDKEventActionSource source;
+
 @end
 
 /**
  Represents an event in which the user taps the “Submit” button on the card feedback screen, which is brought up by tapping on the “This isn't useful” option in the card overflow menu.
  */
 @interface AACSDKEventCardVotedDown : AACSDKEventCREVT
+
+/**
+ The source from which this voting event was initiated.
+ */
+@property (nonatomic, readonly) AACSDKEventActionSource source;
 
 /**
  The reason that the user chooses on the card feedback screen.
@@ -520,6 +545,11 @@ typedef NS_ENUM(NSUInteger, AACSDKEventRedirectDetailType) {
  The stream container ID associated with the request. `nil` if the request isn't related to a stream container.
  */
 @property (nonatomic, readonly, nullable) NSString *streamContainerId;
+
+/**
+ The array of stream container IDs associated with the request. `nil` if the request isn't related to multiple stream containers.
+ */
+@property (nonatomic, readonly, nullable) NSArray<NSString *> *streamContainerIds;
 
 /**
  The card instance ID associated with the request. `nil` if the request isn't related to a specific card.

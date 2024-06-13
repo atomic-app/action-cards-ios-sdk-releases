@@ -6,6 +6,7 @@
 
 #import <Foundation/Foundation.h>
 #import <AtomicSDK/AACValidator.h>
+#import <AtomicSDK/AACCardNodeCustomIcon.h>
 
 // Type-safe way of returning the name of a property as a string.
 #define AAC_PROPERTY_NAME(name) NSStringFromSelector(@selector(name))
@@ -51,7 +52,7 @@
 /**
  An array of buttons held by the node, if any. Buttons are now all hosted in the `AACCardNodeForm` node.
  */
-@property (nonatomic, strong, nonnull, readonly) NSMutableArray* buttons;
+@property (nonatomic, strong, nullable, readonly) NSMutableArray* buttons;
 
 /**
  Whether this node represents a form field that contains buttons.
@@ -118,7 +119,14 @@
  Has only a `text` property.
  */
 @interface AACCardNodeHeading1: AACCardNode
+/**
+ An optional icon to render next to the text.
+ */
+@property (nonatomic, nullable) AACCardNodeCustomIcon *customIcon;
 
+/**
+ The headline to display.
+ */
 @property (nonatomic, copy, nonnull) NSString* text;
 
 @end
@@ -139,9 +147,14 @@ typedef NS_ENUM(NSInteger, AACCardButtonType) {
 /// Text to display on the button.
 @property (nonatomic, copy, nonnull) NSString* text;
 
-/// If non-empty, matched against the known icon names from the Font Awesome Pro 5 font.
-@property (nonatomic, copy, nullable) NSString* icon;
+/**
+ An optional icon to render next to the button title.
+ */
+@property (nonatomic, nullable) AACCardNodeCustomIcon *customIcon;
 
+/**
+ Whether the button is a primary or secondary button. Primary and secondary buttons are defined in Atomic Workbench and can have different theme properties.
+ */
 @property (nonatomic) AACCardButtonType buttonType;
 
 @end
@@ -176,12 +189,20 @@ typedef NS_ENUM(NSInteger, AACCardButtonType) {
 /// Values to submit along with the data already collected for this form.
 @property (nonatomic, strong, nullable) NSDictionary* values;
 
+/// The name of the submit button.
+@property (nonatomic, copy, nullable) NSString* buttonName;
+
 @end
 
 /**
  A node that renders a category title (e.g. 'Leave Request').
  */
 @interface AACCardNodeCategory: AACCardNode
+
+/**
+ An optional icon to render next to the text.
+ */
+@property (nonatomic, nullable) AACCardNodeCustomIcon *customIcon;
 
 /// The title to display.
 @property (nonatomic, copy, nonnull) NSString* text;
