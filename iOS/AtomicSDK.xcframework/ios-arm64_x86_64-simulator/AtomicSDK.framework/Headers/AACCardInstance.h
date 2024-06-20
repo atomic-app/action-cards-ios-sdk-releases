@@ -70,6 +70,11 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, readonly) AACCardLayout *defaultLayout;
 
 /**
+ Returns a set of sub-layout names for this card instance, which can be used with the `layoutWithName` method.
+ */
+- (NSSet<NSString*>*)subLayoutNames;
+
+/**
  Returns the layout matching the given `name`, or `nil` if no such layout
  exists for this card.
  */
