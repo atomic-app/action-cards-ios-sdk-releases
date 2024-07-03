@@ -119,6 +119,7 @@
  Has only a `text` property.
  */
 @interface AACCardNodeHeading1: AACCardNode
+
 /**
  An optional icon to render next to the text.
  */
@@ -146,6 +147,9 @@ typedef NS_ENUM(NSInteger, AACCardButtonType) {
 
 /// Text to display on the button.
 @property (nonatomic, copy, nonnull) NSString* text;
+
+/// If non-empty, matched against the known icon names from the Font Awesome Pro 5 font.
+@property (nonatomic, copy, nullable) NSString* icon DEPRECATED_MSG_ATTRIBUTE("The icon property has been deprecated and will be removed in future releases. Please use customIcon instead.");
 
 /**
  An optional icon to render next to the button title.

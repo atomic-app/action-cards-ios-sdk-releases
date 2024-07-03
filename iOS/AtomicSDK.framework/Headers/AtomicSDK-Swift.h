@@ -329,6 +329,17 @@ SWIFT_CLASS("_TtC9AtomicSDK11AACSVGImage") SWIFT_AVAILABILITY(ios_app_extension,
 @end
 
 
+@interface NSLayoutConstraint (SWIFT_EXTENSION(AtomicSDK))
+/// Change the multiplier of a constraint. The multiplier property is readonly, so we need to create a new one and replace the old one.
+/// \param multiplier The new multiplier value.
+///
+///
+/// returns:
+/// The new constraint with the new multiplier.
+- (NSLayoutConstraint * _Nonnull)changeWithMultiplier:(CGFloat)multiplier SWIFT_WARN_UNUSED_RESULT;
+@end
+
+
 SWIFT_CLASS_NAMED("SVG")
 @interface SVGImage : NSObject
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
