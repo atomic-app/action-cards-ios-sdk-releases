@@ -107,10 +107,10 @@ typedef NS_ENUM(NSInteger, AACThemeAlignment) {
 @property (nonatomic, strong) AACColor *textListEmptyState;
 @property (nonatomic, strong) AACColor *textFooterMessage;
 
-- (AACColor *)iconButton:(AACCardButtonType)buttonType;
+- (AACColor *__nullable)iconButton:(AACCardButtonType)buttonType;
 @property (nonatomic, strong) AACColor *iconOptions;
 @property (nonatomic, strong) AACColor *iconOptionsActive;
-@property (nonatomic, strong) AACColor *iconBody;
+@property (nonatomic, strong, nullable) AACColor *iconBody;
 @property (nonatomic, strong) AACColor *iconListAction;
 @property (nonatomic, strong) AACColor *iconMediaBanner;
 @property (nonatomic, strong) AACColor *iconMediaControl;
@@ -128,6 +128,8 @@ typedef NS_ENUM(NSInteger, AACThemeAlignment) {
 @property (nonatomic, strong) AACColor *iconSheetItemActive;
 @property (nonatomic, strong) AACColor *iconListEmptyState;
 @property (nonatomic, strong) AACColor *iconSelectionIndicatorActive;
+@property (nonatomic, strong, nullable) AACColor *iconCategory;
+@property (nonatomic, strong, nullable) AACColor *iconHeadline;
 
 @property (nonatomic, strong) AACColor *shadowCard;
 @property (nonatomic, strong) AACColor *shadowNavigation;
