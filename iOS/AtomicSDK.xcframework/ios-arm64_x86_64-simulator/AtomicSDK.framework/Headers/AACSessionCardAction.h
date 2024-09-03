@@ -47,8 +47,12 @@ typedef NS_ENUM(NSUInteger, AACSessionCardActionTypes) {
 /// - Parameters:
 ///   - containerId: The stream container that the card belongs to.
 ///   - cardId: The instance ID of the card. Can be fetched through `card.detail.cardId`.
+///   - submitButtonName: The button name of the submit button used to trigger this action. You must specify the name otherwise an error will be returned.
 ///   - submitValues: The response key-value pairs attached to the submit action. The key must be a string type. The value type must be string, number or boolean.
-- (instancetype)initSubmitActionWithContainerId:(NSString *)containerId cardId:(NSString *)cardId submitValues:(NSDictionary<NSString*, id> *__nullable)submitValues;
+- (instancetype)initSubmitActionWithContainerId:(NSString *)containerId
+                                         cardId:(NSString *)cardId
+                               submitButtonName:(NSString *)submitButtonName
+                                   submitValues:(NSDictionary<NSString*, id> *__nullable)submitValues;
 
 /// The container identifier associated with the card action.
 @property (nonatomic, readonly) NSString *containerId;
@@ -65,6 +69,12 @@ typedef NS_ENUM(NSUInteger, AACSessionCardActionTypes) {
 
 /// Optional response values attached to the submit action.
 @property (nonatomic, readonly, nullable) NSDictionary<NSString*, id>* submitValues;
+
+/// The name of the submit button used to submit the card.
+/// It can be retrieved from `AACCardNodeSubmitButton.buttonName`.
+///
+/// This property has no effects to other card actions.
+@property (nonatomic, readonly, nullable) NSString *submitButtonName;
 
 @end
 
