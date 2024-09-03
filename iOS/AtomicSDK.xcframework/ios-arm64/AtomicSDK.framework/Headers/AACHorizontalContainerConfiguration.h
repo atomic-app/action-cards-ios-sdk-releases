@@ -71,6 +71,8 @@ typedef NS_ENUM(NSUInteger, AACHorizontalContainerConfigurationScrollMode) {
 
 /**
  The width of every card displayed in the horizontal container view.
+ 
+ This property functions identically to the `cardMaxWidth` property.
  */
 @property (nonatomic) CGFloat cardWidth;
 
