@@ -279,7 +279,7 @@ typedef NS_OPTIONS(NSUInteger, AACUIElement) {
  
  - In vertical stream containers, the stream container disregards this property if its value exceeds the container's current width.
  
- - In horizontal stream containers, this property functions identically to the `cardWidth` property.
+ - In horizontal stream containers, this property functions identically to the `cardWidth` property, and it must be > 0.
  */
 
  @property (nonatomic) CGFloat cardMaxWidth;
