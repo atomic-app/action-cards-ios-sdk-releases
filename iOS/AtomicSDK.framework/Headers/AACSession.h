@@ -223,7 +223,11 @@ typedef NS_ERROR_ENUM(AACSessionLogoutErrorDomain, AACSessionLogoutErrorCode) {
     /**
      The logout operation failed to send any pending analytics events to the Atomic Platform due to a data error.
      */
-    AACSessionLogoutErrorCodeDataError
+    AACSessionLogoutErrorCodeDataError,
+    /**
+     The logout operation is aborted. See the `userInfo` property in the error for more details.
+     */
+    AACSessionLogoutErrorCodeAborted
 };
 
 /**

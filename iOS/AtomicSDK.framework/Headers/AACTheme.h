@@ -54,9 +54,12 @@ typedef NS_ENUM(NSInteger, AACThemeAlignment) {
 
 - (AACColor *)backgroundButton:(AACCardButtonType)buttonType;
 - (AACColor *)backgroundButtonBorder:(AACCardButtonType)buttonType;
+- (AACColor *)borderCheckbox:(BOOL)isChecked;
+- (AACColor *)backgroundCheckbox:(BOOL)isChecked;
 
 @property (nonatomic, strong) AACColor *borderCard;
 @property (nonatomic, strong) AACColor *borderMedia;
+@property (nonatomic, strong) AACColor *borderMediaThumb;
 @property (nonatomic, strong) AACColor *borderComponent;
 @property (nonatomic, strong) AACColor *borderSheetItemDivider;
 
@@ -80,6 +83,7 @@ typedef NS_ENUM(NSInteger, AACThemeAlignment) {
 @property (nonatomic, strong) AACColor *backgroundNavigation;
 @property (nonatomic, strong) AACColor *backgroundBanner;
 @property (nonatomic, strong) AACColor *backgroundOptions;
+@property (nonatomic, strong) AACColor *backgroundUploadPlaceholder;
 
 - (AACColor *)textButton:(AACCardButtonType)buttonType;
 @property (nonatomic, strong) AACColor *textListTitle;
@@ -106,6 +110,8 @@ typedef NS_ENUM(NSInteger, AACThemeAlignment) {
 @property (nonatomic, strong) AACColor *textErrorOverlayAction;
 @property (nonatomic, strong) AACColor *textListEmptyState;
 @property (nonatomic, strong) AACColor *textFooterMessage;
+@property (nonatomic, strong) AACColor *textProcessingStateMessage;
+@property (nonatomic, strong) AACColor *textProcessingStateButtonLabel;
 
 - (AACColor *__nullable)iconButton:(AACCardButtonType)buttonType;
 @property (nonatomic, strong) AACColor *iconOptions;
@@ -130,6 +136,9 @@ typedef NS_ENUM(NSInteger, AACThemeAlignment) {
 @property (nonatomic, strong) AACColor *iconSelectionIndicatorActive;
 @property (nonatomic, strong, nullable) AACColor *iconCategory;
 @property (nonatomic, strong, nullable) AACColor *iconHeadline;
+@property (nonatomic, strong) AACColor *iconUploadPlaceholder;
+@property (nonatomic, strong) AACColor *iconProcessingStateSpinner;
+@property (nonatomic, strong) AACColor *iconInputButton;
 
 @property (nonatomic, strong) AACColor *shadowCard;
 @property (nonatomic, strong) AACColor *shadowNavigation;
@@ -137,7 +146,10 @@ typedef NS_ENUM(NSInteger, AACThemeAlignment) {
 @property (nonatomic, strong) AACColor *overlayMediaBanner;
 @property (nonatomic, strong) AACColor *overlaySheet;
 
+@property (nonatomic, strong) AACColor *checkboxChecker;
+
 #pragma mark - Typography
+// Note: IMPORTANT! Add new typography to `invalidateTypographyStylesForContentSizeCategory:`
 - (AACTypography *)typographyButton:(AACCardButtonType)buttonType;
 - (AACThemeAlignment)buttonTitleAlign:(AACCardButtonType)buttonType;
 
@@ -164,6 +176,8 @@ typedef NS_ENUM(NSInteger, AACThemeAlignment) {
 @property (nonatomic, strong) AACTypography *typographyErrorOverlayAction;
 @property (nonatomic, strong) AACTypography *typographyListEmptyState;
 @property (nonatomic, strong) AACTypography *typographyFooterMessage;
+@property (nonatomic, strong) AACTypography *typographyProcessingStateMessage;
+@property (nonatomic, strong) AACTypography *typographyProcessingStateButtonLabel;
 
 #pragma mark - Shape
 - (AACMeasurement *)borderRadiusButton:(AACCardButtonType)buttonType;
@@ -184,10 +198,15 @@ typedef NS_ENUM(NSInteger, AACThemeAlignment) {
 @property (nonatomic, strong) AACMeasurement *blurNavigationShadow;
 @property (nonatomic, strong) AACMeasurement *offsetNavigationShadow;
 
+- (AACMeasurement *)borderRadiusCheckbox:(BOOL)isChecked;
+
 @property (nonatomic, strong) AACMeasurement *borderRadiusCard;
 @property (nonatomic, strong) AACMeasurement *borderRadiusMedia;
+@property (nonatomic, strong) AACMeasurement *borderRadiusMediaThumb;
 @property (nonatomic, strong) AACMeasurement *borderRadiusSheet;
+@property (nonatomic, strong) AACMeasurement *borderRadiusUploadPlaceholder;
 
+- (AACMeasurement *)borderWidthCheckbox:(BOOL)isChecked;
 @property (nonatomic, strong) AACMeasurement *borderWidthCard;
 
 #pragma mark - Button shadow

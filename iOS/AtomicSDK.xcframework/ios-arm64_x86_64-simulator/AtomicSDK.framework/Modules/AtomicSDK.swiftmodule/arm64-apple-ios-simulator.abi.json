@@ -30,6 +30,16 @@
       },
       {
         "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "AtomicSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -1732,6 +1742,195 @@
       "value": "1"
     },
     {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Utilities\/AACImageUprighter.swift",
+      "kind": "FloatLiteral",
+      "offset": 230,
+      "length": 3,
+      "value": "1.0"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Utilities\/AACImageUprighter.swift",
+      "kind": "BooleanLiteral",
+      "offset": 625,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Utilities\/AACImageUprighter.swift",
+      "kind": "BooleanLiteral",
+      "offset": 653,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Utilities\/AACImageUprighter.swift",
+      "kind": "IntegerLiteral",
+      "offset": 899,
+      "length": 3,
+      "value": "100"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Utilities\/AACImageUprighter.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1037,
+      "length": 2,
+      "value": "10"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Utilities\/AACImageUprighter.swift",
+      "kind": "FloatLiteral",
+      "offset": 1207,
+      "length": 4,
+      "value": "0.01"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Utilities\/AACImageUprighter.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1249,
+      "length": 4,
+      "value": "1024"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Utilities\/AACImageUprighter.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1426,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Utilities\/AACImageUprighter.swift",
+      "kind": "FloatLiteral",
+      "offset": 1626,
+      "length": 3,
+      "value": "0.5"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Utilities\/AACImageUprighter.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1693,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Utilities\/AACImageUprighter.swift",
+      "kind": "FloatLiteral",
+      "offset": 1850,
+      "length": 4,
+      "value": "0.01"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Utilities\/AACImageUprighter.swift",
+      "kind": "FloatLiteral",
+      "offset": 1912,
+      "length": 4,
+      "value": "0.01"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Utilities\/AACImageUprighter.swift",
+      "kind": "FloatLiteral",
+      "offset": 2100,
+      "length": 3,
+      "value": "1.0"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Utilities\/AACImageUprighter.swift",
+      "kind": "FloatLiteral",
+      "offset": 2216,
+      "length": 3,
+      "value": "1.0"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Utilities\/AACImageUprighter.swift",
+      "kind": "FloatLiteral",
+      "offset": 2277,
+      "length": 4,
+      "value": "0.99"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Utilities\/AACImageUprighter.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3207,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Utilities\/AACImageUprighter.swift",
+      "kind": "FloatLiteral",
+      "offset": 3269,
+      "length": 3,
+      "value": "2.0"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Utilities\/AACImageUprighter.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3361,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Utilities\/AACImageUprighter.swift",
+      "kind": "FloatLiteral",
+      "offset": 3439,
+      "length": 4,
+      "value": "-2.0"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Utilities\/AACImageUprighter.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3780,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Utilities\/AACImageUprighter.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3829,
+      "length": 2,
+      "value": "-1"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Utilities\/AACImageUprighter.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3836,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Utilities\/AACImageUprighter.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3949,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Utilities\/AACImageUprighter.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3998,
+      "length": 2,
+      "value": "-1"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Utilities\/AACImageUprighter.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4005,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Utilities\/AACImageUprighter.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4505,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Utilities\/AACImageUprighter.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5346,
+      "length": 1,
+      "value": "1"
+    },
+    {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/LayerTree.Builder.swift",
       "kind": "Array",
       "offset": 1885,
@@ -2608,652 +2807,750 @@
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/XML.Formatter.SVG.swift",
+      "kind": "FloatLiteral",
+      "offset": 11700,
+      "length": 3,
+      "value": "1.0"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/XML.Formatter.SVG.swift",
       "kind": "StringLiteral",
-      "offset": 11696,
+      "offset": 11733,
       "length": 23,
       "value": "\"rgb(\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/XML.Formatter.SVG.swift",
       "kind": "StringLiteral",
-      "offset": 11705,
+      "offset": 11742,
       "length": 1,
       "value": "\", \""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/XML.Formatter.SVG.swift",
       "kind": "StringLiteral",
-      "offset": 11711,
+      "offset": 11748,
       "length": 1,
       "value": "\", \""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/XML.Formatter.SVG.swift",
       "kind": "StringLiteral",
-      "offset": 11717,
+      "offset": 11754,
       "length": 1,
       "value": "\")\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/XML.Formatter.SVG.swift",
       "kind": "StringLiteral",
-      "offset": 11797,
+      "offset": 11826,
+      "length": 6,
+      "value": "\"%.2f\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/XML.Formatter.SVG.swift",
+      "kind": "StringLiteral",
+      "offset": 11864,
+      "length": 31,
+      "value": "\"rgba(\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/XML.Formatter.SVG.swift",
+      "kind": "StringLiteral",
+      "offset": 11874,
+      "length": 1,
+      "value": "\", \""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/XML.Formatter.SVG.swift",
+      "kind": "StringLiteral",
+      "offset": 11880,
+      "length": 1,
+      "value": "\", \""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/XML.Formatter.SVG.swift",
+      "kind": "StringLiteral",
+      "offset": 11886,
+      "length": 1,
+      "value": "\", \""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/XML.Formatter.SVG.swift",
+      "kind": "StringLiteral",
+      "offset": 11893,
+      "length": 1,
+      "value": "\")\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/XML.Formatter.SVG.swift",
+      "kind": "StringLiteral",
+      "offset": 11994,
       "length": 6,
       "value": "\"%.0f\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/XML.Formatter.SVG.swift",
       "kind": "IntegerLiteral",
-      "offset": 11809,
+      "offset": 12006,
       "length": 3,
       "value": "100"
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/XML.Formatter.SVG.swift",
       "kind": "StringLiteral",
-      "offset": 11854,
+      "offset": 12051,
       "length": 6,
       "value": "\"%.0f\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/XML.Formatter.SVG.swift",
       "kind": "IntegerLiteral",
-      "offset": 11866,
+      "offset": 12063,
       "length": 3,
       "value": "100"
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/XML.Formatter.SVG.swift",
       "kind": "StringLiteral",
-      "offset": 11911,
+      "offset": 12108,
       "length": 6,
       "value": "\"%.0f\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/XML.Formatter.SVG.swift",
       "kind": "IntegerLiteral",
-      "offset": 11923,
+      "offset": 12120,
       "length": 3,
       "value": "100"
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/XML.Formatter.SVG.swift",
+      "kind": "FloatLiteral",
+      "offset": 12149,
+      "length": 3,
+      "value": "1.0"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/XML.Formatter.SVG.swift",
       "kind": "StringLiteral",
-      "offset": 11951,
+      "offset": 12182,
       "length": 29,
       "value": "\"rgb(\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/XML.Formatter.SVG.swift",
       "kind": "StringLiteral",
-      "offset": 11961,
+      "offset": 12192,
       "length": 1,
       "value": "\"%, \""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/XML.Formatter.SVG.swift",
       "kind": "StringLiteral",
-      "offset": 11969,
+      "offset": 12200,
       "length": 1,
       "value": "\"%, \""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/XML.Formatter.SVG.swift",
       "kind": "StringLiteral",
-      "offset": 11977,
+      "offset": 12208,
       "length": 1,
       "value": "\"%)\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/XML.Formatter.SVG.swift",
       "kind": "StringLiteral",
-      "offset": 12039,
+      "offset": 12281,
+      "length": 6,
+      "value": "\"%.2f\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/XML.Formatter.SVG.swift",
+      "kind": "StringLiteral",
+      "offset": 12319,
+      "length": 37,
+      "value": "\"rgba(\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/XML.Formatter.SVG.swift",
+      "kind": "StringLiteral",
+      "offset": 12330,
+      "length": 1,
+      "value": "\"%, \""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/XML.Formatter.SVG.swift",
+      "kind": "StringLiteral",
+      "offset": 12338,
+      "length": 1,
+      "value": "\"%, \""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/XML.Formatter.SVG.swift",
+      "kind": "StringLiteral",
+      "offset": 12346,
+      "length": 1,
+      "value": "\"%, \""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/XML.Formatter.SVG.swift",
+      "kind": "StringLiteral",
+      "offset": 12354,
+      "length": 1,
+      "value": "\")\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/XML.Formatter.SVG.swift",
+      "kind": "StringLiteral",
+      "offset": 12433,
       "length": 36,
       "value": "\"color(display-p3 \""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/XML.Formatter.SVG.swift",
       "kind": "StringLiteral",
-      "offset": 12061,
+      "offset": 12455,
       "length": 1,
       "value": "\", \""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/XML.Formatter.SVG.swift",
       "kind": "StringLiteral",
-      "offset": 12067,
+      "offset": 12461,
       "length": 1,
       "value": "\", \""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/XML.Formatter.SVG.swift",
       "kind": "StringLiteral",
-      "offset": 12073,
+      "offset": 12467,
       "length": 1,
       "value": "\")\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/XML.Formatter.SVG.swift",
       "kind": "StringLiteral",
-      "offset": 12152,
+      "offset": 12546,
       "length": 6,
       "value": "\"%02X\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/XML.Formatter.SVG.swift",
       "kind": "StringLiteral",
-      "offset": 12203,
+      "offset": 12597,
       "length": 6,
       "value": "\"%02X\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/XML.Formatter.SVG.swift",
       "kind": "StringLiteral",
-      "offset": 12254,
+      "offset": 12648,
       "length": 6,
       "value": "\"%02X\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/XML.Formatter.SVG.swift",
       "kind": "StringLiteral",
-      "offset": 12288,
+      "offset": 12682,
       "length": 18,
       "value": "\"#\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/XML.Formatter.SVG.swift",
       "kind": "StringLiteral",
-      "offset": 12295,
+      "offset": 12689,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/XML.Formatter.SVG.swift",
       "kind": "StringLiteral",
-      "offset": 12300,
+      "offset": 12694,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/XML.Formatter.SVG.swift",
       "kind": "StringLiteral",
-      "offset": 12305,
+      "offset": 12699,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/XML.Formatter.SVG.swift",
       "kind": "StringLiteral",
-      "offset": 12521,
+      "offset": 12915,
       "length": 42,
       "value": "\"matrix(\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/XML.Formatter.SVG.swift",
       "kind": "StringLiteral",
-      "offset": 12561,
+      "offset": 12955,
       "length": 1,
       "value": "\")\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/XML.Formatter.SVG.swift",
       "kind": "StringLiteral",
-      "offset": 12636,
+      "offset": 13030,
       "length": 39,
       "value": "\"translate(\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/XML.Formatter.SVG.swift",
       "kind": "StringLiteral",
-      "offset": 12674,
+      "offset": 13068,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/XML.Formatter.SVG.swift",
       "kind": "StringLiteral",
-      "offset": 12744,
+      "offset": 13138,
       "length": 35,
       "value": "\"scale(\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/XML.Formatter.SVG.swift",
       "kind": "StringLiteral",
-      "offset": 12778,
+      "offset": 13172,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/XML.Formatter.SVG.swift",
       "kind": "StringLiteral",
-      "offset": 12847,
+      "offset": 13241,
       "length": 35,
       "value": "\"rotate(\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/XML.Formatter.SVG.swift",
       "kind": "StringLiteral",
-      "offset": 12881,
+      "offset": 13275,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/XML.Formatter.SVG.swift",
       "kind": "StringLiteral",
-      "offset": 12971,
+      "offset": 13365,
       "length": 43,
       "value": "\"rotate(\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/XML.Formatter.SVG.swift",
       "kind": "StringLiteral",
-      "offset": 13013,
+      "offset": 13407,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/XML.Formatter.SVG.swift",
       "kind": "StringLiteral",
-      "offset": 13081,
+      "offset": 13475,
       "length": 34,
       "value": "\"skewX(\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/XML.Formatter.SVG.swift",
       "kind": "StringLiteral",
-      "offset": 13114,
+      "offset": 13508,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/XML.Formatter.SVG.swift",
       "kind": "StringLiteral",
-      "offset": 13182,
+      "offset": 13576,
       "length": 34,
       "value": "\"skewY(\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/XML.Formatter.SVG.swift",
       "kind": "StringLiteral",
-      "offset": 13215,
+      "offset": 13609,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/XML.Formatter.SVG.swift",
       "kind": "StringLiteral",
-      "offset": 13413,
+      "offset": 13807,
       "length": 3,
       "value": "\" \""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/XML.Formatter.SVG.swift",
       "kind": "StringLiteral",
-      "offset": 13749,
+      "offset": 14143,
       "length": 25,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/XML.Formatter.SVG.swift",
       "kind": "StringLiteral",
-      "offset": 13765,
+      "offset": 14159,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/XML.Formatter.SVG.swift",
       "kind": "StringLiteral",
-      "offset": 13773,
+      "offset": 14167,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/XML.Formatter.SVG.swift",
       "kind": "StringLiteral",
-      "offset": 13998,
+      "offset": 14392,
       "length": 25,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/XML.Formatter.SVG.swift",
       "kind": "StringLiteral",
-      "offset": 14014,
+      "offset": 14408,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/XML.Formatter.SVG.swift",
       "kind": "StringLiteral",
-      "offset": 14022,
+      "offset": 14416,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/XML.Formatter.SVG.swift",
       "kind": "StringLiteral",
-      "offset": 14248,
+      "offset": 14642,
       "length": 21,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/XML.Formatter.SVG.swift",
       "kind": "StringLiteral",
-      "offset": 14264,
+      "offset": 14658,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/XML.Formatter.SVG.swift",
       "kind": "StringLiteral",
-      "offset": 14268,
+      "offset": 14662,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/XML.Formatter.SVG.swift",
       "kind": "StringLiteral",
-      "offset": 14488,
+      "offset": 14882,
       "length": 21,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/XML.Formatter.SVG.swift",
       "kind": "StringLiteral",
-      "offset": 14504,
+      "offset": 14898,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/XML.Formatter.SVG.swift",
       "kind": "StringLiteral",
-      "offset": 14508,
+      "offset": 14902,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/XML.Formatter.SVG.swift",
       "kind": "StringLiteral",
-      "offset": 14896,
+      "offset": 15290,
       "length": 49,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/XML.Formatter.SVG.swift",
       "kind": "StringLiteral",
-      "offset": 14912,
+      "offset": 15306,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/XML.Formatter.SVG.swift",
       "kind": "StringLiteral",
-      "offset": 14923,
+      "offset": 15317,
       "length": 1,
       "value": "\" \""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/XML.Formatter.SVG.swift",
       "kind": "StringLiteral",
-      "offset": 14935,
+      "offset": 15329,
       "length": 1,
       "value": "\" \""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/XML.Formatter.SVG.swift",
       "kind": "StringLiteral",
-      "offset": 14944,
+      "offset": 15338,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/XML.Formatter.SVG.swift",
       "kind": "StringLiteral",
-      "offset": 15269,
+      "offset": 15663,
       "length": 36,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/XML.Formatter.SVG.swift",
       "kind": "StringLiteral",
-      "offset": 15285,
+      "offset": 15679,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/XML.Formatter.SVG.swift",
       "kind": "StringLiteral",
-      "offset": 15295,
+      "offset": 15689,
       "length": 1,
       "value": "\" \""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/XML.Formatter.SVG.swift",
       "kind": "StringLiteral",
-      "offset": 15304,
+      "offset": 15698,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/XML.Formatter.SVG.swift",
       "kind": "StringLiteral",
-      "offset": 15623,
+      "offset": 16017,
       "length": 36,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/XML.Formatter.SVG.swift",
       "kind": "StringLiteral",
-      "offset": 15639,
+      "offset": 16033,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/XML.Formatter.SVG.swift",
       "kind": "StringLiteral",
-      "offset": 15649,
+      "offset": 16043,
       "length": 1,
       "value": "\" \""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/XML.Formatter.SVG.swift",
       "kind": "StringLiteral",
-      "offset": 15658,
+      "offset": 16052,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/XML.Formatter.SVG.swift",
       "kind": "StringLiteral",
-      "offset": 15916,
+      "offset": 16310,
       "length": 25,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/XML.Formatter.SVG.swift",
       "kind": "StringLiteral",
-      "offset": 15932,
+      "offset": 16326,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/XML.Formatter.SVG.swift",
       "kind": "StringLiteral",
-      "offset": 15940,
+      "offset": 16334,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/XML.Formatter.SVG.swift",
       "kind": "StringLiteral",
-      "offset": 16449,
+      "offset": 16843,
       "length": 58,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/XML.Formatter.SVG.swift",
       "kind": "StringLiteral",
-      "offset": 16465,
+      "offset": 16859,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/XML.Formatter.SVG.swift",
       "kind": "StringLiteral",
-      "offset": 16469,
+      "offset": 16863,
       "length": 1,
       "value": "\" \""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/XML.Formatter.SVG.swift",
       "kind": "StringLiteral",
-      "offset": 16479,
+      "offset": 16873,
       "length": 1,
       "value": "\" \""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/XML.Formatter.SVG.swift",
       "kind": "StringLiteral",
-      "offset": 16488,
+      "offset": 16882,
       "length": 1,
       "value": "\" \""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/XML.Formatter.SVG.swift",
       "kind": "StringLiteral",
-      "offset": 16497,
+      "offset": 16891,
       "length": 1,
       "value": "\" \""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/XML.Formatter.SVG.swift",
       "kind": "StringLiteral",
-      "offset": 16506,
+      "offset": 16900,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/XML.Formatter.SVG.swift",
       "kind": "StringLiteral",
-      "offset": 16605,
+      "offset": 16999,
       "length": 17,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/XML.Formatter.SVG.swift",
       "kind": "StringLiteral",
-      "offset": 16621,
+      "offset": 17015,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/XML.Formatter.SVG.swift",
       "kind": "StringLiteral",
-      "offset": 16852,
+      "offset": 17246,
       "length": 18,
       "value": "\"SFSymbolsPreview\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/XML.Formatter.SVG.swift",
       "kind": "StringLiteral",
-      "offset": 16946,
+      "offset": 17340,
       "length": 18,
       "value": "\"SFSymbolsPreview\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/XML.Formatter.SVG.swift",
       "kind": "StringLiteral",
-      "offset": 17333,
+      "offset": 17727,
       "length": 22,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/XML.Formatter.SVG.swift",
       "kind": "StringLiteral",
-      "offset": 17341,
+      "offset": 17735,
       "length": 1,
       "value": "\" { \""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/XML.Formatter.SVG.swift",
       "kind": "StringLiteral",
-      "offset": 17352,
+      "offset": 17746,
       "length": 1,
       "value": "\" }\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/XML.Formatter.SVG.swift",
       "kind": "StringLiteral",
-      "offset": 17532,
+      "offset": 17926,
       "length": 10,
       "value": "\".\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/XML.Formatter.SVG.swift",
       "kind": "StringLiteral",
-      "offset": 17541,
+      "offset": 17935,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/XML.Formatter.SVG.swift",
       "kind": "StringLiteral",
-      "offset": 17663,
+      "offset": 18057,
       "length": 10,
       "value": "\"#\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/XML.Formatter.SVG.swift",
       "kind": "StringLiteral",
-      "offset": 17672,
+      "offset": 18066,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/XML.Formatter.SVG.swift",
       "kind": "IntegerLiteral",
-      "offset": 17767,
+      "offset": 18161,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/XML.Formatter.SVG.swift",
       "kind": "StringLiteral",
-      "offset": 17818,
+      "offset": 18212,
       "length": 3,
       "value": "\" \""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/XML.Formatter.SVG.swift",
       "kind": "StringLiteral",
-      "offset": 17877,
+      "offset": 18271,
       "length": 4,
       "value": "\"\n\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/XML.Formatter.SVG.swift",
       "kind": "StringLiteral",
-      "offset": 17900,
+      "offset": 18294,
       "length": 13,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/XML.Formatter.SVG.swift",
       "kind": "StringLiteral",
-      "offset": 17907,
+      "offset": 18301,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/XML.Formatter.SVG.swift",
       "kind": "StringLiteral",
-      "offset": 17912,
+      "offset": 18306,
       "length": 3,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/XML.Formatter.SVG.swift",
       "kind": "StringLiteral",
-      "offset": 17945,
+      "offset": 18339,
       "length": 4,
       "value": "\"\n\""
     },
@@ -3442,28 +3739,28 @@
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/LayerTree.Image.swift",
       "kind": "IntegerLiteral",
-      "offset": 1345,
+      "offset": 1613,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/LayerTree.Image.swift",
       "kind": "StringLiteral",
-      "offset": 1409,
+      "offset": 1683,
       "length": 11,
       "value": "\"image\/png\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/LayerTree.Image.swift",
       "kind": "StringLiteral",
-      "offset": 1465,
+      "offset": 1754,
       "length": 12,
       "value": "\"image\/jpeg\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/LayerTree.Image.swift",
       "kind": "StringLiteral",
-      "offset": 1523,
+      "offset": 1827,
       "length": 11,
       "value": "\"image\/jpg\""
     },
@@ -3764,30 +4061,30 @@
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Parser.XML.Image.swift",
       "kind": "StringLiteral",
-      "offset": 1331,
-      "length": 7,
-      "value": "\"width\""
-    },
-    {
-      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Parser.XML.Image.swift",
-      "kind": "StringLiteral",
-      "offset": 1397,
-      "length": 8,
-      "value": "\"height\""
-    },
-    {
-      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Parser.XML.Image.swift",
-      "kind": "StringLiteral",
-      "offset": 1514,
+      "offset": 1352,
       "length": 3,
       "value": "\"x\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Parser.XML.Image.swift",
       "kind": "StringLiteral",
-      "offset": 1555,
+      "offset": 1395,
       "length": 3,
       "value": "\"y\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Parser.XML.Image.swift",
+      "kind": "StringLiteral",
+      "offset": 1442,
+      "length": 7,
+      "value": "\"width\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Parser.XML.Image.swift",
+      "kind": "StringLiteral",
+      "offset": 1494,
+      "length": 8,
+      "value": "\"height\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/XML.Formatter.swift",
@@ -4456,1240 +4753,1254 @@
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.CGText.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6785,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.CGText.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6804,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.CGText.swift",
       "kind": "Array",
-      "offset": 7516,
+      "offset": 7635,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.CGText.swift",
       "kind": "Dictionary",
-      "offset": 7560,
+      "offset": 7679,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.CGText.swift",
       "kind": "Dictionary",
-      "offset": 7604,
+      "offset": 7723,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.CGText.swift",
       "kind": "Dictionary",
-      "offset": 7653,
+      "offset": 7772,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.CGText.swift",
       "kind": "Dictionary",
-      "offset": 7713,
+      "offset": 7832,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.CGText.swift",
       "kind": "Dictionary",
-      "offset": 7760,
+      "offset": 7879,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.CGText.swift",
       "kind": "StringLiteral",
-      "offset": 7898,
+      "offset": 8017,
       "length": 34,
       "value": "\"CGColorSpaceCreateExtendedGray()\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.CGText.swift",
       "kind": "StringLiteral",
-      "offset": 7988,
+      "offset": 8107,
       "length": 31,
       "value": "\"CGColorSpaceCreateDeviceRGB()\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.CGText.swift",
       "kind": "StringLiteral",
-      "offset": 8075,
+      "offset": 8194,
       "length": 31,
       "value": "\"CGColorSpaceCreateDisplayP3()\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.CGText.swift",
       "kind": "StringLiteral",
-      "offset": 8316,
+      "offset": 8435,
       "length": 21,
       "value": "\"not a support color\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.CGText.swift",
       "kind": "StringLiteral",
-      "offset": 8540,
+      "offset": 8659,
       "length": 59,
       "value": "\"let gray = CGColorSpace(name: CGColorSpace.extendedGray)!\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.CGText.swift",
       "kind": "StringLiteral",
-      "offset": 8673,
+      "offset": 8792,
       "length": 41,
       "value": "\"let rgb = CGColorSpaceCreateDeviceRGB()\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.CGText.swift",
       "kind": "StringLiteral",
-      "offset": 8786,
+      "offset": 8905,
       "length": 54,
       "value": "\"let p3 = CGColorSpace(name: CGColorSpace.displayP3)!\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.CGText.swift",
       "kind": "StringLiteral",
-      "offset": 9071,
+      "offset": 9190,
       "length": 34,
       "value": "\"CGColorSpaceCreateExtendedGray()\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.CGText.swift",
       "kind": "StringLiteral",
-      "offset": 9113,
+      "offset": 9232,
       "length": 6,
       "value": "\"gray\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.CGText.swift",
       "kind": "StringLiteral",
-      "offset": 9180,
+      "offset": 9299,
       "length": 31,
       "value": "\"CGColorSpaceCreateDeviceRGB()\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.CGText.swift",
       "kind": "StringLiteral",
-      "offset": 9219,
+      "offset": 9338,
       "length": 5,
       "value": "\"rgb\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.CGText.swift",
       "kind": "StringLiteral",
-      "offset": 9284,
+      "offset": 9403,
       "length": 31,
       "value": "\"CGColorSpaceCreateDisplayP3()\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.CGText.swift",
       "kind": "StringLiteral",
-      "offset": 9323,
+      "offset": 9442,
       "length": 4,
       "value": "\"p3\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.CGText.swift",
       "kind": "StringLiteral",
-      "offset": 9520,
+      "offset": 9639,
       "length": 26,
       "value": "\"color\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.CGText.swift",
       "kind": "IntegerLiteral",
-      "offset": 9543,
+      "offset": 9662,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.CGText.swift",
       "kind": "StringLiteral",
-      "offset": 9545,
+      "offset": 9664,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.CGText.swift",
       "kind": "StringLiteral",
-      "offset": 9595,
+      "offset": 9714,
       "length": 30,
       "value": "\"let \""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.CGText.swift",
       "kind": "StringLiteral",
-      "offset": 9613,
+      "offset": 9732,
       "length": 1,
       "value": "\" = \""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.CGText.swift",
       "kind": "StringLiteral",
-      "offset": 9624,
+      "offset": 9743,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.CGText.swift",
       "kind": "IntegerLiteral",
-      "offset": 9771,
+      "offset": 9890,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.CGText.swift",
       "kind": "StringLiteral",
-      "offset": 9839,
+      "offset": 9958,
       "length": 79,
       "value": "\"CGColor(colorSpace: CGColorSpaceCreateDeviceRGB(), components: [0, 0, 0, 0])!\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.CGText.swift",
       "kind": "StringLiteral",
-      "offset": 10051,
+      "offset": 10170,
       "length": 77,
       "value": "\"CGColor(colorSpace: CGColorSpaceCreateDeviceRGB(), components: [\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.CGText.swift",
       "kind": "StringLiteral",
-      "offset": 10124,
+      "offset": 10243,
       "length": 1,
       "value": "\"])!\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.CGText.swift",
       "kind": "StringLiteral",
-      "offset": 10259,
+      "offset": 10378,
       "length": 77,
       "value": "\"CGColor(colorSpace: CGColorSpaceCreateDisplayP3(), components: [\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.CGText.swift",
       "kind": "StringLiteral",
-      "offset": 10332,
+      "offset": 10451,
       "length": 1,
       "value": "\"])!\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.CGText.swift",
       "kind": "StringLiteral",
-      "offset": 10464,
+      "offset": 10583,
       "length": 80,
       "value": "\"CGColor(colorSpace: CGColorSpaceCreateExtendedGray(), components: [\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.CGText.swift",
       "kind": "StringLiteral",
-      "offset": 10540,
+      "offset": 10659,
       "length": 1,
       "value": "\"])!\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.CGText.swift",
       "kind": "StringLiteral",
-      "offset": 10726,
+      "offset": 10845,
       "length": 6,
       "value": "\"path\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.CGText.swift",
       "kind": "StringLiteral",
-      "offset": 10837,
+      "offset": 10956,
       "length": 7,
       "value": "\"path1\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.CGText.swift",
       "kind": "StringLiteral",
-      "offset": 10888,
+      "offset": 11007,
       "length": 4,
       "value": "\"\n\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.CGText.swift",
       "kind": "StringLiteral",
-      "offset": 11177,
+      "offset": 11296,
       "length": 11,
       "value": "\"transform\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.CGText.swift",
       "kind": "StringLiteral",
-      "offset": 11313,
+      "offset": 11432,
       "length": 12,
       "value": "\"transform1\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.CGText.swift",
       "kind": "StringLiteral",
-      "offset": 11369,
+      "offset": 11488,
       "length": 4,
       "value": "\"\n\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.CGText.swift",
       "kind": "StringLiteral",
-      "offset": 11908,
+      "offset": 12027,
       "length": 10,
       "value": "\"gradient\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.CGText.swift",
       "kind": "StringLiteral",
-      "offset": 12078,
+      "offset": 12197,
       "length": 4,
       "value": "\", \""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.CGText.swift",
       "kind": "StringLiteral",
-      "offset": 12178,
+      "offset": 12297,
       "length": 4,
       "value": "\", \""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.CGText.swift",
       "kind": "StringLiteral",
-      "offset": 12279,
+      "offset": 12398,
       "length": 11,
       "value": "\"locations\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.CGText.swift",
       "kind": "StringLiteral",
-      "offset": 12326,
+      "offset": 12445,
       "length": 232,
       "value": "\"var \""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.CGText.swift",
       "kind": "StringLiteral",
-      "offset": 12360,
+      "offset": 12479,
       "length": 1,
       "value": "\": [CGFloat] = [\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.CGText.swift",
       "kind": "StringLiteral",
-      "offset": 12387,
+      "offset": 12506,
       "length": 1,
       "value": "\"]\nlet \""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.CGText.swift",
       "kind": "StringLiteral",
-      "offset": 12410,
+      "offset": 12529,
       "length": 1,
       "value": "\" = CGGradient(\n  colorsSpace: \""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.CGText.swift",
       "kind": "StringLiteral",
-      "offset": 12461,
+      "offset": 12580,
       "length": 1,
       "value": "\",\n  colors: [\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.CGText.swift",
       "kind": "StringLiteral",
-      "offset": 12489,
+      "offset": 12608,
       "length": 1,
       "value": "\"] as CFArray,\n  locations: &\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.CGText.swift",
       "kind": "StringLiteral",
-      "offset": 12543,
+      "offset": 12662,
       "length": 1,
       "value": "\"\n)!\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.CGText.swift",
       "kind": "StringLiteral",
-      "offset": 12576,
+      "offset": 12695,
       "length": 4,
       "value": "\"\n\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.CGText.swift",
       "kind": "StringLiteral",
-      "offset": 12844,
+      "offset": 12963,
       "length": 9,
       "value": "\"pattern\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.CGText.swift",
       "kind": "StringLiteral",
-      "offset": 12889,
+      "offset": 13008,
       "length": 13,
       "value": "\"patternDraw\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.CGText.swift",
       "kind": "StringLiteral",
-      "offset": 12942,
+      "offset": 13061,
       "length": 17,
       "value": "\"patternCallback\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.CGText.swift",
       "kind": "StringLiteral",
-      "offset": 13076,
+      "offset": 13195,
       "length": 10,
       "value": "\"pattern1\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.CGText.swift",
       "kind": "StringLiteral",
-      "offset": 13138,
+      "offset": 13257,
       "length": 14,
       "value": "\"patternDraw1\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.CGText.swift",
       "kind": "StringLiteral",
-      "offset": 13198,
+      "offset": 13317,
       "length": 18,
       "value": "\"patternCallback1\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.CGText.swift",
       "kind": "StringLiteral",
-      "offset": 13258,
+      "offset": 13377,
       "length": 4,
       "value": "\"\n\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.CGText.swift",
       "kind": "StringLiteral",
-      "offset": 13395,
+      "offset": 13514,
       "length": 18,
       "value": "\"ctx.saveGState()\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.CGText.swift",
       "kind": "StringLiteral",
-      "offset": 13457,
+      "offset": 13576,
       "length": 21,
       "value": "\"ctx.restoreGState()\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.CGText.swift",
       "kind": "StringLiteral",
-      "offset": 13537,
+      "offset": 13656,
       "length": 48,
       "value": "\"ctx.beginTransparencyLayer(auxiliaryInfo: nil)\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.CGText.swift",
       "kind": "StringLiteral",
-      "offset": 13643,
+      "offset": 13762,
       "length": 28,
       "value": "\"ctx.endTransparencyLayer()\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.CGText.swift",
       "kind": "StringLiteral",
-      "offset": 13790,
+      "offset": 13909,
       "length": 32,
       "value": "\"ctx.concatenate(\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.CGText.swift",
       "kind": "StringLiteral",
-      "offset": 13820,
+      "offset": 13939,
       "length": 1,
       "value": "\")\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.CGText.swift",
       "kind": "StringLiteral",
-      "offset": 13907,
+      "offset": 14026,
       "length": 73,
       "value": "\"ctx.translateBy(x: \""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.CGText.swift",
       "kind": "StringLiteral",
-      "offset": 13950,
+      "offset": 14069,
       "length": 1,
       "value": "\", y: \""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.CGText.swift",
       "kind": "StringLiteral",
-      "offset": 13978,
+      "offset": 14097,
       "length": 1,
       "value": "\")\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.CGText.swift",
       "kind": "StringLiteral",
-      "offset": 14044,
+      "offset": 14163,
       "length": 44,
       "value": "\"ctx.rotate(by: \""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.CGText.swift",
       "kind": "StringLiteral",
-      "offset": 14086,
+      "offset": 14205,
       "length": 1,
       "value": "\")\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.CGText.swift",
       "kind": "StringLiteral",
-      "offset": 14171,
+      "offset": 14290,
       "length": 69,
       "value": "\"ctx.scaleBy(x: \""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.CGText.swift",
       "kind": "StringLiteral",
-      "offset": 14210,
+      "offset": 14329,
       "length": 1,
       "value": "\", y: \""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.CGText.swift",
       "kind": "StringLiteral",
-      "offset": 14238,
+      "offset": 14357,
       "length": 1,
       "value": "\")\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.CGText.swift",
       "kind": "StringLiteral",
-      "offset": 14343,
+      "offset": 14462,
       "length": 33,
       "value": "\"ctx.setFillColor(\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.CGText.swift",
       "kind": "StringLiteral",
-      "offset": 14374,
+      "offset": 14493,
       "length": 1,
       "value": "\")\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.CGText.swift",
       "kind": "StringLiteral",
-      "offset": 14520,
+      "offset": 14639,
       "length": 9,
       "value": "\"pattern\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.CGText.swift",
       "kind": "StringLiteral",
-      "offset": 14537,
+      "offset": 14656,
       "length": 14,
       "value": "\"patternAlpha\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.CGText.swift",
       "kind": "StringLiteral",
-      "offset": 14570,
+      "offset": 14689,
       "length": 61,
       "value": "\"ctx.setFillColorSpace(CGColorSpace(patternBaseSpace: nil)!)\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.CGText.swift",
       "kind": "StringLiteral",
-      "offset": 14650,
+      "offset": 14769,
       "length": 30,
       "value": "\"var \""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.CGText.swift",
       "kind": "StringLiteral",
-      "offset": 14663,
+      "offset": 14782,
       "length": 1,
       "value": "\" : CGFloat = 1.0\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.CGText.swift",
       "kind": "StringLiteral",
-      "offset": 14699,
+      "offset": 14818,
       "length": 63,
       "value": "\"ctx.setFillPattern(\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.CGText.swift",
       "kind": "StringLiteral",
-      "offset": 14732,
+      "offset": 14851,
       "length": 1,
       "value": "\", colorComponents: &\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.CGText.swift",
       "kind": "StringLiteral",
-      "offset": 14760,
+      "offset": 14879,
       "length": 1,
       "value": "\")\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.CGText.swift",
       "kind": "StringLiteral",
-      "offset": 14865,
+      "offset": 14984,
       "length": 35,
       "value": "\"ctx.setStrokeColor(\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.CGText.swift",
       "kind": "StringLiteral",
-      "offset": 14898,
+      "offset": 15017,
       "length": 1,
       "value": "\")\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.CGText.swift",
       "kind": "StringLiteral",
-      "offset": 14967,
+      "offset": 15086,
       "length": 46,
       "value": "\"ctx.setLineWidth(\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.CGText.swift",
       "kind": "StringLiteral",
-      "offset": 15011,
+      "offset": 15130,
       "length": 1,
       "value": "\")\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.CGText.swift",
       "kind": "StringLiteral",
-      "offset": 15069,
+      "offset": 15188,
       "length": 24,
       "value": "\"ctx.setLineCap(\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.CGText.swift",
       "kind": "StringLiteral",
-      "offset": 15091,
+      "offset": 15210,
       "length": 1,
       "value": "\")\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.CGText.swift",
       "kind": "StringLiteral",
-      "offset": 15150,
+      "offset": 15269,
       "length": 26,
       "value": "\"ctx.setLineJoin(\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.CGText.swift",
       "kind": "StringLiteral",
-      "offset": 15174,
+      "offset": 15293,
       "length": 1,
       "value": "\")\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.CGText.swift",
       "kind": "StringLiteral",
-      "offset": 15248,
+      "offset": 15367,
       "length": 52,
       "value": "\"ctx.setMiterLimit(\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.CGText.swift",
       "kind": "StringLiteral",
-      "offset": 15298,
+      "offset": 15417,
       "length": 1,
       "value": "\")\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.CGText.swift",
       "kind": "StringLiteral",
-      "offset": 15423,
+      "offset": 15542,
       "length": 28,
       "value": "\"ctx.addPath(\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.CGText.swift",
       "kind": "StringLiteral",
-      "offset": 15449,
+      "offset": 15568,
       "length": 1,
       "value": "\")\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.CGText.swift",
       "kind": "StringLiteral",
-      "offset": 15468,
+      "offset": 15587,
       "length": 10,
       "value": "\".winding\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.CGText.swift",
       "kind": "StringLiteral",
-      "offset": 15500,
+      "offset": 15619,
       "length": 12,
       "value": "\"ctx.clip()\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.CGText.swift",
       "kind": "StringLiteral",
-      "offset": 15546,
+      "offset": 15665,
       "length": 26,
       "value": "\"ctx.clip(using: \""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.CGText.swift",
       "kind": "StringLiteral",
-      "offset": 15570,
+      "offset": 15689,
       "length": 1,
       "value": "\")\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.CGText.swift",
       "kind": "StringLiteral",
-      "offset": 15647,
+      "offset": 15766,
       "length": 39,
       "value": "\"ctx.clip(to: \""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.CGText.swift",
       "kind": "StringLiteral",
-      "offset": 15669,
+      "offset": 15788,
       "length": 1,
       "value": "\", mask: \""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.CGText.swift",
       "kind": "StringLiteral",
-      "offset": 15684,
+      "offset": 15803,
       "length": 1,
       "value": "\")\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.CGText.swift",
       "kind": "StringLiteral",
-      "offset": 15756,
+      "offset": 15875,
       "length": 42,
       "value": "\"ctx.setAlpha(\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.CGText.swift",
       "kind": "StringLiteral",
-      "offset": 15796,
+      "offset": 15915,
       "length": 1,
       "value": "\")\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.CGText.swift",
       "kind": "StringLiteral",
-      "offset": 15856,
+      "offset": 15975,
       "length": 27,
       "value": "\"ctx.setBlendMode(\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.CGText.swift",
       "kind": "StringLiteral",
-      "offset": 15881,
+      "offset": 16000,
       "length": 1,
       "value": "\")\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.CGText.swift",
       "kind": "StringLiteral",
-      "offset": 15997,
+      "offset": 16116,
       "length": 22,
       "value": "\"ctx.stroke(\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.CGText.swift",
       "kind": "StringLiteral",
-      "offset": 16017,
+      "offset": 16136,
       "length": 1,
       "value": "\")\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.CGText.swift",
       "kind": "StringLiteral",
-      "offset": 16097,
+      "offset": 16216,
       "length": 33,
       "value": "\"ctx.strokeEllipse(in: \""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.CGText.swift",
       "kind": "StringLiteral",
-      "offset": 16128,
+      "offset": 16247,
       "length": 1,
       "value": "\")\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.CGText.swift",
       "kind": "StringLiteral",
-      "offset": 16209,
+      "offset": 16328,
       "length": 28,
       "value": "\"ctx.addPath(\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.CGText.swift",
       "kind": "StringLiteral",
-      "offset": 16235,
+      "offset": 16354,
       "length": 1,
       "value": "\")\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.CGText.swift",
       "kind": "StringLiteral",
-      "offset": 16258,
+      "offset": 16377,
       "length": 18,
       "value": "\"ctx.strokePath()\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.CGText.swift",
       "kind": "StringLiteral",
-      "offset": 16405,
+      "offset": 16524,
       "length": 28,
       "value": "\"ctx.addPath(\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.CGText.swift",
       "kind": "StringLiteral",
-      "offset": 16431,
+      "offset": 16550,
       "length": 1,
       "value": "\")\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.CGText.swift",
       "kind": "StringLiteral",
-      "offset": 16454,
+      "offset": 16573,
       "length": 34,
       "value": "\"ctx.replacePathWithStrokedPath()\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.CGText.swift",
       "kind": "StringLiteral",
-      "offset": 16509,
+      "offset": 16628,
       "length": 12,
       "value": "\"ctx.clip()\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.CGText.swift",
       "kind": "StringLiteral",
-      "offset": 16647,
+      "offset": 16766,
       "length": 20,
       "value": "\"ctx.fill(\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.CGText.swift",
       "kind": "StringLiteral",
-      "offset": 16665,
+      "offset": 16784,
       "length": 1,
       "value": "\")\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.CGText.swift",
       "kind": "StringLiteral",
-      "offset": 16745,
+      "offset": 16864,
       "length": 31,
       "value": "\"ctx.fillEllipse(in: \""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.CGText.swift",
       "kind": "StringLiteral",
-      "offset": 16774,
+      "offset": 16893,
       "length": 1,
       "value": "\")\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.CGText.swift",
       "kind": "StringLiteral",
-      "offset": 16855,
+      "offset": 16974,
       "length": 28,
       "value": "\"ctx.addPath(\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.CGText.swift",
       "kind": "StringLiteral",
-      "offset": 16881,
+      "offset": 17000,
       "length": 1,
       "value": "\")\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.CGText.swift",
       "kind": "StringLiteral",
-      "offset": 16902,
+      "offset": 17021,
       "length": 10,
       "value": "\".winding\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.CGText.swift",
       "kind": "StringLiteral",
-      "offset": 16936,
+      "offset": 17055,
       "length": 16,
       "value": "\"ctx.fillPath()\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.CGText.swift",
       "kind": "StringLiteral",
-      "offset": 16990,
+      "offset": 17109,
       "length": 30,
       "value": "\"ctx.fillPath(using: \""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.CGText.swift",
       "kind": "StringLiteral",
-      "offset": 17018,
+      "offset": 17137,
       "length": 1,
       "value": "\")\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.CGText.swift",
       "kind": "StringLiteral",
-      "offset": 17098,
+      "offset": 17234,
       "length": 18,
       "value": "\"ctx.saveGState()\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.CGText.swift",
       "kind": "StringLiteral",
-      "offset": 17135,
+      "offset": 17271,
       "length": 40,
       "value": "\"ctx.translateBy(x: 0, y: image.height)\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.CGText.swift",
       "kind": "StringLiteral",
-      "offset": 17194,
+      "offset": 17330,
       "length": 26,
       "value": "\"ctx.scaleBy(x: 1, y: -1)\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.CGText.swift",
       "kind": "StringLiteral",
-      "offset": 17239,
+      "offset": 17375,
       "length": 82,
       "value": "\"ctx.draw(image, in: CGRect(x: 0, y: 0, width: image.width, height: image.height)\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.CGText.swift",
       "kind": "StringLiteral",
-      "offset": 17340,
+      "offset": 17476,
       "length": 21,
       "value": "\"ctx.restoreGState()\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.CGText.swift",
       "kind": "StringLiteral",
-      "offset": 17523,
+      "offset": 17659,
       "length": 226,
       "value": "\"ctx.drawLinearGradient(\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.CGText.swift",
       "kind": "StringLiteral",
-      "offset": 17567,
+      "offset": 17703,
       "length": 1,
       "value": "\",\n                       start: \""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.CGText.swift",
       "kind": "StringLiteral",
-      "offset": 17611,
+      "offset": 17747,
       "length": 1,
       "value": "\",\n                       end: \""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.CGText.swift",
       "kind": "StringLiteral",
-      "offset": 17651,
+      "offset": 17787,
       "length": 1,
       "value": "\",\n                       options: [.drawsAfterEndLocation, .drawsBeforeStartLocation])\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.CGText.swift",
       "kind": "StringLiteral",
-      "offset": 17973,
+      "offset": 18109,
       "length": 394,
       "value": "\"ctx.drawRadialGradient(\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.CGText.swift",
       "kind": "StringLiteral",
-      "offset": 18017,
+      "offset": 18153,
       "length": 1,
       "value": "\",\n                       startCenter: \""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.CGText.swift",
       "kind": "StringLiteral",
-      "offset": 18073,
+      "offset": 18209,
       "length": 1,
       "value": "\",\n                       startRadius: \""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.CGText.swift",
       "kind": "StringLiteral",
-      "offset": 18147,
+      "offset": 18283,
       "length": 1,
       "value": "\",\n                       endCenter: \""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.CGText.swift",
       "kind": "StringLiteral",
-      "offset": 18199,
+      "offset": 18335,
       "length": 1,
       "value": "\",\n                       endRadius: \""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.CGText.swift",
       "kind": "StringLiteral",
-      "offset": 18269,
+      "offset": 18405,
       "length": 1,
       "value": "\",\n                       options: [.drawsAfterEndLocation, .drawsBeforeStartLocation])\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.CGText.swift",
       "kind": "StringLiteral",
-      "offset": 18409,
+      "offset": 18545,
       "length": 603,
       "value": "\"import CoreGraphics\nimport UIKit\n\nextension UIImage {\n  static func svg\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.CGText.swift",
       "kind": "StringLiteral",
-      "offset": 18507,
+      "offset": 18643,
       "length": 1,
       "value": "\"(size: CGSize = CGSize(width: \""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.CGText.swift",
       "kind": "StringLiteral",
-      "offset": 18550,
+      "offset": 18686,
       "length": 1,
       "value": "\", height: \""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.CGText.swift",
       "kind": "StringLiteral",
-      "offset": 18574,
+      "offset": 18710,
       "length": 1,
       "value": "\")) -> UIImage {\n    let f = UIGraphicsImageRendererFormat.preferred()\n    f.opaque = false\n    let scale = CGSize(width: size.width \/ \""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.CGText.swift",
       "kind": "StringLiteral",
-      "offset": 18740,
+      "offset": 18876,
       "length": 1,
       "value": "\", height: size.height \/ \""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.CGText.swift",
       "kind": "StringLiteral",
-      "offset": 18785,
+      "offset": 18921,
       "length": 1,
       "value": "\")\n    return UIGraphicsImageRenderer(size: size, format: f).image {\n      draw\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.CGText.swift",
       "kind": "StringLiteral",
-      "offset": 18878,
+      "offset": 19014,
       "length": 1,
       "value": "\"(in: $0.cgContext, scale: scale)\n    }\n  }\n\n  private static func draw\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.CGText.swift",
       "kind": "StringLiteral",
-      "offset": 18967,
+      "offset": 19103,
       "length": 1,
       "value": "\"(in ctx: CGContext, scale: CGSize) {\n\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.CGText.swift",
       "kind": "StringLiteral",
-      "offset": 19054,
+      "offset": 19190,
       "length": 610,
       "value": "\"import Cocoa\nimport CoreGraphics\n\n\nextension NSImage {\n  static func svgKey(size: NSSize = NSSize(width: \""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.CGText.swift",
       "kind": "StringLiteral",
-      "offset": 19196,
+      "offset": 19332,
       "length": 1,
       "value": "\", height: \""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.CGText.swift",
       "kind": "StringLiteral",
-      "offset": 19220,
+      "offset": 19356,
       "length": 1,
       "value": "\")) -> NSImage {\n    NSImage(size: size, flipped: true) { rect in\n        guard let ctx = NSGraphicsContext.current?.cgContext else { return false }\n        let scale = CGSize(width: rect.width \/ \""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.CGText.swift",
       "kind": "StringLiteral",
-      "offset": 19447,
+      "offset": 19583,
       "length": 1,
       "value": "\", height: rect.height \/ \""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.CGText.swift",
       "kind": "StringLiteral",
-      "offset": 19492,
+      "offset": 19628,
       "length": 1,
       "value": "\")\n        draw\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.CGText.swift",
       "kind": "StringLiteral",
-      "offset": 19517,
+      "offset": 19653,
       "length": 1,
       "value": "\"(in: ctx, scale: scale)\n        return true\n    }\n  }\n\nprivate static func draw\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.CGText.swift",
       "kind": "StringLiteral",
-      "offset": 19619,
+      "offset": 19755,
       "length": 1,
       "value": "\"(in ctx: CGContext, scale: CGSize) {\n\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.CGText.swift",
       "kind": "StringLiteral",
-      "offset": 19900,
+      "offset": 20036,
       "length": 46,
       "value": "\"ctx.scaleBy(x: scale.width, y: scale.height)\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.CGText.swift",
       "kind": "IntegerLiteral",
-      "offset": 19952,
+      "offset": 20088,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.CGText.swift",
       "kind": "StringLiteral",
-      "offset": 20003,
+      "offset": 20139,
       "length": 23,
       "value": "\"let baseCTM = ctx.ctm\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.CGText.swift",
       "kind": "IntegerLiteral",
-      "offset": 20032,
+      "offset": 20168,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.CGText.swift",
       "kind": "StringLiteral",
-      "offset": 20077,
+      "offset": 20213,
       "length": 3,
       "value": "\" \""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.CGText.swift",
       "kind": "IntegerLiteral",
-      "offset": 20089,
+      "offset": 20225,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.CGText.swift",
       "kind": "StringLiteral",
-      "offset": 20125,
+      "offset": 20261,
       "length": 16,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.CGText.swift",
       "kind": "StringLiteral",
-      "offset": 20135,
+      "offset": 20271,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.CGText.swift",
       "kind": "StringLiteral",
-      "offset": 20140,
+      "offset": 20276,
       "length": 3,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.CGText.swift",
       "kind": "StringLiteral",
-      "offset": 20188,
+      "offset": 20324,
       "length": 4,
       "value": "\"\n\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.CGText.swift",
       "kind": "StringLiteral",
-      "offset": 20215,
+      "offset": 20351,
       "length": 10,
       "value": "\"\n  }\n}\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.CGText.swift",
       "kind": "StringLiteral",
-      "offset": 20413,
+      "offset": 20549,
       "length": 3,
       "value": "\" \""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.CGText.swift",
       "kind": "IntegerLiteral",
-      "offset": 20532,
+      "offset": 20668,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.CGText.swift",
       "kind": "StringLiteral",
-      "offset": 20576,
+      "offset": 20712,
       "length": 49,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.CGText.swift",
       "kind": "StringLiteral",
-      "offset": 20591,
+      "offset": 20727,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.CGText.swift",
       "kind": "StringLiteral",
-      "offset": 20624,
+      "offset": 20760,
       "length": 3,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.CGText.swift",
       "kind": "StringLiteral",
-      "offset": 20653,
+      "offset": 20789,
       "length": 5,
       "value": "\",\n\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.CGText.swift",
       "kind": "IntegerLiteral",
-      "offset": 20789,
+      "offset": 20925,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.CGText.swift",
       "kind": "StringLiteral",
-      "offset": 20833,
+      "offset": 20969,
       "length": 17,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.CGText.swift",
       "kind": "StringLiteral",
-      "offset": 20841,
+      "offset": 20977,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.CGText.swift",
       "kind": "StringLiteral",
-      "offset": 20849,
+      "offset": 20985,
       "length": 1,
       "value": "\"\""
     },
@@ -5724,16 +6035,9 @@
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/AACSVGImage.swift",
       "kind": "StringLiteral",
-      "offset": 1035,
-      "length": 32,
+      "offset": 1046,
+      "length": 42,
       "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/AACSVGImage.swift",
-      "kind": "StringLiteral",
-      "offset": 1044,
-      "length": 1,
-      "value": "\", \""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/AACSVGImage.swift",
@@ -5747,166 +6051,187 @@
       "kind": "StringLiteral",
       "offset": 1066,
       "length": 1,
+      "value": "\", \""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/AACSVGImage.swift",
+      "kind": "StringLiteral",
+      "offset": 1077,
+      "length": 1,
+      "value": "\", \""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/AACSVGImage.swift",
+      "kind": "StringLiteral",
+      "offset": 1087,
+      "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/AACSVGImage.swift",
       "kind": "StringLiteral",
-      "offset": 1142,
+      "offset": 1175,
+      "length": 43,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/AACSVGImage.swift",
+      "kind": "StringLiteral",
+      "offset": 1184,
+      "length": 1,
+      "value": "\", \""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/AACSVGImage.swift",
+      "kind": "StringLiteral",
+      "offset": 1195,
+      "length": 1,
+      "value": "\", \""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/AACSVGImage.swift",
+      "kind": "StringLiteral",
+      "offset": 1206,
+      "length": 1,
+      "value": "\", \""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/AACSVGImage.swift",
+      "kind": "StringLiteral",
+      "offset": 1217,
+      "length": 1,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/AACSVGImage.swift",
+      "kind": "StringLiteral",
+      "offset": 1291,
       "length": 32,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/AACSVGImage.swift",
       "kind": "StringLiteral",
-      "offset": 1151,
+      "offset": 1300,
       "length": 1,
       "value": "\", \""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/AACSVGImage.swift",
       "kind": "StringLiteral",
-      "offset": 1162,
+      "offset": 1311,
       "length": 1,
       "value": "\", \""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/AACSVGImage.swift",
       "kind": "StringLiteral",
-      "offset": 1173,
+      "offset": 1322,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/AACSVGImage.swift",
       "kind": "StringLiteral",
-      "offset": 1247,
+      "offset": 1397,
       "length": 32,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/AACSVGImage.swift",
       "kind": "StringLiteral",
-      "offset": 1256,
+      "offset": 1406,
       "length": 1,
       "value": "\", \""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/AACSVGImage.swift",
       "kind": "StringLiteral",
-      "offset": 1267,
+      "offset": 1417,
       "length": 1,
       "value": "\", \""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/AACSVGImage.swift",
       "kind": "StringLiteral",
-      "offset": 1278,
-      "length": 1,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/AACSVGImage.swift",
-      "kind": "StringLiteral",
-      "offset": 1353,
-      "length": 32,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/AACSVGImage.swift",
-      "kind": "StringLiteral",
-      "offset": 1362,
-      "length": 1,
-      "value": "\", \""
-    },
-    {
-      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/AACSVGImage.swift",
-      "kind": "StringLiteral",
-      "offset": 1373,
-      "length": 1,
-      "value": "\", \""
-    },
-    {
-      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/AACSVGImage.swift",
-      "kind": "StringLiteral",
-      "offset": 1384,
+      "offset": 1428,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/AACSVGImage.swift",
       "kind": "IntegerLiteral",
-      "offset": 3980,
+      "offset": 4024,
       "length": 2,
       "value": "20"
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/AACSVGImage.swift",
       "kind": "IntegerLiteral",
-      "offset": 3992,
+      "offset": 4036,
       "length": 2,
       "value": "20"
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/AACSVGImage.swift",
       "kind": "IntegerLiteral",
-      "offset": 4029,
+      "offset": 4073,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/AACSVGImage.swift",
       "kind": "IntegerLiteral",
-      "offset": 4057,
+      "offset": 4101,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/AACSVGImage.swift",
       "kind": "IntegerLiteral",
-      "offset": 4912,
+      "offset": 4956,
       "length": 2,
       "value": "20"
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/AACSVGImage.swift",
       "kind": "IntegerLiteral",
-      "offset": 4924,
+      "offset": 4968,
       "length": 2,
       "value": "20"
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/AACSVGImage.swift",
       "kind": "StringLiteral",
-      "offset": 5111,
+      "offset": 5155,
       "length": 14,
       "value": "\"currentColor\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/AACSVGImage.swift",
       "kind": "IntegerLiteral",
-      "offset": 5515,
+      "offset": 5559,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/AACSVGImage.swift",
       "kind": "IntegerLiteral",
-      "offset": 5521,
+      "offset": 5565,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/AACSVGImage.swift",
       "kind": "IntegerLiteral",
-      "offset": 5653,
+      "offset": 5697,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/AACSVGImage.swift",
       "kind": "StringLiteral",
-      "offset": 3276,
+      "offset": 3320,
       "length": 11,
       "value": "\"AtomicSDK.AACSVGImage\""
     },
@@ -5997,51 +6322,58 @@
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.SVG.swift",
       "kind": "IntegerLiteral",
-      "offset": 1635,
+      "offset": 1628,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.SVG.swift",
       "kind": "StringLiteral",
-      "offset": 2408,
+      "offset": 2401,
       "length": 3,
       "value": "\" \""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.SVG.swift",
       "kind": "StringLiteral",
-      "offset": 2679,
+      "offset": 2672,
       "length": 11,
       "value": "\"M\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.SVG.swift",
       "kind": "StringLiteral",
-      "offset": 2689,
+      "offset": 2682,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.SVG.swift",
       "kind": "StringLiteral",
-      "offset": 2800,
+      "offset": 2793,
       "length": 11,
       "value": "\"L\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.SVG.swift",
       "kind": "StringLiteral",
-      "offset": 2810,
+      "offset": 2803,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.SVG.swift",
       "kind": "StringLiteral",
-      "offset": 3030,
+      "offset": 3023,
       "length": 21,
       "value": "\"C\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.SVG.swift",
+      "kind": "StringLiteral",
+      "offset": 3031,
+      "length": 1,
+      "value": "\" \""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.SVG.swift",
@@ -6053,21 +6385,14 @@
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.SVG.swift",
       "kind": "StringLiteral",
-      "offset": 3045,
-      "length": 1,
-      "value": "\" \""
-    },
-    {
-      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.SVG.swift",
-      "kind": "StringLiteral",
-      "offset": 3050,
+      "offset": 3043,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.SVG.swift",
       "kind": "StringLiteral",
-      "offset": 3092,
+      "offset": 3085,
       "length": 3,
       "value": "\"Z\""
     },
@@ -6228,28 +6553,42 @@
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.LayerTree.swift",
       "kind": "IntegerLiteral",
-      "offset": 3642,
+      "offset": 3657,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.LayerTree.swift",
       "kind": "IntegerLiteral",
-      "offset": 3648,
+      "offset": 3684,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.LayerTree.swift",
       "kind": "IntegerLiteral",
-      "offset": 3658,
+      "offset": 3794,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.LayerTree.swift",
       "kind": "IntegerLiteral",
-      "offset": 3669,
+      "offset": 3800,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.LayerTree.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3810,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.LayerTree.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3821,
       "length": 1,
       "value": "0"
     },
@@ -6557,441 +6896,441 @@
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.SFSymbol.swift",
       "kind": "StringLiteral",
-      "offset": 2539,
+      "offset": 2525,
       "length": 25,
       "value": "\"No valid content found.\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.SFSymbol.swift",
       "kind": "IntegerLiteral",
-      "offset": 3953,
+      "offset": 3939,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.SFSymbol.swift",
       "kind": "BooleanLiteral",
-      "offset": 4653,
+      "offset": 4639,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.SFSymbol.swift",
       "kind": "StringLiteral",
-      "offset": 4692,
+      "offset": 4678,
       "length": 15,
       "value": "\"hierarchical-\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.SFSymbol.swift",
       "kind": "StringLiteral",
-      "offset": 4736,
+      "offset": 4722,
       "length": 13,
       "value": "\"monochrome-\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.SFSymbol.swift",
       "kind": "StringLiteral",
-      "offset": 4778,
+      "offset": 4764,
       "length": 13,
       "value": "\"multicolor-\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.SFSymbol.swift",
       "kind": "StringLiteral",
-      "offset": 4820,
+      "offset": 4806,
       "length": 18,
       "value": "\"SFSymbolsPreview\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.SFSymbol.swift",
       "kind": "IntegerLiteral",
-      "offset": 6201,
+      "offset": 6187,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.SFSymbol.swift",
       "kind": "IntegerLiteral",
-      "offset": 6222,
+      "offset": 6208,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.SFSymbol.swift",
       "kind": "StringLiteral",
-      "offset": 6255,
+      "offset": 6241,
       "length": 16,
       "value": "\"Invalid insets\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.SFSymbol.swift",
       "kind": "IntegerLiteral",
-      "offset": 6891,
+      "offset": 6877,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.SFSymbol.swift",
       "kind": "Array",
-      "offset": 6907,
+      "offset": 6893,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.SFSymbol.swift",
       "kind": "StringLiteral",
-      "offset": 6970,
+      "offset": 6956,
       "length": 10,
       "value": "\"Warning:\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.SFSymbol.swift",
       "kind": "StringLiteral",
-      "offset": 6982,
+      "offset": 6968,
       "length": 38,
       "value": "\"clip-path unsupported in SF Symbols.\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.SFSymbol.swift",
       "kind": "Array",
-      "offset": 7062,
+      "offset": 7048,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.SFSymbol.swift",
       "kind": "StringLiteral",
-      "offset": 7132,
+      "offset": 7118,
       "length": 10,
       "value": "\"Warning:\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.SFSymbol.swift",
       "kind": "StringLiteral",
-      "offset": 7144,
+      "offset": 7130,
       "length": 33,
       "value": "\"mask unsupported in SF Symbols.\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.SFSymbol.swift",
       "kind": "Array",
-      "offset": 7219,
+      "offset": 7205,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.SFSymbol.swift",
       "kind": "IntegerLiteral",
-      "offset": 8864,
+      "offset": 8850,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.SFSymbol.swift",
       "kind": "IntegerLiteral",
-      "offset": 9193,
+      "offset": 9179,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.SFSymbol.swift",
       "kind": "IntegerLiteral",
-      "offset": 11575,
+      "offset": 11561,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.SFSymbol.swift",
       "kind": "IntegerLiteral",
-      "offset": 11581,
+      "offset": 11567,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.SFSymbol.swift",
       "kind": "StringLiteral",
-      "offset": 12319,
+      "offset": 12305,
       "length": 7,
       "value": "\"en_US\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.SFSymbol.swift",
       "kind": "IntegerLiteral",
-      "offset": 12370,
+      "offset": 12356,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.SFSymbol.swift",
       "kind": "StringLiteral",
-      "offset": 12687,
+      "offset": 12673,
       "length": 55,
       "value": "\"Alignment: --insets \""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.SFSymbol.swift",
       "kind": "StringLiteral",
-      "offset": 12714,
+      "offset": 12700,
       "length": 1,
       "value": "\",\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.SFSymbol.swift",
       "kind": "StringLiteral",
-      "offset": 12722,
+      "offset": 12708,
       "length": 1,
       "value": "\",\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.SFSymbol.swift",
       "kind": "StringLiteral",
-      "offset": 12732,
+      "offset": 12718,
       "length": 1,
       "value": "\",\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.SFSymbol.swift",
       "kind": "StringLiteral",
-      "offset": 12741,
+      "offset": 12727,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.SFSymbol.swift",
       "kind": "StringLiteral",
-      "offset": 12788,
+      "offset": 12774,
       "length": 65,
       "value": "\"Alignment: --ultralightInsets \""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.SFSymbol.swift",
       "kind": "StringLiteral",
-      "offset": 12825,
+      "offset": 12811,
       "length": 1,
       "value": "\",\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.SFSymbol.swift",
       "kind": "StringLiteral",
-      "offset": 12833,
+      "offset": 12819,
       "length": 1,
       "value": "\",\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.SFSymbol.swift",
       "kind": "StringLiteral",
-      "offset": 12843,
+      "offset": 12829,
       "length": 1,
       "value": "\",\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.SFSymbol.swift",
       "kind": "StringLiteral",
-      "offset": 12852,
+      "offset": 12838,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.SFSymbol.swift",
       "kind": "StringLiteral",
-      "offset": 12894,
+      "offset": 12880,
       "length": 60,
       "value": "\"Alignment: --blackInsets \""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.SFSymbol.swift",
       "kind": "StringLiteral",
-      "offset": 12926,
+      "offset": 12912,
       "length": 1,
       "value": "\",\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.SFSymbol.swift",
       "kind": "StringLiteral",
-      "offset": 12934,
+      "offset": 12920,
       "length": 1,
       "value": "\",\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.SFSymbol.swift",
       "kind": "StringLiteral",
-      "offset": 12944,
+      "offset": 12930,
       "length": 1,
       "value": "\",\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.SFSymbol.swift",
       "kind": "StringLiteral",
-      "offset": 12953,
+      "offset": 12939,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.SFSymbol.swift",
       "kind": "StringLiteral",
-      "offset": 13379,
+      "offset": 13365,
       "length": 12,
       "value": "\"Ultralight\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.SFSymbol.swift",
       "kind": "StringLiteral",
-      "offset": 13444,
+      "offset": 13430,
       "length": 9,
       "value": "\"Regular\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.SFSymbol.swift",
       "kind": "StringLiteral",
-      "offset": 13504,
+      "offset": 13490,
       "length": 7,
       "value": "\"Black\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.SFSymbol.swift",
       "kind": "StringLiteral",
-      "offset": 13715,
+      "offset": 13701,
       "length": 8,
       "value": "\"Guides\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.SFSymbol.swift",
       "kind": "StringLiteral",
-      "offset": 13769,
+      "offset": 13755,
       "length": 9,
       "value": "\"Symbols\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.SFSymbol.swift",
       "kind": "StringLiteral",
-      "offset": 13830,
+      "offset": 13816,
       "length": 23,
       "value": "\"left-margin-\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.SFSymbol.swift",
       "kind": "StringLiteral",
-      "offset": 13850,
+      "offset": 13836,
       "length": 1,
       "value": "\"-S\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.SFSymbol.swift",
       "kind": "StringLiteral",
-      "offset": 13915,
+      "offset": 13901,
       "length": 11,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.SFSymbol.swift",
       "kind": "StringLiteral",
-      "offset": 13923,
+      "offset": 13909,
       "length": 1,
       "value": "\"-S\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.SFSymbol.swift",
       "kind": "StringLiteral",
-      "offset": 13980,
+      "offset": 13966,
       "length": 24,
       "value": "\"right-margin-\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.SFSymbol.swift",
       "kind": "StringLiteral",
-      "offset": 14001,
+      "offset": 13987,
       "length": 1,
       "value": "\"-S\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.SFSymbol.swift",
       "kind": "IntegerLiteral",
-      "offset": 14153,
+      "offset": 14139,
       "length": 2,
       "value": "76"
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.SFSymbol.swift",
       "kind": "IntegerLiteral",
-      "offset": 14185,
+      "offset": 14171,
       "length": 2,
       "value": "70"
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.SFSymbol.swift",
       "kind": "IntegerLiteral",
-      "offset": 14441,
+      "offset": 14427,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.SFSymbol.swift",
       "kind": "IntegerLiteral",
-      "offset": 14625,
+      "offset": 14611,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.SFSymbol.swift",
       "kind": "IntegerLiteral",
-      "offset": 14716,
+      "offset": 14702,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.SFSymbol.swift",
       "kind": "Array",
-      "offset": 15388,
+      "offset": 15374,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.SFSymbol.swift",
       "kind": "StringLiteral",
-      "offset": 15402,
+      "offset": 15388,
       "length": 14,
       "value": "\"template.svg\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.SFSymbol.swift",
       "kind": "StringLiteral",
-      "offset": 15576,
+      "offset": 15562,
       "length": 2940,
       "value": "\"<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?>\n<svg width=\"800\" height=\"600\" version=\"1.1\" xmlns=\"http:\/\/www.w3.org\/2000\/svg\" xmlns:xlink=\"http:\/\/www.w3.org\/1999\/xlink\">\n    <g id=\"Notes\" font-family=\"'LucidaGrande', 'Lucida Grande', sans-serif\" font-weight=\"500\" font-size=\"13px\">\n          <rect x=\"0\" y=\"0\" width=\"800\" height=\"600\" fill=\"white\"\/>\n        <g font-weight=\"500\" font-size=\"13px\">\n            <text x=\"18px\" y=\"176px\">Small<\/text>\n            <text x=\"18px\" y=\"376px\">Medium<\/text>\n            <text x=\"18px\" y=\"576px\">Large<\/text>\n        <\/g>\n        <g font-weight=\"300\" font-size=\"9px\">\n            <text x=\"250px\" y=\"30px\">Ultralight<\/text>\n            <text x=\"450px\" y=\"30px\">Regular<\/text>\n         <text x=\"650px\" y=\"30px\">Black<\/text>\n         <text id=\"template-version\" fill=\"#505050\" x=\"785.0\" y=\"575.0\" text-anchor=\"end\">Template v.3.0<\/text>\n         <a href=\"https:\/\/github.com\/swhitty\/SwiftDraw\">\n            <text fill=\"#505050\" x=\"785.0\" y=\"590.0\" text-anchor=\"end\">https:\/\/github.com\/swhitty\/SwiftDraw<\/text>\n         <\/a>\n        <\/g>\n    <\/g>\n\n    <g id=\"Guides\" stroke=\"rgb(39,170,225)\" stroke-width=\"0.5px\">\n        <path id=\"Capline-S\" d=\"M18,76 l800,0\" \/>\n        <path id=\"H-reference\"\n            d=\"M85,145.755 L87.685,145.755 L113.369,79.287 L114.052002,79.287\n               L114.052002,76 L112.148,76 L85,145.755 Z\n               M95.693,121.536 L130.996,121.536 L130.263,119.313 L96.474,119.313 L95.693,121.536 Z\n               M139.14999,145.755 L141.787,145.755 L114.638,76 L113.466,76 L113.466,79.287 L139.14999,145.755 Z\" stroke=\"none\" \/>\n        <path id=\"Baseline-S\" d=\"M18,146 l800,0\" \/>\n\n        <path id=\"left-margin-Ultralight-S\" d=\"M221,56 l0,110\" \/>\n        <path id=\"right-margin-Ultralight-S\" d=\"M309,56 l0,110\" \/>\n\n        <path id=\"left-margin-Regular-S\" d=\"M421,56 l0,110\" \/>\n        <path id=\"right-margin-Regular-S\" d=\"M509,56 l0,110\" \/>\n\n        <path id=\"left-margin-Black-S\" d=\"M621,56 l0,110\" \/>\n        <path id=\"right-margin-Black-S\" d=\"M709,56 l0,110\" \/>\n\n        <path id=\"Capline-M\" d=\"M18,276 l800,0\" \/>\n        <path id=\"Baseline-M\" d=\"M18,346 l800,0\" \/>\n\n        <path id=\"Capline-L\" d=\"M18,476 l800,0\" \/>\n        <path id=\"Baseline-L\" d=\"M18,546 l800,0\" \/>\n    <\/g>\n\n    <g id=\"Symbols\">\n        <g id=\"Ultralight-S\">\n            <!-- Insert Contents -->\n        <\/g>\n        <g id=\"Regular-S\">\n            <!-- Insert Contents -->\n        <\/g>\n        <g id=\"Black-S\">\n            <!-- Insert Contents -->\n        <\/g>\n    <\/g>\n<\/svg>\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.SFSymbol.swift",
       "kind": "IntegerLiteral",
-      "offset": 19707,
+      "offset": 19693,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.SFSymbol.swift",
       "kind": "IntegerLiteral",
-      "offset": 19712,
+      "offset": 19698,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.SFSymbol.swift",
       "kind": "IntegerLiteral",
-      "offset": 20009,
+      "offset": 19995,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.SFSymbol.swift",
       "kind": "IntegerLiteral",
-      "offset": 20164,
+      "offset": 20150,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.SFSymbol.swift",
       "kind": "IntegerLiteral",
-      "offset": 20238,
+      "offset": 20224,
       "length": 1,
       "value": "0"
     },
@@ -7131,14 +7470,14 @@
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Parser.XML.Color.swift",
       "kind": "StringLiteral",
-      "offset": 2139,
+      "offset": 2137,
       "length": 6,
       "value": "\"none\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Parser.XML.Color.swift",
       "kind": "StringLiteral",
-      "offset": 2160,
+      "offset": 2158,
       "length": 13,
       "value": "\"transparent\""
     },
@@ -7152,310 +7491,352 @@
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Parser.XML.Color.swift",
       "kind": "StringLiteral",
-      "offset": 2871,
+      "offset": 2873,
       "length": 6,
       "value": "\"rgb(\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Parser.XML.Color.swift",
       "kind": "StringLiteral",
-      "offset": 3178,
-      "length": 6,
-      "value": "\"url(\""
-    },
-    {
-      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Parser.XML.Color.swift",
-      "kind": "BooleanLiteral",
-      "offset": 3190,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Parser.XML.Color.swift",
-      "kind": "StringLiteral",
-      "offset": 3277,
-      "length": 3,
-      "value": "\")\""
-    },
-    {
-      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Parser.XML.Color.swift",
-      "kind": "StringLiteral",
-      "offset": 3314,
-      "length": 3,
-      "value": "\")\""
-    },
-    {
-      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Parser.XML.Color.swift",
-      "kind": "StringLiteral",
-      "offset": 3671,
-      "length": 6,
-      "value": "\"rgb(\""
-    },
-    {
-      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Parser.XML.Color.swift",
-      "kind": "StringLiteral",
-      "offset": 3753,
-      "length": 3,
-      "value": "\",\""
-    },
-    {
-      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Parser.XML.Color.swift",
-      "kind": "StringLiteral",
-      "offset": 3827,
-      "length": 3,
-      "value": "\",\""
-    },
-    {
-      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Parser.XML.Color.swift",
-      "kind": "StringLiteral",
-      "offset": 3895,
-      "length": 3,
-      "value": "\")\""
-    },
-    {
-      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Parser.XML.Color.swift",
-      "kind": "StringLiteral",
-      "offset": 4074,
-      "length": 6,
-      "value": "\"rgb(\""
-    },
-    {
-      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Parser.XML.Color.swift",
-      "kind": "StringLiteral",
-      "offset": 4161,
-      "length": 3,
-      "value": "\",\""
-    },
-    {
-      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Parser.XML.Color.swift",
-      "kind": "StringLiteral",
-      "offset": 4240,
-      "length": 3,
-      "value": "\",\""
-    },
-    {
-      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Parser.XML.Color.swift",
-      "kind": "StringLiteral",
-      "offset": 4313,
-      "length": 3,
-      "value": "\")\""
-    },
-    {
-      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Parser.XML.Color.swift",
-      "kind": "StringLiteral",
-      "offset": 4508,
-      "length": 18,
-      "value": "\"color(display-p3\""
-    },
-    {
-      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Parser.XML.Color.swift",
-      "kind": "StringLiteral",
-      "offset": 4618,
-      "length": 3,
-      "value": "\",\""
-    },
-    {
-      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Parser.XML.Color.swift",
-      "kind": "StringLiteral",
-      "offset": 4692,
-      "length": 3,
-      "value": "\",\""
-    },
-    {
-      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Parser.XML.Color.swift",
-      "kind": "StringLiteral",
-      "offset": 4760,
-      "length": 3,
-      "value": "\")\""
-    },
-    {
-      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Parser.XML.Color.swift",
-      "kind": "IntegerLiteral",
-      "offset": 4959,
-      "length": 1,
-      "value": "3"
-    },
-    {
-      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Parser.XML.Color.swift",
-      "kind": "StringLiteral",
-      "offset": 4998,
-      "length": 68,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Parser.XML.Color.swift",
-      "kind": "IntegerLiteral",
-      "offset": 5007,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Parser.XML.Color.swift",
-      "kind": "StringLiteral",
-      "offset": 5010,
-      "length": 1,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Parser.XML.Color.swift",
-      "kind": "IntegerLiteral",
-      "offset": 5018,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Parser.XML.Color.swift",
-      "kind": "StringLiteral",
-      "offset": 5021,
-      "length": 1,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Parser.XML.Color.swift",
-      "kind": "IntegerLiteral",
-      "offset": 5029,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Parser.XML.Color.swift",
-      "kind": "StringLiteral",
-      "offset": 5032,
-      "length": 1,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Parser.XML.Color.swift",
-      "kind": "IntegerLiteral",
-      "offset": 5040,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Parser.XML.Color.swift",
-      "kind": "StringLiteral",
-      "offset": 5043,
-      "length": 1,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Parser.XML.Color.swift",
-      "kind": "IntegerLiteral",
-      "offset": 5051,
-      "length": 1,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Parser.XML.Color.swift",
-      "kind": "StringLiteral",
-      "offset": 5054,
-      "length": 1,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Parser.XML.Color.swift",
-      "kind": "IntegerLiteral",
-      "offset": 5062,
-      "length": 1,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Parser.XML.Color.swift",
-      "kind": "StringLiteral",
-      "offset": 5065,
-      "length": 1,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Parser.XML.Color.swift",
-      "kind": "StringLiteral",
-      "offset": 5227,
-      "length": 3,
-      "value": "\"#\""
-    },
-    {
-      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Parser.XML.Color.swift",
-      "kind": "StringLiteral",
-      "offset": 5312,
-      "length": 24,
-      "value": "\"0123456789ABCDEFabcdef\""
-    },
-    {
-      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Parser.XML.Color.swift",
-      "kind": "IntegerLiteral",
-      "offset": 5488,
-      "length": 2,
-      "value": "16"
-    },
-    {
-      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Parser.XML.Color.swift",
-      "kind": "IntegerLiteral",
-      "offset": 5564,
-      "length": 2,
-      "value": "16"
-    },
-    {
-      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Parser.XML.Color.swift",
-      "kind": "IntegerLiteral",
-      "offset": 5570,
-      "length": 4,
-      "value": "0xff"
-    },
-    {
-      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Parser.XML.Color.swift",
-      "kind": "IntegerLiteral",
-      "offset": 5602,
-      "length": 1,
-      "value": "8"
-    },
-    {
-      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Parser.XML.Color.swift",
-      "kind": "IntegerLiteral",
-      "offset": 5607,
-      "length": 4,
-      "value": "0xff"
-    },
-    {
-      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Parser.XML.Color.swift",
-      "kind": "IntegerLiteral",
-      "offset": 5637,
-      "length": 4,
-      "value": "0xff"
-    },
-    {
-      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Parser.XML.Color.swift",
-      "kind": "StringLiteral",
-      "offset": 5834,
+      "offset": 3184,
       "length": 7,
       "value": "\"rgba(\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Parser.XML.Color.swift",
       "kind": "StringLiteral",
-      "offset": 5929,
-      "length": 3,
-      "value": "\",\""
+      "offset": 3494,
+      "length": 6,
+      "value": "\"url(\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Parser.XML.Color.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3506,
+      "length": 4,
+      "value": "true"
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Parser.XML.Color.swift",
       "kind": "StringLiteral",
-      "offset": 6011,
-      "length": 3,
-      "value": "\",\""
-    },
-    {
-      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Parser.XML.Color.swift",
-      "kind": "StringLiteral",
-      "offset": 6093,
-      "length": 3,
-      "value": "\",\""
-    },
-    {
-      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Parser.XML.Color.swift",
-      "kind": "StringLiteral",
-      "offset": 6181,
+      "offset": 3593,
       "length": 3,
       "value": "\")\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Parser.XML.Color.swift",
+      "kind": "StringLiteral",
+      "offset": 3630,
+      "length": 3,
+      "value": "\")\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Parser.XML.Color.swift",
+      "kind": "StringLiteral",
+      "offset": 4015,
+      "length": 7,
+      "value": "\"rgba(\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Parser.XML.Color.swift",
+      "kind": "StringLiteral",
+      "offset": 4025,
+      "length": 6,
+      "value": "\"rgb(\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Parser.XML.Color.swift",
+      "kind": "StringLiteral",
+      "offset": 4107,
+      "length": 3,
+      "value": "\",\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Parser.XML.Color.swift",
+      "kind": "StringLiteral",
+      "offset": 4181,
+      "length": 3,
+      "value": "\",\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Parser.XML.Color.swift",
+      "kind": "FloatLiteral",
+      "offset": 4241,
+      "length": 3,
+      "value": "1.0"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Parser.XML.Color.swift",
+      "kind": "StringLiteral",
+      "offset": 4304,
+      "length": 3,
+      "value": "\",\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Parser.XML.Color.swift",
+      "kind": "StringLiteral",
+      "offset": 4393,
+      "length": 3,
+      "value": "\")\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Parser.XML.Color.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4552,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Parser.XML.Color.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4685,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Parser.XML.Color.swift",
+      "kind": "StringLiteral",
+      "offset": 4874,
+      "length": 7,
+      "value": "\"rgba(\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Parser.XML.Color.swift",
+      "kind": "StringLiteral",
+      "offset": 4884,
+      "length": 6,
+      "value": "\"rgb(\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Parser.XML.Color.swift",
+      "kind": "StringLiteral",
+      "offset": 4971,
+      "length": 3,
+      "value": "\",\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Parser.XML.Color.swift",
+      "kind": "StringLiteral",
+      "offset": 5050,
+      "length": 3,
+      "value": "\",\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Parser.XML.Color.swift",
+      "kind": "FloatLiteral",
+      "offset": 5120,
+      "length": 3,
+      "value": "1.0"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Parser.XML.Color.swift",
+      "kind": "StringLiteral",
+      "offset": 5178,
+      "length": 3,
+      "value": "\",\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Parser.XML.Color.swift",
+      "kind": "StringLiteral",
+      "offset": 5267,
+      "length": 3,
+      "value": "\")\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Parser.XML.Color.swift",
+      "kind": "BooleanLiteral",
+      "offset": 5438,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Parser.XML.Color.swift",
+      "kind": "BooleanLiteral",
+      "offset": 5578,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Parser.XML.Color.swift",
+      "kind": "StringLiteral",
+      "offset": 5746,
+      "length": 18,
+      "value": "\"color(display-p3\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Parser.XML.Color.swift",
+      "kind": "StringLiteral",
+      "offset": 5860,
+      "length": 3,
+      "value": "\",\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Parser.XML.Color.swift",
+      "kind": "StringLiteral",
+      "offset": 5934,
+      "length": 3,
+      "value": "\",\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Parser.XML.Color.swift",
+      "kind": "StringLiteral",
+      "offset": 6002,
+      "length": 3,
+      "value": "\")\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Parser.XML.Color.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6205,
+      "length": 1,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Parser.XML.Color.swift",
+      "kind": "StringLiteral",
+      "offset": 6244,
+      "length": 68,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Parser.XML.Color.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6253,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Parser.XML.Color.swift",
+      "kind": "StringLiteral",
+      "offset": 6256,
+      "length": 1,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Parser.XML.Color.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6264,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Parser.XML.Color.swift",
+      "kind": "StringLiteral",
+      "offset": 6267,
+      "length": 1,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Parser.XML.Color.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6275,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Parser.XML.Color.swift",
+      "kind": "StringLiteral",
+      "offset": 6278,
+      "length": 1,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Parser.XML.Color.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6286,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Parser.XML.Color.swift",
+      "kind": "StringLiteral",
+      "offset": 6289,
+      "length": 1,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Parser.XML.Color.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6297,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Parser.XML.Color.swift",
+      "kind": "StringLiteral",
+      "offset": 6300,
+      "length": 1,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Parser.XML.Color.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6308,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Parser.XML.Color.swift",
+      "kind": "StringLiteral",
+      "offset": 6311,
+      "length": 1,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Parser.XML.Color.swift",
+      "kind": "StringLiteral",
+      "offset": 6473,
+      "length": 3,
+      "value": "\"#\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Parser.XML.Color.swift",
+      "kind": "StringLiteral",
+      "offset": 6558,
+      "length": 24,
+      "value": "\"0123456789ABCDEFabcdef\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Parser.XML.Color.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6734,
+      "length": 2,
+      "value": "16"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Parser.XML.Color.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6808,
+      "length": 2,
+      "value": "16"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Parser.XML.Color.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6814,
+      "length": 4,
+      "value": "0xff"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Parser.XML.Color.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6846,
+      "length": 1,
+      "value": "8"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Parser.XML.Color.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6851,
+      "length": 4,
+      "value": "0xff"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Parser.XML.Color.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6881,
+      "length": 4,
+      "value": "0xff"
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/CGPattern+Closure.swift",
@@ -7467,231 +7848,231 @@
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/CommandLine.Configuration.swift",
       "kind": "IntegerLiteral",
-      "offset": 2817,
+      "offset": 2642,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/CommandLine.Configuration.swift",
       "kind": "IntegerLiteral",
-      "offset": 2918,
+      "offset": 2743,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/CommandLine.Configuration.swift",
       "kind": "IntegerLiteral",
-      "offset": 3015,
+      "offset": 2840,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/CommandLine.Configuration.swift",
       "kind": "StringLiteral",
-      "offset": 6159,
+      "offset": 5984,
       "length": 3,
       "value": "\"x\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/CommandLine.Configuration.swift",
       "kind": "IntegerLiteral",
-      "offset": 6231,
+      "offset": 6056,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/CommandLine.Configuration.swift",
       "kind": "IntegerLiteral",
-      "offset": 6243,
+      "offset": 6068,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/CommandLine.Configuration.swift",
       "kind": "StringLiteral",
-      "offset": 6813,
+      "offset": 6638,
       "length": 6,
       "value": "\"auto\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/CommandLine.Configuration.swift",
       "kind": "StringLiteral",
-      "offset": 6996,
+      "offset": 6821,
       "length": 3,
       "value": "\",\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/CommandLine.Configuration.swift",
       "kind": "StringLiteral",
-      "offset": 7079,
+      "offset": 6904,
       "length": 3,
       "value": "\",\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/CommandLine.Configuration.swift",
       "kind": "StringLiteral",
-      "offset": 7164,
+      "offset": 6989,
       "length": 3,
       "value": "\",\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/CommandLine.Configuration.swift",
       "kind": "StringLiteral",
-      "offset": 7826,
+      "offset": 7651,
       "length": 6,
       "value": "\"auto\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/CommandLine.Configuration.swift",
       "kind": "IntegerLiteral",
-      "offset": 7997,
+      "offset": 7822,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/CommandLine.Configuration.swift",
       "kind": "IntegerLiteral",
-      "offset": 8002,
+      "offset": 7827,
       "length": 1,
       "value": "8"
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/CommandLine.Configuration.swift",
       "kind": "IntegerLiteral",
-      "offset": 8049,
+      "offset": 7874,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/CommandLine.Configuration.swift",
       "kind": "IntegerLiteral",
-      "offset": 8054,
+      "offset": 7879,
       "length": 1,
       "value": "9"
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/CommandLine.Configuration.swift",
       "kind": "IntegerLiteral",
-      "offset": 8256,
+      "offset": 8081,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/CommandLine.Configuration.swift",
       "kind": "IntegerLiteral",
-      "offset": 8283,
+      "offset": 8108,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/CommandLine.Configuration.swift",
       "kind": "StringLiteral",
-      "offset": 8604,
+      "offset": 8429,
       "length": 59,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/CommandLine.Configuration.swift",
       "kind": "StringLiteral",
-      "offset": 8629,
+      "offset": 8454,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/CommandLine.Configuration.swift",
       "kind": "StringLiteral",
-      "offset": 8638,
+      "offset": 8463,
       "length": 1,
       "value": "\".\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/CommandLine.Configuration.swift",
       "kind": "StringLiteral",
-      "offset": 8662,
+      "offset": 8487,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/CommandLine.Configuration.swift",
       "kind": "StringLiteral",
-      "offset": 8983,
+      "offset": 8808,
       "length": 9,
       "value": "\"-symbol\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/CommandLine.Configuration.swift",
       "kind": "StringLiteral",
-      "offset": 9042,
+      "offset": 8867,
       "length": 5,
       "value": "\"@2x\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/CommandLine.Configuration.swift",
       "kind": "StringLiteral",
-      "offset": 9102,
+      "offset": 8927,
       "length": 5,
       "value": "\"@3x\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/CommandLine.Configuration.swift",
       "kind": "StringLiteral",
-      "offset": 9144,
+      "offset": 8969,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/CommandLine.Configuration.swift",
       "kind": "StringLiteral",
-      "offset": 9343,
+      "offset": 9168,
       "length": 5,
       "value": "\"jpg\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/CommandLine.Configuration.swift",
       "kind": "StringLiteral",
-      "offset": 9387,
+      "offset": 9212,
       "length": 5,
       "value": "\"pdf\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/CommandLine.Configuration.swift",
       "kind": "StringLiteral",
-      "offset": 9431,
+      "offset": 9256,
       "length": 5,
       "value": "\"png\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/CommandLine.Configuration.swift",
       "kind": "StringLiteral",
-      "offset": 9477,
+      "offset": 9302,
       "length": 7,
       "value": "\"swift\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/CommandLine.Configuration.swift",
       "kind": "StringLiteral",
-      "offset": 9528,
+      "offset": 9353,
       "length": 5,
       "value": "\"svg\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/CommandLine.Configuration.swift",
       "kind": "StringLiteral",
-      "offset": 9701,
+      "offset": 9526,
       "length": 4,
       "value": "\"1x\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/CommandLine.Configuration.swift",
       "kind": "StringLiteral",
-      "offset": 9748,
+      "offset": 9573,
       "length": 4,
       "value": "\"2x\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/CommandLine.Configuration.swift",
       "kind": "StringLiteral",
-      "offset": 9794,
+      "offset": 9619,
       "length": 4,
       "value": "\"3x\""
     },
@@ -8468,56 +8849,49 @@
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/LayerTree.Builder.Layer.swift",
       "kind": "StringLiteral",
-      "offset": 1732,
+      "offset": 1745,
       "length": 41,
       "value": "\"missing referenced element: \""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/LayerTree.Builder.Layer.swift",
       "kind": "StringLiteral",
-      "offset": 1772,
+      "offset": 1785,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/LayerTree.Builder.Layer.swift",
       "kind": "FloatLiteral",
-      "offset": 1871,
+      "offset": 1884,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/LayerTree.Builder.Layer.swift",
       "kind": "FloatLiteral",
-      "offset": 1900,
+      "offset": 1913,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/LayerTree.Builder.Layer.swift",
       "kind": "IntegerLiteral",
-      "offset": 1921,
+      "offset": 1934,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/LayerTree.Builder.Layer.swift",
       "kind": "IntegerLiteral",
-      "offset": 1931,
+      "offset": 1944,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/LayerTree.Builder.Layer.swift",
       "kind": "IntegerLiteral",
-      "offset": 1996,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/LayerTree.Builder.Layer.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2182,
+      "offset": 2009,
       "length": 1,
       "value": "0"
     },
@@ -8530,10 +8904,31 @@
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/LayerTree.Builder.Layer.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2208,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/LayerTree.Builder.Layer.swift",
       "kind": "StringLiteral",
-      "offset": 2835,
+      "offset": 2848,
       "length": 21,
       "value": "\"Cannot decode image\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/LayerTree.Builder.Layer.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2931,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/LayerTree.Builder.Layer.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2983,
+      "length": 1,
+      "value": "0"
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Parser.XML.Scanner.swift",
@@ -8572,134 +8967,148 @@
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Parser.XML.Scanner.swift",
+      "kind": "BooleanLiteral",
+      "offset": 5884,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Parser.XML.Scanner.swift",
+      "kind": "BooleanLiteral",
+      "offset": 5971,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Parser.XML.Scanner.swift",
       "kind": "IntegerLiteral",
-      "offset": 5946,
+      "offset": 6793,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Parser.XML.Scanner.swift",
       "kind": "FloatLiteral",
-      "offset": 6541,
+      "offset": 7482,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Parser.XML.Scanner.swift",
       "kind": "FloatLiteral",
-      "offset": 6553,
+      "offset": 7494,
       "length": 3,
       "value": "1.0"
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Parser.XML.Scanner.swift",
       "kind": "StringLiteral",
-      "offset": 6933,
+      "offset": 7874,
       "length": 17,
       "value": "\"+-0123456789.Ee\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Parser.XML.Scanner.swift",
       "kind": "IntegerLiteral",
-      "offset": 7124,
+      "offset": 8065,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Parser.XML.Scanner.swift",
       "kind": "IntegerLiteral",
-      "offset": 7134,
+      "offset": 8075,
       "length": 3,
       "value": "100"
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Parser.XML.Scanner.swift",
       "kind": "StringLiteral",
-      "offset": 7175,
+      "offset": 8116,
       "length": 3,
       "value": "\"%\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Parser.XML.Scanner.swift",
       "kind": "IntegerLiteral",
-      "offset": 7198,
+      "offset": 8139,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Parser.XML.Scanner.swift",
       "kind": "FloatLiteral",
-      "offset": 7383,
+      "offset": 8324,
       "length": 5,
       "value": "100.0"
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Parser.XML.Scanner.swift",
       "kind": "StringLiteral",
-      "offset": 7509,
+      "offset": 8450,
       "length": 7,
       "value": "\"FALSE\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Parser.XML.Scanner.swift",
       "kind": "StringLiteral",
-      "offset": 7538,
+      "offset": 8479,
       "length": 6,
       "value": "\"TRUE\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Parser.XML.Scanner.swift",
       "kind": "StringLiteral",
-      "offset": 7561,
+      "offset": 8502,
       "length": 3,
       "value": "\"0\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Parser.XML.Scanner.swift",
       "kind": "StringLiteral",
-      "offset": 7580,
+      "offset": 8521,
       "length": 3,
       "value": "\"1\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Parser.XML.Scanner.swift",
       "kind": "BooleanLiteral",
-      "offset": 7694,
+      "offset": 8635,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Parser.XML.Scanner.swift",
       "kind": "BooleanLiteral",
-      "offset": 7759,
+      "offset": 8700,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Parser.XML.Scanner.swift",
       "kind": "StringLiteral",
-      "offset": 7509,
+      "offset": 8450,
       "length": 7,
       "value": "\"FALSE\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Parser.XML.Scanner.swift",
       "kind": "StringLiteral",
-      "offset": 7538,
+      "offset": 8479,
       "length": 6,
       "value": "\"TRUE\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Parser.XML.Scanner.swift",
       "kind": "StringLiteral",
-      "offset": 7561,
+      "offset": 8502,
       "length": 3,
       "value": "\"0\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Parser.XML.Scanner.swift",
       "kind": "StringLiteral",
-      "offset": 7580,
+      "offset": 8521,
       "length": 3,
       "value": "\"1\""
     },
@@ -8979,105 +9388,119 @@
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/LayerTree.Color.swift",
       "kind": "FloatLiteral",
-      "offset": 2198,
+      "offset": 2402,
       "length": 3,
       "value": "1.0"
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/LayerTree.Color.swift",
       "kind": "FloatLiteral",
-      "offset": 2381,
+      "offset": 2523,
+      "length": 5,
+      "value": "255.0"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/LayerTree.Color.swift",
+      "kind": "FloatLiteral",
+      "offset": 2559,
+      "length": 5,
+      "value": "255.0"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/LayerTree.Color.swift",
+      "kind": "FloatLiteral",
+      "offset": 2595,
+      "length": 5,
+      "value": "255.0"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/LayerTree.Color.swift",
+      "kind": "FloatLiteral",
+      "offset": 2622,
       "length": 3,
       "value": "1.0"
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/LayerTree.Color.swift",
       "kind": "FloatLiteral",
-      "offset": 2502,
+      "offset": 2763,
       "length": 5,
       "value": "255.0"
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/LayerTree.Color.swift",
       "kind": "FloatLiteral",
-      "offset": 2538,
+      "offset": 2803,
       "length": 5,
       "value": "255.0"
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/LayerTree.Color.swift",
       "kind": "FloatLiteral",
-      "offset": 2574,
+      "offset": 2843,
       "length": 5,
       "value": "255.0"
-    },
-    {
-      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/LayerTree.Color.swift",
-      "kind": "FloatLiteral",
-      "offset": 2601,
-      "length": 3,
-      "value": "1.0"
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/LayerTree.Color.swift",
       "kind": "BooleanLiteral",
-      "offset": 2712,
+      "offset": 2989,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/LayerTree.Color.swift",
       "kind": "FloatLiteral",
-      "offset": 2783,
+      "offset": 3060,
       "length": 3,
       "value": "1.0"
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/LayerTree.Color.swift",
       "kind": "FloatLiteral",
-      "offset": 2841,
+      "offset": 3118,
       "length": 3,
       "value": "1.0"
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/LayerTree.Color.swift",
       "kind": "IntegerLiteral",
-      "offset": 3398,
+      "offset": 3683,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/LayerTree.Color.swift",
       "kind": "IntegerLiteral",
-      "offset": 3468,
+      "offset": 3753,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/LayerTree.Color.swift",
       "kind": "FloatLiteral",
-      "offset": 4445,
+      "offset": 4730,
       "length": 6,
       "value": "0.2126"
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/LayerTree.Color.swift",
       "kind": "FloatLiteral",
-      "offset": 4458,
+      "offset": 4743,
       "length": 6,
       "value": "0.7152"
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/LayerTree.Color.swift",
       "kind": "FloatLiteral",
-      "offset": 4471,
+      "offset": 4756,
       "length": 6,
       "value": "0.0722"
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/LayerTree.Color.swift",
       "kind": "FloatLiteral",
-      "offset": 4510,
+      "offset": 4795,
       "length": 3,
       "value": "0.0"
     },
@@ -9287,49 +9710,28 @@
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.CoreGraphics.swift",
       "kind": "FloatLiteral",
-      "offset": 11550,
+      "offset": 11731,
       "length": 3,
       "value": "1.0"
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.CoreGraphics.swift",
       "kind": "BooleanLiteral",
-      "offset": 11906,
+      "offset": 12087,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.CoreGraphics.swift",
       "kind": "IntegerLiteral",
-      "offset": 13190,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.CoreGraphics.swift",
-      "kind": "IntegerLiteral",
-      "offset": 13196,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.CoreGraphics.swift",
-      "kind": "IntegerLiteral",
-      "offset": 13279,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.CoreGraphics.swift",
-      "kind": "IntegerLiteral",
-      "offset": 13315,
+      "offset": 13441,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.CoreGraphics.swift",
       "kind": "IntegerLiteral",
-      "offset": 13322,
+      "offset": 13448,
       "length": 2,
       "value": "-1"
     },
@@ -9658,21 +10060,21 @@
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Image.swift",
       "kind": "IntegerLiteral",
-      "offset": 2468,
+      "offset": 2433,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Image.swift",
       "kind": "IntegerLiteral",
-      "offset": 2473,
+      "offset": 2438,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Image.swift",
       "kind": "Array",
-      "offset": 2524,
+      "offset": 2482,
       "length": 2,
       "value": "[]"
     },
@@ -9686,28 +10088,28 @@
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Image.swift",
       "kind": "IntegerLiteral",
-      "offset": 5297,
+      "offset": 5178,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Image.swift",
       "kind": "IntegerLiteral",
-      "offset": 5306,
+      "offset": 5187,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Image.swift",
       "kind": "IntegerLiteral",
-      "offset": 5317,
+      "offset": 5198,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Image.swift",
       "kind": "IntegerLiteral",
-      "offset": 5327,
+      "offset": 5208,
       "length": 1,
       "value": "0"
     },
@@ -9874,176 +10276,197 @@
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/LayerTree.CommandGenerator.swift",
+      "kind": "IntegerLiteral",
+      "offset": 11331,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/LayerTree.CommandGenerator.swift",
+      "kind": "IntegerLiteral",
+      "offset": 11350,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/LayerTree.CommandGenerator.swift",
       "kind": "Array",
-      "offset": 11581,
+      "offset": 11366,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/LayerTree.CommandGenerator.swift",
+      "kind": "Array",
+      "offset": 12552,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/LayerTree.CommandGenerator.swift",
       "kind": "FloatLiteral",
-      "offset": 12007,
+      "offset": 12978,
       "length": 3,
       "value": "1.0"
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/LayerTree.CommandGenerator.swift",
       "kind": "Array",
-      "offset": 12025,
+      "offset": 12996,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/LayerTree.CommandGenerator.swift",
       "kind": "Array",
-      "offset": 13316,
+      "offset": 14287,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/LayerTree.CommandGenerator.swift",
       "kind": "Array",
-      "offset": 13724,
+      "offset": 14695,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/LayerTree.CommandGenerator.swift",
       "kind": "BooleanLiteral",
-      "offset": 14627,
+      "offset": 15598,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/LayerTree.CommandGenerator.swift",
       "kind": "BooleanLiteral",
-      "offset": 14748,
+      "offset": 15719,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/LayerTree.CommandGenerator.swift",
       "kind": "BooleanLiteral",
-      "offset": 14787,
+      "offset": 15758,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/LayerTree.CommandGenerator.swift",
       "kind": "BooleanLiteral",
-      "offset": 14969,
+      "offset": 15940,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/LayerTree.CommandGenerator.swift",
       "kind": "BooleanLiteral",
-      "offset": 15095,
+      "offset": 16066,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/LayerTree.CommandGenerator.swift",
       "kind": "BooleanLiteral",
-      "offset": 15134,
+      "offset": 16105,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/LayerTree.CommandGenerator.swift",
       "kind": "StringLiteral",
-      "offset": 19335,
+      "offset": 20306,
       "length": 4,
       "value": "\", \""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/LayerTree.CommandGenerator.swift",
       "kind": "StringLiteral",
-      "offset": 19430,
+      "offset": 20401,
       "length": 28,
       "value": "\"[--hideUnsupportedFilters]\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/LayerTree.CommandGenerator.swift",
       "kind": "StringLiteral",
-      "offset": 19524,
+      "offset": 20495,
       "length": 54,
       "value": "\"UIImage(svgNamed:, options: .hideUnsupportedFilters)\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/LayerTree.CommandGenerator.swift",
       "kind": "StringLiteral",
-      "offset": 19707,
+      "offset": 20678,
       "length": 10,
       "value": "\"Warning:\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/LayerTree.CommandGenerator.swift",
       "kind": "StringLiteral",
-      "offset": 19725,
+      "offset": 20696,
       "length": 72,
       "value": "\"is not supported. Elements with this filter can be hidden with \""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/LayerTree.CommandGenerator.swift",
       "kind": "StringLiteral",
-      "offset": 19796,
+      "offset": 20767,
       "length": 23,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/LayerTree.CommandGenerator.swift",
       "kind": "BooleanLiteral",
-      "offset": 19853,
+      "offset": 20824,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/LayerTree.CommandGenerator.swift",
       "kind": "StringLiteral",
-      "offset": 19971,
+      "offset": 20942,
       "length": 10,
       "value": "\"Warning:\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/LayerTree.CommandGenerator.swift",
       "kind": "StringLiteral",
-      "offset": 19983,
+      "offset": 20954,
       "length": 50,
       "value": "\"PDF does not support gradients with stop-opacity\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/LayerTree.CommandGenerator.swift",
       "kind": "BooleanLiteral",
-      "offset": 20091,
+      "offset": 21062,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/LayerTree.CommandGenerator.swift",
       "kind": "StringLiteral",
-      "offset": 20201,
+      "offset": 21172,
       "length": 10,
       "value": "\"Warning:\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/LayerTree.CommandGenerator.swift",
       "kind": "StringLiteral",
-      "offset": 20213,
+      "offset": 21184,
       "length": 41,
       "value": "\"PDF does not support transparency masks\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/LayerTree.CommandGenerator.swift",
       "kind": "BooleanLiteral",
-      "offset": 20308,
+      "offset": 21279,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/LayerTree.CommandGenerator.swift",
       "kind": "StringLiteral",
-      "offset": 21817,
+      "offset": 22788,
       "length": 18,
       "value": "\"<feGaussianBlur>\""
     },
@@ -11583,63 +12006,63 @@
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/UIImage+Image.swift",
       "kind": "IntegerLiteral",
-      "offset": 2696,
+      "offset": 2688,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/UIImage+Image.swift",
       "kind": "IntegerLiteral",
-      "offset": 2927,
+      "offset": 2919,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/UIImage+Image.swift",
       "kind": "BooleanLiteral",
-      "offset": 3018,
+      "offset": 3010,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/UIImage+Image.swift",
       "kind": "IntegerLiteral",
-      "offset": 3272,
+      "offset": 3264,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/UIImage+Image.swift",
       "kind": "StringLiteral",
-      "offset": 3466,
+      "offset": 3458,
       "length": 27,
       "value": "\"Failed to create png data\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/UIImage+Image.swift",
       "kind": "IntegerLiteral",
-      "offset": 3588,
+      "offset": 3580,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/UIImage+Image.swift",
       "kind": "IntegerLiteral",
-      "offset": 3629,
+      "offset": 3621,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/UIImage+Image.swift",
       "kind": "StringLiteral",
-      "offset": 3851,
+      "offset": 3843,
       "length": 28,
       "value": "\"Failed to create jpeg data\""
     },
     {
       "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/UIImage+Image.swift",
       "kind": "IntegerLiteral",
-      "offset": 4677,
+      "offset": 4669,
       "length": 1,
       "value": "0"
     },
@@ -11651,128 +12074,247 @@
       "value": "\"Color\""
     },
     {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/DOM.swift",
+      "kind": "StringLiteral",
+      "offset": 3068,
+      "length": 4,
+      "value": "\"px\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/DOM.swift",
+      "kind": "StringLiteral",
+      "offset": 3112,
+      "length": 4,
+      "value": "\"in\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/DOM.swift",
+      "kind": "StringLiteral",
+      "offset": 3162,
+      "length": 4,
+      "value": "\"cm\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/DOM.swift",
+      "kind": "StringLiteral",
+      "offset": 3212,
+      "length": 4,
+      "value": "\"mm\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/DOM.swift",
+      "kind": "StringLiteral",
+      "offset": 3257,
+      "length": 4,
+      "value": "\"pt\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/DOM.swift",
+      "kind": "StringLiteral",
+      "offset": 3301,
+      "length": 4,
+      "value": "\"pc\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/DOM.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3500,
+      "length": 2,
+      "value": "96"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/DOM.swift",
+      "kind": "FloatLiteral",
+      "offset": 3555,
+      "length": 6,
+      "value": "37.795"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/DOM.swift",
+      "kind": "FloatLiteral",
+      "offset": 3614,
+      "length": 6,
+      "value": "3.7795"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/DOM.swift",
+      "kind": "FloatLiteral",
+      "offset": 3668,
+      "length": 6,
+      "value": "1.3333"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/DOM.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3721,
+      "length": 2,
+      "value": "16"
+    },
+    {
       "filePath": "\/Users\/distiller\/Library\/Developer\/Xcode\/DerivedData\/ActionCards-bxhtaptuiijibqfmkcwrexdteglm\/Build\/Intermediates.noindex\/ActionCardsSDK.build\/Release-iphonesimulator\/AtomicSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 730,
+      "offset": 734,
+      "length": 16,
+      "value": "\"icon-add-image\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/Library\/Developer\/Xcode\/DerivedData\/ActionCards-bxhtaptuiijibqfmkcwrexdteglm\/Build\/Intermediates.noindex\/ActionCardsSDK.build\/Release-iphonesimulator\/AtomicSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 889,
+      "length": 17,
+      "value": "\"icon-attachment\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/Library\/Developer\/Xcode\/DerivedData\/ActionCards-bxhtaptuiijibqfmkcwrexdteglm\/Build\/Intermediates.noindex\/ActionCardsSDK.build\/Release-iphonesimulator\/AtomicSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 1033,
       "length": 11,
       "value": "\"icon-back\""
     },
     {
       "filePath": "\/Users\/distiller\/Library\/Developer\/Xcode\/DerivedData\/ActionCards-bxhtaptuiijibqfmkcwrexdteglm\/Build\/Intermediates.noindex\/ActionCardsSDK.build\/Release-iphonesimulator\/AtomicSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 883,
+      "offset": 1175,
+      "length": 13,
+      "value": "\"icon-camera\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/Library\/Developer\/Xcode\/DerivedData\/ActionCards-bxhtaptuiijibqfmkcwrexdteglm\/Build\/Intermediates.noindex\/ActionCardsSDK.build\/Release-iphonesimulator\/AtomicSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 1330,
       "length": 19,
       "value": "\"icon-card-options\""
     },
     {
       "filePath": "\/Users\/distiller\/Library\/Developer\/Xcode\/DerivedData\/ActionCards-bxhtaptuiijibqfmkcwrexdteglm\/Build\/Intermediates.noindex\/ActionCardsSDK.build\/Release-iphonesimulator\/AtomicSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 1031,
+      "offset": 1478,
       "length": 12,
       "value": "\"icon-cards\""
     },
     {
       "filePath": "\/Users\/distiller\/Library\/Developer\/Xcode\/DerivedData\/ActionCards-bxhtaptuiijibqfmkcwrexdteglm\/Build\/Intermediates.noindex\/ActionCardsSDK.build\/Release-iphonesimulator\/AtomicSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 1172,
+      "offset": 1619,
+      "length": 12,
+      "value": "\"icon-check\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/Library\/Developer\/Xcode\/DerivedData\/ActionCards-bxhtaptuiijibqfmkcwrexdteglm\/Build\/Intermediates.noindex\/ActionCardsSDK.build\/Release-iphonesimulator\/AtomicSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 1760,
       "length": 12,
       "value": "\"icon-clock\""
     },
     {
       "filePath": "\/Users\/distiller\/Library\/Developer\/Xcode\/DerivedData\/ActionCards-bxhtaptuiijibqfmkcwrexdteglm\/Build\/Intermediates.noindex\/ActionCardsSDK.build\/Release-iphonesimulator\/AtomicSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 1321,
+      "offset": 1909,
       "length": 16,
       "value": "\"icon-completed\""
     },
     {
       "filePath": "\/Users\/distiller\/Library\/Developer\/Xcode\/DerivedData\/ActionCards-bxhtaptuiijibqfmkcwrexdteglm\/Build\/Intermediates.noindex\/ActionCardsSDK.build\/Release-iphonesimulator\/AtomicSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 1466,
+      "offset": 2054,
       "length": 12,
       "value": "\"icon-cross\""
     },
     {
       "filePath": "\/Users\/distiller\/Library\/Developer\/Xcode\/DerivedData\/ActionCards-bxhtaptuiijibqfmkcwrexdteglm\/Build\/Intermediates.noindex\/ActionCardsSDK.build\/Release-iphonesimulator\/AtomicSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 1609,
+      "offset": 2197,
       "length": 13,
       "value": "\"icon-delete\""
     },
     {
       "filePath": "\/Users\/distiller\/Library\/Developer\/Xcode\/DerivedData\/ActionCards-bxhtaptuiijibqfmkcwrexdteglm\/Build\/Intermediates.noindex\/ActionCardsSDK.build\/Release-iphonesimulator\/AtomicSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 1749,
+      "offset": 2337,
       "length": 11,
       "value": "\"icon-down\""
     },
     {
       "filePath": "\/Users\/distiller\/Library\/Developer\/Xcode\/DerivedData\/ActionCards-bxhtaptuiijibqfmkcwrexdteglm\/Build\/Intermediates.noindex\/ActionCardsSDK.build\/Release-iphonesimulator\/AtomicSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 1895,
+      "offset": 2511,
+      "length": 30,
+      "value": "\"icon-file-upload-placeholder\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/Library\/Developer\/Xcode\/DerivedData\/ActionCards-bxhtaptuiijibqfmkcwrexdteglm\/Build\/Intermediates.noindex\/ActionCardsSDK.build\/Release-iphonesimulator\/AtomicSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 2700,
+      "length": 31,
+      "value": "\"icon-file-upload-remove-image\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/Library\/Developer\/Xcode\/DerivedData\/ActionCards-bxhtaptuiijibqfmkcwrexdteglm\/Build\/Intermediates.noindex\/ActionCardsSDK.build\/Release-iphonesimulator\/AtomicSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 2866,
       "length": 18,
       "value": "\"icon-media-image\""
     },
     {
       "filePath": "\/Users\/distiller\/Library\/Developer\/Xcode\/DerivedData\/ActionCards-bxhtaptuiijibqfmkcwrexdteglm\/Build\/Intermediates.noindex\/ActionCardsSDK.build\/Release-iphonesimulator\/AtomicSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 2053,
+      "offset": 3024,
       "length": 18,
       "value": "\"icon-media-video\""
     },
     {
       "filePath": "\/Users\/distiller\/Library\/Developer\/Xcode\/DerivedData\/ActionCards-bxhtaptuiijibqfmkcwrexdteglm\/Build\/Intermediates.noindex\/ActionCardsSDK.build\/Release-iphonesimulator\/AtomicSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 2200,
+      "offset": 3171,
       "length": 12,
       "value": "\"icon-minus\""
     },
     {
       "filePath": "\/Users\/distiller\/Library\/Developer\/Xcode\/DerivedData\/ActionCards-bxhtaptuiijibqfmkcwrexdteglm\/Build\/Intermediates.noindex\/ActionCardsSDK.build\/Release-iphonesimulator\/AtomicSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 2350,
+      "offset": 3321,
       "length": 17,
       "value": "\"icon-more-large\""
     },
     {
       "filePath": "\/Users\/distiller\/Library\/Developer\/Xcode\/DerivedData\/ActionCards-bxhtaptuiijibqfmkcwrexdteglm\/Build\/Intermediates.noindex\/ActionCardsSDK.build\/Release-iphonesimulator\/AtomicSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 2494,
+      "offset": 3465,
       "length": 11,
       "value": "\"icon-play\""
     },
     {
       "filePath": "\/Users\/distiller\/Library\/Developer\/Xcode\/DerivedData\/ActionCards-bxhtaptuiijibqfmkcwrexdteglm\/Build\/Intermediates.noindex\/ActionCardsSDK.build\/Release-iphonesimulator\/AtomicSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 2632,
+      "offset": 3603,
       "length": 11,
       "value": "\"icon-plus\""
     },
     {
       "filePath": "\/Users\/distiller\/Library\/Developer\/Xcode\/DerivedData\/ActionCards-bxhtaptuiijibqfmkcwrexdteglm\/Build\/Intermediates.noindex\/ActionCardsSDK.build\/Release-iphonesimulator\/AtomicSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 2776,
+      "offset": 3747,
       "length": 14,
       "value": "\"icon-success\""
     },
     {
       "filePath": "\/Users\/distiller\/Library\/Developer\/Xcode\/DerivedData\/ActionCards-bxhtaptuiijibqfmkcwrexdteglm\/Build\/Intermediates.noindex\/ActionCardsSDK.build\/Release-iphonesimulator\/AtomicSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 2928,
+      "offset": 3899,
       "length": 17,
       "value": "\"icon-thumb-down\""
     },
     {
       "filePath": "\/Users\/distiller\/Library\/Developer\/Xcode\/DerivedData\/ActionCards-bxhtaptuiijibqfmkcwrexdteglm\/Build\/Intermediates.noindex\/ActionCardsSDK.build\/Release-iphonesimulator\/AtomicSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 3079,
+      "offset": 4050,
       "length": 15,
       "value": "\"icon-thumb-up\""
     },
     {
       "filePath": "\/Users\/distiller\/Library\/Developer\/Xcode\/DerivedData\/ActionCards-bxhtaptuiijibqfmkcwrexdteglm\/Build\/Intermediates.noindex\/ActionCardsSDK.build\/Release-iphonesimulator\/AtomicSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 3221,
+      "offset": 4192,
       "length": 11,
       "value": "\"icon-tick\""
     }
