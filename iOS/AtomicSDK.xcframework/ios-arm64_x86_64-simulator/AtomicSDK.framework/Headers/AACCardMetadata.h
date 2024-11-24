@@ -42,4 +42,14 @@ typedef NS_ENUM(NSUInteger, AACCardMenuOption) {
  */
 @property (nonatomic, strong, nonnull) NSDate *updatedTime;
 
+/**
+Any metadata that has been sent with the payload of the card.
+ */
+@property (nonatomic, strong, nullable) NSDictionary *payloadMetadata;
+
+/**
+ The time when this card expires.
+ */
+@property (nonatomic, strong, nullable) NSDate *expiryDate;
+
 @end

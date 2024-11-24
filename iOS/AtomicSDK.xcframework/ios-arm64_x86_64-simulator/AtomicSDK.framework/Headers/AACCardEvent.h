@@ -25,7 +25,11 @@ typedef NS_ENUM(NSUInteger, AACCardEventKind) {
     /// A card failed to dismiss, either due to an API error or lack of network connectivity.
     AACCardEventKindDismissFailed,
     /// A card failed to snooze, either due to an API error or lack of network connectivity.
-    AACCardEventKindSnoozeFailed
+    AACCardEventKindSnoozeFailed,
+    /// The user has explicitly denied an app permission to capture media. Equivalent to AVAuthorizationStatusDenied.
+    AACCardEventKindCameraDenied,
+    /// The app isn’t permitted to use media capture devices. Equivalent to AVAuthorizationStatusRestricted.
+    AACCardEventKindCameraRestricted
 };
 
 /**

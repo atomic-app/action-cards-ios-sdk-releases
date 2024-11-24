@@ -135,7 +135,27 @@ typedef NS_ENUM(NSUInteger, AACCustomString) {
     /**
      Customised toast message for when the user sends feedback (votes) for a card - defaults to "Feedback received".
      */
-    AACCustomStringToastCardFeedbackMessage
+    AACCustomStringToastCardFeedbackMessage,
+    /**
+     The message displayed on the upload processing overlay during file upload. Defaults to "Sending, please wait...".
+     */
+    AACCustomStringProcessingStateMessage,
+    /**
+     The text displayed on the cancel button in the upload overlay during file upload. Defaults to "Cancel process".
+     */
+    AACCustomStringProcessingStateCancelButtonTitle,
+    /**
+     Customised toast message shown when file(s) fail to upload during card submission. Defaults to "Couldn't upload file(s)".
+     */
+    AACCustomStringToastFileUploadFailedMessage,
+    /**
+     Customised toast message shown when requesting camera access from the user. Defaults to "Access to your camera is required to take photos. Please enable camera access in your device settings".
+     */
+    AACCustomStringRequestCameraAccessMessage,
+    /**
+     The title for the button in the toast message prompting for camera access, which navigates to the Settings app. Defaults to `Settings`.
+     */
+    AACCustomStringRequestCameraAccessSettingsTitle
 };
 
 /**
@@ -157,11 +177,17 @@ typedef NS_OPTIONS(NSUInteger, AACUIElement) {
     /// Value indicating that none of the listed UI elements should be shown.
     AACUIElementNone = 0,
     /// Value indicating that toast messages should shown at the bottom of the screen.
+    ///
+    /// This setting is independent of the camera usage toast setting `AACUIElementRequestCameraUsage`.
     AACUIElementCardListToast = 1 << 0,
     /// Value indicating that the footer message should be shown beneath the last card in the list.
     AACUIElementCardListFooterMessage = 1 << 1,
     /// Value indicating that the header should be shown at the top of the card list.
     AACUIElementCardListHeader = 1 << 2,
+    /// Value indicating that the SDK should display a toast message requesting camera access when camera permission has been explicitly denied.
+    ///
+    /// This setting is independent of the toast message setting `AACUIElementCardListToast`.
+    AACUIElementRequestCameraUsage = 1 << 3,
 };
 
 /**
@@ -229,8 +255,8 @@ typedef NS_OPTIONS(NSUInteger, AACUIElement) {
 
 /**
  Bitmask of user interface elements that should be enabled in the stream container.
- The default value enables toast messages and the card list header.
- For single card view only the toast message option takes effect.
+ The default value enables toast messages, the card list header and the camera usage request toast.
+ For single card view the header setting does not take effect.
  */
 @property (nonatomic) AACUIElement enabledUiElements;
 
