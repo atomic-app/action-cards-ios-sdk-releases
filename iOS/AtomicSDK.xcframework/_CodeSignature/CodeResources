@@ -402,7 +402,7 @@
 		</data>
 		<key>ios-arm64/AtomicSDK.framework/Info.plist</key>
 		<data>
-		9dfdPBd7j9MSYVaBe6NxWTN+cWY=
+		Fx5OBE2t7cAKQMeHdz16erfMnlw=
 		</data>
 		<key>ios-arm64/AtomicSDK.framework/LICENSE-FontAwesome.txt</key>
 		<data>
@@ -410,7 +410,7 @@
 		</data>
 		<key>ios-arm64/AtomicSDK.framework/LICENSES.html</key>
 		<data>
-		v3EFBN3tIMuciYeejQGmP5JE/gg=
+		C9+UBUbXg4cqapAXrMhBONnybzk=
 		</data>
 		<key>ios-arm64/AtomicSDK.framework/Localizable.strings</key>
 		<data>
@@ -426,7 +426,7 @@
 		</data>
 		<key>ios-arm64/AtomicSDK.framework/SDKInfo.plist</key>
 		<data>
-		cm/JcUExagGFdRwd6KFDNT0123Q=
+		V3W9qdP04V/ei3PezdF0gTT22LU=
 		</data>
 		<key>ios-arm64/AtomicSDK.framework/fontawesome-5-solid.otf</key>
 		<data>
@@ -598,7 +598,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/AtomicSDK.framework/AtomicSDK</key>
 		<data>
-		8qoHMH7sg8YzHiMyvUlewLutYvU=
+		lQ9f9kvuXc4ITBNXMeL2vrw1UGY=
 		</data>
 		<key>ios-arm64_x86_64-simulator/AtomicSDK.framework/Headers/AACCardActionButton.h</key>
 		<data>
@@ -830,7 +830,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/AtomicSDK.framework/Info.plist</key>
 		<data>
-		0itSZN/O8nbAO6HzZ+cpA513uP8=
+		b2OLO8S3n//qiiQJ3l0QhK/IFFQ=
 		</data>
 		<key>ios-arm64_x86_64-simulator/AtomicSDK.framework/LICENSE-FontAwesome.txt</key>
 		<data>
@@ -838,7 +838,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/AtomicSDK.framework/LICENSES.html</key>
 		<data>
-		v3EFBN3tIMuciYeejQGmP5JE/gg=
+		C9+UBUbXg4cqapAXrMhBONnybzk=
 		</data>
 		<key>ios-arm64_x86_64-simulator/AtomicSDK.framework/Localizable.strings</key>
 		<data>
@@ -854,11 +854,11 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/AtomicSDK.framework/SDKInfo.plist</key>
 		<data>
-		cm/JcUExagGFdRwd6KFDNT0123Q=
+		V3W9qdP04V/ei3PezdF0gTT22LU=
 		</data>
 		<key>ios-arm64_x86_64-simulator/AtomicSDK.framework/_CodeSignature/CodeResources</key>
 		<data>
-		mYUvFyYa6yZ+D0IYmDZ3v4yLEFQ=
+		xyGxAdJpjUM2y3x/iekJBaVKSCY=
 		</data>
 		<key>ios-arm64_x86_64-simulator/AtomicSDK.framework/fontawesome-5-solid.otf</key>
 		<data>
@@ -1960,11 +1960,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			9dfdPBd7j9MSYVaBe6NxWTN+cWY=
+			Fx5OBE2t7cAKQMeHdz16erfMnlw=
 			</data>
 			<key>hash2</key>
 			<data>
-			oKjnWqGf55Tw/1XSIjv5cX2MJBGzbBhgLLghjshr8rQ=
+			aQOzS61DgDjpa0BxtwewwjyJwDTS8EhswEVidSS/FFw=
 			</data>
 		</dict>
 		<key>ios-arm64/AtomicSDK.framework/LICENSE-FontAwesome.txt</key>
@@ -1982,11 +1982,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			v3EFBN3tIMuciYeejQGmP5JE/gg=
+			C9+UBUbXg4cqapAXrMhBONnybzk=
 			</data>
 			<key>hash2</key>
 			<data>
-			ogAhmkGIAElGG0XeEZcqJmibi2vNfkVE/bBiqZysBno=
+			nPBo+p0UwfxNVtuK1Ko7eoHGdyeBjPk9xoU/rqgP1ek=
 			</data>
 		</dict>
 		<key>ios-arm64/AtomicSDK.framework/Localizable.strings</key>
@@ -2026,11 +2026,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			cm/JcUExagGFdRwd6KFDNT0123Q=
+			V3W9qdP04V/ei3PezdF0gTT22LU=
 			</data>
 			<key>hash2</key>
 			<data>
-			dzjSZtBsOXN+ODxh3rrIc5cg7XYYVH8PB4p9Z9YDQgc=
+			aBbiS2gNwQPMu7pMlQZrmi64v1w8gCrHC8lyfIg4L88=
 			</data>
 		</dict>
 		<key>ios-arm64/AtomicSDK.framework/fontawesome-5-solid.otf</key>
@@ -2499,11 +2499,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			8qoHMH7sg8YzHiMyvUlewLutYvU=
+			lQ9f9kvuXc4ITBNXMeL2vrw1UGY=
 			</data>
 			<key>hash2</key>
 			<data>
-			7rLss2eFs4ayE6eaYXOly3v+K8Pz70i7Cj8hJOq1DUs=
+			5+cD3wx1h5JZlEcAjXRE1yqfwF5jxTdk6Vn5tByW2/Y=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/AtomicSDK.framework/Headers/AACCardActionButton.h</key>
@@ -3137,11 +3137,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			0itSZN/O8nbAO6HzZ+cpA513uP8=
+			b2OLO8S3n//qiiQJ3l0QhK/IFFQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			rudF1SROzujTLgDjGtDwf2F0UlrswT1WXrzHSlsg4Mg=
+			k3n/4Tn1VGpbq9Vi6YS70NpXMJBwfJ8TZmGv0WQPp2g=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/AtomicSDK.framework/LICENSE-FontAwesome.txt</key>
@@ -3159,11 +3159,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			v3EFBN3tIMuciYeejQGmP5JE/gg=
+			C9+UBUbXg4cqapAXrMhBONnybzk=
 			</data>
 			<key>hash2</key>
 			<data>
-			ogAhmkGIAElGG0XeEZcqJmibi2vNfkVE/bBiqZysBno=
+			nPBo+p0UwfxNVtuK1Ko7eoHGdyeBjPk9xoU/rqgP1ek=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/AtomicSDK.framework/Localizable.strings</key>
@@ -3203,22 +3203,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			cm/JcUExagGFdRwd6KFDNT0123Q=
+			V3W9qdP04V/ei3PezdF0gTT22LU=
 			</data>
 			<key>hash2</key>
 			<data>
-			dzjSZtBsOXN+ODxh3rrIc5cg7XYYVH8PB4p9Z9YDQgc=
+			aBbiS2gNwQPMu7pMlQZrmi64v1w8gCrHC8lyfIg4L88=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/AtomicSDK.framework/_CodeSignature/CodeResources</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			mYUvFyYa6yZ+D0IYmDZ3v4yLEFQ=
+			xyGxAdJpjUM2y3x/iekJBaVKSCY=
 			</data>
 			<key>hash2</key>
 			<data>
-			2vrCAc0UdkrYQ9hWQ4SRq2w5UMsesbntzZzwSgEu/yU=
+			hL/9yKds3iAYIQA3+H6turAttTTzw6Klw7/5Dk2qWFw=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/AtomicSDK.framework/fontawesome-5-solid.otf</key>
