@@ -1,0 +1,31 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 6.0.2 effective-5.10 (swiftlang-6.0.2.1.2 clang-1600.0.26.4)
+// swift-module-flags: -target arm64-apple-ios12.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name AtomicSDK
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface
+@_exported import AtomicSDK
+import CoreGraphics
+import CoreText
+import Darwin
+import DeveloperToolsSupport
+import Foundation
+import Swift
+import SwiftUI
+import UIKit
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+@available(iOSApplicationExtension 13.0, *)
+@objc public class AACSVGImage : ObjectiveC.NSObject {
+  @objc final public let viewBox: CoreFoundation.CGRect
+  @objc final public let isMonoChrome: Swift.Bool
+  @objc public var pdfImage: UIKit.UIImage? {
+    @objc get
+    @objc set
+  }
+  @objc public var rasterizedImage: UIKit.UIImage? {
+    @objc get
+    @objc set
+  }
+  @objc public init?(svgString: Swift.String, proposedSize: CoreFoundation.CGSize = CGSize(width: 20, height: 20), currentColor: UIKit.UIColor)
+  @objc deinit
+}

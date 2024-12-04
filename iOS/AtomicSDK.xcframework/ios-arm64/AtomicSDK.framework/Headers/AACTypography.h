@@ -9,6 +9,16 @@
 NS_ASSUME_NONNULL_BEGIN
 
 /**
+ The transform style used by a typography style.
+ */
+typedef NS_ENUM(NSUInteger, AACTypographyTransform) {
+    /// There are no transforms applied.
+    AACTypographyTransformNone,
+    /// The characters are converted to upper case.
+    AACTypographyTransformUppercase
+};
+
+/**
  Allows consumers of typography styles to pass additional options
  when generating an attributed string from that style.
  
@@ -91,6 +101,16 @@ NS_ASSUME_NONNULL_BEGIN
  in points.
  */
 - (CGFloat)lineHeightValue;
+
+/**
+ The line height multiple defined in Atomic Workbench.
+ */
+- (CGFloat)lineHeightMultiple;
+
+/**
+ The transform style used before displaying the text.
+ */
+@property (nonatomic, readonly) AACTypographyTransform transform;
 
 /**
  Applies attributes necessary to render the given string in the style dictated

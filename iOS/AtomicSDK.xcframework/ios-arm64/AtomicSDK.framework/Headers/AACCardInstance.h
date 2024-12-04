@@ -81,6 +81,15 @@ NS_ASSUME_NONNULL_BEGIN
 - (AACCardLayout* __nullable)layoutWithName:(NSString *)name;
 
 /**
+ Returns an array of the buttons on the layout matching the given subview ID. Pass `nil` to the ID for the top-level layout.
+ 
+ An empty array is returned if there are no buttons on the specified layout.
+ 
+ @param subviewId The ID of the subview to retrieve the buttons for, or `nil` for the top-level layout.
+ */
+- (NSArray<AACCardBaseButton*>*)buttonsWithSubviewId:(NSString *__nullable)subviewId;
+
+/**
  Information pertaining to the card's creation.
  */
 @property (nonatomic, readonly) AACCardDetail *detail;
