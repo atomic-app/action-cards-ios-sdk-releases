@@ -70,15 +70,6 @@ typedef NS_ENUM(NSUInteger, AACSDKEventType) {
     /// This event is only occurred when you call the SDK's track method. Read more in the documentation of `AACSDKEventNotificationReceived`.
     AACSDKEventTypeNotificationReceived,
     
-    /// One or more file uploads have started as part of a card submission.
-    AACSDKEventTypeUserFileUploadsStarted,
-    
-    /// One or more file uploads have failed during card submission.
-    AACSDKEventTypeUserFileUploadsFailed,
-    
-    /// One or more file uploads have successfully completed. This event does not necessarily mean the card submission has succeeded.
-    AACSDKEventTypeUserFileUploadsCompleted,
-    
     /// An unknown event is observed.
     AACSDKEventTypeUnknown
 };
@@ -136,24 +127,7 @@ typedef NS_ENUM(NSUInteger, AACSDKEventRedirectLinkMethod) {
 };
 
 /**
- The types of card components from which a user can be redirected.
- */
-typedef NS_ENUM(NSUInteger, AACSDKEventRedirectDetailType) {
-    /// The user is redirected from an image.
-    AACSDKEventRedirectDetailTypeImage = 0,
-    
-    /// The user is redirected from a link button.
-    AACSDKEventRedirectDetailTypeLinkButton,
-    
-    /// The user is redirected from a submit button.
-    AACSDKEventRedirectDetailTypeSubmitButton,
-    
-    /// The user is redirected from a hyperlink in markdown text.
-    AACSDKEventRedirectDetailTypeTextLink
-};
-
-/**
- The types of possible sources that can trigger card actions, such as snoozing, dismissal or voting.
+The types of possible sources that can trigger card actions, such as snoozing, dismissal or voting.
  */
 typedef NS_ENUM(NSUInteger, AACSDKEventActionSource) {
     /// The action is initiated from an unknown source.
@@ -334,12 +308,6 @@ typedef NS_ENUM(NSUInteger, AACSDKEventActionSource) {
  This event does not undergo de-duplication.
  */
 @interface AACSDKEventCardDisplayed : AACSDKEventCREVT
-
-/**
- Represents any metadata payload sent as part of a card trigger.
-*/
-@property (nonatomic, readonly, nullable) NSDictionary *payloadMetadata;
-
 @end
 
 /**
@@ -416,10 +384,8 @@ typedef NS_ENUM(NSUInteger, AACSDKEventActionSource) {
  Represents an event in which the user is redirected by a URL or a custom payload.
  
  The event occurs when
- - The user taps an image that is set to open a URL or has a custom action payload.
  - The user opens a URL on a link button or after submitting a card.
  - The user taps on a link or submit button with a custom action payload.
- - The user taps on a hyperlink in markdown text.
  
  This event can occur on either the top-level or subview of a card.
  */
@@ -443,11 +409,6 @@ typedef NS_ENUM(NSUInteger, AACSDKEventActionSource) {
  This will be `nil` if the redirection did not involve a custom action payload (for example, if it was a URL redirection).
  */
 @property (nonatomic, readonly, nullable) NSDictionary *redirectPayload;
-
-/**
- The card component from which a user gets redirected.
- */
-@property (nonatomic, readonly) AACSDKEventRedirectDetailType detail;
 
 @end
 
@@ -510,7 +471,7 @@ typedef NS_ENUM(NSUInteger, AACSDKEventActionSource) {
 /**
  The URL of this video.
  */
-@property (nonatomic, readonly, nullable) NSURL* videoUrl;
+@property (nonatomic, readonly) NSURL* videoUrl;
 
 @end
 
@@ -580,53 +541,5 @@ typedef NS_ENUM(NSUInteger, AACSDKEventActionSource) {
  */
 @interface AACSDKEventNotificationReceived : AACSDKEventCREVT
 @end
-
-/**
- The data type containing details of an uploaded file.
- */
-@interface AACSDKEventUserFileUploadsData : NSObject
-
-/**
- The name of the file, derived from the local disk name but unique within the platform's bucket.
- */
-@property (nonatomic, readonly) NSString *filename;
-
-/**
- The identifier of the bucket to which the file is uploaded.
- */
-@property (nonatomic, readonly) NSString *bucketId;
-
-@end
-
-/**
- Represents an event in which one or more files are uploaded.
- */
-@interface AACSDKEventUsrFlUpldEVT : AACSDKEventCREVT <AACSDKEventHasViewState>
-
-/**
- Detailed information about the uploaded files.
- */
-@property (nonatomic, readonly, nonnull) NSArray<AACSDKEventUserFileUploadsData *> *fileInfo;
-
-@end
-
-/**
- Represents an event where one or more files start being uploaded.
- */
-@interface AACSDKEventUserFileUploadsStarted : AACSDKEventUsrFlUpldEVT
-@end
-
-/**
- Represents an event where one or more files failed to upload.
- */
-@interface AACSDKEventUserFileUploadsFailed : AACSDKEventUsrFlUpldEVT
-@end
-
-/**
- Represents an event where one or more files have been successfully uploaded.
- */
-@interface AACSDKEventUserFileUploadsCompleted : AACSDKEventUsrFlUpldEVT
-@end
-
 
 NS_ASSUME_NONNULL_END
