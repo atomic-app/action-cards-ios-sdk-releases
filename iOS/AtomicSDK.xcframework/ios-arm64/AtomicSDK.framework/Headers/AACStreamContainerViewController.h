@@ -28,18 +28,6 @@ __attribute__((objc_subclassing_restricted))
  Creates a new view controller that renders a stream container by its identifier.
  
  @param containerId (Required) The ID for this stream container, as identified in the Workbench.
- @param sessionDelegate (Required) A delegate that supplies a user authentication token when requested
- by the SDK.
- @param configuration (Required) A configuration object for defining behaviour of the stream container.
- */
-- (instancetype __nonnull)initWithIdentifier:(NSString* __nonnull)containerId
-                             sessionDelegate:(id<AACSessionDelegate> __nonnull)sessionDelegate
-                               configuration:(AACConfiguration* __nonnull)configuration NS_DESIGNATED_INITIALIZER DEPRECATED_MSG_ATTRIBUTE("Session delegates are now configured globally, and are no longer supplied as a parameter (as of release 1.0.0). Please pass your session delegate to +[AACSession setSessionDelegate:], and use `initWithIdentifier:configuration:` instead.");
-
-/**
- Creates a new view controller that renders a stream container by its identifier.
- 
- @param containerId (Required) The ID for this stream container, as identified in the Workbench.
  @param configuration (Required) A configuration object for defining behaviour of the stream container.
  */
 - (instancetype __nonnull)initWithIdentifier:(NSString* __nonnull)containerId
