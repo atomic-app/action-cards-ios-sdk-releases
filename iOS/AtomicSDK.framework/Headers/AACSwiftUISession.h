@@ -53,6 +53,17 @@ typedef void(^AACSessionAppearanceCollectionCompletionHandler)(AACAppearanceColl
  */
 + (void)dispatchAnalyticsWithEventType:(AACSwiftUIAnalyticsEvent *)event;
 
+/**
+ Given a markdown string, returns an attributed string.
+ 
+ @return An attributed string rendered from the provided markdown text.
+ */
++ (NSAttributedString*)attributedStringFromMarkdown:(NSString *)markdown
+                                    typographyStyle:(AACTypography *)typographyStyle
+                                          textColor:(AACColor *)textColor
+                                          linkColor:(AACColor *)linkColor
+                            isVerticalCentreAligned:(BOOL)isVerticalCentreAligned;
+
 @end
 
 NS_ASSUME_NONNULL_END
