@@ -13,21 +13,21 @@
 @interface AACCardNodeStepper: AACCardNodeSubmittable
 
 /// The label to display to the left of the stepper.
-@property (nonatomic, copy, nonnull) NSString* label;
+@property (nonatomic, copy, nullable) NSString* label;
 
 /// An optional image to display to the left of the stepper's label.
 @property (nonatomic, strong, nullable) NSURL* thumbnailUrl;
 
 /// The minimum value the stepper supports.
-@property (nonatomic, copy, nonnull) NSNumber *minimumValue;
+@property (nonatomic, copy, nullable) NSNumber *minimumValue;
 
 /// The maximum value the stepper supports.
-@property (nonatomic, copy, nonnull) NSNumber *maximumValue;
+@property (nonatomic, copy, nullable) NSNumber *maximumValue;
 
 /// The amount by which the stepper increments or decrements its value when stepped.
-@property (nonatomic, copy, nonnull) NSNumber *stepValue;
+@property (nonatomic, copy, nullable) NSNumber *stepValue;
 
 /// The default value to display in the stepper.
-@property (nonatomic, copy, nonnull) NSNumber *defaultValue;
+@property (nonatomic, copy, nullable) NSNumber *defaultValue;
 
 @end

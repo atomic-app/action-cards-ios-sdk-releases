@@ -6,8 +6,6 @@
 
 #import <AtomicSDK/AACCardNode.h>
 
-extern CGFloat const AACCardNodeMediaHeightDynamic;
-
 /**
  Media element kinds (or types) supported by the SDK.
  */
@@ -46,20 +44,6 @@ typedef NS_ENUM(NSUInteger, AACCardNodeMediaActionType) {
     AACCardNodeMediaActionTypeSubview,
     /// The media would redirect to a custom payload.
     AACCardNodeMediaActionTypePayload
-};
-
-/**
- Defines the possible heights for displaying a media element.
- */
-typedef NS_ENUM(NSUInteger, AACCardNodeMediaHeight) {
-    /// Tall height (200px). Spans full width, centered with automatic vertical cropping.
-    AACCardNodeMediaHeightTall,
-    /// Medium height (120px). Spans full width, centered with automatic vertical cropping.
-    AACCardNodeMediaHeightMedium,
-    /// Short height (50px). Spans full width, centered with automatic vertical cropping.
-    AACCardNodeMediaHeightShort,
-    /// Original size. Displays the source image at its original dimensions, spanning full width with no cropping.
-    AACCardNodeMediaHeightOriginal
 };
 
 @interface AACCardNodeMedia: AACCardNode
@@ -104,12 +88,5 @@ typedef NS_ENUM(NSUInteger, AACCardNodeMediaHeight) {
  The action to be taken by this object.
  */
 @property (nonatomic) AACCardNodeMediaActionType actionType;
-
-/**
- The specified height type of this object provided in the Atomic Workbench.
- 
- Defaults to `AACCardNodeMediaHeightTall`.
- */
-@property (nonatomic) AACCardNodeMediaHeight displayedHeightType;
 
 @end
