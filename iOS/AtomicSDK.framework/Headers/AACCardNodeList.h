@@ -28,4 +28,12 @@ typedef NS_ENUM(NSUInteger, AACCardNodeListStyle) {
  */
 @property (nonatomic) AACCardNodeListStyle style;
 
+/// Whether this node is the first node of a card.
+///
+/// This property can be used to make the first list item have more top and trailing
+/// spacing to make room for the action button.
+///
+/// This property is set during the parsing the card layout.
+@property (nonatomic) BOOL isFirstNodeOfCard;
+
 @end
