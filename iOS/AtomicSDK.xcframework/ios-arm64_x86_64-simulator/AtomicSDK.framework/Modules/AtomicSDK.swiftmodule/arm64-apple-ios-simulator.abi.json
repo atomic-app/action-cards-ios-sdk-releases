@@ -1,0 +1,2611 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "AtomicSDK",
+    "printedName": "AtomicSDK",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "CoreGraphics",
+        "printedName": "CoreGraphics",
+        "declKind": "Import",
+        "moduleName": "AtomicSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AtomicSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AtomicSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AtomicSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AtomicSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AtomicSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Darwin",
+        "printedName": "Darwin",
+        "declKind": "Import",
+        "moduleName": "AtomicSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AtomicSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AtomicSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AtomicSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AtomicSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AtomicSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "AACSVGImage",
+        "printedName": "AACSVGImage",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "viewBox",
+            "printedName": "viewBox",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CGRect",
+                "printedName": "CoreFoundation.CGRect",
+                "usr": "c:@S@CGRect"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@AtomicSDK@objc(cs)AACSVGImage(py)viewBox",
+            "mangledName": "$s9AtomicSDK11AACSVGImageC7viewBoxSo6CGRectVvp",
+            "moduleName": "AtomicSDK",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CGRect",
+                    "printedName": "CoreFoundation.CGRect",
+                    "usr": "c:@S@CGRect"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@AtomicSDK@objc(cs)AACSVGImage(im)viewBox",
+                "mangledName": "$s9AtomicSDK11AACSVGImageC7viewBoxSo6CGRectVvg",
+                "moduleName": "AtomicSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "isMonoChrome",
+            "printedName": "isMonoChrome",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@AtomicSDK@objc(cs)AACSVGImage(py)isMonoChrome",
+            "mangledName": "$s9AtomicSDK11AACSVGImageC12isMonoChromeSbvp",
+            "moduleName": "AtomicSDK",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@AtomicSDK@objc(cs)AACSVGImage(im)isMonoChrome",
+                "mangledName": "$s9AtomicSDK11AACSVGImageC12isMonoChromeSbvg",
+                "moduleName": "AtomicSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "pdfImage",
+            "printedName": "pdfImage",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIImage?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIImage",
+                    "printedName": "UIKit.UIImage",
+                    "usr": "c:objc(cs)UIImage"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@AtomicSDK@objc(cs)AACSVGImage(py)pdfImage",
+            "mangledName": "$s9AtomicSDK11AACSVGImageC8pdfImageSo7UIImageCSgvp",
+            "moduleName": "AtomicSDK",
+            "declAttributes": [
+              "Lazy",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "UIKit.UIImage?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIImage",
+                        "printedName": "UIKit.UIImage",
+                        "usr": "c:objc(cs)UIImage"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@AtomicSDK@objc(cs)AACSVGImage(im)pdfImage",
+                "mangledName": "$s9AtomicSDK11AACSVGImageC8pdfImageSo7UIImageCSgvg",
+                "moduleName": "AtomicSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "UIKit.UIImage?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIImage",
+                        "printedName": "UIKit.UIImage",
+                        "usr": "c:objc(cs)UIImage"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@AtomicSDK@objc(cs)AACSVGImage(im)setPdfImage:",
+                "mangledName": "$s9AtomicSDK11AACSVGImageC8pdfImageSo7UIImageCSgvs",
+                "moduleName": "AtomicSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9AtomicSDK11AACSVGImageC8pdfImageSo7UIImageCSgvM",
+                "mangledName": "$s9AtomicSDK11AACSVGImageC8pdfImageSo7UIImageCSgvM",
+                "moduleName": "AtomicSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Available"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "rasterizedImage",
+            "printedName": "rasterizedImage",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIImage?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIImage",
+                    "printedName": "UIKit.UIImage",
+                    "usr": "c:objc(cs)UIImage"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@AtomicSDK@objc(cs)AACSVGImage(py)rasterizedImage",
+            "mangledName": "$s9AtomicSDK11AACSVGImageC15rasterizedImageSo7UIImageCSgvp",
+            "moduleName": "AtomicSDK",
+            "declAttributes": [
+              "Lazy",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "UIKit.UIImage?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIImage",
+                        "printedName": "UIKit.UIImage",
+                        "usr": "c:objc(cs)UIImage"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@AtomicSDK@objc(cs)AACSVGImage(im)rasterizedImage",
+                "mangledName": "$s9AtomicSDK11AACSVGImageC15rasterizedImageSo7UIImageCSgvg",
+                "moduleName": "AtomicSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "UIKit.UIImage?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIImage",
+                        "printedName": "UIKit.UIImage",
+                        "usr": "c:objc(cs)UIImage"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@AtomicSDK@objc(cs)AACSVGImage(im)setRasterizedImage:",
+                "mangledName": "$s9AtomicSDK11AACSVGImageC15rasterizedImageSo7UIImageCSgvs",
+                "moduleName": "AtomicSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9AtomicSDK11AACSVGImageC15rasterizedImageSo7UIImageCSgvM",
+                "mangledName": "$s9AtomicSDK11AACSVGImageC15rasterizedImageSo7UIImageCSgvM",
+                "moduleName": "AtomicSDK",
+                "implicit": true,
+                "declAttributes": [
+                  "Available"
+                ],
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(svgString:proposedSize:currentColor:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "AtomicSDK.AACSVGImage?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AACSVGImage",
+                    "printedName": "AtomicSDK.AACSVGImage",
+                    "usr": "c:@M@AtomicSDK@objc(cs)AACSVGImage"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CGSize",
+                "printedName": "CoreFoundation.CGSize",
+                "hasDefaultArg": true,
+                "usr": "c:@S@CGSize"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIColor",
+                "printedName": "UIKit.UIColor",
+                "usr": "c:objc(cs)UIColor"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@AtomicSDK@objc(cs)AACSVGImage(im)initWithSvgString:proposedSize:currentColor:",
+            "mangledName": "$s9AtomicSDK11AACSVGImageC9svgString12proposedSize12currentColorACSgSS_So6CGSizeVSo7UIColorCtcfc",
+            "moduleName": "AtomicSDK",
+            "objc_name": "initWithSvgString:proposedSize:currentColor:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AACSVGImage",
+                "printedName": "AtomicSDK.AACSVGImage",
+                "usr": "c:@M@AtomicSDK@objc(cs)AACSVGImage"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@AtomicSDK@objc(cs)AACSVGImage(im)init",
+            "mangledName": "$s9AtomicSDK11AACSVGImageCACycfc",
+            "moduleName": "AtomicSDK",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@AtomicSDK@objc(cs)AACSVGImage",
+        "mangledName": "$s9AtomicSDK11AACSVGImageC",
+        "moduleName": "AtomicSDK",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC",
+          "Available",
+          "RawDocComment"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AtomicSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AtomicSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AtomicSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AtomicSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "CoreText",
+        "printedName": "CoreText",
+        "declKind": "Import",
+        "moduleName": "AtomicSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AtomicSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "AtomicSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AtomicSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AtomicSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AtomicSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "CoreGraphics",
+        "printedName": "CoreGraphics",
+        "declKind": "Import",
+        "moduleName": "AtomicSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AtomicSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AtomicSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AtomicSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AtomicSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AtomicSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AtomicSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AtomicSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AtomicSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AtomicSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AtomicSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AtomicSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AtomicSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "CoreText",
+        "printedName": "CoreText",
+        "declKind": "Import",
+        "moduleName": "AtomicSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "AtomicSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AtomicSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AtomicSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "CoreGraphics",
+        "printedName": "CoreGraphics",
+        "declKind": "Import",
+        "moduleName": "AtomicSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AtomicSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "CoreGraphics",
+        "printedName": "CoreGraphics",
+        "declKind": "Import",
+        "moduleName": "AtomicSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AtomicSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AtomicSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "CoreText",
+        "printedName": "CoreText",
+        "declKind": "Import",
+        "moduleName": "AtomicSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AtomicSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AtomicSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AtomicSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "CoreGraphics",
+        "printedName": "CoreGraphics",
+        "declKind": "Import",
+        "moduleName": "AtomicSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AtomicSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "CoreGraphics",
+        "printedName": "CoreGraphics",
+        "declKind": "Import",
+        "moduleName": "AtomicSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AtomicSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AtomicSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AtomicSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AtomicSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "CoreGraphics",
+        "printedName": "CoreGraphics",
+        "declKind": "Import",
+        "moduleName": "AtomicSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AtomicSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AtomicSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "AtomicSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AtomicSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "AtomicSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "AtomicSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "AtomicSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "DeveloperToolsSupport",
+        "printedName": "DeveloperToolsSupport",
+        "declKind": "Import",
+        "moduleName": "AtomicSDK"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "Dictionary",
+        "printedName": "Dictionary",
+        "declKind": "Struct",
+        "usr": "s:SD",
+        "mangledName": "$sSD",
+        "moduleName": "Swift",
+        "genericSig": "<τ_0_0, τ_0_1 where τ_0_0 : Swift.Hashable>",
+        "sugared_genericSig": "<Key, Value where Key : Swift.Hashable>",
+        "declAttributes": [
+          "EagerMove",
+          "Frozen"
+        ],
+        "isExternal": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sequence",
+            "printedName": "Sequence",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "Element",
+                "printedName": "Element",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(key: τ_0_0, value: τ_0_1)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GenericTypeParam",
+                        "printedName": "τ_0_0"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GenericTypeParam",
+                        "printedName": "τ_0_1"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "Iterator",
+                "printedName": "Iterator",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Iterator",
+                    "printedName": "Swift.Dictionary<τ_0_0, τ_0_1>.Iterator",
+                    "usr": "s:SD8IteratorV"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:ST",
+            "mangledName": "$sST"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Collection",
+            "printedName": "Collection",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "Element",
+                "printedName": "Element",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(key: τ_0_0, value: τ_0_1)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GenericTypeParam",
+                        "printedName": "τ_0_0"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GenericTypeParam",
+                        "printedName": "τ_0_1"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "Index",
+                "printedName": "Index",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Index",
+                    "printedName": "Swift.Dictionary<τ_0_0, τ_0_1>.Index",
+                    "usr": "s:SD5IndexV"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "Iterator",
+                "printedName": "Iterator",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Iterator",
+                    "printedName": "Swift.Dictionary<τ_0_0, τ_0_1>.Iterator",
+                    "usr": "s:SD8IteratorV"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "SubSequence",
+                "printedName": "SubSequence",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Slice",
+                    "printedName": "Swift.Slice<[τ_0_0 : τ_0_1]>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Dictionary",
+                        "printedName": "[τ_0_0 : τ_0_1]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "GenericTypeParam",
+                            "printedName": "τ_0_0"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "GenericTypeParam",
+                            "printedName": "τ_0_1"
+                          }
+                        ],
+                        "usr": "s:SD"
+                      }
+                    ],
+                    "usr": "s:s5SliceV"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "Indices",
+                "printedName": "Indices",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DefaultIndices",
+                    "printedName": "Swift.DefaultIndices<[τ_0_0 : τ_0_1]>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Dictionary",
+                        "printedName": "[τ_0_0 : τ_0_1]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "GenericTypeParam",
+                            "printedName": "τ_0_0"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "GenericTypeParam",
+                            "printedName": "τ_0_1"
+                          }
+                        ],
+                        "usr": "s:SD"
+                      }
+                    ],
+                    "usr": "s:SI"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:Sl",
+            "mangledName": "$sSl"
+          },
+          {
+            "kind": "Conformance",
+            "name": "ExpressibleByDictionaryLiteral",
+            "printedName": "ExpressibleByDictionaryLiteral",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "Key",
+                "printedName": "Key",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "Value",
+                "printedName": "Value",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_1"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:s30ExpressibleByDictionaryLiteralP",
+            "mangledName": "$ss30ExpressibleByDictionaryLiteralP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_HasCustomAnyHashableRepresentation",
+            "printedName": "_HasCustomAnyHashableRepresentation",
+            "usr": "s:s35_HasCustomAnyHashableRepresentationP",
+            "mangledName": "$ss35_HasCustomAnyHashableRepresentationP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomReflectable",
+            "printedName": "CustomReflectable",
+            "usr": "s:s17CustomReflectableP",
+            "mangledName": "$ss17CustomReflectableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_ObjectiveCBridgeable",
+            "printedName": "_ObjectiveCBridgeable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "_ObjectiveCType",
+                "printedName": "_ObjectiveCType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NSDictionary",
+                    "printedName": "Foundation.NSDictionary",
+                    "usr": "c:objc(cs)NSDictionary"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:s21_ObjectiveCBridgeableP",
+            "mangledName": "$ss21_ObjectiveCBridgeableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          }
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/LayerTree.Builder.swift",
+      "kind": "Array",
+      "offset": 2925,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/XML.Formatter.SVG.swift",
+      "kind": "StringLiteral",
+      "offset": 3968,
+      "length": 4,
+      "value": "\"id\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/XML.Formatter.SVG.swift",
+      "kind": "StringLiteral",
+      "offset": 4010,
+      "length": 7,
+      "value": "\"style\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/XML.Formatter.SVG.swift",
+      "kind": "StringLiteral",
+      "offset": 4084,
+      "length": 7,
+      "value": "\"class\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/XML.Formatter.SVG.swift",
+      "kind": "StringLiteral",
+      "offset": 17926,
+      "length": 10,
+      "value": "\".\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/XML.Formatter.SVG.swift",
+      "kind": "StringLiteral",
+      "offset": 17935,
+      "length": 1,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/XML.Formatter.SVG.swift",
+      "kind": "StringLiteral",
+      "offset": 18057,
+      "length": 10,
+      "value": "\"#\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/XML.Formatter.SVG.swift",
+      "kind": "StringLiteral",
+      "offset": 18066,
+      "length": 1,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/XML.Formatter.SVG.swift",
+      "kind": "IntegerLiteral",
+      "offset": 18161,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/LayerTree.Transform.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2084,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/LayerTree.Transform.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2090,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/LayerTree.Transform.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2096,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/LayerTree.Transform.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2102,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/LayerTree.Transform.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2109,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/LayerTree.Transform.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2116,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/LayerTree.Gradient.swift",
+      "kind": "Array",
+      "offset": 2307,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/LayerTree.Gradient.swift",
+      "kind": "Array",
+      "offset": 2588,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/XML.Formatter.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1203,
+      "length": 1,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/XML.Formatter.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1470,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.CGText.swift",
+      "kind": "Array",
+      "offset": 7635,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.CGText.swift",
+      "kind": "Dictionary",
+      "offset": 7679,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.CGText.swift",
+      "kind": "Dictionary",
+      "offset": 7723,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.CGText.swift",
+      "kind": "Dictionary",
+      "offset": 7772,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.CGText.swift",
+      "kind": "Dictionary",
+      "offset": 7832,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.CGText.swift",
+      "kind": "Dictionary",
+      "offset": 7879,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/AACSVGImage.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4024,
+      "length": 2,
+      "value": "20"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/AACSVGImage.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4036,
+      "length": 2,
+      "value": "20"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/AACSVGImage.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4073,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/AACSVGImage.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4101,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/AACSVGImage.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4956,
+      "length": 2,
+      "value": "20"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/AACSVGImage.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4968,
+      "length": 2,
+      "value": "20"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/LayerTree.Layer.swift",
+      "kind": "Array",
+      "offset": 1181,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/LayerTree.Layer.swift",
+      "kind": "FloatLiteral",
+      "offset": 1213,
+      "length": 3,
+      "value": "1.0"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/LayerTree.Layer.swift",
+      "kind": "Array",
+      "offset": 1254,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/LayerTree.Layer.swift",
+      "kind": "Array",
+      "offset": 1285,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/LayerTree.Layer.swift",
+      "kind": "Array",
+      "offset": 1377,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/LayerTree.Layer.swift",
+      "kind": "FloatLiteral",
+      "offset": 3333,
+      "length": 3,
+      "value": "1.0"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.SVG.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1628,
+      "length": 1,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Parser.XML.swift",
+      "kind": "Array",
+      "offset": 1485,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Parser.XML.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1690,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Parser.XML.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1748,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/LayerTree.Shape.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4279,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/DOM.PresentationAttributes.swift",
+      "kind": "StringLiteral",
+      "offset": 2942,
+      "length": 3,
+      "value": "\" \""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.SFSymbol.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6877,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.SFSymbol.swift",
+      "kind": "Array",
+      "offset": 6893,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.SFSymbol.swift",
+      "kind": "StringLiteral",
+      "offset": 6956,
+      "length": 10,
+      "value": "\"Warning:\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.SFSymbol.swift",
+      "kind": "StringLiteral",
+      "offset": 6968,
+      "length": 38,
+      "value": "\"clip-path unsupported in SF Symbols.\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.SFSymbol.swift",
+      "kind": "Array",
+      "offset": 7048,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.SFSymbol.swift",
+      "kind": "StringLiteral",
+      "offset": 7118,
+      "length": 10,
+      "value": "\"Warning:\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.SFSymbol.swift",
+      "kind": "StringLiteral",
+      "offset": 7130,
+      "length": 33,
+      "value": "\"mask unsupported in SF Symbols.\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.SFSymbol.swift",
+      "kind": "Array",
+      "offset": 7205,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.SFSymbol.swift",
+      "kind": "IntegerLiteral",
+      "offset": 19693,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Renderer.SFSymbol.swift",
+      "kind": "IntegerLiteral",
+      "offset": 19698,
+      "length": 2,
+      "value": "10"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Utilities\/UIColorExtensions.swift",
+      "kind": "IntegerLiteral",
+      "offset": 216,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Utilities\/UIColorExtensions.swift",
+      "kind": "IntegerLiteral",
+      "offset": 247,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Utilities\/UIColorExtensions.swift",
+      "kind": "IntegerLiteral",
+      "offset": 277,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Utilities\/UIColorExtensions.swift",
+      "kind": "IntegerLiteral",
+      "offset": 308,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Utilities\/UIColorExtensions.swift",
+      "kind": "FloatLiteral",
+      "offset": 344,
+      "length": 10,
+      "value": "255.999999"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Utilities\/UIColorExtensions.swift",
+      "kind": "StringLiteral",
+      "offset": 595,
+      "length": 6,
+      "value": "\"%.2f\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Utilities\/UIColorExtensions.swift",
+      "kind": "StringLiteral",
+      "offset": 630,
+      "length": 30,
+      "value": "\"rgba(\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Utilities\/UIColorExtensions.swift",
+      "kind": "StringLiteral",
+      "offset": 640,
+      "length": 1,
+      "value": "\", \""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Utilities\/UIColorExtensions.swift",
+      "kind": "StringLiteral",
+      "offset": 646,
+      "length": 1,
+      "value": "\", \""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Utilities\/UIColorExtensions.swift",
+      "kind": "StringLiteral",
+      "offset": 652,
+      "length": 1,
+      "value": "\", \""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Utilities\/UIColorExtensions.swift",
+      "kind": "StringLiteral",
+      "offset": 658,
+      "length": 1,
+      "value": "\")\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Utilities\/UIColorExtensions.swift",
+      "kind": "IntegerLiteral",
+      "offset": 782,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Utilities\/UIColorExtensions.swift",
+      "kind": "IntegerLiteral",
+      "offset": 817,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Utilities\/UIColorExtensions.swift",
+      "kind": "IntegerLiteral",
+      "offset": 851,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Utilities\/UIColorExtensions.swift",
+      "kind": "IntegerLiteral",
+      "offset": 886,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Utilities\/UIColorExtensions.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1013,
+      "length": 3,
+      "value": "255"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Utilities\/UIColorExtensions.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1054,
+      "length": 3,
+      "value": "255"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Utilities\/UIColorExtensions.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1094,
+      "length": 3,
+      "value": "255"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Utilities\/UIColorExtensions.swift",
+      "kind": "StringLiteral",
+      "offset": 1137,
+      "length": 15,
+      "value": "\"#%02X%02X%02X\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/CommandLine.Configuration.swift",
+      "kind": "IntegerLiteral",
+      "offset": 7822,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/CommandLine.Configuration.swift",
+      "kind": "IntegerLiteral",
+      "offset": 7827,
+      "length": 1,
+      "value": "8"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/CommandLine.Configuration.swift",
+      "kind": "IntegerLiteral",
+      "offset": 7874,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/CommandLine.Configuration.swift",
+      "kind": "IntegerLiteral",
+      "offset": 7879,
+      "length": 1,
+      "value": "9"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Parser.XML.Element.swift",
+      "kind": "StringLiteral",
+      "offset": 3246,
+      "length": 3,
+      "value": "\"g\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Parser.XML.Element.swift",
+      "kind": "StringLiteral",
+      "offset": 3287,
+      "length": 6,
+      "value": "\"line\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Parser.XML.Element.swift",
+      "kind": "StringLiteral",
+      "offset": 3332,
+      "length": 8,
+      "value": "\"circle\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Parser.XML.Element.swift",
+      "kind": "StringLiteral",
+      "offset": 3381,
+      "length": 9,
+      "value": "\"ellipse\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Parser.XML.Element.swift",
+      "kind": "StringLiteral",
+      "offset": 3432,
+      "length": 6,
+      "value": "\"rect\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Parser.XML.Element.swift",
+      "kind": "StringLiteral",
+      "offset": 3477,
+      "length": 10,
+      "value": "\"polyline\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Parser.XML.Element.swift",
+      "kind": "StringLiteral",
+      "offset": 3530,
+      "length": 9,
+      "value": "\"polygon\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Parser.XML.Element.swift",
+      "kind": "StringLiteral",
+      "offset": 3581,
+      "length": 6,
+      "value": "\"path\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Parser.XML.Element.swift",
+      "kind": "StringLiteral",
+      "offset": 3626,
+      "length": 6,
+      "value": "\"text\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Parser.XML.Element.swift",
+      "kind": "StringLiteral",
+      "offset": 3749,
+      "length": 3,
+      "value": "\"a\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Parser.XML.Element.swift",
+      "kind": "StringLiteral",
+      "offset": 3875,
+      "length": 5,
+      "value": "\"use\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Parser.XML.Element.swift",
+      "kind": "StringLiteral",
+      "offset": 3918,
+      "length": 8,
+      "value": "\"switch\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Parser.XML.Element.swift",
+      "kind": "StringLiteral",
+      "offset": 3965,
+      "length": 7,
+      "value": "\"image\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Parser.XML.Element.swift",
+      "kind": "StringLiteral",
+      "offset": 10267,
+      "length": 4,
+      "value": "\"id\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Parser.XML.Element.swift",
+      "kind": "StringLiteral",
+      "offset": 10313,
+      "length": 7,
+      "value": "\"class\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/XML.SAXParser.swift",
+      "kind": "StringLiteral",
+      "offset": 1533,
+      "length": 28,
+      "value": "\"http:\/\/www.w3.org\/2000\/svg\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/XML.SAXParser.swift",
+      "kind": "Dictionary",
+      "offset": 2851,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Parser.XML.Scanner.swift",
+      "kind": "StringLiteral",
+      "offset": 8450,
+      "length": 7,
+      "value": "\"FALSE\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Parser.XML.Scanner.swift",
+      "kind": "StringLiteral",
+      "offset": 8479,
+      "length": 6,
+      "value": "\"TRUE\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Parser.XML.Scanner.swift",
+      "kind": "StringLiteral",
+      "offset": 8502,
+      "length": 3,
+      "value": "\"0\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Parser.XML.Scanner.swift",
+      "kind": "StringLiteral",
+      "offset": 8521,
+      "length": 3,
+      "value": "\"1\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/DOM.SVG.swift",
+      "kind": "Dictionary",
+      "offset": 2587,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/DOM.LinearGradient.swift",
+      "kind": "FloatLiteral",
+      "offset": 1900,
+      "length": 3,
+      "value": "1.0"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/LayerTree.CommandOptimizer.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4827,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/LayerTree.CommandOptimizer.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4895,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/DOM.Pattern.swift",
+      "kind": "Array",
+      "offset": 1493,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Image.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2433,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Image.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2438,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Image.swift",
+      "kind": "Array",
+      "offset": 2482,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Image.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5178,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Image.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5187,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Image.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5198,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Image.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5208,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/LayerTree.Path.swift",
+      "kind": "Array",
+      "offset": 1279,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/LayerTree.CommandGenerator.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1483,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/LayerTree.CommandGenerator.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1536,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/LayerTree.CommandGenerator.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1585,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/LayerTree.CommandGenerator.swift",
+      "kind": "FloatLiteral",
+      "offset": 1665,
+      "length": 3,
+      "value": "3.0"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Parser.XML.Path.swift",
+      "kind": "StringLiteral",
+      "offset": 8148,
+      "length": 4,
+      "value": "\",;\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Parser.XML.Path.swift",
+      "kind": "StringLiteral",
+      "offset": 8205,
+      "length": 22,
+      "value": "\"MmLlHhVvCcSsQqTtAaZz\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/DOM.Path.swift",
+      "kind": "StringLiteral",
+      "offset": 2764,
+      "length": 3,
+      "value": "\"M\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/DOM.Path.swift",
+      "kind": "StringLiteral",
+      "offset": 2800,
+      "length": 3,
+      "value": "\"m\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/DOM.Path.swift",
+      "kind": "StringLiteral",
+      "offset": 2828,
+      "length": 3,
+      "value": "\"L\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/DOM.Path.swift",
+      "kind": "StringLiteral",
+      "offset": 2864,
+      "length": 3,
+      "value": "\"l\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/DOM.Path.swift",
+      "kind": "StringLiteral",
+      "offset": 2898,
+      "length": 3,
+      "value": "\"H\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/DOM.Path.swift",
+      "kind": "StringLiteral",
+      "offset": 2940,
+      "length": 3,
+      "value": "\"h\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/DOM.Path.swift",
+      "kind": "StringLiteral",
+      "offset": 2972,
+      "length": 3,
+      "value": "\"V\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/DOM.Path.swift",
+      "kind": "StringLiteral",
+      "offset": 3012,
+      "length": 3,
+      "value": "\"v\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/DOM.Path.swift",
+      "kind": "StringLiteral",
+      "offset": 3041,
+      "length": 3,
+      "value": "\"C\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/DOM.Path.swift",
+      "kind": "StringLiteral",
+      "offset": 3078,
+      "length": 3,
+      "value": "\"c\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/DOM.Path.swift",
+      "kind": "StringLiteral",
+      "offset": 3113,
+      "length": 3,
+      "value": "\"S\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/DOM.Path.swift",
+      "kind": "StringLiteral",
+      "offset": 3156,
+      "length": 3,
+      "value": "\"s\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/DOM.Path.swift",
+      "kind": "StringLiteral",
+      "offset": 3189,
+      "length": 3,
+      "value": "\"Q\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/DOM.Path.swift",
+      "kind": "StringLiteral",
+      "offset": 3230,
+      "length": 3,
+      "value": "\"q\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/DOM.Path.swift",
+      "kind": "StringLiteral",
+      "offset": 3269,
+      "length": 3,
+      "value": "\"T\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/DOM.Path.swift",
+      "kind": "StringLiteral",
+      "offset": 3316,
+      "length": 3,
+      "value": "\"t\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/DOM.Path.swift",
+      "kind": "StringLiteral",
+      "offset": 3343,
+      "length": 3,
+      "value": "\"A\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/DOM.Path.swift",
+      "kind": "StringLiteral",
+      "offset": 3378,
+      "length": 3,
+      "value": "\"a\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/DOM.Path.swift",
+      "kind": "StringLiteral",
+      "offset": 3407,
+      "length": 3,
+      "value": "\"Z\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/DOM.Path.swift",
+      "kind": "StringLiteral",
+      "offset": 3441,
+      "length": 3,
+      "value": "\"z\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Utilities\/PairedSequence.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3345,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/DOM.RadialGradient.swift",
+      "kind": "FloatLiteral",
+      "offset": 2001,
+      "length": 3,
+      "value": "1.0"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/LayerTree.Path+Reversed.swift",
+      "kind": "Array",
+      "offset": 2868,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/LayerTree.Path+Bounds.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6349,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/LayerTree.Path+Bounds.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6412,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/XML.Element.swift",
+      "kind": "Dictionary",
+      "offset": 1423,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/CoordinateFormatter.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1376,
+      "length": 1,
+      "value": "5"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/CoordinateFormatter.swift",
+      "kind": "StringLiteral",
+      "offset": 1758,
+      "length": 3,
+      "value": "\" \""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/CoordinateFormatter.swift",
+      "kind": "StringLiteral",
+      "offset": 1810,
+      "length": 3,
+      "value": "\",\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/CoordinateFormatter.swift",
+      "kind": "StringLiteral",
+      "offset": 1867,
+      "length": 4,
+      "value": "\", \""
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Image+CoreGraphics.swift",
+      "kind": "FloatLiteral",
+      "offset": 1850,
+      "length": 3,
+      "value": "1.0"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Image+CoreGraphics.swift",
+      "kind": "FloatLiteral",
+      "offset": 1863,
+      "length": 3,
+      "value": "1.0"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/Parser.XML.Attributes.swift",
+      "kind": "Array",
+      "offset": 1702,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/UIImage+Image.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2688,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/UIImage+Image.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3264,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/UIImage+Image.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3580,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/distiller\/project\/ActionCardsSDK\/ActionCardsSDK\/Model\/SVGImage\/SwiftDrawSVG\/UIImage+Image.swift",
+      "kind": "IntegerLiteral",
+      "offset": 3621,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/distiller\/Library\/Developer\/Xcode\/DerivedData\/ActionCards-bxhtaptuiijibqfmkcwrexdteglm\/Build\/Intermediates.noindex\/ActionCardsSDK.build\/Release-iphonesimulator\/AtomicSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 730,
+      "length": 11,
+      "value": "\"icon-back\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/Library\/Developer\/Xcode\/DerivedData\/ActionCards-bxhtaptuiijibqfmkcwrexdteglm\/Build\/Intermediates.noindex\/ActionCardsSDK.build\/Release-iphonesimulator\/AtomicSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 883,
+      "length": 19,
+      "value": "\"icon-card-options\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/Library\/Developer\/Xcode\/DerivedData\/ActionCards-bxhtaptuiijibqfmkcwrexdteglm\/Build\/Intermediates.noindex\/ActionCardsSDK.build\/Release-iphonesimulator\/AtomicSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 1031,
+      "length": 12,
+      "value": "\"icon-cards\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/Library\/Developer\/Xcode\/DerivedData\/ActionCards-bxhtaptuiijibqfmkcwrexdteglm\/Build\/Intermediates.noindex\/ActionCardsSDK.build\/Release-iphonesimulator\/AtomicSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 1172,
+      "length": 12,
+      "value": "\"icon-clock\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/Library\/Developer\/Xcode\/DerivedData\/ActionCards-bxhtaptuiijibqfmkcwrexdteglm\/Build\/Intermediates.noindex\/ActionCardsSDK.build\/Release-iphonesimulator\/AtomicSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 1321,
+      "length": 16,
+      "value": "\"icon-completed\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/Library\/Developer\/Xcode\/DerivedData\/ActionCards-bxhtaptuiijibqfmkcwrexdteglm\/Build\/Intermediates.noindex\/ActionCardsSDK.build\/Release-iphonesimulator\/AtomicSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 1466,
+      "length": 12,
+      "value": "\"icon-cross\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/Library\/Developer\/Xcode\/DerivedData\/ActionCards-bxhtaptuiijibqfmkcwrexdteglm\/Build\/Intermediates.noindex\/ActionCardsSDK.build\/Release-iphonesimulator\/AtomicSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 1609,
+      "length": 13,
+      "value": "\"icon-delete\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/Library\/Developer\/Xcode\/DerivedData\/ActionCards-bxhtaptuiijibqfmkcwrexdteglm\/Build\/Intermediates.noindex\/ActionCardsSDK.build\/Release-iphonesimulator\/AtomicSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 1749,
+      "length": 11,
+      "value": "\"icon-down\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/Library\/Developer\/Xcode\/DerivedData\/ActionCards-bxhtaptuiijibqfmkcwrexdteglm\/Build\/Intermediates.noindex\/ActionCardsSDK.build\/Release-iphonesimulator\/AtomicSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 1895,
+      "length": 18,
+      "value": "\"icon-media-image\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/Library\/Developer\/Xcode\/DerivedData\/ActionCards-bxhtaptuiijibqfmkcwrexdteglm\/Build\/Intermediates.noindex\/ActionCardsSDK.build\/Release-iphonesimulator\/AtomicSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 2053,
+      "length": 18,
+      "value": "\"icon-media-video\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/Library\/Developer\/Xcode\/DerivedData\/ActionCards-bxhtaptuiijibqfmkcwrexdteglm\/Build\/Intermediates.noindex\/ActionCardsSDK.build\/Release-iphonesimulator\/AtomicSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 2200,
+      "length": 12,
+      "value": "\"icon-minus\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/Library\/Developer\/Xcode\/DerivedData\/ActionCards-bxhtaptuiijibqfmkcwrexdteglm\/Build\/Intermediates.noindex\/ActionCardsSDK.build\/Release-iphonesimulator\/AtomicSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 2350,
+      "length": 17,
+      "value": "\"icon-more-large\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/Library\/Developer\/Xcode\/DerivedData\/ActionCards-bxhtaptuiijibqfmkcwrexdteglm\/Build\/Intermediates.noindex\/ActionCardsSDK.build\/Release-iphonesimulator\/AtomicSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 2494,
+      "length": 11,
+      "value": "\"icon-play\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/Library\/Developer\/Xcode\/DerivedData\/ActionCards-bxhtaptuiijibqfmkcwrexdteglm\/Build\/Intermediates.noindex\/ActionCardsSDK.build\/Release-iphonesimulator\/AtomicSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 2632,
+      "length": 11,
+      "value": "\"icon-plus\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/Library\/Developer\/Xcode\/DerivedData\/ActionCards-bxhtaptuiijibqfmkcwrexdteglm\/Build\/Intermediates.noindex\/ActionCardsSDK.build\/Release-iphonesimulator\/AtomicSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 2776,
+      "length": 14,
+      "value": "\"icon-success\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/Library\/Developer\/Xcode\/DerivedData\/ActionCards-bxhtaptuiijibqfmkcwrexdteglm\/Build\/Intermediates.noindex\/ActionCardsSDK.build\/Release-iphonesimulator\/AtomicSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 2928,
+      "length": 17,
+      "value": "\"icon-thumb-down\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/Library\/Developer\/Xcode\/DerivedData\/ActionCards-bxhtaptuiijibqfmkcwrexdteglm\/Build\/Intermediates.noindex\/ActionCardsSDK.build\/Release-iphonesimulator\/AtomicSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 3079,
+      "length": 15,
+      "value": "\"icon-thumb-up\""
+    },
+    {
+      "filePath": "\/Users\/distiller\/Library\/Developer\/Xcode\/DerivedData\/ActionCards-bxhtaptuiijibqfmkcwrexdteglm\/Build\/Intermediates.noindex\/ActionCardsSDK.build\/Release-iphonesimulator\/AtomicSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
+      "kind": "StringLiteral",
+      "offset": 3221,
+      "length": 11,
+      "value": "\"icon-tick\""
+    }
+  ]
+}
