@@ -135,7 +135,15 @@ typedef NS_ENUM(NSUInteger, AACCustomString) {
     /**
      Customised toast message for when the user sends feedback (votes) for a card - defaults to "Feedback received".
      */
-    AACCustomStringToastCardFeedbackMessage
+    AACCustomStringToastCardFeedbackMessage,
+    /**
+     The call-to-action text displayed at the bottom of a thumbnail image element. Defaults to “View”.
+     */
+    AACCustomStringThumbnailImageActionLinkTitle,
+    /**
+     The call-to-action text displayed at the bottom of a thumbnail video element. Defaults to "Watch".
+     */
+    AACCustomStringThumbnailVideoActionLinkTitle
 };
 
 /**
@@ -279,7 +287,7 @@ typedef NS_OPTIONS(NSUInteger, AACUIElement) {
  
  - In vertical stream containers, the stream container disregards this property if its value exceeds the container's current width.
  
- - In horizontal stream containers, this property functions identically to the `cardWidth` property.
+ - In horizontal stream containers, this property functions identically to the `cardWidth` property, and it must be > 0.
  */
 
  @property (nonatomic) CGFloat cardMaxWidth;
