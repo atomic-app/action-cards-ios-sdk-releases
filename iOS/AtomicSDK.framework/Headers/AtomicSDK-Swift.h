@@ -366,6 +366,13 @@ SWIFT_CLASS_NAMED("SVG")
 
 
 @class NSData;
+
+@interface UIImage (SWIFT_EXTENSION(AtomicSDK))
+- (NSData * _Nullable)jpegDataWithIdealSize:(NSInteger)idealSize SWIFT_WARN_UNUSED_RESULT;
+/// https://gist.github.com/schickling/b5d86cb070130f80bb40?permalink_comment_id=3500925#gistcomment-3500925
+- (UIImage * _Nullable)fixedOrientation SWIFT_WARN_UNUSED_RESULT;
+@end
+
 @class NSBundle;
 
 SWIFT_AVAILABILITY(ios_app_extension,introduced=13.0)

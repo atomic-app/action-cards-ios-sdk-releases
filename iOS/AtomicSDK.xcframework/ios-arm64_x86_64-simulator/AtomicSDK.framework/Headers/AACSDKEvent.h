@@ -70,6 +70,15 @@ typedef NS_ENUM(NSUInteger, AACSDKEventType) {
     /// This event is only occurred when you call the SDK's track method. Read more in the documentation of `AACSDKEventNotificationReceived`.
     AACSDKEventTypeNotificationReceived,
     
+    /// One or more file uploads have started as part of a card submission.
+    AACSDKEventTypeUserFileUploadsStarted,
+    
+    /// One or more file uploads have failed during card submission.
+    AACSDKEventTypeUserFileUploadsFailed,
+    
+    /// One or more file uploads have successfully completed. This event does not necessarily mean the card submission has succeeded.
+    AACSDKEventTypeUserFileUploadsCompleted,
+    
     /// An unknown event is observed.
     AACSDKEventTypeUnknown
 };
@@ -325,6 +334,12 @@ typedef NS_ENUM(NSUInteger, AACSDKEventActionSource) {
  This event does not undergo de-duplication.
  */
 @interface AACSDKEventCardDisplayed : AACSDKEventCREVT
+
+/**
+ Represents any metadata payload sent as part of a card trigger.
+*/
+@property (nonatomic, readonly, nullable) NSDictionary *payloadMetadata;
+
 @end
 
 /**
@@ -495,7 +510,7 @@ typedef NS_ENUM(NSUInteger, AACSDKEventActionSource) {
 /**
  The URL of this video.
  */
-@property (nonatomic, readonly) NSURL* videoUrl;
+@property (nonatomic, readonly, nullable) NSURL* videoUrl;
 
 @end
 
@@ -565,5 +580,53 @@ typedef NS_ENUM(NSUInteger, AACSDKEventActionSource) {
  */
 @interface AACSDKEventNotificationReceived : AACSDKEventCREVT
 @end
+
+/**
+ The data type containing details of an uploaded file.
+ */
+@interface AACSDKEventUserFileUploadsData : NSObject
+
+/**
+ The name of the file, derived from the local disk name but unique within the platform's bucket.
+ */
+@property (nonatomic, readonly) NSString *filename;
+
+/**
+ The identifier of the bucket to which the file is uploaded.
+ */
+@property (nonatomic, readonly) NSString *bucketId;
+
+@end
+
+/**
+ Represents an event in which one or more files are uploaded.
+ */
+@interface AACSDKEventUsrFlUpldEVT : AACSDKEventCREVT <AACSDKEventHasViewState>
+
+/**
+ Detailed information about the uploaded files.
+ */
+@property (nonatomic, readonly, nonnull) NSArray<AACSDKEventUserFileUploadsData *> *fileInfo;
+
+@end
+
+/**
+ Represents an event where one or more files start being uploaded.
+ */
+@interface AACSDKEventUserFileUploadsStarted : AACSDKEventUsrFlUpldEVT
+@end
+
+/**
+ Represents an event where one or more files failed to upload.
+ */
+@interface AACSDKEventUserFileUploadsFailed : AACSDKEventUsrFlUpldEVT
+@end
+
+/**
+ Represents an event where one or more files have been successfully uploaded.
+ */
+@interface AACSDKEventUserFileUploadsCompleted : AACSDKEventUsrFlUpldEVT
+@end
+
 
 NS_ASSUME_NONNULL_END
