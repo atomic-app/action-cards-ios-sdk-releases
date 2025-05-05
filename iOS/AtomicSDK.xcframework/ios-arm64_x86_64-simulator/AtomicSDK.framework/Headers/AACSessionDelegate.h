@@ -56,4 +56,13 @@ typedef void(^AACSessionAuthenticationTokenHandler)(NSString* __nullable authTok
  */
 - (NSTimeInterval)retryInterval;
 
+/**
+ (Optional) Returns a custom field in your JWT for the user ID used by the Atomic Platform. You must first configure this field in the Atomic Workbench for the relevant SDK API Key.
+ 
+ If this method is not set, the SDK will look for the default names in following order: atomic\_sub, atomic\_id, sub, id.
+ 
+ ***Note**: You must return a constant value from this method, as the value is only retrieved by the SDK once.
+ */
+- (NSString *__nullable)tokenUserIdAttribute;
+
 @end
