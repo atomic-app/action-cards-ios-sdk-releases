@@ -45,7 +45,9 @@ typedef NS_ENUM(NSUInteger, AACCardNodeMediaActionType) {
     /// The media would redirect to a subview.
     AACCardNodeMediaActionTypeSubview,
     /// The media would redirect to a custom payload.
-    AACCardNodeMediaActionTypePayload
+    AACCardNodeMediaActionTypePayload,
+    /// The media would do nothing upon user interaction.
+    AACCardNodeMediaActionTypeDoNothing
 };
 
 /**
