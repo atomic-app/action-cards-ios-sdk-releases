@@ -30,16 +30,6 @@
       },
       {
         "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
-        "declKind": "Import",
-        "moduleName": "AtomicSDK",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -2494,168 +2484,126 @@
     {
       "filePath": "\/Users\/distiller\/Library\/Developer\/Xcode\/DerivedData\/ActionCards-bxhtaptuiijibqfmkcwrexdteglm\/Build\/Intermediates.noindex\/ActionCardsSDK.build\/Release-iphoneos\/AtomicSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 734,
-      "length": 16,
-      "value": "\"icon-add-image\""
-    },
-    {
-      "filePath": "\/Users\/distiller\/Library\/Developer\/Xcode\/DerivedData\/ActionCards-bxhtaptuiijibqfmkcwrexdteglm\/Build\/Intermediates.noindex\/ActionCardsSDK.build\/Release-iphoneos\/AtomicSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
-      "kind": "StringLiteral",
-      "offset": 889,
-      "length": 17,
-      "value": "\"icon-attachment\""
-    },
-    {
-      "filePath": "\/Users\/distiller\/Library\/Developer\/Xcode\/DerivedData\/ActionCards-bxhtaptuiijibqfmkcwrexdteglm\/Build\/Intermediates.noindex\/ActionCardsSDK.build\/Release-iphoneos\/AtomicSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
-      "kind": "StringLiteral",
-      "offset": 1033,
+      "offset": 730,
       "length": 11,
       "value": "\"icon-back\""
     },
     {
       "filePath": "\/Users\/distiller\/Library\/Developer\/Xcode\/DerivedData\/ActionCards-bxhtaptuiijibqfmkcwrexdteglm\/Build\/Intermediates.noindex\/ActionCardsSDK.build\/Release-iphoneos\/AtomicSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 1175,
-      "length": 13,
-      "value": "\"icon-camera\""
-    },
-    {
-      "filePath": "\/Users\/distiller\/Library\/Developer\/Xcode\/DerivedData\/ActionCards-bxhtaptuiijibqfmkcwrexdteglm\/Build\/Intermediates.noindex\/ActionCardsSDK.build\/Release-iphoneos\/AtomicSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
-      "kind": "StringLiteral",
-      "offset": 1330,
+      "offset": 883,
       "length": 19,
       "value": "\"icon-card-options\""
     },
     {
       "filePath": "\/Users\/distiller\/Library\/Developer\/Xcode\/DerivedData\/ActionCards-bxhtaptuiijibqfmkcwrexdteglm\/Build\/Intermediates.noindex\/ActionCardsSDK.build\/Release-iphoneos\/AtomicSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 1478,
+      "offset": 1031,
       "length": 12,
       "value": "\"icon-cards\""
     },
     {
       "filePath": "\/Users\/distiller\/Library\/Developer\/Xcode\/DerivedData\/ActionCards-bxhtaptuiijibqfmkcwrexdteglm\/Build\/Intermediates.noindex\/ActionCardsSDK.build\/Release-iphoneos\/AtomicSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 1619,
-      "length": 12,
-      "value": "\"icon-check\""
-    },
-    {
-      "filePath": "\/Users\/distiller\/Library\/Developer\/Xcode\/DerivedData\/ActionCards-bxhtaptuiijibqfmkcwrexdteglm\/Build\/Intermediates.noindex\/ActionCardsSDK.build\/Release-iphoneos\/AtomicSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
-      "kind": "StringLiteral",
-      "offset": 1760,
+      "offset": 1172,
       "length": 12,
       "value": "\"icon-clock\""
     },
     {
       "filePath": "\/Users\/distiller\/Library\/Developer\/Xcode\/DerivedData\/ActionCards-bxhtaptuiijibqfmkcwrexdteglm\/Build\/Intermediates.noindex\/ActionCardsSDK.build\/Release-iphoneos\/AtomicSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 1909,
+      "offset": 1321,
       "length": 16,
       "value": "\"icon-completed\""
     },
     {
       "filePath": "\/Users\/distiller\/Library\/Developer\/Xcode\/DerivedData\/ActionCards-bxhtaptuiijibqfmkcwrexdteglm\/Build\/Intermediates.noindex\/ActionCardsSDK.build\/Release-iphoneos\/AtomicSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 2054,
+      "offset": 1466,
       "length": 12,
       "value": "\"icon-cross\""
     },
     {
       "filePath": "\/Users\/distiller\/Library\/Developer\/Xcode\/DerivedData\/ActionCards-bxhtaptuiijibqfmkcwrexdteglm\/Build\/Intermediates.noindex\/ActionCardsSDK.build\/Release-iphoneos\/AtomicSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 2197,
+      "offset": 1609,
       "length": 13,
       "value": "\"icon-delete\""
     },
     {
       "filePath": "\/Users\/distiller\/Library\/Developer\/Xcode\/DerivedData\/ActionCards-bxhtaptuiijibqfmkcwrexdteglm\/Build\/Intermediates.noindex\/ActionCardsSDK.build\/Release-iphoneos\/AtomicSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 2337,
+      "offset": 1749,
       "length": 11,
       "value": "\"icon-down\""
     },
     {
       "filePath": "\/Users\/distiller\/Library\/Developer\/Xcode\/DerivedData\/ActionCards-bxhtaptuiijibqfmkcwrexdteglm\/Build\/Intermediates.noindex\/ActionCardsSDK.build\/Release-iphoneos\/AtomicSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 2511,
-      "length": 30,
-      "value": "\"icon-file-upload-placeholder\""
-    },
-    {
-      "filePath": "\/Users\/distiller\/Library\/Developer\/Xcode\/DerivedData\/ActionCards-bxhtaptuiijibqfmkcwrexdteglm\/Build\/Intermediates.noindex\/ActionCardsSDK.build\/Release-iphoneos\/AtomicSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
-      "kind": "StringLiteral",
-      "offset": 2700,
-      "length": 31,
-      "value": "\"icon-file-upload-remove-image\""
-    },
-    {
-      "filePath": "\/Users\/distiller\/Library\/Developer\/Xcode\/DerivedData\/ActionCards-bxhtaptuiijibqfmkcwrexdteglm\/Build\/Intermediates.noindex\/ActionCardsSDK.build\/Release-iphoneos\/AtomicSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
-      "kind": "StringLiteral",
-      "offset": 2866,
+      "offset": 1895,
       "length": 18,
       "value": "\"icon-media-image\""
     },
     {
       "filePath": "\/Users\/distiller\/Library\/Developer\/Xcode\/DerivedData\/ActionCards-bxhtaptuiijibqfmkcwrexdteglm\/Build\/Intermediates.noindex\/ActionCardsSDK.build\/Release-iphoneos\/AtomicSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 3024,
+      "offset": 2053,
       "length": 18,
       "value": "\"icon-media-video\""
     },
     {
       "filePath": "\/Users\/distiller\/Library\/Developer\/Xcode\/DerivedData\/ActionCards-bxhtaptuiijibqfmkcwrexdteglm\/Build\/Intermediates.noindex\/ActionCardsSDK.build\/Release-iphoneos\/AtomicSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 3171,
+      "offset": 2200,
       "length": 12,
       "value": "\"icon-minus\""
     },
     {
       "filePath": "\/Users\/distiller\/Library\/Developer\/Xcode\/DerivedData\/ActionCards-bxhtaptuiijibqfmkcwrexdteglm\/Build\/Intermediates.noindex\/ActionCardsSDK.build\/Release-iphoneos\/AtomicSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 3321,
+      "offset": 2350,
       "length": 17,
       "value": "\"icon-more-large\""
     },
     {
       "filePath": "\/Users\/distiller\/Library\/Developer\/Xcode\/DerivedData\/ActionCards-bxhtaptuiijibqfmkcwrexdteglm\/Build\/Intermediates.noindex\/ActionCardsSDK.build\/Release-iphoneos\/AtomicSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 3465,
+      "offset": 2494,
       "length": 11,
       "value": "\"icon-play\""
     },
     {
       "filePath": "\/Users\/distiller\/Library\/Developer\/Xcode\/DerivedData\/ActionCards-bxhtaptuiijibqfmkcwrexdteglm\/Build\/Intermediates.noindex\/ActionCardsSDK.build\/Release-iphoneos\/AtomicSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 3603,
+      "offset": 2632,
       "length": 11,
       "value": "\"icon-plus\""
     },
     {
       "filePath": "\/Users\/distiller\/Library\/Developer\/Xcode\/DerivedData\/ActionCards-bxhtaptuiijibqfmkcwrexdteglm\/Build\/Intermediates.noindex\/ActionCardsSDK.build\/Release-iphoneos\/AtomicSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 3747,
+      "offset": 2776,
       "length": 14,
       "value": "\"icon-success\""
     },
     {
       "filePath": "\/Users\/distiller\/Library\/Developer\/Xcode\/DerivedData\/ActionCards-bxhtaptuiijibqfmkcwrexdteglm\/Build\/Intermediates.noindex\/ActionCardsSDK.build\/Release-iphoneos\/AtomicSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 3899,
+      "offset": 2928,
       "length": 17,
       "value": "\"icon-thumb-down\""
     },
     {
       "filePath": "\/Users\/distiller\/Library\/Developer\/Xcode\/DerivedData\/ActionCards-bxhtaptuiijibqfmkcwrexdteglm\/Build\/Intermediates.noindex\/ActionCardsSDK.build\/Release-iphoneos\/AtomicSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 4050,
+      "offset": 3079,
       "length": 15,
       "value": "\"icon-thumb-up\""
     },
     {
       "filePath": "\/Users\/distiller\/Library\/Developer\/Xcode\/DerivedData\/ActionCards-bxhtaptuiijibqfmkcwrexdteglm\/Build\/Intermediates.noindex\/ActionCardsSDK.build\/Release-iphoneos\/AtomicSDK.build\/DerivedSources\/GeneratedAssetSymbols.swift",
       "kind": "StringLiteral",
-      "offset": 4192,
+      "offset": 3221,
       "length": 11,
       "value": "\"icon-tick\""
     }
