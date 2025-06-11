@@ -39,6 +39,15 @@ typedef NS_ENUM(NSInteger, AACThemeAlignment) {
 };
 
 /**
+ The vertical alignment types of theme elements.
+ */
+typedef NS_CLOSED_ENUM(NSInteger, AACThemeVerticalAlignment) {
+    AACThemeVerticalAlignmentTop,
+    AACThemeVerticalAlignmentCenter,
+    AACThemeVerticalAlignmentBottom
+};
+
+/**
  Represents a theme that is rendered in a part of the SDK.
  A theme encapsulates colours, text styles and measured values (such as the border radius
  on elements) to create a visual style.
@@ -84,6 +93,7 @@ typedef NS_ENUM(NSInteger, AACThemeAlignment) {
 @property (nonatomic, strong) AACColor *backgroundBanner;
 @property (nonatomic, strong) AACColor *backgroundOptions;
 @property (nonatomic, strong) AACColor *backgroundUploadPlaceholder;
+@property (nonatomic, strong) AACColor *backgroundModalContainer;
 
 - (AACColor *)textButton:(AACCardButtonType)buttonType;
 @property (nonatomic, strong) AACColor *textListTitle;
@@ -180,6 +190,9 @@ typedef NS_ENUM(NSInteger, AACThemeAlignment) {
 @property (nonatomic, strong) AACTypography *typographyProcessingStateButtonLabel;
 
 #pragma mark - Shape
+@property (nonatomic) AACThemeVerticalAlignment modalContainerAlignment;
+@property (nonatomic, readonly) AACMeasurement *modalContainerPadding;
+
 - (AACMeasurement *)borderRadiusButton:(AACCardButtonType)buttonType;
 - (AACMeasurement *)borderWidthButton:(AACCardButtonType)buttonType;
 - (AACEdgeInsets *)paddingsButton:(AACCardButtonType)buttonType;
