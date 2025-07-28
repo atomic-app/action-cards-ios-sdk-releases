@@ -8,8 +8,12 @@
 #import <AtomicSDK/AACAppearanceCollection.h>
 #import <AtomicSDK/AACSDKEvent.h>
 #import <AtomicSDK/AACSwiftUIAnalyticsEvent.h>
+#import <AtomicSDK/AACUploadRequest.h>
+#import <AtomicSDK/AACUploadServiceError.h>
 
 NS_ASSUME_NONNULL_BEGIN
+
+typedef void(^AACSwiftUIUploadServiceHandler)(NSArray<AACUploadServiceError *> *errors);
 
 /**
  Handler called when the request for a theme completes.
@@ -63,6 +67,10 @@ typedef void(^AACSessionAppearanceCollectionCompletionHandler)(AACAppearanceColl
                                           textColor:(AACColor *)textColor
                                           linkColor:(AACColor *)linkColor
                             isVerticalCentreAligned:(BOOL)isVerticalCentreAligned;
+
++ (void)uploadWithRequests:(NSArray<AACUploadRequest *> *)requests withCompletionHandler:(AACSwiftUIUploadServiceHandler)completionHandler;
+
++ (void)cancelAllUploads;
 
 @end
 

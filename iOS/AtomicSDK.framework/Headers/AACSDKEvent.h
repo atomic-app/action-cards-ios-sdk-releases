@@ -352,6 +352,11 @@ typedef NS_ENUM(NSUInteger, AACSDKEventActionSource) {
  */
 @property (nonatomic, readonly) AACSDKEventActionSource source;
 
+/**
+ The free-form feedback provided by the user where available.
+ */
+@property (nonatomic, readonly, nullable) NSString *otherMessage;
+
 @end
 
 /**

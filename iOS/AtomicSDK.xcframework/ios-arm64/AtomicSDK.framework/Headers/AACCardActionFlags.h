@@ -15,9 +15,16 @@
 
 @property (nonatomic, readonly) BOOL snoozeSwipeDisabled;
 @property (nonatomic, readonly) BOOL snoozeOverflowDisabled;
+
 @property (nonatomic, readonly) BOOL dismissSwipeDisabled;
 @property (nonatomic, readonly) BOOL dismissOverflowDisabled;
+
 @property (nonatomic, readonly) BOOL voteUpOverflowDisabled;
+@property (nonatomic, readonly) BOOL voteUpFeedbackDisabled;
+@property (nonatomic, nullable, copy) NSString *voteUpFeedbackLabel;
+
 @property (nonatomic, readonly) BOOL voteDownOverflowDisabled;
+@property (nonatomic, readonly) BOOL voteDownFeedbackDisabled;
+@property (nonatomic, nullable, copy) NSString *voteDownFeedbackLabel;
 
 @end

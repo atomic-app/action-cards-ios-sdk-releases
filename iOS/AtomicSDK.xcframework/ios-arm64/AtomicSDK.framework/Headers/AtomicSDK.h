@@ -86,3 +86,7 @@ FOUNDATION_EXPORT const unsigned char AtomicSDKVersionString[];
 #import <AtomicSDK/AACSubviewTheme.h>
 #import <AtomicSDK/AACAppearanceManager.h>
 #import <AtomicSDK/AACSwiftUISession.h>
+
+#import <AtomicSDK/AACLoadedFileData.h>
+#import <AtomicSDK/AACUploadRequest.h>
+#import <AtomicSDK/AACUploadServiceError.h>

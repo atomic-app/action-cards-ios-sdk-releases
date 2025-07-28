@@ -94,8 +94,7 @@ typedef NS_ENUM(NSUInteger, AACCustomString) {
     */
     AACCustomStringVotingNotUseful,
     /**
-     The title to display at the top of the screen allowing a user to provide feedback on why
-     they didn't find a card useful.
+     The title displayed at the top of the screen, allowing users to provide feedback on why they found a card useful or not.
      Defaults to `Send feedback`.
      */
     AACCustomStringVotingFeedbackTitle,
