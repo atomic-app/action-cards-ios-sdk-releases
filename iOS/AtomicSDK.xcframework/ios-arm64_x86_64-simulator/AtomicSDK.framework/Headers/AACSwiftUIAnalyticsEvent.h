@@ -17,9 +17,7 @@ typedef NS_ENUM(NSInteger, AACSwiftUIAnalyticsEventContainerStyle) {
     /// Display only the first card.
     AACSwiftUIAnalyticsEventContainerStyleSingle,
     /// Display all available cards in a horizontal list.
-    AACSwiftUIAnalyticsEventContainerStyleHorizon,
-    /// Display the first card on a fullscreen page.
-    AACSwiftUIAnalyticsEventContainerStyleModal
+    AACSwiftUIAnalyticsEventContainerStyleHorizon
 };
 
 /**

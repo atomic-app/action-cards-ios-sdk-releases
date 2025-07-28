@@ -29,8 +29,6 @@ typedef NS_ENUM(NSUInteger, AACTypographyTransform) {
  */
 @interface AACTypographyRenderingOptions: NSObject
 
-@property (nonatomic, readonly) NSString *key;
-
 /**
  The text alignment to use (defaults to `NSTextAlignmentLeft`).
  */
