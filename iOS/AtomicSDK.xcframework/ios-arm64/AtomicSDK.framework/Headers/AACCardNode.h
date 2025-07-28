@@ -52,7 +52,7 @@
 /**
  An array of buttons held by the node, if any. Buttons are now all hosted in the `AACCardNodeForm` node.
  */
-@property (nonatomic, strong, nullable, readonly) NSMutableArray* buttons;
+@property (nonatomic, strong, nullable) NSMutableArray* buttons;
 
 /**
  Whether this node represents a form field that contains buttons.
@@ -95,7 +95,7 @@
 /// The identifying name of this node, used when submitting a value for it.
 @property (nonatomic, copy, nonnull) NSString* name;
 
-/// The stored response value, a handy accessor to the stored default value.
+/// The stored response value, a dynamic property implemented by subclasses and a handy accessor to the stored default value.
 @property (nonatomic, readonly, nullable) id storedResponseValue;
 
 /// Whether the node needs validation, this value defaults to `NO`, which means
